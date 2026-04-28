@@ -1,0 +1,641 @@
+[
+  {
+    "doi": "10.1016/j.watres.2026.125913",
+    "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
+    "journal": "Water research",
+    "year": 2026,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Despite great concerns regarding chlorinated disinfection byproducts (Cl-DBPs) formed during chlorine photolysis processes, the formation mechanisms involving multiple reactive species and associated reaction pathways remain unclear. In this study, the role of oxygenation reactions in the formation of Cl-DBPs during vacuum UV/chlorine treatment of reclaimed water was explored. Using ozonation effluent as raw water and treatments with varied reactor configurations, the formation of both regulated and unknown Cl-DBPs was investigated. By examining molecular formulae identified through Fourier transform ion cyclotron resonance mass spectrometry, a significant difference (p ≤ 0.05) in the weighted O/C distributions of unknown Cl-DBPs among the samples was observed. Associated reactions contributing to such oxygen abundance differences were then explored through paired mass distance (PMD) analysis. Results revealed a predominant oxygenation (e.g., +O, ≥ 93.2%) over chlorination (e.g., +HClO) among the PMD pairs; remarkably, 77.8%-94.7% of identified precursors for TCM, HAA, and unknown Cl-DBPs underwent oxygenation reactions, indicating their critical role in Cl-DBP formation probably through producing reactive intermediates for chlorination. Moreover, oxygenation reactions produced precursors (∼53%) associated with Cl-DBP formation potential during post-chlorination. Correlation analysis with steady-state radical concentrations demonstrated that these reactions could be synergistically regulated by HO",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.biortech.2026.134282",
+    "title": "Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.",
+    "journal": "Bioresource technology",
+    "year": 2026,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Understanding the degradation pathways of dissolved organic matter (DOM) in sewage treatment is critical for optimizing DOM removal efficiency. While the multi-stage biological contact oxidation (MBCO) process is increasingly used as a promising emerging wastewater treatment technology, insights into its DOM transformation mechanisms remain limited. This study, for the first time, elucidates DOM transformation pathways in MBCO by integrating Fourier transform-ion cyclotron resonance mass spectrometry (FT-ICR MS), pairwise mass difference (PMD) networks, and microbial community profiling. Results show biological treatment significantly boosts DOM's molecular diversity, with detected molecules nearly tripling. During treatment, lignin's proportion in DOM rises from 11.6% to 73.4%, along with increased aromaticity and humification. PMD analysis reveals DOM transformation mainly occurs via intermolecular conversion of lignin or saturated compounds, with minimal elemental composition changes; functional groups involved (e.g., additions/losses) are mostly composed of C, H, and O. Notably, MBCO has unique DOM transformation pathways vs. conventional biological processes, including potential substitution reactions with 1-hydroxyethyl and acetyl groups-likely due to its distinct microbial community. Correlation analysis between 6 DOM-degrading microorganisms (Serratia, Klebsiella, Escherichia_Shigella, Pseudomonas, Bacillus, Clostridium) and 70 PMDs (linked to 3 common DOM degradation pathways: Glycolysis/Gluconeogenesis; Glycine, serine and threonine metabolism; Amino sugar and nucleotide sugar metabolism) shows different microbes prefer specific pathways. These findings guide targeted microbial enhancement in MBCO to improve DOM removal efficiency.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.5c14774",
+    "title": "Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.",
+    "journal": "Environmental science & technology",
+    "year": 2026,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Understanding contaminant transformation during wastewater treatment is essential for pollution reduction and environmental risk mitigation. However, the highly diverse molecular composition of wastewater, arising from various emission sources, presents a major challenge to deciphering the underlying biochemical reactions. Herein, nontargeted analysis and paired mass distance (PMD) analysis were conducted in paired influent-effluent samples from 11 wastewater treatment plants to elucidate contaminant diversity and transformation reactions across different treatment processes. In total, 418 structural subclasses of contaminants were classified, among which amino acids, peptides, and analogues (AAPAs) were the most common. Although the total number of features, subclasses, and overall abundance decreased in effluent samples, chemical diversity did not show a consistent reduction. This finding was primarily due to the removal of contaminants such as AAPAs and the persistence of aromatic compounds such as benzenoids. Transformation reactions were highly conserved across biological processes, with methylation and demethylation occurring the most frequently. High-frequency PMDs were strongly associated with carbon-related transformations, which substantially altered the polarity of transformation products. Furthermore, transformation reactions were characterized by small mass shifts and intrastructural reactions, indicating that most contaminants did not undergo extensive structural transformations. This study provides insight into common patterns of contaminant removal across wastewater treatment processes, benefiting transformation product prediction and wastewater treatment process optimization.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.watres.2025.125056",
+    "title": "Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.",
+    "journal": "Water research",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "The dissemination of antibiotic resistance genes (ARGs) facilitated by coexisting microplastics (MPs) in the \"source-sink\" hotspots of waste activated sludge (WAS) raises great concern. Despite real-world MPs undergoing aging, whether and how naturally aged microplastics (AMPs) affect ARG dissemination during sludge treatment remains largely unknown. Herein, we systematically explored the evolved effects and underlying mechanisms of environmentally relevant MPs (0, 3, and 30 mg/kg TS) aging on ARG propagation in anaerobic sludge digestion via multi-omics analyses. Specifically, microplastic exposure increased total ARG abundance by 2.59-15.31 % with enriched mobile genetic elements (MGEs, 0.22-16.71 %). These effects were escalated at higher microplastic dosages and aging degrees. Mechanistically, metagenomic and metaproteomic analyses revealed the drivers for ARG amplification in the sludge digester evolved from the pristine microplastics (PMPs)-induced higher oxidative stress and membrane permeability to AMPs-induced higher multidrug efflux coupled with pilus-mediated conjugation. Subsequently, metagenomic binning identified key multidrug-resistant hosts of Sedimentibacter, Alicycliphilus, and Sulfuricurvum genera. Moreover, high-resolution metabolomics and reactomics network analysis uncovered that AMPs stimulated microbial metabolite turnover, particularly of nitrogenous and sulfurous compounds, and enhanced the complexity and communication frequency of molecular transformation networks centered on lignin and protein nodes, thereby promoting ARG exchange. Finally, Mantel tests reconfirmed that reactive oxygen species level (Mantel's r = 0.93, p = 0.04) and metabolite network connectivity (Mantel's r = 0.82, p = 0.04) are paramount drivers of ARG spread. These findings offer novel insights into the ARG amplification risk driven by MPs aging, guiding targeted strategies to mitigate ARG spread and improve resource recovery in sludge bioengineering systems.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1158/1055-9965.epi-25-0801",
+    "title": "Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.",
+    "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Most pediatric leukemia forms early in life, but early-life biology and biomarkers for screening remain undefined. We performed direct molecular measurements in neonatal dried blood spots (DBS) and maternal pregnancy serum to identify early-life biological signatures of pediatric acute lymphoblastic leukemia (ALL). In a nested case-control study design, we obtained mother-infant paired samples from second-trimester pregnancy serum and neonatal DBS from 122 children diagnosed with pediatric ALL and 122 matched cancer-free controls. Using liquid chromatography-high-resolution mass spectrometry, we performed untargeted metabolomics. The data-driven Reactomics approach was used to identify quantitative paired mass differences (qPMD) that represent molecular changes in the samples. We identified qPMDs associated with ALL risk and assessed linolenic acid and linoleic acid as potential ALL biomarkers. Overall, the nine selected qPMDs in DBS were more strongly associated with ALL than the 16 qPMDs in maternal serum. Several of the selected qPMDs were highly correlated, suggesting that these qPMDs may represent biological reactivity hubs of metabolic pathways important in leukemogenesis. We also observed a suggestive positive but not significant association between linolenic acid and linoleic acid in the DBS of children diagnosed with ALL at 5 years or older (N = 13) and matched controls (N = 13). Although biological interpretation of Reactomics analysis for clinical intervention is currently limited, our study supports the presence of molecular reaction changes in early life associated with later pediatric ALL. Reactomics analysis revealed potential biomarkers in neonatal samples linked with later diagnosis of ALL.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.cej.2025.167655",
+    "title": "FT-ICR MS and viral metagenomics reveal distinct mechanisms of lysogenic and lytic phage-driven DOM transformations in wastewater at formula-levels",
+    "journal": "Chemical Engineering Journal",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1021/acs.est.5c09633",
+    "title": "Microbial Physiological Adaptation to Biodegradable Microplastics Drives the Transformation and Reactivity of Dissolved Organic Matter in Soil.",
+    "journal": "Environmental science & technology",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "The turnover of dissolved organic matter (DOM) in soil regulated by biodegradable microplastics (MPs) has garnered much attention due to its profound impact on the storage and stability of soil organic matter. However, the transformation and reactivity of plant-derived and microbially derived DOM by microorganisms adapted to biodegradable MPs, and the involved microbial physiological processes, remain nearly unknown. Here, we added virgin and aged polylactic acid (PLA) and polyhydroxyalkanoate (PHA) to agricultural soils and incubated for 56 days. Using stable isotope techniques, reactomics, and metagenomics, we found that the addition of both virgin and aged PLA induced hydroxylation, demethylation, and dehydrogenation of lignin-derived DOM, resulting in a 3-fold increase in their oxidation degree. PLA activated the enzymatic pathway for lignin-derived DOM decomposition and downregulated genes involved in bacterial anabolism, such as those related to protein, amino sugar, and peptidoglycan biosynthesis. In contrast, PHA increased the content of microbially derived DOM compounds such as proteins and amino sugars by 2.1-fold relative to the control with peptide chain elongation. PHA resulted in the degradation of lignin-derived DOM into pyruvate and acetyl-CoA, accelerated bacterial ATP synthesis, the de novo biosynthesis of proteins and peptidoglycan, and cell renewal and death, thereby increasing PHA- and soil organic matter-derived microbial necromass carbon. Our study provides new insights into the impact of biodegradable MPs on soil DOM transformation and underscores the importance of the microbial physiological processes involved.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.jafc.5c05559",
+    "title": "Molecular Humification Mechanisms of Dissolved Organic Matter during Maize Straw Composting Enhanced by Humus Soil Biomaterial: Paired-Molecule Mass Difference Reactomics Analysis Based on FT-ICR MS.",
+    "journal": "Journal of agricultural and food chemistry",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "This study investigated molecular humification mechanisms of dissolved organic matter during maize straw composting enhanced by humus soil biomaterial using paired-molecule mass difference reactomics analysis and high-throughput sequencing. Results indicated that the composting process predominantly involved three molecular humification pathways, namely, the phenol-protein reaction, polyphenol self-condensation, and Maillard reaction, with N-containing molecules showing the highest reactivity. Proteins were hydrolyzed into N-containing intermediates in the initial composting stage, which rapidly polymerized with phenol from humus soil biomaterial to form humic acids, improving organic nitrogen retention. Lignin was decomposed and oxidized into phenolics and quinones mainly during the middle and later composting stages, which either self-condensed or polymerized with protein derivatives to assemble humic acids. Concurrently, some amino acids and monosaccharides underwent the Maillard reaction to produce humic acids. Furthermore, humus soil biomaterial introduced the genus",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.analchem.5c01213",
+    "title": "mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry-Based Nontargeted Metabolomics Data Analysis",
+    "journal": "Analytical Chemistry",
+    "year": 2025,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "Reproducibility of data analysis is pivotal in the context of nontargeted metabolomics based on mass spectrometry coupled with chromatography. While various algorithms have been proposed for feature or peak extraction, their validation often revolves around a limited set of known compounds or standards. While data simulation is widely used in other omics studies, simulations are focused on the feature level, neglecting uncertainties inherent in the feature or peak extraction process for metabolomics mass spectrometry data. In this technique note, we introduce an R package called \"mzrtsim\"' to simulate gas/liquid chromatography full scan raw data in the mzML format. Unlike simulations solely based on virtual features, our approach leverages experimental spectral data from MassBank of North America (MoNA) and the human metabolome database (HMDB). We developed algorithms to simulate chromatographic peaks, accounting for the tailing factor. The results of our study demonstrate the potential of this tool for comparing established metabolomics software (e.g., XCMS, mzMine, and OpenMS) against ground truth. We found that the investigated software introduced false positive peaks and/or loss of compounds with fewer peaks. They also showed different sensitivity to the tailing and leading peaks. This R package is free and available online (https://github.com/yufree/mzrtsim).",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.watres.2025.124331",
+    "title": "Decoding periodate-driven phototransformation of dissolved organic matter in sunlit waters: Multidimensional property shifts and molecular network reconfiguration.",
+    "journal": "Water research",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Residual periodate (PI) from advanced oxidation processes poses emerging threats to aquatic carbon cycling, yet its role in reprogramming the phototransformation of dissolved organic matter (DOM) remains poorly understood. Here, we reveal the multidimensional effects of PI residues (20.0-300.0 μM) on DOM under solar irradiation by real-time photophysical, electrochemical, and photochemical tracking; molecular reactomics via FT-ICR MS with paired mass distance networks; and interpretable machine learning. PI residues induced aromatic structure fragmentation, reductions in apparent molecular weight, and increases in redox capacity by 1.4-3.6 times. The solar/PI system enhanced photochemical reactivity, elevating the quantum yields of",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jece.2025.117411",
+    "title": "Identifying the impacts of photochemical and biological processes on wastewater effluent organic matter in receiving water using directed paired mass distance",
+    "journal": "Journal of Environmental Chemical Engineering",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1021/acs.est.5c01928",
+    "title": "Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants",
+    "journal": "Environmental Science &amp; Technology",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "The gut microbiota plays a pivotal role in metabolizing exogenous compounds, profoundly influencing their bioavailability and biological effects. With the increasing prevalence of environmental contamination, understanding the gut microbiota's role in transforming pollutants and the underlying mechanisms is essential for assessing the associated environmental and health risks. Here, we review the current knowledge on gut microbiota-mediated transformation reaction, with a focus on the identification of transformation products using advanced predictive tools and mass spectrometry. We highlight the integration of multi-omics approaches─including genomics, transcriptomics, proteomics, and metabolomics─to unravel the mechanisms underlying these processes. Furthermore, we examine the roles of gut microbiota in pollutant bioaccumulation and their interplay with the host in pollutant metabolism and excretion, emphasizing the multifaceted contributions of gut microbiota to pollutant processing and their impacts on host health. Lastly, we identify critical knowledge gaps and emphasize the need for further research to advance our understanding of microbiota-mediated transformations and their broader implications for host physiology, environmental health, and pollution management.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1080/10408347.2025.2528134",
+    "title": "Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review",
+    "journal": "Critical Reviews in Analytical Chemistry",
+    "year": 2025,
+    "section": "Methods and tools",
+    "abstract": "Chromatographic data processing represents an increasing challenge in analytical science, particularly due to the complexity of samples and the large volume of data generated by chromatographic techniques coupled with mass spectrometry (MS). This paper presents a systematic review of technological innovations over the last six years in the development of computational tools for processing these data. The review follows the PRISMA protocol, with a search conducted across five databases (SciFinder, Scopus, Web of Science, Embase, and ScienceDirect), utilizing strategies based on indexed descriptors and Boolean combinations. Thirty-three studies were selected that met the criteria of originality, applicability, and innovation in analytical tools. The results reveal significant advancements in algorithms for peak detection, alignment, and deconvolution, with an emphasis on machine learning, deep learning, and multivariate resolution approaches. Tools such as DeepResolution, SeA-M2Net, SLAW, QPMASS, autoGCMSDataAnal, and AntDAS demonstrate automation, scalability, and higher accuracy in critical tasks such as noise filtering, baseline correction, and compound identification. The analysis also highlights the progress of open-source software, which promotes greater access and interoperability. Although challenges such as the need for annotated data and standardization remain, recent advancements signal a shift toward more robust, accessible, and adaptable solutions for chromatographic data processing, expanding the potential of analyses across various scientific and industrial contexts. In this review, 'peak deconvolution' refers to separating co-eluting chromatographic signals, while 'spectral deconvolution' denotes reconstructing pure MS/MS spectra from mixed fragments.\"",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acsestwater.4c01260",
+    "title": "Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition",
+    "journal": "ACS ES&amp;T Water",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1021/acs.est.5c01794",
+    "title": "Wildfire-Derived Pyrogenic Dissolved Organic Matter (pyDOM) Enhances Riverine DOM Reactivities and Nitrogen Metabolisms.",
+    "journal": "Environmental science & technology",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Wildfires profoundly reshape soil organic matter composition with cascading impacts on global carbon cycling, yet, the biogeochemical consequences of pyrogenic dissolved organic matter (pyDOM) on riverine DOM reactivity and microbial metabolism remain poorly constrained. Here, we conducted controlled incubation of river water amended with DOM extracted from wildfire-affected versus undisturbed soils to assess molecular DOM transformations and microbial responses. High-resolution mass spectrometry and substrate-explicit modeling revealed that pyDOM introduction increased refractory components (e.g., condensed aromatics and tannins) with high modified aromaticity index (AI",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.estlett.5c00284",
+    "title": "MoleTrans: Browser-Based Webtool for Postanalysis on Molecular Chemodiversity and Transformation of Dissolved Organic Matters via FT-ICR MS",
+    "journal": "Environmental Science &amp; Technology Letters",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.watres.2025.123645",
+    "title": "Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.",
+    "journal": "Water research",
+    "year": 2025,
+    "section": "Methods and tools",
+    "abstract": "The accurate detection of unknown per- and polyfluoroalkyl substances (PFAS) transformation products (TPs) is essential for elucidating degradation pathways and advancing remediation strategies. Herein, we developed a workflow that combined Fourier transform ion cyclotron resonance mass spectrometry (FT-ICR MS) with a paired mass distance (PMD) network. This study achieved high throughput profiling of PFAS TPs with mDa resolving power and sub-ppm mass error. UV treatment revealed chain-shortening pathways, while plasma treatment uncovered competing mechanisms of chain shortening and lengthening, generating oxygen-rich TPs with increased hydrophilicity. Specifically, UV treatment of a 15-PFAS mixture and contaminated natural water showed disappearance of 7 unknown PFAS homologues and the emergence of 12 unknown PFAS homologues. Despite PFAS persistence under UV exposure, previously undetected low-abundance PFAS species were identified, indicating non-negligible photochemical transformation. Under plasma treatment of isolated PFOS, 39 unknown PFAS homologues including 142 suspect and 34 unknown PFAS TPs were identified, highlighting the extensive transformation of emerging and persistent PFAS. Overall, our approach enabled accurate and high-throughput profiling of unknown PFAS TPs and their degradation pathways, providing new insights into persistent unknown PFAS.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.tibs.2025.01.010",
+    "title": "Toward an integrated omics approach for plant biosynthetic pathway discovery in the age of AI",
+    "journal": "Trends in Biochemical Sciences",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Elucidating plant biosynthetic pathways is key to advancing a sustainable bioeconomy by enabling access to complex natural products through synthetic biology. Despite progress from genomic, transcriptomic, and metabolomic approaches, much multiomics data remain underutilized. This review highlights state-of-the-art multiomics strategies for discovering plant biosynthetic pathways, addressing challenges in data acquisition and interpretation with emerging computational tools. We propose an integrated workflow combining molecular networking, reaction pair analysis, and gene expression patterns to enhance data utilization. Additionally, artificial intelligence (AI)-driven approaches promise to revolutionize pathway discovery by streamlining data analysis and validation. Integrating multiomics data, chemical insights, and advanced algorithms can accelerate understanding of plant metabolism and bioengineering valuable natural products efficiently.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jhazmat.2025.137183",
+    "title": "Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge",
+    "journal": "Journal of Hazardous Materials",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "Activated sludge enriches vast amounts of micropollutants (MPs) when wastewater is treated, posing potential environmental risks. While standard methods typically focus on target analysis of known compounds, the identity, structure, and concentration of transformation products (TPs) of MPs remain less understood. Here, we employed a novel approach that integrates machine learning for the quantification of nontarget TPs with advanced target, suspect, and nontarget screening strategies. 39 parent chemicals and 286 TPs were identified, with the majority being pharmaceuticals, followed by phthalate acid ester and alkylphenols. To quantify TPs without reference standards, we applied machine learning to forecast the relative response factors (RRFs) relied on their physicochemical characteristics. The random forest regression model showed great performance, with prediction errors of RRFs ranging from 0.03 to 0.35. The mean concentrations for parents and TPs were 1.32 -19.83 and 6.35 -9.94 μg/g dw, respectively. Further risk-based prioritization integrating environmental exposure and ToxPi scoring ranked the identified 182 compounds, with three parents and one TP recognized as high priorities for management. N-demethylation and N-oxidated TPs are generally less toxic than their parents. These findings are expected to facilitate MPs and their TPs investigations for reliable environmental monitoring and risk assessment across different sludge treatment processes.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jhazmat.2024.137038",
+    "title": "Effect of a high Cl– concentration on the transformation of waste leachate DOM by the UV/PMS system: A mechanistic study using the Suwannee River natural organic matter (SRNOM) as a simulator of waste leachate DOM",
+    "journal": "Journal of Hazardous Materials",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "The ultraviolet-activated peroxymosnofulate (UV/PMS) system, an effective advanced oxidation process for removing dissolved organic matter (DOM) from wastewater, is limited by high chloride ion (Cl",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.4c13557",
+    "title": "Enhanced Release and Reactivity of Soil Water-Extractable Organic Matter Following Wildfire in a Subtropical Forest.",
+    "journal": "Environmental science & technology",
+    "year": 2025,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Climate-driven increases in wildfire frequency may disrupt soil carbon dynamics, potentially creating positive feedback within global carbon cycle. However, the release and lability of soil carbon following wildfire remain unclear, limiting our ability to predict fire impacts on carbon cycling. Here, we investigated chemical alterations in soil water-extractable organic matter (WEOM) following a subtropical forest wildfire by comparing burned soils to an adjacent unburned site. The consensus is that fire-altered DOM is aromatic and less reactive. However, we found that 10 months postfire, burned soils contained nearly three times more water-extractable organic carbon (WEOC) than the control site. Reactomics analysis further revealed an overall 8-fold increase in potential reactivity of this carbon, identified by higher abundances of molecular formulas involved in identified microbial reaction pathways. Specifically, burned soils exhibited elevated potential oxidative enzyme reactions, linked to a higher nominal oxidation state of carbon (NOSC) in WEOM. Metagenomic analysis revealed an enrichment of microbial taxa specialized in degrading aromatic compounds in burned areas, supporting the occurrence of potential microbial reaction pathways acting on WEOM in postfire soils. These findings highlight that wildfires may accelerate soil carbon loss through reactive WEOM mobilization and microbial response, with implications for long-term carbon-climate projections.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1038/s43247-025-02032-7",
+    "title": "Long-term fertilization promotes the microbial-mediated transformation of soil dissolved organic matter",
+    "journal": "Communications Earth &amp; Environment",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.seppur.2024.128536",
+    "title": "Photochemical transformation altered coagulation behavior and treatability of dissolved organic matters in water",
+    "journal": "Separation and Purification Technology",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.chemosphere.2025.144111",
+    "title": "Unveiling molecular DOM reactomics and transformation coupled with multifunctional nanocomposites under anaerobic conditions: Tracking potential metabolomics and pathways.",
+    "journal": "Chemosphere",
+    "year": 2025,
+    "section": "Methods and tools",
+    "abstract": "Anaerobic digestion (AD) offers great potential for pollutant removal and bioenergy recovery. However, it faces challenges when using livestock manure (LSM) as a feedstock given its high content of refractory materials (e.g., lignocellulose, long-chain carbohydrates, lipids, and crude protein). This would significantly inhibit AD-microbial activities, reduce organic transformation efficiency and limit gas production. To overcome this, multifunctional metal-doped hydrochars (HCs) were introduced here as AD supplements/accelerators, given that LSM degradation under AD results in complex dissolved organic matter (DOM). To assess this, the current study investigates the molecular interactions/transformations within DOM during LSM-AD coupled with metal-doped HCs, via batch-mode experiments. Expansive data mining techniques were employed to analyze DOM using Fourier transform ion cyclotron resonance mass spectrometry (FT-ICR MS). Substantial increments in peptide-like along with decrements in highly unsaturated-like molecules were observed in HC@MnCl",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.4c08840",
+    "title": "Network-Based Methods for Deciphering the Oxidizability of Complex Leachate DOM with <sup>•</sup>OH/O<sub>3</sub> via Molecular Signatures",
+    "journal": "Environmental Science &amp; Technology",
+    "year": 2025,
+    "section": "Applications in environmental transformation",
+    "abstract": "In landfill leachates containing complex dissolved organic matter (DOM), the link between individual DOM constituents and their inherent oxidizability is unclear. Here, we resolved the molecular signatures of DOM oxidized by",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1186/s12859-024-05994-1",
+    "title": "DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.",
+    "journal": "BMC bioinformatics",
+    "year": 2024,
+    "section": "Applications in environmental transformation",
+    "abstract": "Metabolomics is a high-throughput technology that measures small molecule metabolites in cells, tissues or biofluids. Analysis of metabolomics data is a multi-step process that involves data processing, quality control and normalization, followed by statistical and bioinformatics analysis. The latter step often involves pathway analysis to aid biological interpretation of the data. This approach is limited to endogenous metabolites that can be readily mapped to metabolic pathways. An alternative to pathway analysis that can be used for any classes of metabolites, including unknown compounds that are ubiquitous in untargeted metabolomics data, involves defining metabolite-metabolite interactions using experimental data. Our group has developed several network-based methods that use partial correlations of experimentally determined metabolite measurements. These were implemented in CorrelationCalculator and Filigree, two software tools for the analysis of metabolomics data we developed previously. The latter tool implements the Differential Network Enrichment Analysis (DNEA) algorithm. This analysis is useful for building differential networks from metabolomics data containing two experimental groups and identifying differentially enriched metabolic modules. While Filigree is a user-friendly tool, it has certain limitations when used for the analysis of large-scale metabolomics datasets. We developed the DNEA R package for the data-driven network analysis of metabolomics data. We present the DNEA workflow and functionality, algorithm enhancements implemented with respect to the package's predecessor, Filigree, and discuss best practices for analyses. We tested the performance of the DNEA R package and illustrated its features using publicly available metabolomics data from the environmental determinants of diabetes in the young. To our knowledge, this package is the only publicly available tool designed for the construction of biological networks and subsequent enrichment testing for datasets containing exogenous, secondary, and unknown compounds. This greatly expands the scope of traditional enrichment analysis tools that can be used to analyze a relatively small set of well-annotated metabolites. The DNEA R package is a more flexible and powerful implementation of our previously published software tool, Filigree. The modular structure of the package, along with the parallel processing framework built into the most computationally extensive steps of the algorithm, make it a powerful tool for the analysis of large and complex metabolomics datasets.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jpba.2024.116429",
+    "title": "The impact of sampling time point on the lipidome composition",
+    "journal": "Journal of Pharmaceutical and Biomedical Analysis",
+    "year": 2024,
+    "section": "Applications in environmental transformation",
+    "abstract": "Lipidomic profiling has been reported as an effective approach for characterizing and differentiating brain tumors. However, since lipids can undergo non-specific enzymatic and nonenzymatic reactions due to tissue disruption, it is critical to consider the preanalytical phase of the diagnostic process (e.g., optimizing the sampling time and sampling conditions). Thus, this study assesses the ways in which the time point of sampling impacts the lipidome composition of brain tumors. Two histologically distinct brain tumors-namely, meningiomas and gliomas-were sampled using solid-phase microextraction (SPME) fibers at two time points: on-site directly after removal, and after 12 months of storage at -30 °C. The samples were analyzed via HILIC chromatography coupled with HRMS, which enabled the detection of a wide range of features, including phospholipids and sphingolipids, as well as changes in the profiles of these compounds. The samples obtained from the stored tissues tended to have elevated levels of analytes with lower m/z values. In addition, the samples obtained from the fresh and stored tissues were easily distinguished based on their lipidome compositions, regardless of the histological tumor type. Notably, while storage did not affect the possibility of differentiating meningiomas and gliomas, the biological interpretation of the obtained results were prone to bias.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.cej.2024.157156",
+    "title": "Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water",
+    "journal": "Chemical Engineering Journal",
+    "year": 2024,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.envres.2024.120216",
+    "title": "Revealing the interplay of dissolved organic matters variation with microbial symbiotic network in lime-treated sludge landscaping.",
+    "journal": "Environmental research",
+    "year": 2024,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Lime pretreatment is commonly used for sludge hygienization. Appropriate lime dosage is crucial for achieving both sludge stabilization (lime dosage >0.2 g/g-TS) and promoting plant and soil health during subsequent landscaping (lime dosage <0.8 g/g-TS). While much research has been conducted on sludge lime treatment, few studies have examined the effects of lime dosing on integrating sludge stabilization and plant growth promotion during landscaping. In this study, we investigated microbial dynamics and dissolved organic matter (DOM) transformation during sludge landscaping with five lime dosage gradients (0, 0.2, 0.4, 0.6, 0.8 g lime/g-TS) over 90 days. Our results showed that a lime dosage of 0.4 g/g-TS is the lower threshold for achieving waste activated sludge (WAS) stabilization during landscaping, leading to maximum humic substance formation and minimal phytotoxicity. Specifically, at 0.4 g/g-TS lime dosage, protein degradation and decarboxylation-induced humification were significantly enhanced. The predominant microbial genera shifted from Aromatoleum to Exiguobacterium and Romboutsia (both affiliated with the phylum Firmicutes). Reactomics analysis further indicated that a 0.4 g/g-TS lime dosage promoted the hydrolysis of proteins (lyase reactions on C-C, C-O, and C-N bonds), amino acid metabolism, and decarboxylation-induced humification (e.g., C",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.4c03022",
+    "title": "Complexation with Metal Ions Affects Chlorination Reactivity of Dissolved Organic Matter: Structural Reactomics of Emerging Disinfection Byproducts.",
+    "journal": "Environmental science & technology",
+    "year": 2024,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Metal ions are liable to form metal-dissolved organic matter [dissolved organic matter (DOM)] complexes, changing the chemistry and chlorine reactivity of DOM. Herein, the impacts of iron and zinc ions (Fe",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1080/00032719.2024.2358160",
+    "title": "Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)",
+    "journal": "Analytical Letters",
+    "year": 2024,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1126/sciadv.adn1039",
+    "title": "Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.",
+    "journal": "Science advances",
+    "year": 2024,
+    "section": "Applications in environmental transformation",
+    "abstract": "Unknown forever chemicals like per- and polyfluoroalkyl substances (PFASs) are difficult to identify. Current platforms designed for metabolites and natural products cannot capture the diverse structural characteristics of PFAS. Here, we report an automatic PFAS identification platform (APP-ID) that screens for PFAS in environmental samples using an enhanced molecular network and identifies unknown PFAS structures using machine learning. Our networking algorithm, which enhances characteristic fragment matches, has lower false-positive rate (0.7%) than current algorithms (2.4 to 46%). Our support vector machine model identified unknown PFAS in test set with 58.3% accuracy, surpassing current software. Further, APP-ID detected 733 PFASs in real fluorochemical wastewater, 39 of which are previously unreported in environmental media. Retrospective screening of 126 PFASs against public data repository from 20 countries show PFAS substitutes are prevalent worldwide.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/envhealth.3c00218",
+    "title": "Active Molecular Network Discovery Links Lifestyle Variables to Breast Cancer in the Long Island Breast Cancer Study Project.",
+    "journal": "Environment & health (Washington, D.C.)",
+    "year": 2024,
+    "section": "Applications in drug metabolism",
+    "abstract": "A healthy lifestyle has been associated with decreased risk of developing breast cancer. Using untargeted metabolomics profiling, which provides unbiased information regarding lifestyle choices such as diet and exercise, we aim to identify the molecular mechanisms connecting lifestyle and breast cancer through network analysis. A total of 100 postmenopausal women, 50 with breast cancer and 50 cancer-free controls, were selected from the Long Island Breast Cancer Study Project (LIBCSP). We measured untargeted plasma metabolomics using liquid chromatography-high-resolution mass spectrometry (LC-HRMS). Using the \"enet\" package, we retained highly correlated metabolites representing active molecular network (AMN) clusters for analysis. LASSO was used to examine associations between cancer status and AMN metabolites and covariates such as BMI, age, and reproductive factors. LASSO was then repeated to examine associations between AMN metabolites and 10 lifestyle-related variables including smoking, physical activity, alcohol consumption, meat consumption, fruit and vegetable consumption, and supplemental vitamin use. Results were displayed as a network to uncover biological pathways linking lifestyle factors to breast cancer status. After filtering, 851 \"active\" metabolites out of 1797 metabolomics were retained in 197 correlation AMN clusters. Using LASSO, breast cancer status was associated with 71 \"active\" metabolites. Several of these metabolites were associated with lifestyle variables including meat consumption, alcohol consumption, and supplemental β-carotene, B12, and folate use. Those metabolites could potentially serve as molecular-level biological intermediaries connecting healthy lifestyle factors to breast cancer, even though direct associations between breast cancer and the investigated lifestyles at the phenotype level are not evident. In particular, DiHODE, a metabolite linked with inflammation, was associated with breast cancer status and connected to β-carotene supplement usage through an AMN. We found several plasma metabolites associated with lifestyle factors and breast cancer status. Future studies investigating the mechanistic role of inflammation in linking supplement usage to breast cancer status are warranted.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.3c09534",
+    "title": "Exploring Prenatal Exposure to Halogenated Compounds and Its Relationship with Birth Outcomes Using Nontarget Analysis",
+    "journal": "Environmental Science &amp; Technology",
+    "year": 2024,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Halogenated organic compounds (HOCs) are a class of contaminants showing high toxicity, low biodegradability, and high bioaccumulation potential, especially chlorinated and brominated HOCs (Cl/Br-HOCs). Knowledge gaps exist on whether novel Cl/Br-HOCs could penetrate the placental barrier and cause adverse birth outcomes. Herein, 326 cord blood samples were collected in a hospital in Jinan, Shandong Province from February 2017 to January 2022, and 44 Cl/Br-HOCs were identified with communicating confidence level above 4 based on a nontarget approach, covering veterinary drugs, pesticides, and their transformation products, pharmaceutical and personal care products, disinfection byproducts, and so on. To our knowledge, the presence of closantel, bromoxynil, 4-hydroxy-2,5,6-trichloroisophthalonitrile, 2,6-dibromo-4-nitrophenol, and related components in cord blood samples was reported for the first time. Both multiple linear regression (MLR) and Bayesian kernel machine regression (BKMR) models were applied to evaluate the relationships of newborn birth outcomes (birth weight, length, and ponderal index) with individual Cl/Br-HOC and Cl/Br-HOCs mixture exposure, respectively. A significantly negative association was observed between pentachlorophenol exposure and newborn birth length, but the significance vanished after the false discovery rate correction. The BKMR analysis showed that Cl/Br-HOCs mixture exposure was significantly associated with reduced newborn birth length, indicating higher risks of fetal growth restriction. Our findings offer an overview of Cl/Br-HOCs exposome during the early life stage and enhance the understanding of its exposure risks.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.watres.2024.121299",
+    "title": "Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis",
+    "journal": "Water Research",
+    "year": 2024,
+    "section": "Applications in environmental transformation",
+    "abstract": "As the key stage for purifying wastewater, elimination of emerging contaminants (ECs) is found to be fairly low in wastewater treatment plants (WWTPs). However, less knowledge is obtained regarding the transformation pathways between various chemical structures of ECs under different treatment processes. This study unveiled the transformation pathways of ECs with different structures in 15 WWTPs distributed across China by simplified network analysis (SNA) we proposed. After treatment, the molecular weight of the whole component of wastewater decreased and the hydrophilicity increased. There are significant differences in the structure of eliminated, consistent and formed pollutants. Amino acids, peptides, and analogues (AAPAs) were detected most frequently and most removable. Benzenoids were refractory. Triazoles were often produced. The high-frequency reactions in different WWTPs were similar, (de)methylation and dehydration occurred most frequently. Different biological treatment processes performed similarly, while some advanced treatment processes differed, such as a significant increase of -13.976 (2HO reaction) paired mass distances (PMDs) in the chlorine alone process. Further, the common structural transformation was uncovered. 4 anti-hypertensive drugs, including irbesartan, valsartan, olmesartan, and losartan, were identified, along with 22 transformation products (TPs) of them. OH",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.watres.2024.121231",
+    "title": "Inhibitory effect of microplastics derived organic matters on humification reaction of organics in sewage sludge under alkali-hydrothermal treatment.",
+    "journal": "Water research",
+    "year": 2024,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Alkali-hydrothermal treatment (AHT) of sewage sludge is often used to recover value-added dissolved organic matters (DOM) enriched with artificial humic acids (HA). Microplastics (MPs), as emerging contaminants in sewage sludge, can leach organic compounds (MP-DOM) during AHT, which potentially impact the characteristics of thermally treated sludge's DOM. This study employed spectroscopy and Fourier transform-ion cyclotron resonance mass spectrometry (FT-ICR-MS) to explore the impacts of MPs on DOM composition and transformation during AHT. The biological effects of DOM were also investigated by hydroponic experiments. The results showed that the leaching of MP-DOM led to a substantial increase in DOC content of DOM of thermally treated sludge. Conversely, the HA content significantly decreased in the presence of MPs, resulting in a decline of plant growth facilitation degree. FT-ICR-MS analysis revealed that the reduction in HA content was characterized by a notable decline in the abundance of O",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.3c06871",
+    "title": "Deciphering Microbe-Mediated Dissolved Organic Matter Reactome in Wastewater Treatment Plants Using Directed Paired Mass Distance.",
+    "journal": "Environmental science & technology",
+    "year": 2023,
+    "section": "Methods and tools",
+    "abstract": "Understanding the reaction mechanism of dissolved organic matter (DOM) during wastewater biotreatment is crucial for optimal DOM control. Here, we develop a directed paired mass distance (dPMD) method that constructs a molecular network displaying the reaction pathways of DOM. It couples direction inference and PMD analysis to extract the substrate-product relationships and delta masses of potentially paired reactants directly from sequential mass spectrometry data without formula assignment. Using this method, we analyze the influent and effluent samples from the bioprocesses of 12 wastewater treatment plants (WWTPs) and build a dPMD network to characterize the core reactome of DOM. The network shows that the first step of the transformation triggers reaction cascades that diversify the DOM, but the highly overlapped subsequent reaction pathways result in similar effluent DOM compositions across WWTPs despite varied influents. Mass changes exhibit consistent gain/loss preferences (e.g., +3.995 and -16.031) but different occurrences across WWTPs. Combined with genome-centric metatranscriptomics, we reveal the associations among dPMDs, enzymes, and microbes. Most enzymes are involved in oxygenation, (de)hydrogenation, demethylation, and hydration-related reactions but with different target substrates and expressed by various taxa, as exemplified by",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.3c05213",
+    "title": "Interpretable Machine Learning and Reactomics Assisted Isotopically Labeled FT-ICR-MS for Exploring the Reactivity and Transformation of Natural Organic Matter during Ultraviolet Photolysis.",
+    "journal": "Environmental science & technology",
+    "year": 2023,
+    "section": "Methods and tools",
+    "abstract": "Isotopically labeled FT-ICR-MS combined with multiple post-analyses, including interpretable machine learning (IML) and a paired mass distance (PMD) network, was employed to unravel the reactivity and transformation of natural organic matter (NOM) during ultraviolet (UV) irradiation. FT-ICR-MS analysis was used to assign formulas, which were classified on the basis of their molecular compositions and structural categories. Isotope (deuterium, D) labeling was utilized to unequivocally determine the photochemical products and examine the development of OD radical-mediated NOM transformation. With regard to the reactive molecular formulas, CHOS formulas exhibited the highest reactivity (86.5% of precursors disappeared) followed by CHON (53.4%) and CHO (24.6%) formulas. With regard to structural categories, the degree of reactivity decreased in the following order: tannins > condensed aromatics > lignin/CRAMs. The IML algorithm demonstrated that the crucial features governing the reactivity of formulas were the molecular weight, DBE-O, NOSC, and the presence of heteroatoms (i.e., N and S), suggesting that the large and unsaturated compounds containing S and N are more prone to photodegradation. The reactomics approach using the PMD network further indicated that 11 specific molecular formulas in the CHOS and CHO class served as hubs, implying a higher photoreactivity and participation in a range of transformations. The isotope labeling analyses also found that, among the reactions observed, hydroxylation (i.e., +OD) is dominant for lignin/CRAMs and condensed aromatics, and formulas containing ≤10 D atoms were developed. Overall, this study, by adopting rigorous and interpretable techniques, could provide in-depth insights into the molecular-level dynamics of NOM under UV irradiation.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1101/2023.11.14.567024",
+    "title": "mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry Based Non-targeted Metabolomics Data Analysis",
+    "journal": "",
+    "year": 2023,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.chemosphere.2023.140149",
+    "title": "Tracking the transformation pathway of dissolved organic matters (DOMs) in biochars under sludge pyrolysis via reactomics and molecular network analysis.",
+    "journal": "Chemosphere",
+    "year": 2023,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "This work examined the transformation pathways of sludge biochar-derived dissolved organic matters (SBC-derived DOMs) under sludge pyrolysis via FT-ICR-MS-based reactomics and molecular network analysis. Lignin/carboxylic-rich alicyclic molecules, proteins/aliphatic, and lipids of SBC-derived DOMs did not contribute equally to the overall pyrolytic reactions. Reactomics suggested that the pyrolysis reactions of SBC-derived DOMs consist of multiple cascade reactions involving the elimination of assemblages of reactive fragments during each pyrolysis reaction region, and the overall pyrolysis process was divided into three stages according to cascade reaction variations. Especially, cascade reactions at 400-500 °C produced potential environmental risk substances of N-containing, carbonyl-containing, and phenolic compounds. Besides, network analysis unraveled the complexity and number of molecular reaction pairs of SBC-derived DOMs decreased with the increase in pyrolytic temperatures. Keystone molecules and pathways results indicated that the pyrolytic temperature of the sludge pyrolysis process should be controlled at temperatures above 500 °C according to the harmful substances generation pattern in reaction products. Overall, the possible transformation pathways of SBC-derived DOMs during sludge pyrolysis treatment were proposed. This study elucidated the underlying mechanisms in generating SBC-derived DOMs and provided theoretical support for process optimization and harmful substances control of sludge pyrolysis.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jpha.2023.08.001",
+    "title": "Mapping the metabolic responses to oxaliplatin-based chemotherapy with in vivo spatiotemporal metabolomics.",
+    "journal": "Journal of pharmaceutical analysis",
+    "year": 2023,
+    "section": "Applications in drug metabolism",
+    "abstract": "Adjuvant chemotherapy improves the survival outlook for patients undergoing operations for lung metastases caused by colorectal cancer (CRC). However, a multidisciplinary approach that evaluates several factors related to patient and tumor characteristics is necessary for managing chemotherapy treatment in metastatic CRC patients with lung disease, as such factors dictate the timing and drug regimen, which may affect treatment response and prognosis. In this study, we explore the potential of spatial metabolomics for evaluating metabolic phenotypes and therapy outcomes during the local delivery of the anticancer drug, oxaliplatin, to the lung. 12 male Yorkshire pigs underwent a 3 h left lung in vivo lung perfusion (IVLP) with various doses of oxaliplatin (7.5, 10, 20, 40, and 80 mg/L), which were administered to the perfusion circuit reservoir as a bolus. Biocompatible solid-phase microextraction (SPME) microprobes were combined with global metabolite profiling to obtain spatiotemporal information about the activity of the drug, determine toxic doses that exceed therapeutic efficacy, and conduct a mechanistic exploration of associated lung injury. Mild and subclinical lung injury was observed at 40 mg/L of oxaliplatin, and significant compromise of the hemodynamic lung function was found at 80 mg/L. This result was associated with massive alterations in metabolic patterns of lung tissue and perfusate, resulting in a total of 139 discriminant compounds. Uncontrolled inflammatory response, abnormalities in energy metabolism, and mitochondrial dysfunction next to accelerated kynurenine and aldosterone production were recognized as distinct features of dysregulated metabolipidome. Spatial pharmacometabolomics may be a promising tool for identifying pathological responses to chemotherapy.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.analchem.2c04995",
+    "title": "Deep Characterization of Serum Metabolome Based on the Segment-Optimized Spectral-Stitching Direct-Infusion Fourier Transform Ion Cyclotron Resonance Mass Spectrometry Approach",
+    "journal": "Analytical Chemistry",
+    "year": 2023,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "Direct-infusion Fourier transform ion cyclotron resonance mass spectrometry (DI-FTICR MS) shows great promise for metabolomic analysis due to ultrahigh mass accuracy and resolution. However, most of the DI-FTICR MS approaches focused on high-throughput metabolomics analysis at the expense of sensitivity and resolution and the potential for metabolome characterization has not been fully explored. Here, we proposed a novel deep characterization approach of serum metabolome using a segment-optimized spectral-stitching DI-FTICR MS method integrated with high-confidence and database-independent formula assignments. With varied acquisition parameters for each segment, a highly efficient acquisition was achieved for the whole mass range with sub-ppm mass accuracy. In a pooled human serum sample, thousands of features were assigned with unambiguous formulas and possible candidates based on highly accurate mass measurements. Furthermore, a reaction network was used to select confidently unique formulas from possible candidates, which was constructed by unambiguous formulas and possible candidates connected by the formula differences resulting from biochemical and MS transformation. Compared with full-range and conventional segment acquisition, 8- and 1.2-fold increases in observed features were achieved, respectively. Assignment accuracy was 93-94% for both a standard mixture containing 190 metabolites and a spiked serum sample with the root mean square mass error of 0.15-0.16 ppm. In total, 3534 unequivocal neutral molecular formulas were assigned in the pooled serum sample, 35% of which are contained in the HMDB. This method offers great enhancement in the deep characterization of serum metabolome by DI-FTICR MS.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jpba.2023.115400",
+    "title": "A mass defect filtering combined background subtraction strategy for rapid screening and identification of metabolites in rat plasma after oral administration of Yindan Xinnaotong soft capsule",
+    "journal": "Journal of Pharmaceutical and Biomedical Analysis",
+    "year": 2023,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "The absorbed prototypes and metabolites of traditional Chinese medicines (TCMs) serves an important part in pharmacological action and clinical effects. However, the comprehensive characterization of which is facing actual or possible rigorous challenges due to the lack of data mining methods and the complexity of metabolite samples. Yindan Xinnaotong soft capsule (YDXNT), a typical traditional Chinese medicine prescription consisting of extracts from 8 herbal medicines, is widely used for the treatment of angina pectoris and ischemic stroke in the clinic. This study established a systematic data mining strategy based on ultra-high performance liquid chromatography tandem quadrupole-time-of-fight mass spectrometry (UHPLC-Q-TOF MS) for comprehensive metabolite profiling of YDXNT in rat plasma after oral administration. The multi-level feature ion filtration strategy was primarily conducted through the full scan MS data of plasma samples. All potential metabolites were rapidly fileted out from the endogenous background interference based on the background subtract and the chemical type specifically mass defect filter (MDF) windows including flavonoids, ginkgolides, phenolic acids, saponins, and tanshinones. As the MDF windows of certain types were overlapped, the screened-out potential metabolites were deeply characterized and identified according to their retention times (RT), integrating neutral loss filtering (NLF), diagnostic fragment ions filtering (DFIF), and further confirmed by reference standards. Thus, a total of 122 compounds, consisting of 29 prototype components (16 confirmed with reference standards) and 93 metabolites had been identified. This study provides a rapid and robust metabolite profiling method for researching complicated traditional Chinese medicine prescriptions.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.3c00199",
+    "title": "Exploring the Complexities of Dissolved Organic Matter Photochemistry from the Molecular Level by Using Machine Learning Approaches",
+    "journal": "Environmental Science &amp; Technology",
+    "year": 2023,
+    "section": "Applications in environmental transformation",
+    "abstract": "Dissolved organic matter (DOM) sustains a substantial part of the organic matter transported seaward, where photochemical reactions significantly affect its transformation and fate. The irradiation experiments can provide valuable information on the photochemical reactivity (photolabile, photoresistant, and photoproduct) of molecules. However, the inconsistency of the fate of irradiated molecules among different experiments curtailed our understanding of the roles the photochemical reactions have played, which cannot be properly addressed by traditional approaches. Here, we conducted irradiation experiments for samples from two large estuaries in China. Molecules that occurred in irradiation experiments were characterized by the Fourier transform ion cyclotron resonance mass spectrometry and assigned probabilistic labels to define their photochemical reactivity. These molecules with probabilistic labels were used to construct a learning database for establishing a suitable machine learning (ML) model. We further applied our well-trained ML model to \"un-matched\" (i.e., not detected in our irradiation experiments) molecules from five estuaries worldwide, to predict their photochemical reactivity. Results showed that numerous molecules with strong photolability can be captured solely by the ML model. Moreover, comparing DOM photochemical reactivity in five estuaries revealed that the riverine DOM chemistry largely determines their subsequent photochemical transformation. We offer an expandable and renewable approach based on ML to compatibly integrate existing irradiation experiments and shed insight into DOM transformation and degradation processes.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.foodchem.2023.136150",
+    "title": "A multiplatform metabolomics/reactomics approach as a powerful strategy to identify reaction compounds generated during hemicellulose hydrothermal extraction from agro-food biomasses.",
+    "journal": "Food chemistry",
+    "year": 2023,
+    "section": "Methods and tools",
+    "abstract": "Hydrothermal treatment is commonly used for hemicelluloses extraction from lignocellulosic materials. In this study, we thoroughly investigated with a novel approach the metabolomics of degradation compounds formed when hazelnut shells are subjected to this type of treatment. Three different complementary techniques were combined, namely GC-MS,",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.cej.2023.141881",
+    "title": "Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment",
+    "journal": "Chemical Engineering Journal",
+    "year": 2023,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.3390/catal13020304",
+    "title": "Ring-Opening Polymerization of rac-Lactide Catalyzed by Octahedral Nickel Carboxylate Complexes",
+    "journal": "Catalysts",
+    "year": 2023,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.watres.2022.119488",
+    "title": "Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.",
+    "journal": "Water research",
+    "year": 2022,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "Understanding the composition and reactivity of dissolved organic matter (DOM) at molecular level is vital for deciphering potential regulators or indicators relating to anaerobic process performance, though it was hardly achieved by traditional analyses. Here, the DOM composition, molecular reactivity and transformation in the enhanced sludge fermentation process were comprehensively elucidated using high-resolution mass spectrometry measurement, and data mining with machine learning and paired mass distance (PMD)-based reactomics. In the fermentation process for dewatered sludge, persulfate (PDS) pretreatment presented its highest performance in improving volatile fatty acids (VFAs) production with the increase from 2,711 mg/L to 3,869 mg/L, whereas its activation in the presence of Fe (as well as the hybrid of Fe and activated carbon) led to the decreased VFAs production performance. In addition to the conventional view of improved decomposition and solubilization of N-containing structures from sludge under the sole PDS pretreatment, the improved VFAs production was associated with the alternation of DOM molecular compositions such as humification generating molecules with high O/C, N/C, S/C and aromatic index (AI",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.3390/toxics10120778",
+    "title": "Bioaccumulation and Biotransformation of Chlorinated Paraffins.",
+    "journal": "Toxics",
+    "year": 2022,
+    "section": "Applications in environmental transformation",
+    "abstract": "Chlorinated paraffins (CPs), a class of persistent, toxic, and bioaccumulated compounds, have received increasing attention for their environmental occurrence and ecological and human health risks worldwide in the past decades. Understanding the environmental behavior and fate of CPs faces a huge challenge owing to the extremely complex CP congeners. Consequently, the aims of the present study are to summarize and integrate the bioaccumulation and biotransformation of CPs, including the occurrence of CPs in biota, tissue distribution, biomagnification, and trophic transfer, and biotransformation of CPs in plants, invertebrates, and vertebrates in detail. Biota samples collected in China showed higher CP concentrations than other regions, which is consistent with their huge production and usage. The lipid content is the major factor that determines the physical burden of CPs in tissues or organs. Regarding the bioaccumulation of CPs and their influence factors, inconsistent results were obtained. Biotransformation is an important reason for this variable. Some CP congeners are readily biodegradable in plants, animals, and microorganisms. Hydroxylation, dechlorination, chlorine rearrangement, and carbon chain decomposition are potential biotransformation pathways for the CP congeners. Knowledge of the influence of chain length, chlorination degree, constitution, and stereochemistry on the tissue distribution, bioaccumulation, and biotransformation is still scarce.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.csbj.2022.09.004",
+    "title": "Strategies for structure elucidation of small molecules based on LC-MS/MS data from complex biological samples.",
+    "journal": "Computational and structural biotechnology journal",
+    "year": 2022,
+    "section": "Applications in environmental transformation",
+    "abstract": "LC-MS/MS is a major analytical platform for metabolomics, which has become a recent hotspot in the research fields of life and environmental sciences. By contrast, structure elucidation of small molecules based on LC-MS/MS data remains a major challenge in the chemical and biological interpretation of untargeted metabolomics datasets. In recent years, several strategies for structure elucidation using LC-MS/MS data from complex biological samples have been proposed, these strategies can be simply categorized into two types, one based on structure annotation of mass spectra and for the other on retention time prediction. These strategies have helped many scientists conduct research in metabolite-related fields and are indispensable for the development of future tools. Here, we summarized the characteristics of the current tools and strategies for structure elucidation of small molecules based on LC-MS/MS data, and further discussed the directions and perspectives to improve the power of the tools or strategies for structure elucidation.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.trac.2022.116656",
+    "title": "In vivo solid phase microextraction for bioanalysis",
+    "journal": "TrAC Trends in Analytical Chemistry",
+    "year": 2022,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.xcrp.2022.100978",
+    "title": "AI/ML-driven advances in untargeted metabolomics and exposomics for biomedical applications.",
+    "journal": "Cell reports. Physical science",
+    "year": 2022,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "Metabolomics describes a high-throughput approach for measuring a repertoire of metabolites and small molecules in biological samples. One utility of untargeted metabolomics, unbiased global analysis of the metabolome, is to detect key metabolites as contributors to, or readouts of, human health and disease. In this perspective, we discuss how artificial intelligence (AI) and machine learning (ML) have promoted major advances in untargeted metabolomics workflows and facilitated pivotal findings in the areas of disease screening and diagnosis. We contextualize applications of AI and ML to the emerging field of high-resolution mass spectrometry (HRMS) exposomics, which unbiasedly detects endogenous metabolites and exogenous chemicals in human tissue to characterize exposure linked with disease outcomes. We discuss the state of the science and suggest potential opportunities for using AI and ML to improve data quality, rigor, detection, and chemical identification in untargeted metabolomics and exposomics studies.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jpha.2022.06.002",
+    "title": "Metabolomic fingerprinting of porcine lung tissue during pre-clinical prolonged ex vivo lung perfusion using in vivo SPME coupled with LC-HRMS.",
+    "journal": "Journal of pharmaceutical analysis",
+    "year": 2022,
+    "section": "Applications in drug metabolism",
+    "abstract": "Normothermic ex vivo lung perfusion (NEVLP) has emerged as a modernized organ preservation technique that allows for detailed assessment of donor lung function prior to transplantation. The main goal of this study was to identify potential biomarkers of lung function and/or injury during a prolonged (19 h) NEVLP procedure using in vivo solid-phase microextraction (SPME) technology followed by liquid chromatography-high resolution mass spectrometry (LC-HRMS). The use of minimally invasive in vivo SPME fibers for repeated sampling of biological tissue permits the monitoring and evaluation of biochemical changes and alterations in the metabolomic profile of the lung. These in vivo SPME fibers were directly introduced into the lung and were also used to extract metabolites (on-site SPME) from fresh perfusate samples collected alongside lung samplings. A subsequent goal of the study was to assess the feasibility of SPME as an in vivo method in metabolomics studies, in comparison to the traditional in-lab metabolomics workflow. Several upregulated biochemical pathways involved in pro- and anti-inflammatory responses, as well as lipid metabolism, were observed during extended lung perfusion, especially between the 11th and 12th hours of the procedure, in both lung and perfusate samples. However, several unstable and/or short-lived metabolites, such as neuroprostanes, have been extracted from lung tissue in vivo using SPME fibers. On-site monitoring of the metabolomic profiles of both lung tissues through in vivo SPME and perfusate samples on site throughout the prolonged NEVLP procedure can be effectively performed using in vivo SPME technology.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1186/s13321-022-00586-8",
+    "title": "Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.",
+    "journal": "Journal of cheminformatics",
+    "year": 2022,
+    "section": "In-source reactions and independent ion selection",
+    "abstract": "Unknown features in untargeted metabolomics and non-targeted analysis (NTA) are identified using fragment ions from MS/MS spectra to predict the structures of the unknown compounds. The precursor ion selected for fragmentation is commonly performed using data dependent acquisition (DDA) strategies or following statistical analysis using targeted MS/MS approaches. However, the selected precursor ions from DDA only cover a biased subset of the peaks or features found in full scan data. In addition, different statistical analysis can select different precursor ions for MS/MS analysis, which make the post-hoc validation of ions selected following a secondary analysis impossible for precursor ions selected by the original statistical method. Here we propose an automated, exhaustive, statistical model-free workflow: paired mass distance-dependent analysis (PMDDA), for reproducible untargeted mass spectrometry MS2 fragment ion collection of unknown compounds found in MS1 full scan. Our workflow first removes redundant peaks from MS1 data and then exports a list of precursor ions for pseudo-targeted MS/MS analysis on independent peaks. This workflow provides comprehensive coverage of MS2 collection on unknown compounds found in full scan analysis using a \"one peak for one compound\" workflow without a priori redundant peak information. We compared pseudo-spectra formation and the number of MS2 spectra linked to MS1 data using the PMDDA workflow to that obtained using CAMERA and RAMclustR algorithms. More annotated compounds, molecular networks, and unique MS/MS spectra were found using PMDDA compared with CAMERA and RAMClustR. In addition, PMDDA can generate a preferred ion list for iterative DDA to enhance coverage of compounds when instruments support such functions. Finally, compounds with signals in both positive and negative modes can be identified by the PMDDA workflow, to further reduce redundancies. The whole workflow is fully reproducible as a docker image xcmsrocker with both the original data and the data processing template.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.envres.2022.112713",
+    "title": "Novel insight into dissolved organic nitrogen (DON) transformation along wastewater treatment processes with special emphasis on endogenous-source DON.",
+    "journal": "Environmental research",
+    "year": 2022,
+    "section": "Applications in environmental transformation",
+    "abstract": "Knowledge of endogenous-source dissolved organic nitrogen (esDON) produced in wastewater treatment processes is critical for evaluating its potential impacts on receiving waters because esDON is a recognized concern, as it causes eutrophication. However, differentiating esDON from influent residual DON in real wastewater is always a challenge. Here, we deciphered esDON information in DON transformation processes along a full-scale wastewater treatment train by combining multiple chemometric tools with ion-mobility separation quadrupole time-of-flight mass spectrometry (IMS-QTOF MS) analyses. In total, DON became more refractory and compact with shorter carbon chains and fewer nitrogen atoms, and esDON composed a nonnegligible fraction that dominated DON transformation and characteristics. New esDON produced in treatment processes constituted a crucial part (>35.5%) of wastewater DON, and its contributions to wastewater DON are augmented along the train. Evidence of molecular conformations further confirmed dominant roles of esDON in DON characteristics. Moreover, esDON participated in 46.7% of core biochemical reaction networks, explaining the importance of esDON in DON transformation. Our study offers a tool to gain esDON characteristics and transformation mechanisms, and highlights the importance to control esDON for alleviating adverse influences from DON in receiving waters.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acsenvironau.1c00024",
+    "title": "In Vivo Solid-Phase Microextraction and Applications in Environmental Sciences.",
+    "journal": "ACS environmental Au",
+    "year": 2021,
+    "section": "Applications in environmental transformation",
+    "abstract": "Solid-phase microextraction (SPME) is a well-established sample-preparation technique for environmental studies. The application of SPME has extended from the headspace extraction of volatile compounds to the capture of active components in living organisms via the direct immersion of SPME probes into the tissue (",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.trac.2021.116409",
+    "title": "Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry",
+    "journal": "TrAC Trends in Analytical Chemistry",
+    "year": 2021,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1016/j.envint.2021.106849",
+    "title": "Tooth biomarkers to characterize the temporal dynamics of the fetal and early-life exposome.",
+    "journal": "Environment international",
+    "year": 2021,
+    "section": "Applications in environmental transformation",
+    "abstract": "Teeth have unique histology that make this biomatrix a time-capsule for retrospective exposure analysis of fetal and early life. However, most analytic methods require pulverizing the whole tooth, which eliminates exposure timing information. Further, the range of chemicals and endogenous exposures that can be measured in teeth has yet to be fully characterized. We performed untargeted metabolomics on micro-dissected layers from naturally shed deciduous teeth. Using four liquid-chromatography high-resolution mass spectrometry analytical modes, we profiled small molecules (<1000 Da) from prenatal and postnatal tooth fractions. In addition, we employed linear regression on the tooth fraction pairs from 31 children to identify metabolites that discriminate between prenatal and postnatal exposures. Of over 10,000 features measured in teeth dentin, 390 unique compounds were annotated from 62 chemical classes. The class with the largest number of compounds was carboxylic acids and their derivatives (36%). Of the annotated exogenous metabolites (phthalates, parabens, perfluoroalkyl compounds, and cotinine) and endogenous metabolites (fatty acids, steroids, carnitines, amino acids, and others), 91 are linked to 256 health conditions through published literature. Differential analysis revealed 267 metabolites significantly different between the prenatal and the postnatal tooth fractions (adj. p-value < 0.05, Bonferroni correction), and 21 metabolites exclusive to the prenatal fraction. The prenatal and early postnatal exposome revealed from dental biomarkers represents a broad range of endogenous and exogenous metabolites for a comprehensive characterization in environmental health research. Most importantly, this technology provides a direct window into fetal exposures that is not possible by maternal biomarkers. Indeed, we identified several metabolites exclusively in the prenatal fraction, suggesting unique fetal exposures that are markedly different to postnatal exposures. Expansion of databases that include tooth matrix metabolites will strengthen biological interpretation and shed light on exposures during gestation and early life that may be causally linked with later health conditions.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.0c05111",
+    "title": "Medium- and Short-Chain Chlorinated Paraffins in Mature Maize Plants and Corresponding Agricultural Soils.",
+    "journal": "Environmental science & technology",
+    "year": 2021,
+    "section": "Applications in environmental transformation",
+    "abstract": "For the most complex artificial chlorinated environmental contaminants, much less is known for medium-chain CPs than short-chain CPs. In this research, the spatial distributions of MCCPs and SCCPs in farmland soil and maize leaves near a CP production facility were found marginally influenced by seasonal winds. The levels of ∑MCCPs and ∑SCCPs were in the ranges of <1.51-188 and 5.41-381 ng/g dw for soils; and 77.6-52930 and 119-61999 ng/g dw for maize leaf, respectively. Bioaccumulation and tissue distributions of the CPs within maize plants were specifically analyzed. Most of the CPs were contained in the tissues directly exposed to airborne CPs. Though the estimated risk of CPs to humans through ingestion of kernels appears to be minimal, the edible safety of MCCPs in maize plants for cattle was nearly in the designated range of adverse effects. To our knowledge, this is the first report on bioaccumulation of CPs in mature maize plants, especially in the parts eaten by humans and domestic animals. It provides a baseline reference to the edible risks of CPs in agricultural food plants and alerts us to the problematic environmental behavior of MCCPs, a probable future replacement for SCCPs commercially.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1021/acs.est.0c07184",
+    "title": "Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.",
+    "journal": "Environmental science & technology",
+    "year": 2021,
+    "section": "Applications in drug metabolism",
+    "abstract": "The most environmentally abundant bromophenol congener, 2,4,6-tribromophenol (2,4,6-TBP, 6.06 μmol/L), was exposed to rice for 5 d both in vivo (intact seedling) and in vitro (suspension cell) to systematically characterize the fate of its sulfation and glycosylation conjugates in rice. The 2,4,6-TBP was rapidly transformed to produce 6 [rice cells (3 h)] and 8 [rice seedlings (24 h)] sulfated and glycosylated conjugates. The predominant sulfation conjugate (TP",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1002/mnfr.202000615",
+    "title": "A Novel LC-MS Based Targeted Metabolomic Approach to Study the Biomarkers of Food Intake.",
+    "journal": "Molecular nutrition & food research",
+    "year": 2020,
+    "section": "Methods and tools",
+    "abstract": "In this work, an integrated strategy is developed for rapid discovery, precise identification, and automated quantification for the biomarkers of food intake (BFIs) for specific food exposure using an ultra-high-pressure liquid chromatography-high-resolution mass spectrometry (MS) based targeted metabolomics approach. Using whole grain (WG) wheat intake as an example, the combination of paired mass distance networking and parallel reaction monitoring analysis is applied to selectively extract and identify WG metabolites in human urine samples. As a result, a total of 76 wheat phytochemical-derived metabolites, including 17 alkylresorcinol metabolites, 20 benzoxazinoid derivatives, and 39 phenolic acid metabolites are identified. Subsequently, a MS spectral database consisting of the identified metabolites is created by mzVault. The characteristics of identified metabolites from the database are incorporated into the TraceFinder software to establish a quantification platform. Using a standardized urine sample, the authors are able to simultaneously quantify both free and conjugated (sulfate and glucuronide) WG wheat metabolites in real samples without further enzymatic hydrolysis, which is validated by using authentic standards to quantify these metabolites. This novel strategy opens the window to study the biomarkers of specific food intake and make it feasible to validate the BFIs in large-scale human studies.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.aca.2020.08.050",
+    "title": "Metabolic profile of fish muscle tissue changes with sampling method, storage strategy and time.",
+    "journal": "Analytica chimica acta",
+    "year": 2020,
+    "section": "In-source reactions and independent ion selection",
+    "abstract": "Unstable tissue components (metabolites) are not easily captured and evaluated by traditional metabolomics methods. In this study, a comprehensive investigation of various sampling methods and storage conditions on the metabolomic profile of fish muscle was performed based on in vivo and ex vivo sampling. The GlobalStd algorithm and structure/reaction directed analysis under a linear mixed model were used to investigate the distinctive influences of these factors on the metabolomic profiles of fish tissue obtained via untargeted LC-MS analysis. Immediate analysis of samples yielded different metabolomic profiles compared to that of stored samples. Storage time was found to affect the metabolomic profile in a complex way, whereas storage temperature was shown to not substantially change this pattern. At the reaction level, metabolites involved in homologous series with butylation were shown stable during storage. Overall, our findings demonstrate that immediate instrumental analysis after in vivo solid phase microextraction (SPME) sampling and a reverse time series experimental design should be the preferred approaches for metabolomic profiling if unstable compounds are of interest.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jpba.2020.113574",
+    "title": "Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.",
+    "journal": "Journal of pharmaceutical and biomedical analysis",
+    "year": 2020,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "Archived dried blood spots (DBS) following newborn screening are an attractive resource for interrogating early-life biology using untargeted metabolomics. Therefore, they have the potential to substantially aid etiological studies, particularly for rare and low-frequency childhood diseases and disorders. However, metabolite quantification in DBS is hindered by variation sources not present in serum and plasma samples such as the hematocrit effect and unknown initial blood volumes. Hemoglobin (Hb) is an appropriate correlate for hematocrit in experimentally-generated DBS punches. However, since many biorepositories worldwide archive DBS at 4-5 °C, there is a need to validate the utility of Hb for DBS archived under refrigeration. We evaluated two simple spectroscopic methods for measuring Hb in DBS stored at 4 +/- 2 °C for up to 21 years, obtained from the newborn screening program at the Karolinska University Hospital, Sweden. Spearman correlation analysis and Akaike Information Criterion model selection found that measurement of a Hb sodium lauryl sulfate complex at 540 nm better described nuisance variation than Hb measured at 404 nm, or using age of spot alone. This is the first study to profile metabolites and to propose a normalization factor for metabolite measurements from DBS archived for decades at 4 °C.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.foodchem.2020.126619",
+    "title": "A UPLC-Q-TOF-MS-based metabolomics approach for the evaluation of fermented mare’s milk to koumiss",
+    "journal": "Food Chemistry",
+    "year": 2020,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "The fermentation of mare's milk into koumiss produces many beneficial functional compounds depending on the metabolism of the initial microbial flora. In this study, metabolites found in mare's milk and resulting koumiss were identified. Major metabolic pathways in the fermentation were also identified using an UPLC-Q-TOF-MS-based metabolomics method. In total, 354 metabolites were identified: 61 were up-regulated and 105 were down-regulated. Metabolic pathway analyses revealed that c-5-branched dibasic acid metabolism, valine, leucine and isoleucine degradation, arginine and proline metabolism, valine, leucine and isoleucine biosynthesis, vascular smooth muscle contraction, aminoacyl-tRNA biosynthesis and ß-alanine metabolism showed significant increases. A hierarchical cluster analysis of metabolites indicated a clear grouping pattern in which the relative concentrations of p-pyruvate, 20-HETE, 4-aminobutanoate, uracil, acetoacetate, and γ-linolenic acid differed significantly between milk and koumiss. This study provides reference values for metabolic isolates and bioactive compounds purification in mare's milk and koumiss.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1016/j.jfca.2020.103484",
+    "title": "Carbohydrate fraction characterisation of functional yogurts containing pectin and pectic oligosaccharides through convolutional networks",
+    "journal": "Journal of Food Composition and Analysis",
+    "year": 2020,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.3390/separations7010006",
+    "title": "Recent Advances in In Vivo SPME Sampling",
+    "journal": "Separations",
+    "year": 2020,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1101/2019.12.16.878637",
+    "title": "Simulation-based comprehensive study of batch effects in metabolomics studies",
+    "journal": "",
+    "year": 2019,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1101/855148",
+    "title": "Reactomics: using mass spectrometry as a reaction detector",
+    "journal": "",
+    "year": 2019,
+    "section": "Paired mass distance and chemical reactions",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.3390/metabo9100200",
+    "title": "The metaRbolomics Toolbox in Bioconductor and beyond.",
+    "journal": "Metabolites",
+    "year": 2019,
+    "section": "Applications in endogenous metabolomics",
+    "abstract": "Metabolomics aims to measure and characterise the complex composition of metabolites in a biological system. Metabolomics studies involve sophisticated analytical techniques such as mass spectrometry and nuclear magnetic resonance spectroscopy, and generate large amounts of high-dimensional and complex experimental data. Open source processing and analysis tools are of major interest in light of innovative, open and reproducible science. The scientific community has developed a wide range of open source software, providing freely available advanced processing and analysis approaches. The programming and statistics environment R has emerged as one of the most popular environments to process and analyse Metabolomics datasets. A major benefit of such an environment is the possibility of connecting different tools into more complex workflows. Combining reusable data processing R scripts with the experimental data thus allows for open, reproducible research. This review provides an extensive overview of existing packages in R for different steps in a typical computational metabolomics workflow, including data processing, biostatistics, metabolite annotation and identification, and biochemical network and pathway analysis. Multifunctional workflows, possible user interfaces and integration into workflow management systems are also reviewed. In total, this review summarises more than two hundred metabolomics specific packages primarily available on CRAN, Bioconductor and GitHub.",
+    "has_abstract": true
+  },
+  {
+    "doi": "10.1007/978-981-13-9447-8_3",
+    "title": "In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology",
+    "journal": "A New Paradigm for Environmental Chemistry and Toxicology",
+    "year": 2019,
+    "section": "Applications in environmental transformation",
+    "abstract": "",
+    "has_abstract": false
+  },
+  {
+    "doi": "10.1007/s00330-019-06193-w",
+    "title": "Prediction of response after chemoradiation for esophageal cancer using a combination of dosimetry and CT radiomics.",
+    "journal": "European radiology",
+    "year": 2019,
+    "section": "In-source reactions and independent ion selection",
+    "abstract": "To investigate the treatment response prediction feasibility and accuracy of an integrated model combining computed tomography (CT) radiomic features and dosimetric parameters for patients with esophageal cancer (EC) who underwent concurrent chemoradiation (CRT) using machine learning. The radiomic features and dosimetric parameters of 94 EC patients were extracted and modeled using Support Vector Classification (SVM) and Extreme Gradient Boosting algorithm (XGBoost). The 94-sample dataset was randomly divided into a 70-sample training subset and a 24-sample independent test set while keeping the class proportions intact via stratification. A receiver operating characteristic (ROC) curve was used to assess the performance of models using radiomic features alone and using combined radiomic features and dosimetric parameters. A total of 42 radiomic features and 18 dosimetric parameters plus the patients' characteristic parameters were extracted for these 94 cases (58 responders and 36 non-responders). XGBoost plus principal component analysis (PCA) achieved an accuracy and area under the curve of 0.708 and 0.541, respectively, for models with radiomic features combined with dosimetric parameters, and 0.689 and 0.479, respectively, for radiomic features alone. Image features of GlobalMean X.333.1, Coarseness, Skewness, and GlobalStd contributed most to the model. The dosimetric parameters of gross tumor volume (GTV) homogeneity index (HI), Cord Dmax, Prescription dose, Heart-Dmean, and Heart-V50 also had a strong contribution to the model. The model with radiomic features combined with dosimetric parameters is promising and outperforms that with radiomic features alone in predicting the treatment response of patients with EC who underwent CRT. • The model with radiomic features combined with dosimetric parameters is promising in predicting the treatment response of patients with EC who underwent CRT. • The model with radiomic features combined with dosimetric parameters (prediction accuracy of 0.708 and AUC of 0.689) outperforms that with radiomic features alone (best prediction accuracy of 0.625 and AUC of 0.412). • The image features of GlobalMean X.333.1, Coarseness, Skewness, and GlobalStd contributed most to the treatment response prediction model. The dosimetric parameters of GTV HI, Cord Dmax, Prescription dose, Heart-Dmean, and Heart-V50 also had a strong contribution to the model.",
+    "has_abstract": true
+  }
+]
