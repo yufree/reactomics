@@ -1,0 +1,1568 @@
+{
+  "generated_at": "2026-04-28T01:57:17+00:00",
+  "start_date": "2019-01-01",
+  "end_date": "2026-04-27",
+  "total": 79,
+  "papers": [
+    {
+      "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
+      "doi": "10.1016/j.watres.2026.125913",
+      "url": "https://doi.org/10.1016/j.watres.2026.125913",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-04-09",
+      "authors": [
+        "Wentao Li",
+        "Tiantian Li",
+        "Yue Hu",
+        "Yangang Li",
+        "Wenzhen Zhang",
+        "Mengkai Li",
+        "Zhimin Qiang"
+      ],
+      "source": "pubmed",
+      "pmid": "41980437",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.",
+      "doi": "10.1016/j.biortech.2026.134282",
+      "url": "https://doi.org/10.1016/j.biortech.2026.134282",
+      "journal": "Bioresource technology",
+      "year": 2026,
+      "published_date": "2026-02-24",
+      "authors": [
+        "Yuchen Guo",
+        "Zhen Sun",
+        "Jieqiong Wang",
+        "Yonglan Tian",
+        "Jibao Liu",
+        "Zhongyu Guo",
+        "Aibin Hu",
+        "Dongming Wu",
+        "Yunfei Zhang",
+        "Shaoxia Yang",
+        "Junfeng Niu"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "41747906",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.",
+      "doi": "10.1021/acs.est.5c14774",
+      "url": "https://doi.org/10.1021/acs.est.5c14774",
+      "journal": "Environmental science & technology",
+      "year": 2026,
+      "published_date": "2026-01-15",
+      "authors": [
+        "Keng Tu",
+        "Yun Liu",
+        "Xichao Chen",
+        "Wei Li",
+        "Zhao Xu",
+        "Chen Qia",
+        "Yunjiang Yu"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "41540359",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.",
+      "doi": "10.1016/j.watres.2025.125247",
+      "url": "https://doi.org/10.1016/j.watres.2025.125247",
+      "journal": "Water research",
+      "year": 2025,
+      "published_date": "2025-12-20",
+      "authors": [
+        "Xiaofeng Zhang",
+        "Congyu Hou",
+        "Wenkai An",
+        "Huaijia Xin",
+        "Qinghua Ji",
+        "Gong Zhang",
+        "Huijuan Liu"
+      ],
+      "source": "pubmed",
+      "pmid": "41448013",
+      "section": "PMD network",
+      "annotation": "Uses frequency-based PMD analysis to reveal which transformation pathways are preferentially selected during organic matter mineralisation, linking reaction selectivity to treatment conditions."
+    },
+    {
+      "title": "Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.",
+      "doi": "10.1016/j.watres.2025.125056",
+      "url": "https://doi.org/10.1016/j.watres.2025.125056",
+      "journal": "Water research",
+      "year": 2025,
+      "published_date": "2025-11-26",
+      "authors": [
+        "Tao Liu",
+        "Lipin Li",
+        "Junjie Chen",
+        "Guiyuan Cai",
+        "Fan Meng",
+        "Yimeng Jiao",
+        "Yuqing Mao",
+        "Zifan Wang",
+        "Wei Zuo",
+        "Yu Tian",
+        "Huihang Sun"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "41344131",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.",
+      "doi": "10.1158/1055-9965.EPI-25-0801",
+      "url": "https://doi.org/10.1158/1055-9965.EPI-25-0801",
+      "journal": "Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology",
+      "year": 2025,
+      "published_date": "2025-11-03",
+      "authors": [
+        "Lauren M Petrick",
+        "Partow Imani",
+        "Miao Yu",
+        "Georgia Dolios",
+        "Sandrine Dudoit",
+        "Libby M Morimoto",
+        "Xiaomei Ma",
+        "Joseph L Wiemels",
+        "Catherine Metayer"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "40932331",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "FT-ICR MS and viral metagenomics reveal distinct mechanisms of lysogenic and lytic phage-driven DOM transformations in wastewater at formula-levels",
+      "doi": "10.1016/j.cej.2025.167655",
+      "url": "https://doi.org/10.1016/j.cej.2025.167655",
+      "journal": "Chemical Engineering Journal",
+      "year": 2025,
+      "published_date": "2025-10-01",
+      "authors": [
+        "Qi Wang",
+        "Jieqi Tian",
+        "Rong Zhang",
+        "Pengcheng Yan",
+        "Yali Niu",
+        "Guodong Zhang",
+        "Qiuling Ma",
+        "Jian Zhou",
+        "Ruigang Wang",
+        "He Guo",
+        "Tiecheng Wang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Microbial Physiological Adaptation to Biodegradable Microplastics Drives the Transformation and Reactivity of Dissolved Organic Matter in Soil.",
+      "doi": "10.1021/acs.est.5c09633",
+      "url": "https://doi.org/10.1021/acs.est.5c09633",
+      "journal": "Environmental science & technology",
+      "year": 2025,
+      "published_date": "2025-09-09",
+      "authors": [
+        "Lin Liu",
+        "Long Hu",
+        "Yakov Kuzyakov",
+        "Matthias C Rillig",
+        "Guilan Duan",
+        "Gehong Wei",
+        "Chun Chen"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "40924621",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Molecular Humification Mechanisms of Dissolved Organic Matter during Maize Straw Composting Enhanced by Humus Soil Biomaterial: Paired-Molecule Mass Difference Reactomics Analysis Based on FT-ICR MS.",
+      "doi": "10.1021/acs.jafc.5c05559",
+      "url": "https://doi.org/10.1021/acs.jafc.5c05559",
+      "journal": "Journal of agricultural and food chemistry",
+      "year": 2025,
+      "published_date": "2025-08-14",
+      "authors": [
+        "Zheng-Liang Du",
+        "Qing-Long Fu",
+        "Jia-Yu Liu",
+        "Xiao-Li Chai",
+        "Bo-Ran Wu"
+      ],
+      "source": "bib+pubmed+oc",
+      "pmid": "40811610",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry-Based Nontargeted Metabolomics Data Analysis",
+      "doi": "10.1021/acs.analchem.5c01213",
+      "url": "https://doi.org/10.1021/acs.analchem.5c01213",
+      "journal": "Analytical Chemistry",
+      "year": 2025,
+      "published_date": "2025-08-05",
+      "authors": [
+        "Miao Yu",
+        "Vivek Philip"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "Decoding periodate-driven phototransformation of dissolved organic matter in sunlit waters: Multidimensional property shifts and molecular network reconfiguration.",
+      "doi": "10.1016/j.watres.2025.124331",
+      "url": "https://doi.org/10.1016/j.watres.2025.124331",
+      "journal": "Water research",
+      "year": 2025,
+      "published_date": "2025-08-05",
+      "authors": [
+        "Kaiting Zhang",
+        "Ruiqi Zheng",
+        "Lihua Li",
+        "Bin Jiang",
+        "Mingbao Feng"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "40769065",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Identifying the impacts of photochemical and biological processes on wastewater effluent organic matter in receiving water using directed paired mass distance",
+      "doi": "10.1016/j.jece.2025.117411",
+      "url": "https://doi.org/10.1016/j.jece.2025.117411",
+      "journal": "Journal of Environmental Chemical Engineering",
+      "year": 2025,
+      "published_date": "2025-08-01",
+      "authors": [
+        "Lei Zheng",
+        "Tianbei Zhang",
+        "Ruxin Gong",
+        "Shuang Xu",
+        "Xinyi Zhang",
+        "Feng Xiao"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants",
+      "doi": "10.1021/acs.est.5c01928",
+      "url": "https://doi.org/10.1021/acs.est.5c01928",
+      "journal": "Environmental Science &amp; Technology",
+      "year": 2025,
+      "published_date": "2025-07-25",
+      "authors": [
+        "Meilin Lv",
+        "Yanna Liu",
+        "Minghao Wang",
+        "Xue-chao Song",
+        "Yuzhao Hu",
+        "Jie Gao",
+        "Liqun Chen",
+        "Aifeng Liu",
+        "Jun Liu",
+        "Runzeng Liu",
+        "Mingliang Fang",
+        "Zongwei Cai",
+        "Chunzhen Shi",
+        "Guotao Peng",
+        "Guangbo Qu",
+        "Guibin Jiang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review",
+      "doi": "10.1080/10408347.2025.2528134",
+      "url": "https://doi.org/10.1080/10408347.2025.2528134",
+      "journal": "Critical Reviews in Analytical Chemistry",
+      "year": 2025,
+      "published_date": "2025-07-06",
+      "authors": [
+        "Jelmir Craveiro de Andrade",
+        "Gislaine Natiele dos Santos Costa",
+        "Celeste Yara dos Santos Siqueira",
+        "Carlos Alberto Carbonezi",
+        "Regina Binotto",
+        "Vinicius Kartnaller"
+      ],
+      "source": "crossref+oc",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition",
+      "doi": "10.1021/acsestwater.4c01260",
+      "url": "https://doi.org/10.1021/acsestwater.4c01260",
+      "journal": "ACS ES&amp;T Water",
+      "year": 2025,
+      "published_date": "2025-06-10",
+      "authors": [
+        "Fanju Kong",
+        "Feiyan Fang",
+        "Weiming Chen"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Wildfire-Derived Pyrogenic Dissolved Organic Matter (pyDOM) Enhances Riverine DOM Reactivities and Nitrogen Metabolisms.",
+      "doi": "10.1021/acs.est.5c01794",
+      "url": "https://doi.org/10.1021/acs.est.5c01794",
+      "journal": "Environmental science & technology",
+      "year": 2025,
+      "published_date": "2025-06-07",
+      "authors": [
+        "Mingxing Cao",
+        "Hua Ma",
+        "Yixuan Ye",
+        "Sheng-Ao Li",
+        "Xinghong Cao",
+        "Hai Huang",
+        "Zhe Li",
+        "Fuyi Cui"
+      ],
+      "source": "bib+pubmed+oc",
+      "pmid": "40481773",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "MoleTrans: Browser-Based Webtool for Postanalysis on Molecular Chemodiversity and Transformation of Dissolved Organic Matters via FT-ICR MS",
+      "doi": "10.1021/acs.estlett.5c00284",
+      "url": "https://doi.org/10.1021/acs.estlett.5c00284",
+      "journal": "Environmental Science &amp; Technology Letters",
+      "year": 2025,
+      "published_date": "2025-05-09",
+      "authors": [
+        "Jibao Liu",
+        "Bei Zhang",
+        "Qing-Long Fu",
+        "Toshihiro Isobe",
+        "Rongjun Gao",
+        "Yuansong Wei",
+        "Eunsang Kwon",
+        "Zhineng Hao",
+        "Wei An",
+        "Rong Qi",
+        "Manabu Fujii"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.",
+      "doi": "10.1016/j.watres.2025.123645",
+      "url": "https://doi.org/10.1016/j.watres.2025.123645",
+      "journal": "Water research",
+      "year": 2025,
+      "published_date": "2025-04-15",
+      "authors": [
+        "Bei Zhang",
+        "Jibao Liu",
+        "Shanshan Qing",
+        "Thilini Maheshika Herath",
+        "Huan Zhao",
+        "Supaporn Klabklaydee",
+        "Qing-Long Fu",
+        "Eunsang Kwon",
+        "Nozomi Takeuchi",
+        "Douyan Wang",
+        "Takao Namihira",
+        "Toshihiro Isobe",
+        "Yanrong Zhang",
+        "Xiaoying Zhu",
+        "Baoliang Chen",
+        "Mohamed Ateia",
+        "Manabu Fujii"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "40252401",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "Toward an integrated omics approach for plant biosynthetic pathway discovery in the age of AI",
+      "doi": "10.1016/j.tibs.2025.01.010",
+      "url": "https://doi.org/10.1016/j.tibs.2025.01.010",
+      "journal": "Trends in Biochemical Sciences",
+      "year": 2025,
+      "published_date": "2025-04-01",
+      "authors": [
+        "Jakob K. Reinhardt",
+        "David Craft",
+        "Jing-Ke Weng"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge",
+      "doi": "10.1016/j.jhazmat.2025.137183",
+      "url": "https://doi.org/10.1016/j.jhazmat.2025.137183",
+      "journal": "Journal of Hazardous Materials",
+      "year": 2025,
+      "published_date": "2025-04-01",
+      "authors": [
+        "Siying Cai",
+        "Xinyu Zhang",
+        "Tong Sun",
+        "Hao Zhou",
+        "Yu Zhang",
+        "Peng Yang",
+        "Dongsheng Wang",
+        "Jianbo Zhang",
+        "Chengzhi Hu",
+        "Weijun Zhang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Effect of a high Cl– concentration on the transformation of waste leachate DOM by the UV/PMS system: A mechanistic study using the Suwannee River natural organic matter (SRNOM) as a simulator of waste leachate DOM",
+      "doi": "10.1016/j.jhazmat.2024.137038",
+      "url": "https://doi.org/10.1016/j.jhazmat.2024.137038",
+      "journal": "Journal of Hazardous Materials",
+      "year": 2025,
+      "published_date": "2025-04-01",
+      "authors": [
+        "Qingyang Li",
+        "Feiyan Fang",
+        "Weiming Chen"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Enhanced Release and Reactivity of Soil Water-Extractable Organic Matter Following Wildfire in a Subtropical Forest.",
+      "doi": "10.1021/acs.est.4c13557",
+      "url": "https://doi.org/10.1021/acs.est.4c13557",
+      "journal": "Environmental science & technology",
+      "year": 2025,
+      "published_date": "2025-02-21",
+      "authors": [
+        "Xinghong Cao",
+        "Hua Ma",
+        "Sheng-Ao Li",
+        "Hai Huang",
+        "Fuyi Cui",
+        "Andrew J Tanentzap"
+      ],
+      "source": "bib+pubmed+oc",
+      "pmid": "39982015",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Long-term fertilization promotes the microbial-mediated transformation of soil dissolved organic matter",
+      "doi": "10.1038/s43247-025-02032-7",
+      "url": "https://doi.org/10.1038/s43247-025-02032-7",
+      "journal": "Communications Earth &amp; Environment",
+      "year": 2025,
+      "published_date": "2025-02-16",
+      "authors": [
+        "Mingming Xia",
+        "Pengfa Li",
+        "Jia Liu",
+        "Wenjing Qin",
+        "Qingjun Dai",
+        "Meng Wu",
+        "Zhongpei Li",
+        "Daming Li",
+        "Ming Liu"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Photochemical transformation altered coagulation behavior and treatability of dissolved organic matters in water",
+      "doi": "10.1016/j.seppur.2024.128536",
+      "url": "https://doi.org/10.1016/j.seppur.2024.128536",
+      "journal": "Separation and Purification Technology",
+      "year": 2025,
+      "published_date": "2025-02-01",
+      "authors": [
+        "Aibin Hu",
+        "Yao Huang",
+        "Hang He",
+        "Yongliang Zheng",
+        "Yunli Xiao",
+        "Dongsheng Wang",
+        "Weijun Zhang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Unveiling molecular DOM reactomics and transformation coupled with multifunctional nanocomposites under anaerobic conditions: Tracking potential metabolomics and pathways.",
+      "doi": "10.1016/j.chemosphere.2025.144111",
+      "url": "https://doi.org/10.1016/j.chemosphere.2025.144111",
+      "journal": "Chemosphere",
+      "year": 2025,
+      "published_date": "2025-01-20",
+      "authors": [
+        "Manal Ali",
+        "Jibao Liu",
+        "Eunsang Kwon",
+        "Manabu Fujii"
+      ],
+      "source": "bib+pubmed+oc",
+      "pmid": "39837067",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "Network-Based Methods for Deciphering the Oxidizability of Complex Leachate DOM with <sup>•</sup>OH/O<sub>3</sub> via Molecular Signatures",
+      "doi": "10.1021/acs.est.4c08840",
+      "url": "https://doi.org/10.1021/acs.est.4c08840",
+      "journal": "Environmental Science &amp; Technology",
+      "year": 2025,
+      "published_date": "2025-01-09",
+      "authors": [
+        "Hui Wang",
+        "Lan Wang",
+        "Thomas William Seviour",
+        "Changfu Yang",
+        "Yan Xiang",
+        "Ying Zhu",
+        "Michael Palocz-Andresen",
+        "Zongsu Wei",
+        "Ziyang Lou"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.",
+      "doi": "10.1186/s12859-024-05994-1",
+      "url": "https://doi.org/10.1186/s12859-024-05994-1",
+      "journal": "BMC bioinformatics",
+      "year": 2024,
+      "published_date": "2024-12-18",
+      "authors": [
+        "Christopher Patsalis",
+        "Gayatri Iyer",
+        "Marci Brandenburg",
+        "Alla Karnovsky",
+        "George Michailidis"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "39695921",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "The impact of sampling time point on the lipidome composition",
+      "doi": "10.1016/j.jpba.2024.116429",
+      "url": "https://doi.org/10.1016/j.jpba.2024.116429",
+      "journal": "Journal of Pharmaceutical and Biomedical Analysis",
+      "year": 2024,
+      "published_date": "2024-12-01",
+      "authors": [
+        "Joanna Bogusiewicz",
+        "Bogumiła Kupcewicz",
+        "Kacper Wnuk",
+        "Magdalena Gaca-Tabaszewska",
+        "Jacek Furtak",
+        "Marek Harat",
+        "Katarzyna Buszko",
+        "Barbara Bojko"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water",
+      "doi": "10.1016/j.cej.2024.157156",
+      "url": "https://doi.org/10.1016/j.cej.2024.157156",
+      "journal": "Chemical Engineering Journal",
+      "year": 2024,
+      "published_date": "2024-11-01",
+      "authors": [
+        "Hang He",
+        "Niannian Sun",
+        "Lanfeng Li",
+        "Hao Zhou",
+        "Xiaoyin Yang",
+        "Jing Ai",
+        "Xiaofang Yang",
+        "Chengzhi Hu",
+        "Dongsheng Wang",
+        "Weijun Zhang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Revealing the interplay of dissolved organic matters variation with microbial symbiotic network in lime-treated sludge landscaping.",
+      "doi": "10.1016/j.envres.2024.120216",
+      "url": "https://doi.org/10.1016/j.envres.2024.120216",
+      "journal": "Environmental research",
+      "year": 2024,
+      "published_date": "2024-10-22",
+      "authors": [
+        "Zexu Chen",
+        "Yu Zhang",
+        "Boyuan Yang",
+        "Sen Fan",
+        "Lanfeng Li",
+        "Peng Yang",
+        "Weijun Zhang"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "39442659",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Complexation with Metal Ions Affects Chlorination Reactivity of Dissolved Organic Matter: Structural Reactomics of Emerging Disinfection Byproducts.",
+      "doi": "10.1021/acs.est.4c03022",
+      "url": "https://doi.org/10.1021/acs.est.4c03022",
+      "journal": "Environmental science & technology",
+      "year": 2024,
+      "published_date": "2024-07-23",
+      "authors": [
+        "Qian Hu",
+        "Mingxuan Lou",
+        "Ruigang Wang",
+        "Sai Bai",
+        "He Guo",
+        "Jian Zhou",
+        "Qiuling Ma",
+        "Tiecheng Wang",
+        "Lingyan Zhu",
+        "Xiangru Zhang"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "39042037",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)",
+      "doi": "10.1080/00032719.2024.2358160",
+      "url": "https://doi.org/10.1080/00032719.2024.2358160",
+      "journal": "Analytical Letters",
+      "year": 2024,
+      "published_date": "2024-05-29",
+      "authors": [
+        "Lina Xin",
+        "Yun Chen",
+        "Minglu Li",
+        "Feiyan Liang",
+        "Ning Xia",
+        "Li Wang"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.",
+      "doi": "10.1126/sciadv.adn1039",
+      "url": "https://doi.org/10.1126/sciadv.adn1039",
+      "journal": "Science advances",
+      "year": 2024,
+      "published_date": "2024-05-23",
+      "authors": [
+        "Xuebing Wang",
+        "Nanyang Yu",
+        "Zhaoyu Jiao",
+        "Laihui Li",
+        "Hongxia Yu",
+        "Si Wei"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "38781329",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Active Molecular Network Discovery Links Lifestyle Variables to Breast Cancer in the Long Island Breast Cancer Study Project.",
+      "doi": "10.1021/envhealth.3c00218",
+      "url": "https://doi.org/10.1021/envhealth.3c00218",
+      "journal": "Environment & health (Washington, D.C.)",
+      "year": 2024,
+      "published_date": "2024-04-18",
+      "authors": [
+        "Miao Yu",
+        "Qian Li",
+        "Georgia Dolios",
+        "Peijun Tu",
+        "Susan Teitelbaum",
+        "Jia Chen",
+        "Lauren Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "38932753",
+      "section": "Applications in drug metabolism"
+    },
+    {
+      "title": "Exploring Prenatal Exposure to Halogenated Compounds and Its Relationship with Birth Outcomes Using Nontarget Analysis",
+      "doi": "10.1021/acs.est.3c09534",
+      "url": "https://doi.org/10.1021/acs.est.3c09534",
+      "journal": "Environmental Science &amp; Technology",
+      "year": 2024,
+      "published_date": "2024-04-12",
+      "authors": [
+        "Huan Lin",
+        "Wei Gao",
+        "Jingjing Li",
+        "Nan Zhao",
+        "Hongna Zhang",
+        "Juntong Wei",
+        "Xiaoran Wei",
+        "Bing Wang",
+        "Yongfeng Lin",
+        "Yuxin Zheng"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis",
+      "doi": "10.1016/j.watres.2024.121299",
+      "url": "https://doi.org/10.1016/j.watres.2024.121299",
+      "journal": "Water Research",
+      "year": 2024,
+      "published_date": "2024-04-01",
+      "authors": [
+        "Yuli Qian",
+        "Linchang Guan",
+        "Yunhao Ke",
+        "Liye Wang",
+        "Xuebing Wang",
+        "Nanyang Yu",
+        "Qingmiao Yu",
+        "Si Wei",
+        "Jinju Geng"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Inhibitory effect of microplastics derived organic matters on humification reaction of organics in sewage sludge under alkali-hydrothermal treatment.",
+      "doi": "10.1016/j.watres.2024.121231",
+      "url": "https://doi.org/10.1016/j.watres.2024.121231",
+      "journal": "Water research",
+      "year": 2024,
+      "published_date": "2024-01-29",
+      "authors": [
+        "Jun Chen",
+        "Tong Sun",
+        "Peng Yang",
+        "Siwei Peng",
+        "Junxia Yu",
+        "Dongsheng Wang",
+        "Weijun Zhang"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "38324988",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Deciphering Microbe-Mediated Dissolved Organic Matter Reactome in Wastewater Treatment Plants Using Directed Paired Mass Distance.",
+      "doi": "10.1021/acs.est.3c06871",
+      "url": "https://doi.org/10.1021/acs.est.3c06871",
+      "journal": "Environmental science & technology",
+      "year": 2023,
+      "published_date": "2023-12-26",
+      "authors": [
+        "Liye Wang",
+        "Yuan Lin",
+        "Juechun Li",
+        "Qingmiao Yu",
+        "Ke Xu",
+        "Hongqiang Ren",
+        "Jinju Geng"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "38147428",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "Interpretable Machine Learning and Reactomics Assisted Isotopically Labeled FT-ICR-MS for Exploring the Reactivity and Transformation of Natural Organic Matter during Ultraviolet Photolysis.",
+      "doi": "10.1021/acs.est.3c05213",
+      "url": "https://doi.org/10.1021/acs.est.3c05213",
+      "journal": "Environmental science & technology",
+      "year": 2023,
+      "published_date": "2023-12-18",
+      "authors": [
+        "Dhimas Dwinandha",
+        "Mohamed Elsamadony",
+        "Rongjun Gao",
+        "Qing-Long Fu",
+        "Jibao Liu",
+        "Manabu Fujii"
+      ],
+      "source": "bib+pubmed+oc",
+      "pmid": "38111239",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry Based Non-targeted Metabolomics Data Analysis",
+      "doi": "10.1101/2023.11.14.567024",
+      "url": "https://doi.org/10.1101/2023.11.14.567024",
+      "journal": "",
+      "year": 2023,
+      "published_date": "2023-11-16",
+      "authors": [
+        "Miao Yu",
+        "Vivek Philip"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "Tracking the transformation pathway of dissolved organic matters (DOMs) in biochars under sludge pyrolysis via reactomics and molecular network analysis.",
+      "doi": "10.1016/j.chemosphere.2023.140149",
+      "url": "https://doi.org/10.1016/j.chemosphere.2023.140149",
+      "journal": "Chemosphere",
+      "year": 2023,
+      "published_date": "2023-09-12",
+      "authors": [
+        "Aibin Hu",
+        "Yongliang Zheng",
+        "Zheng Wang",
+        "Mengqiu Li",
+        "Dongsheng Wang",
+        "Weijun Zhang"
+      ],
+      "source": "bib+pubmed+oc",
+      "pmid": "37709065",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Mapping the metabolic responses to oxaliplatin-based chemotherapy with in vivo spatiotemporal metabolomics.",
+      "doi": "10.1016/j.jpha.2023.08.001",
+      "url": "https://doi.org/10.1016/j.jpha.2023.08.001",
+      "journal": "Journal of pharmaceutical analysis",
+      "year": 2023,
+      "published_date": "2023-08-09",
+      "authors": [
+        "Mariola Olkowicz",
+        "Khaled Ramadan",
+        "Hernando Rosales-Solano",
+        "Miao Yu",
+        "Aizhou Wang",
+        "Marcelo Cypel",
+        "Janusz Pawliszyn"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "38464782",
+      "section": "Applications in drug metabolism"
+    },
+    {
+      "title": "Deep Characterization of Serum Metabolome Based on the Segment-Optimized Spectral-Stitching Direct-Infusion Fourier Transform Ion Cyclotron Resonance Mass Spectrometry Approach",
+      "doi": "10.1021/acs.analchem.2c04995",
+      "url": "https://doi.org/10.1021/acs.analchem.2c04995",
+      "journal": "Analytical Chemistry",
+      "year": 2023,
+      "published_date": "2023-07-05",
+      "authors": [
+        "Xiaoshan Sun",
+        "Yueyi Xia",
+        "Xinjie Zhao",
+        "Xinxin Wang",
+        "Yuqing Zhang",
+        "Zhen Jia",
+        "Fujian Zheng",
+        "Zaifang Li",
+        "Xiuqiong Zhang",
+        "Chunxia Zhao",
+        "Xin Lu",
+        "Guowang Xu"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "A mass defect filtering combined background subtraction strategy for rapid screening and identification of metabolites in rat plasma after oral administration of Yindan Xinnaotong soft capsule",
+      "doi": "10.1016/j.jpba.2023.115400",
+      "url": "https://doi.org/10.1016/j.jpba.2023.115400",
+      "journal": "Journal of Pharmaceutical and Biomedical Analysis",
+      "year": 2023,
+      "published_date": "2023-07-01",
+      "authors": [
+        "An-Xian Huang",
+        "Jun-Ming Li",
+        "Liu Yang",
+        "Ling Chen",
+        "Zi-Han Zhou",
+        "Ping Li",
+        "Wen Gao"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "Exploring the Complexities of Dissolved Organic Matter Photochemistry from the Molecular Level by Using Machine Learning Approaches",
+      "doi": "10.1021/acs.est.3c00199",
+      "url": "https://doi.org/10.1021/acs.est.3c00199",
+      "journal": "Environmental Science &amp; Technology",
+      "year": 2023,
+      "published_date": "2023-05-29",
+      "authors": [
+        "Chen Zhao",
+        "Xinyue Xu",
+        "Hongmei Chen",
+        "Fengwen Wang",
+        "Penghui Li",
+        "Chen He",
+        "Quan Shi",
+        "Yuanbi Yi",
+        "Xiaomeng Li",
+        "Siliang Li",
+        "Ding He"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "A multiplatform metabolomics/reactomics approach as a powerful strategy to identify reaction compounds generated during hemicellulose hydrothermal extraction from agro-food biomasses.",
+      "doi": "10.1016/j.foodchem.2023.136150",
+      "url": "https://doi.org/10.1016/j.foodchem.2023.136150",
+      "journal": "Food chemistry",
+      "year": 2023,
+      "published_date": "2023-04-17",
+      "authors": [
+        "Andrea Fuso",
+        "Laura Righetti",
+        "Franco Rosso",
+        "Ginevra Rosso",
+        "Ileana Manera",
+        "Augusta Caligiani"
+      ],
+      "source": "pubmed",
+      "pmid": "37086522",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment",
+      "doi": "10.1016/j.cej.2023.141881",
+      "url": "https://doi.org/10.1016/j.cej.2023.141881",
+      "journal": "Chemical Engineering Journal",
+      "year": 2023,
+      "published_date": "2023-03-01",
+      "authors": [
+        "Aibin Hu",
+        "Jing Ai",
+        "Yongliang Zheng",
+        "Shisheng Li",
+        "Dongsheng Wang",
+        "Weijun Zhang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Ring-Opening Polymerization of rac-Lactide Catalyzed by Octahedral Nickel Carboxylate Complexes",
+      "doi": "10.3390/catal13020304",
+      "url": "https://doi.org/10.3390/catal13020304",
+      "journal": "Catalysts",
+      "year": 2023,
+      "published_date": "2023-01-29",
+      "authors": [
+        "Alexey Nikiforov",
+        "Natalia Panina",
+        "Daniil Blinou",
+        "Vladislav Gurzhiy",
+        "Juliya Nashchekina",
+        "Evgenia Korzhikova-Vlakh",
+        "Alexey Eremin",
+        "Mariia Stepanova"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.",
+      "doi": "10.1016/j.watres.2022.119488",
+      "url": "https://doi.org/10.1016/j.watres.2022.119488",
+      "journal": "Water research",
+      "year": 2022,
+      "published_date": "2022-12-13",
+      "authors": [
+        "Jibao Liu",
+        "Chenlu Wang",
+        "Zhineng Hao",
+        "Gen Kondo",
+        "Manabu Fujii",
+        "Qing-Long Fu",
+        "Yuansong Wei"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "36538840",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Bioaccumulation and Biotransformation of Chlorinated Paraffins.",
+      "doi": "10.3390/toxics10120778",
+      "url": "https://doi.org/10.3390/toxics10120778",
+      "journal": "Toxics",
+      "year": 2022,
+      "published_date": "2022-12-12",
+      "authors": [
+        "Liujun Chen",
+        "Bixian Mai",
+        "Xiaojun Luo"
+      ],
+      "source": "pubmed",
+      "pmid": "36548610",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Strategies for structure elucidation of small molecules based on LC-MS/MS data from complex biological samples.",
+      "doi": "10.1016/j.csbj.2022.09.004",
+      "url": "https://doi.org/10.1016/j.csbj.2022.09.004",
+      "journal": "Computational and structural biotechnology journal",
+      "year": 2022,
+      "published_date": "2022-09-07",
+      "authors": [
+        "Zhitao Tian",
+        "Fangzhou Liu",
+        "Dongqin Li",
+        "Alisdair R Fernie",
+        "Wei Chen"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "36187931",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "In vivo solid phase microextraction for bioanalysis",
+      "doi": "10.1016/j.trac.2022.116656",
+      "url": "https://doi.org/10.1016/j.trac.2022.116656",
+      "journal": "TrAC Trends in Analytical Chemistry",
+      "year": 2022,
+      "published_date": "2022-08-01",
+      "authors": [
+        "Maria Eugênia Costa Queiroz",
+        "Israel Donizeti de Souza",
+        "Igor Gustavo de Oliveira",
+        "Caroline Fernandes Grecco"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "AI/ML-driven advances in untargeted metabolomics and exposomics for biomedical applications.",
+      "doi": "10.1016/j.xcrp.2022.100978",
+      "url": "https://doi.org/10.1016/j.xcrp.2022.100978",
+      "journal": "Cell reports. Physical science",
+      "year": 2022,
+      "published_date": "2022-07-20",
+      "authors": [
+        "Lauren M Petrick",
+        "Noam Shomron"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "35936554",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "Metabolomic fingerprinting of porcine lung tissue during pre-clinical prolonged ex vivo lung perfusion using in vivo SPME coupled with LC-HRMS.",
+      "doi": "10.1016/j.jpha.2022.06.002",
+      "url": "https://doi.org/10.1016/j.jpha.2022.06.002",
+      "journal": "Journal of pharmaceutical analysis",
+      "year": 2022,
+      "published_date": "2022-06-08",
+      "authors": [
+        "Nikita Looby",
+        "Anna Roszkowska",
+        "Aadil Ali",
+        "Barbara Bojko",
+        "Marcelo Cypel",
+        "Janusz Pawliszyn"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "36105172",
+      "section": "Applications in drug metabolism"
+    },
+    {
+      "title": "Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.",
+      "doi": "10.1186/s13321-022-00586-8",
+      "url": "https://doi.org/10.1186/s13321-022-00586-8",
+      "journal": "Journal of cheminformatics",
+      "year": 2022,
+      "published_date": "2022-02-16",
+      "authors": [
+        "Miao Yu",
+        "Georgia Dolios",
+        "Lauren Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "35172886",
+      "section": "In-source reactions and independent ion selection"
+    },
+    {
+      "title": "Molecular Gatekeeper Discovery: Workflow for Linking Multiple Exposure Biomarkers to Metabolomics.",
+      "doi": "10.1021/acs.est.1c04039",
+      "url": "https://doi.org/10.1021/acs.est.1c04039",
+      "journal": "Environmental science & technology",
+      "year": 2022,
+      "published_date": "2022-02-07",
+      "authors": [
+        "Miao Yu",
+        "Susan L Teitelbaum",
+        "Georgia Dolios",
+        "Lam-Ha T Dang",
+        "Peijun Tu",
+        "Mary S Wolff",
+        "Lauren M Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "35129943",
+      "section": "Applications in drug metabolism",
+      "annotation": "Introduces the molecular gatekeeper concept. Uses PMD analysis to link multiple environmental exposure biomarkers to downstream metabolomics, identifying hub metabolites that mediate exposure–health relationships."
+    },
+    {
+      "title": "Novel insight into dissolved organic nitrogen (DON) transformation along wastewater treatment processes with special emphasis on endogenous-source DON.",
+      "doi": "10.1016/j.envres.2022.112713",
+      "url": "https://doi.org/10.1016/j.envres.2022.112713",
+      "journal": "Environmental research",
+      "year": 2022,
+      "published_date": "2022-01-10",
+      "authors": [
+        "Kewei Liao",
+        "Haidong Hu",
+        "Jinfeng Wang",
+        "Bing Wu",
+        "Hongqiang Ren"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "35016867",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Metabolite discovery through global annotation of untargeted metabolomics data.",
+      "doi": "10.1038/s41592-021-01303-3",
+      "url": "https://doi.org/10.1038/s41592-021-01303-3",
+      "journal": "Nature methods",
+      "year": 2021,
+      "published_date": "2021-10-28",
+      "authors": [
+        "Li Chen",
+        "Wenyun Lu",
+        "Lin Wang",
+        "Xi Xing",
+        "Ziyang Chen",
+        "Xin Teng",
+        "Xianfeng Zeng",
+        "Antonio D Muscarella",
+        "Yihui Shen",
+        "Alexis Cowan",
+        "Melanie R McReynolds",
+        "Brandon J Kennedy",
+        "Ashley M Lato",
+        "Shawn R Campagna",
+        "Mona Singh",
+        "Joshua D Rabinowitz"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "34711973",
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "NetID uses global network optimisation for metabolite annotation. Incorporates PMD-based ion relationships to propagate identities from known to unannotated LC-MS peaks across the full dataset."
+    },
+    {
+      "title": "In Vivo Solid-Phase Microextraction and Applications in Environmental Sciences.",
+      "doi": "10.1021/acsenvironau.1c00024",
+      "url": "https://doi.org/10.1021/acsenvironau.1c00024",
+      "journal": "ACS environmental Au",
+      "year": 2021,
+      "published_date": "2021-10-24",
+      "authors": [
+        "Miao Yu",
+        "Anna Roszkowska",
+        "Janusz Pawliszyn"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "37101756",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry",
+      "doi": "10.1016/j.trac.2021.116409",
+      "url": "https://doi.org/10.1016/j.trac.2021.116409",
+      "journal": "TrAC Trends in Analytical Chemistry",
+      "year": 2021,
+      "published_date": "2021-10-01",
+      "authors": [
+        "Dong Li",
+        "Wenqing Liang",
+        "Xiaoxia Feng",
+        "Ting Ruan",
+        "Guibin Jiang"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Tooth biomarkers to characterize the temporal dynamics of the fetal and early-life exposome.",
+      "doi": "10.1016/j.envint.2021.106849",
+      "url": "https://doi.org/10.1016/j.envint.2021.106849",
+      "journal": "Environment international",
+      "year": 2021,
+      "published_date": "2021-09-02",
+      "authors": [
+        "Miao Yu",
+        "Peijun Tu",
+        "Georgia Dolios",
+        "Priyanthi S Dassanayake",
+        "Heather Volk",
+        "Craig Newschaffer",
+        "M Daniele Fallin",
+        "Lisa Croen",
+        "Kristen Lyall",
+        "Rebecca Schmidt",
+        "Irva Hertz-Piccioto",
+        "Christine Austin",
+        "Manish Arora",
+        "Lauren M Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "34482270",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Microbial Roles in Dissolved Organic Matter Transformation in Full-Scale Wastewater Treatment Processes Revealed by Reactomics and Comparative Genomics.",
+      "doi": "10.1021/acs.est.1c02584",
+      "url": "https://doi.org/10.1021/acs.est.1c02584",
+      "journal": "Environmental science & technology",
+      "year": 2021,
+      "published_date": "2021-08-02",
+      "authors": [
+        "Liye Wang",
+        "Yuan Lin",
+        "Lin Ye",
+        "Yuli Qian",
+        "Yufei Shi",
+        "Ke Xu",
+        "Hongqiang Ren",
+        "Jinju Geng"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "34338502",
+      "section": "PMD network",
+      "annotation": "Pairs reactomics with comparative genomics. PMD-based reaction networks identify which microbial guilds drive specific dissolved-organic-matter transformations across full-scale wastewater treatment stages."
+    },
+    {
+      "title": "Medium- and Short-Chain Chlorinated Paraffins in Mature Maize Plants and Corresponding Agricultural Soils.",
+      "doi": "10.1021/acs.est.0c05111",
+      "url": "https://doi.org/10.1021/acs.est.0c05111",
+      "journal": "Environmental science & technology",
+      "year": 2021,
+      "published_date": "2021-03-23",
+      "authors": [
+        "Weifang Chen",
+        "Xingwang Hou",
+        "Yanwei Liu",
+        "Xinxiao Hu",
+        "Jiyan Liu",
+        "Jerald L Schnoor",
+        "Guibin Jiang"
+      ],
+      "source": "pubmed",
+      "pmid": "33754697",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Single Cell Reactomics: Real-Time Single-Cell Activation Kinetics of Optically Trapped Macrophages.",
+      "doi": "10.1002/smtd.202000849",
+      "url": "https://doi.org/10.1002/smtd.202000849",
+      "journal": "Small methods",
+      "year": 2021,
+      "published_date": "2021-02-11",
+      "authors": [
+        "Gwenda F Vasse",
+        "Pedro Buzón",
+        "Barbro N Melgert",
+        "Wouter H Roos",
+        "Patrick van Rijn"
+      ],
+      "source": "pubmed",
+      "pmid": "34927846",
+      "section": "Paired mass distance and chemical reactions",
+      "annotation": "Extends reactomics to the single-cell level. Combines optical trapping with PMD-based reaction monitoring to track real-time metabolic activation kinetics in individual macrophages."
+    },
+    {
+      "title": "Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.",
+      "doi": "10.1021/acs.est.0c07184",
+      "url": "https://doi.org/10.1021/acs.est.0c07184",
+      "journal": "Environmental science & technology",
+      "year": 2021,
+      "published_date": "2021-02-05",
+      "authors": [
+        "Qing Zhang",
+        "Wenqian Kong",
+        "Linfeng Wei",
+        "Xingwang Hou",
+        "Qianchi Ma",
+        "Yanna Liu",
+        "Yadan Luo",
+        "Chunyang Liao",
+        "Jiyan Liu",
+        "Jerald L Schnoor",
+        "Guibin Jiang"
+      ],
+      "source": "pubmed",
+      "pmid": "33544574",
+      "section": "Applications in drug metabolism"
+    },
+    {
+      "title": "Untargeted high-resolution paired mass distance data mining for retrieving general chemical relationships.",
+      "doi": "10.1038/s42004-020-00403-z",
+      "url": "https://doi.org/10.1038/s42004-020-00403-z",
+      "journal": "Communications chemistry",
+      "year": 2020,
+      "published_date": "2020-11-06",
+      "authors": [
+        "Miao Yu",
+        "Lauren Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "34337162",
+      "section": "Paired mass distance and chemical reactions",
+      "annotation": "The original reactomics paper. Introduces the PMD concept: high-frequency mass differences in untargeted MS data directly encode active chemical reactions, enabling reaction-network reconstruction without compound identification."
+    },
+    {
+      "title": "A Novel LC-MS Based Targeted Metabolomic Approach to Study the Biomarkers of Food Intake.",
+      "doi": "10.1002/mnfr.202000615",
+      "url": "https://doi.org/10.1002/mnfr.202000615",
+      "journal": "Molecular nutrition & food research",
+      "year": 2020,
+      "published_date": "2020-10-12",
+      "authors": [
+        "Yao Tang",
+        "Yingdong Zhu",
+        "Shengmin Sang"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "32997396",
+      "section": "Methods and tools"
+    },
+    {
+      "title": "Metabolic profile of fish muscle tissue changes with sampling method, storage strategy and time.",
+      "doi": "10.1016/j.aca.2020.08.050",
+      "url": "https://doi.org/10.1016/j.aca.2020.08.050",
+      "journal": "Analytica chimica acta",
+      "year": 2020,
+      "published_date": "2020-09-01",
+      "authors": [
+        "Miao Yu",
+        "Sofia Lendor",
+        "Anna Roszkowska",
+        "Mariola Olkowicz",
+        "Leslie Bragg",
+        "Mark Servos",
+        "Janusz Pawliszyn"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "33081948",
+      "section": "In-source reactions and independent ion selection"
+    },
+    {
+      "title": "Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.",
+      "doi": "10.1016/j.jpba.2020.113574",
+      "url": "https://doi.org/10.1016/j.jpba.2020.113574",
+      "journal": "Journal of pharmaceutical and biomedical analysis",
+      "year": 2020,
+      "published_date": "2020-08-23",
+      "authors": [
+        "Miao Yu",
+        "Georgia Dolios",
+        "Vladimir Yong-Gonzalez",
+        "Olle Björkqvist",
+        "Elena Colicino",
+        "Jonas Halfvarson",
+        "Lauren Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "32896810",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "A UPLC-Q-TOF-MS-based metabolomics approach for the evaluation of fermented mare’s milk to koumiss",
+      "doi": "10.1016/j.foodchem.2020.126619",
+      "url": "https://doi.org/10.1016/j.foodchem.2020.126619",
+      "journal": "Food Chemistry",
+      "year": 2020,
+      "published_date": "2020-08-01",
+      "authors": [
+        "Yanan Xia",
+        "Jiaqi Yu",
+        "Weigang Miao",
+        "Quan Shuang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.",
+      "doi": "10.1021/acs.est.0c01830",
+      "url": "https://doi.org/10.1021/acs.est.0c01830",
+      "journal": "Environmental science & technology",
+      "year": 2020,
+      "published_date": "2020-07-13",
+      "authors": [
+        "Weifang Chen",
+        "Miao Yu",
+        "Qing Zhang",
+        "Xingwang Hou",
+        "Wenqian Kong",
+        "Linfeng Wei",
+        "Xiaowei Mao",
+        "Jiyan Liu",
+        "Jerald L Schnoor",
+        "Guibin Jiang"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "32600037",
+      "section": "PMD network",
+      "annotation": "First application of PMD network to biotransformation tracing. Uses PMD-linked ion chains to map chlorinated paraffin metabolism in rice cells, demonstrating that reaction pathways can be recovered from untargeted data without compound annotation."
+    },
+    {
+      "title": "Carbohydrate fraction characterisation of functional yogurts containing pectin and pectic oligosaccharides through convolutional networks",
+      "doi": "10.1016/j.jfca.2020.103484",
+      "url": "https://doi.org/10.1016/j.jfca.2020.103484",
+      "journal": "Journal of Food Composition and Analysis",
+      "year": 2020,
+      "published_date": "2020-07-01",
+      "authors": [
+        "Carlos Sabater",
+        "Celia Abad-García",
+        "Paloma Delgado-Fernández",
+        "Nieves Corzo",
+        "Antonia Montilla"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Recent Advances in In Vivo SPME Sampling",
+      "doi": "10.3390/separations7010006",
+      "url": "https://doi.org/10.3390/separations7010006",
+      "journal": "Separations",
+      "year": 2020,
+      "published_date": "2020-01-15",
+      "authors": [
+        "Nicolò Riboni",
+        "Fabio Fornari",
+        "Federica Bianchi",
+        "Maria Careri"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "Simulation-based comprehensive study of batch effects in metabolomics studies",
+      "doi": "10.1101/2019.12.16.878637",
+      "url": "https://doi.org/10.1101/2019.12.16.878637",
+      "journal": "",
+      "year": 2019,
+      "published_date": "2019-12-17",
+      "authors": [
+        "Miao Yu",
+        "Anna Roszkowska",
+        "Janusz Pawliszyn"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "Reactomics: using mass spectrometry as a reaction detector",
+      "doi": "10.1101/855148",
+      "url": "https://doi.org/10.1101/855148",
+      "journal": "",
+      "year": 2019,
+      "published_date": "2019-11-25",
+      "authors": [
+        "Miao Yu",
+        "Lauren Petrick"
+      ],
+      "source": "crossref+oc",
+      "section": "Paired mass distance and chemical reactions"
+    },
+    {
+      "title": "The metaRbolomics Toolbox in Bioconductor and beyond.",
+      "doi": "10.3390/metabo9100200",
+      "url": "https://doi.org/10.3390/metabo9100200",
+      "journal": "Metabolites",
+      "year": 2019,
+      "published_date": "2019-09-23",
+      "authors": [
+        "Jan Stanstrup",
+        "Corey D Broeckling",
+        "Rick Helmus",
+        "Nils Hoffmann",
+        "Ewy Mathé",
+        "Thomas Naake",
+        "Luca Nicolotti",
+        "Kristian Peters",
+        "Johannes Rainer",
+        "Reza M Salek",
+        "Tobias Schulze",
+        "Emma L Schymanski",
+        "Michael A Stravs",
+        "Etienne A Thévenot",
+        "Hendrik Treutler",
+        "Ralf J M Weber",
+        "Egon Willighagen",
+        "Michael Witting",
+        "Steffen Neumann"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "31548506",
+      "section": "Applications in endogenous metabolomics"
+    },
+    {
+      "title": "In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology",
+      "doi": "10.1007/978-981-13-9447-8_3",
+      "url": "https://doi.org/10.1007/978-981-13-9447-8_3",
+      "journal": "A New Paradigm for Environmental Chemistry and Toxicology",
+      "year": 2019,
+      "published_date": "2019-08-10",
+      "authors": [
+        "Anna Roszkowska",
+        "Miao Yu",
+        "Janusz Pawliszyn"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Prediction of response after chemoradiation for esophageal cancer using a combination of dosimetry and CT radiomics.",
+      "doi": "10.1007/s00330-019-06193-w",
+      "url": "https://doi.org/10.1007/s00330-019-06193-w",
+      "journal": "European radiology",
+      "year": 2019,
+      "published_date": "2019-04-26",
+      "authors": [
+        "Xiance Jin",
+        "Xiaomin Zheng",
+        "Didi Chen",
+        "Juebin Jin",
+        "Guojie Zhu",
+        "Xia Deng",
+        "Ce Han",
+        "Changfei Gong",
+        "Yongqiang Zhou",
+        "Cong Liu",
+        "Congying Xie"
+      ],
+      "source": "pubmed",
+      "pmid": "31028447",
+      "section": "In-source reactions and independent ion selection"
+    },
+    {
+      "title": "Structure/reaction directed analysis for LC-MS based untargeted analysis.",
+      "doi": "10.1016/j.aca.2018.10.062",
+      "url": "https://doi.org/10.1016/j.aca.2018.10.062",
+      "journal": "Analytica chimica acta",
+      "year": 2018,
+      "published_date": "2018-10-29",
+      "authors": [
+        "Miao Yu",
+        "Mariola Olkowicz",
+        "Janusz Pawliszyn"
+      ],
+      "source": "bib+pubmed",
+      "pmid": "30661584",
+      "section": "In-source reactions and independent ion selection",
+      "annotation": "Introduces the globalstd algorithm for data-driven independent ion selection. High-frequency PMDs among co-eluting peaks reveal widespread adducts and neutral losses; one representative ion per compound is retained, eliminating redundancy without a predefined adduct list."
+    }
+  ]
+}

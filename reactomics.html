@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Reactomics</title>
+  <style>
+:root {
+  --bg: #f4f5f7;
+  --fg: #1a202c;
+  --heading: #0d1117;
+  --surface: #ffffff;
+  --link: #1a56db;
+  --link-hover: #1e429f;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --code-bg: #f1f5f9;
+  --accent: #1a56db;
+  --accent-light: #eff6ff;
+  --tag-bg: #f1f5f9;
+  --tag-fg: #475569;
+  --sidebar-w: 220px;
+  --content-max: 760px;
+  --toc-active: #1a56db;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a;
+    --fg: #e2e8f0;
+    --heading: #f8fafc;
+    --surface: #1e293b;
+    --link: #60a5fa;
+    --link-hover: #93c5fd;
+    --border: #334155;
+    --muted: #94a3b8;
+    --code-bg: #1e293b;
+    --accent: #3b82f6;
+    --accent-light: #1e3a5f;
+    --tag-bg: #1e293b;
+    --tag-fg: #94a3b8;
+    --toc-active: #60a5fa;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+}
+
+/* ── Skip link ── */
+a.skip-link {
+  position: absolute; top: -40px; left: 0;
+  background: var(--accent); color: #fff;
+  padding: 8px 16px; z-index: 200; transition: top .2s;
+}
+a.skip-link:focus { top: 0; }
+
+/* ── Top bar ── */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  display: flex; align-items: center; gap: 16px;
+  height: 48px;
+}
+.topbar-brand {
+  font-weight: 700; font-size: .95rem; color: var(--heading);
+  text-decoration: none; letter-spacing: .01em;
+  white-space: nowrap;
+}
+.topbar-brand:hover { color: var(--accent); text-decoration: none; }
+.topbar-desc {
+  font-size: .8rem; color: var(--muted); flex: 1;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.lang-switch {
+  display: flex; gap: 4px; flex-shrink: 0;
+}
+.lang-switch a {
+  font-size: .78rem; padding: 3px 10px;
+  border: 1px solid var(--border); border-radius: 20px;
+  color: var(--muted); text-decoration: none; transition: all .15s;
+}
+.lang-switch a:hover,
+.lang-switch a.active {
+  background: var(--accent); border-color: var(--accent);
+  color: #fff; text-decoration: none;
+}
+
+/* ── Page grid ── */
+.page-grid {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, var(--content-max));
+  grid-template-rows: 1fr;
+  max-width: calc(var(--sidebar-w) + var(--content-max) + 80px);
+  margin: 0 auto;
+  align-items: start;
+  padding: 0 24px;
+  gap: 0 40px;
+}
+
+/* ── TOC sidebar ── */
+.toc-sidebar {
+  position: sticky;
+  top: 64px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  padding: 24px 0 24px;
+  font-size: .8rem;
+  scrollbar-width: thin;
+}
+.toc-sidebar::-webkit-scrollbar { width: 4px; }
+.toc-sidebar::-webkit-scrollbar-track { background: transparent; }
+.toc-sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+.toc-label {
+  font-size: .7rem; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted);
+  padding-bottom: 8px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+#toc-list {
+  list-style: none;
+  padding: 0;
+}
+#toc-list li { margin: 0; }
+#toc-list a {
+  display: block;
+  padding: 3px 8px;
+  color: var(--muted);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all .15s;
+  line-height: 1.4;
+}
+#toc-list a:hover { color: var(--fg); border-left-color: var(--border); }
+#toc-list a.active { color: var(--toc-active); border-left-color: var(--toc-active); font-weight: 600; }
+#toc-list .toc-h3 > a { padding-left: 20px; font-size: .76rem; }
+
+/* ── Main content ── */
+.content-area {
+  background: var(--surface);
+  padding: 40px 40px 80px;
+  min-height: calc(100vh - 48px);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4 { color: var(--heading); line-height: 1.3; }
+h1 { font-size: 2rem; margin-bottom: .75rem; }
+h2 {
+  font-size: 1.25rem; margin-top: 2.5rem; margin-bottom: .75rem;
+  padding-top: .75rem; border-top: 1px solid var(--border);
+}
+h3 { font-size: 1rem; margin-top: 1.5rem; margin-bottom: .5rem; color: var(--muted); font-weight: 600; }
+p { margin-bottom: 1rem; }
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+code {
+  background: var(--code-bg); padding: .1em .35em;
+  border-radius: 4px; font-size: .88em; font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+blockquote {
+  margin: 1rem 0; padding: .75rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-light); border-radius: 0 4px 4px 0;
+}
+
+/* ── Tables ── */
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .88em; }
+th, td { border: 1px solid var(--border); padding: .5rem .75rem; text-align: left; }
+th { background: var(--code-bg); font-weight: 600; }
+tr:nth-child(even) td { background: var(--code-bg); }
+
+/* ── Lists ── */
+ul, ol { padding-left: 1.4rem; margin-bottom: 1rem; }
+li { margin-bottom: .3rem; }
+
+/* ── Publication list ── */
+.content-area h3 + ul,
+.content-area h3 + p + ul {
+  padding-left: 0; list-style: none;
+}
+.content-area h2#all-publications ~ h3 + ul li,
+.content-area h2#monthly-literature-collection ~ h3 ~ ul li,
+.content-area [id^="paired-mass"] + ul li,
+.content-area [id^="pmd-network"] + ul li,
+.content-area [id^="methods"] + ul li,
+.content-area [id^="applications"] + ul li {
+  padding: 0;
+}
+
+/* Target all li inside sections below h2#all-publications */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+.pub-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: .875rem;
+  line-height: 1.5;
+}
+.pub-list li:last-child { border-bottom: none; }
+.pub-list li::before { display: none; }
+.pub-list .pub-title { flex: 1; }
+.pub-list .pub-meta { flex-shrink: 0; font-size: .75rem; color: var(--muted); white-space: nowrap; }
+
+/* ── Section badge ── */
+.section-heading {
+  display: flex; align-items: center; gap: 8px;
+}
+.section-count {
+  font-size: .7rem; background: var(--tag-bg); color: var(--tag-fg);
+  padding: 1px 7px; border-radius: 10px; font-weight: 500;
+}
+
+/* ── Footer ── */
+footer {
+  margin-top: 3rem; padding: 1.5rem 40px;
+  border-top: 1px solid var(--border);
+  font-size: .8rem; color: var(--muted);
+  background: var(--surface);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 0;
+  }
+  .toc-sidebar { display: none; }
+  .content-area {
+    border-left: none; border-right: none;
+    padding: 24px 20px 60px;
+  }
+  footer { padding: 1rem 20px; }
+}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="topbar">
+    <a class="topbar-brand" href="index.html">Reactomics</a>
+    <span class="topbar-desc">PMD-based reactomics — introduction and monthly literature collection.</span>
+    <nav class="lang-switch" aria-label="Language"><a href="#" class="active">EN</a><a href="reactomics_zh.html">中文</a></nav>
+  </div>
+
+  <div class="page-grid">
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <div class="toc-label">Contents</div>
+      <ul id="toc-list"></ul>
+    </aside>
+
+    <div class="content-area" id="content">
+      <article>
+        <h1 id="reactomics">Reactomics</h1>
+<p><strong>Reactomics</strong> is the study of chemical reactions as a system — specifically, using <strong>paired mass distances (PMDs)</strong> observed in mass spectrometry data to identify and map the reaction networks operating in biological, environmental, and chemical systems. The concept was formally introduced in <a href="https://doi.org/10.1038/s42004-020-00403-z">"Reactomics: using mass spectrometry as a chemical reaction detector"</a> (Communications Chemistry, 2020), where it was shown that the mass differences between pairs of ions in a metabolomics dataset directly encode the chemical reactions that connect them.</p>
+<p>The core insight is simple but powerful: <strong>a fixed mass difference between two molecules corresponds to a specific chemical reaction or biotransformation</strong>. By cataloguing these paired mass distances across an untargeted metabolomics dataset, one can reconstruct the reaction networks active in a sample without prior knowledge of compound identities.</p>
+<p>This page collects publications related to reactomics and PMD-based analysis. New papers are added monthly.</p>
+<h2 id="why-reactomics-matters">Why reactomics matters</h2>
+<p>Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.</p>
+<p>Reactomics addresses this gap by treating <strong>reactions as first-class objects</strong>. Rather than asking "which metabolites differ between groups?", reactomics asks "which reactions differ between groups?" and "what reaction network is active in this sample?". This shift has several practical consequences:</p>
+<ul>
+<li>Reaction-based analysis is <strong>more robust to annotation gaps</strong> than compound-based analysis, because PMDs can be computed for any peak pair regardless of whether the peaks have been annotated.</li>
+<li>Reactions are <strong>chemically interpretable</strong> — a PMD of 2.0157 (H₂) means reduction; a PMD of 14.0157 (CH₂) means methylation or chain elongation. The network is readable without a lookup table.</li>
+<li>Reaction networks can be <strong>compared across conditions</strong>, across species, and across sample types in a way that metabolite lists often cannot.</li>
+<li>The approach connects naturally to <strong>biochemical pathway databases</strong> (KEGG, HMDB reactions, Reactome) while remaining usable when compound annotation is incomplete.</li>
+</ul>
+<h2 id="paired-mass-distance-and-chemical-reactions">Paired mass distance and chemical reactions</h2>
+<h3 id="the-pmd-concept">The PMD concept</h3>
+<p>A <strong>paired mass distance (PMD)</strong> is the absolute difference in accurate mass between two ions detected in the same mass spectrometry dataset. For example:</p>
+<table>
+<thead>
+<tr>
+<th>PMD (Da)</th>
+<th>Formula change</th>
+<th>Reaction type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.0157</td>
+<td>H₂</td>
+<td>Reduction / hydrogenation</td>
+</tr>
+<tr>
+<td>14.0157</td>
+<td>CH₂</td>
+<td>Methylation, chain elongation</td>
+</tr>
+<tr>
+<td>15.9949</td>
+<td>O</td>
+<td>Oxidation (single oxygen)</td>
+</tr>
+<tr>
+<td>17.0027</td>
+<td>OH</td>
+<td>Hydroxylation</td>
+</tr>
+<tr>
+<td>18.0106</td>
+<td>H₂O</td>
+<td>Hydration / dehydration</td>
+</tr>
+<tr>
+<td>28.0313</td>
+<td>C₂H₄</td>
+<td>Ethylation</td>
+</tr>
+<tr>
+<td>42.0106</td>
+<td>C₂H₂O</td>
+<td>Acetylation</td>
+</tr>
+<tr>
+<td>79.9663</td>
+<td>HPO₃</td>
+<td>Phosphorylation</td>
+</tr>
+<tr>
+<td>162.0528</td>
+<td>C₆H₁₀O₅</td>
+<td>Hexose addition (glycosylation)</td>
+</tr>
+</tbody>
+</table>
+<p>When two ions have a PMD matching a known reaction, they are candidates for a substrate–product pair of that reaction. When many such pairs are found in a dataset, the reaction is inferred to be active in the biological or chemical system under study.</p>
+<h3 id="pmd-network">PMD network</h3>
+<p>Ion pairs connected by chemically meaningful PMDs form a <strong>PMD network</strong>. Nodes are ions (detected m/z values); edges are labeled by the PMD (i.e., the reaction type). The PMD network summarizes the full reaction landscape of a sample in a single data structure.</p>
+<p>Key properties of the PMD network:</p>
+<ul>
+<li>It is <strong>computable from any untargeted LC-MS dataset</strong> without annotation.</li>
+<li>The degree distribution of nodes reflects which compounds are most metabolically active.</li>
+<li>Comparison of PMD networks between conditions reveals which reactions are up- or down-regulated, analogous to differential expression analysis.</li>
+<li>Subnetworks often correspond to known biochemical pathways, providing a path to biological interpretation.</li>
+</ul>
+<p>The PMD network is constructed using the <code>getchain()</code> function in the <a href="https://yufree.github.io/pmd/"><code>pmd</code> R package</a>, which traces reaction chains through the ion list by following consecutive PMD edges.</p>
+<h2 id="methods-and-tools">Methods and tools</h2>
+<h3 id="computing-pmds">Computing PMDs</h3>
+<p>PMD analysis requires <strong>accurate mass measurements</strong>, typically from high-resolution instruments such as Orbitrap or Q-TOF mass spectrometers. The mass accuracy required to distinguish between isobaric reactions (e.g., CO at 27.9949 vs. C₂H₄ at 28.0313) is approximately 5 ppm or better.</p>
+<p>The workflow is:</p>
+<ol>
+<li><strong>Peak detection</strong> — extract a peak list with accurate m/z values from raw LC-MS data (e.g., using XCMS, MZmine, or similar tools).</li>
+<li><strong>PMD calculation</strong> — compute all pairwise mass differences; filter to retain only those matching a curated list of chemically meaningful reactions.</li>
+<li><strong>Network construction</strong> — build the PMD network using <code>getchain()</code>, which links ions into reaction chains.</li>
+<li><strong>Quantitative analysis</strong> — use <code>getreact()</code> to compute substrate–product intensity ratios across samples; apply network analysis metrics or pathway annotation.</li>
+</ol>
+<h3 id="quantitative-reaction-analysis">Quantitative reaction analysis</h3>
+<p>Beyond identifying which reactions are present, PMDs enable <strong>quantitative reaction analysis</strong>: for any substrate–product ion pair connected by a PMD, the ratio of their intensities across samples reflects how actively that reaction is proceeding. <code>getreact()</code> implements this by computing per-sample intensity ratios for all PMD-linked pairs and returning a reaction-by-sample matrix suitable for downstream statistical comparison.</p>
+<p>This makes it possible to ask not just "which reactions are active?" but "which reactions differ significantly between conditions?" — treating reactions as the unit of analysis rather than individual metabolites. The approach is annotation-free: a PMD value of 15.9949 Da (oxygen addition) quantifies oxidation activity across every ion pair in the dataset, regardless of whether the compounds have been identified.</p>
+<h3 id="the-pmd-r-package">The pmd R package</h3>
+<p>The <a href="https://cran.r-project.org/package=pmd"><code>pmd</code> package</a> provides a complete implementation of reactomics analysis in R:</p>
+<ul>
+<li><code>getpaired()</code> — identifies ion pairs linked by specific PMDs</li>
+<li><code>getchain()</code> — constructs the PMD network by tracing reaction chains through the ion list</li>
+<li><code>getreact()</code> — computes quantitative reaction activity from substrate–product intensity ratios; returns a reaction-by-sample matrix for statistical comparison</li>
+<li><code>getstd()</code> — extracts stable isotope-related pairs for quality control</li>
+<li>Visualization functions for network plots and reaction heatmaps</li>
+</ul>
+<p>The package handles both positive and negative ionization mode data and integrates with standard metabolomics workflows.</p>
+<h3 id="pmd-databases-and-reaction-lists">PMD databases and reaction lists</h3>
+<p>Reactomics relies on curated PMD reference lists corresponding to known biochemical reactions. The <code>pmd</code> package ships several built-in datasets:</p>
+<ul>
+<li><strong><code>keggrall</code></strong> — PMDs derived from KEGG enzyme-catalyzed reactions, with reaction formula and KEGG ID</li>
+<li><strong><code>hmdb</code></strong> — high-frequency PMDs from HMDB human metabolite entries</li>
+<li><strong><code>omics</code></strong> — a merged multi-database reaction PMD table covering major omics reactions</li>
+<li><strong><code>sda</code></strong> — common PMDs for substructure differences, ion replacements, and reactions</li>
+<li><strong><code>MaConDa</code></strong> — mass spectrometry contaminant PMDs for background checking</li>
+</ul>
+<h2 id="in-source-reactions-and-independent-ion-selection">In-source reactions and independent ion selection</h2>
+<p>In-source reactions — adduct formation, in-source fragmentation, and isotope patterns — also produce characteristic mass differences between ion pairs in an LC-MS dataset. These are analytical artefacts rather than biological reactions, yet they follow the same PMD logic: a fixed mass difference between two ions encodes a specific process connecting them.</p>
+<p>This observation underlies the <strong>globalstd algorithm</strong>, introduced in <a href="https://doi.org/10.1016/j.aca.2018.10.062">Yu, Olkowicz &amp; Pawliszyn (2019)</a> and implemented in the <code>pmd</code> package. Crucially, globalstd is <strong>data-driven</strong>: it does not rely on a predefined adduct list. Instead, it discovers which mass differences are genuinely widespread in the current dataset and uses that evidence to define redundancy. The algorithm works in three steps:</p>
+<ol>
+<li><strong>Retention-time clustering</strong> — co-eluting ions are grouped together as likely originating from the same compound.</li>
+<li><strong>Data-driven high-frequency PMD detection</strong> — pairwise mass differences are computed within each RT group. PMDs that appear at high frequency across many groups are inferred to represent <strong>widely-occurring adducts and neutral losses</strong> (e.g., Na/H exchange, ¹³C isotope, common solvent adducts). Because every compound that undergoes a given in-source reaction contributes the same PMD, these mass differences accumulate to anomalously high counts — a signal that is entirely derived from the data itself.</li>
+<li><strong>Independent ion screening</strong> — using the discovered high-frequency PMDs, one representative ion is retained per compound cluster; redundant adducts, isotopologue peaks, and in-source fragments are removed.</li>
+</ol>
+<p>The result is a <strong>non-redundant set of independent ions</strong> that preserves full chemical diversity while eliminating peak multiplicity. No prior knowledge of which adducts to expect is required.</p>
+<h2 id="applications-in-drug-metabolism">Applications in drug metabolism</h2>
+<p>Drug metabolism generates a predictable set of biotransformation products. Phase I reactions (oxidation, reduction, hydrolysis) and Phase II reactions (conjugation) each correspond to specific PMDs. Reactomics enables <strong>untargeted drug metabolism profiling</strong>: given a sample from a drug-treated organism, the PMD network can identify which phase I and phase II transformations occurred without pre-specifying which metabolites to look for.</p>
+<h2 id="applications-in-environmental-transformation">Applications in environmental transformation</h2>
+<p>Environmental samples contain complex mixtures of chemicals undergoing abiotic and biotic transformations. By computing the PMD network of a water, sediment, or biological tissue sample, one can identify which transformation reactions are active without knowing the identities of the parent compounds.</p>
+<h2 id="applications-in-endogenous-metabolomics">Applications in endogenous metabolomics</h2>
+<p>In human and animal metabolomics, reactomics connects measured metabolite abundances to the enzyme activities that produced them. The PMD network of a plasma or urine sample reflects the metabolic state of the organism — which biosynthetic and catabolic reactions are most active.</p>
+<h2 id="monthly-literature-collection">Monthly literature collection</h2>
+<p>New papers related to reactomics and PMD-based analysis, collected monthly from PubMed.</p>
+<!-- MONTHLY_UPDATES_START -->
+<h3 id="2026-03">2026-03</h3>
+<ul>
+<li><a href="https://doi.org/10.1016/j.watres.2025.125247">Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.</a> <em>Water research</em> (2025-12)</li>
+</ul>
+<!-- MONTHLY_UPDATES_END -->
+
+<h2 id="all-publications">All publications</h2>
+<p>Full collection of publications using or extending PMD-based reactomics, from the original paper (2020) to present. Updated monthly.</p>
+<!-- COLLECTION_START -->
+<h3 id="paired-mass-distance-and-chemical-reactions_1">Paired mass distance and chemical reactions</h3>
+<ul>
+<li><a href="https://doi.org/10.1016/j.watres.2026.125913">Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.</a> <em>Water research</em> (2026)</li>
+<li><a href="https://doi.org/10.1016/j.biortech.2026.134282">Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.</a> <em>Bioresource technology</em> (2026)</li>
+<li><a href="https://doi.org/10.1021/acs.est.5c14774">Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.</a> <em>Environmental science &amp; technology</em> (2026)</li>
+<li><a href="https://doi.org/10.1016/j.watres.2025.125056">Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.</a> <em>Water research</em> (2025)</li>
+<li><a href="https://doi.org/10.1158/1055-9965.EPI-25-0801">Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.</a> <em>Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.est.5c09633">Microbial Physiological Adaptation to Biodegradable Microplastics Drives the Transformation and Reactivity of Dissolved Organic Matter in Soil.</a> <em>Environmental science &amp; technology</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.jafc.5c05559">Molecular Humification Mechanisms of Dissolved Organic Matter during Maize Straw Composting Enhanced by Humus Soil Biomaterial: Paired-Molecule Mass Difference Reactomics Analysis Based on FT-ICR MS.</a> <em>Journal of agricultural and food chemistry</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.watres.2025.124331">Decoding periodate-driven phototransformation of dissolved organic matter in sunlit waters: Multidimensional property shifts and molecular network reconfiguration.</a> <em>Water research</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.jece.2025.117411">Identifying the impacts of photochemical and biological processes on wastewater effluent organic matter in receiving water using directed paired mass distance</a> <em>Journal of Environmental Chemical Engineering</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.est.5c01794">Wildfire-Derived Pyrogenic Dissolved Organic Matter (pyDOM) Enhances Riverine DOM Reactivities and Nitrogen Metabolisms.</a> <em>Environmental science &amp; technology</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.tibs.2025.01.010">Toward an integrated omics approach for plant biosynthetic pathway discovery in the age of AI</a> <em>Trends in Biochemical Sciences</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.est.4c13557">Enhanced Release and Reactivity of Soil Water-Extractable Organic Matter Following Wildfire in a Subtropical Forest.</a> <em>Environmental science &amp; technology</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.envres.2024.120216">Revealing the interplay of dissolved organic matters variation with microbial symbiotic network in lime-treated sludge landscaping.</a> <em>Environmental research</em> (2024)</li>
+<li><a href="https://doi.org/10.1021/acs.est.4c03022">Complexation with Metal Ions Affects Chlorination Reactivity of Dissolved Organic Matter: Structural Reactomics of Emerging Disinfection Byproducts.</a> <em>Environmental science &amp; technology</em> (2024)</li>
+<li><a href="https://doi.org/10.1080/00032719.2024.2358160">Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)</a> <em>Analytical Letters</em> (2024)</li>
+<li><a href="https://doi.org/10.1021/acs.est.3c09534">Exploring Prenatal Exposure to Halogenated Compounds and Its Relationship with Birth Outcomes Using Nontarget Analysis</a> <em>Environmental Science &amp; Technology</em> (2024)</li>
+<li><a href="https://doi.org/10.1016/j.watres.2024.121231">Inhibitory effect of microplastics derived organic matters on humification reaction of organics in sewage sludge under alkali-hydrothermal treatment.</a> <em>Water research</em> (2024)</li>
+<li><a href="https://doi.org/10.1016/j.chemosphere.2023.140149">Tracking the transformation pathway of dissolved organic matters (DOMs) in biochars under sludge pyrolysis via reactomics and molecular network analysis.</a> <em>Chemosphere</em> (2023)</li>
+<li><a href="https://doi.org/10.3390/catal13020304">Ring-Opening Polymerization of rac-Lactide Catalyzed by Octahedral Nickel Carboxylate Complexes</a> <em>Catalysts</em> (2023)</li>
+<li><a href="https://doi.org/10.1016/j.watres.2022.119488">Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.</a> <em>Water research</em> (2022)</li>
+<li><a href="https://doi.org/10.1016/j.trac.2022.116656">In vivo solid phase microextraction for bioanalysis</a> <em>TrAC Trends in Analytical Chemistry</em> (2022)</li>
+<li><a href="https://doi.org/10.1016/j.trac.2021.116409">Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry</a> <em>TrAC Trends in Analytical Chemistry</em> (2021)</li>
+<li><a href="https://doi.org/10.1002/smtd.202000849">Single Cell Reactomics: Real-Time Single-Cell Activation Kinetics of Optically Trapped Macrophages.</a> <em>Small methods</em> (2021) — Extends reactomics to the single-cell level. Combines optical trapping with PMD-based reaction monitoring to track real-time metabolic activation kinetics in individual macrophages.</li>
+<li><a href="https://doi.org/10.1038/s42004-020-00403-z">Untargeted high-resolution paired mass distance data mining for retrieving general chemical relationships.</a> <em>Communications chemistry</em> (2020) — The original reactomics paper. Introduces the PMD concept: high-frequency mass differences in untargeted MS data directly encode active chemical reactions, enabling reaction-network reconstruction without compound identification.</li>
+<li><a href="https://doi.org/10.1016/j.jfca.2020.103484">Carbohydrate fraction characterisation of functional yogurts containing pectin and pectic oligosaccharides through convolutional networks</a> <em>Journal of Food Composition and Analysis</em> (2020)</li>
+<li><a href="https://doi.org/10.3390/separations7010006">Recent Advances in In Vivo SPME Sampling</a> <em>Separations</em> (2020)</li>
+<li><a href="https://doi.org/10.1101/855148">Reactomics: using mass spectrometry as a reaction detector</a> (2019)</li>
+</ul>
+<h3 id="pmd-network_1">PMD network</h3>
+<ul>
+<li><a href="https://doi.org/10.1016/j.watres.2025.125247">Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.</a> <em>Water research</em> (2025) — Uses frequency-based PMD analysis to reveal which transformation pathways are preferentially selected during organic matter mineralisation, linking reaction selectivity to treatment conditions.</li>
+<li><a href="https://doi.org/10.1021/acs.est.1c02584">Microbial Roles in Dissolved Organic Matter Transformation in Full-Scale Wastewater Treatment Processes Revealed by Reactomics and Comparative Genomics.</a> <em>Environmental science &amp; technology</em> (2021) — Pairs reactomics with comparative genomics. PMD-based reaction networks identify which microbial guilds drive specific dissolved-organic-matter transformations across full-scale wastewater treatment stages.</li>
+<li><a href="https://doi.org/10.1021/acs.est.0c01830">Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.</a> <em>Environmental science &amp; technology</em> (2020) — First application of PMD network to biotransformation tracing. Uses PMD-linked ion chains to map chlorinated paraffin metabolism in rice cells, demonstrating that reaction pathways can be recovered from untargeted data without compound annotation.</li>
+</ul>
+<h3 id="methods-and-tools_1">Methods and tools</h3>
+<ul>
+<li><a href="https://doi.org/10.1080/10408347.2025.2528134">Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review</a> <em>Critical Reviews in Analytical Chemistry</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.watres.2025.123645">Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.</a> <em>Water research</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.chemosphere.2025.144111">Unveiling molecular DOM reactomics and transformation coupled with multifunctional nanocomposites under anaerobic conditions: Tracking potential metabolomics and pathways.</a> <em>Chemosphere</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.est.3c06871">Deciphering Microbe-Mediated Dissolved Organic Matter Reactome in Wastewater Treatment Plants Using Directed Paired Mass Distance.</a> <em>Environmental science &amp; technology</em> (2023)</li>
+<li><a href="https://doi.org/10.1021/acs.est.3c05213">Interpretable Machine Learning and Reactomics Assisted Isotopically Labeled FT-ICR-MS for Exploring the Reactivity and Transformation of Natural Organic Matter during Ultraviolet Photolysis.</a> <em>Environmental science &amp; technology</em> (2023)</li>
+<li><a href="https://doi.org/10.1016/j.foodchem.2023.136150">A multiplatform metabolomics/reactomics approach as a powerful strategy to identify reaction compounds generated during hemicellulose hydrothermal extraction from agro-food biomasses.</a> <em>Food chemistry</em> (2023)</li>
+<li><a href="https://doi.org/10.1002/mnfr.202000615">A Novel LC-MS Based Targeted Metabolomic Approach to Study the Biomarkers of Food Intake.</a> <em>Molecular nutrition &amp; food research</em> (2020)</li>
+</ul>
+<h3 id="in-source-reactions-and-independent-ion-selection_1">In-source reactions and independent ion selection</h3>
+<ul>
+<li><a href="https://doi.org/10.1186/s13321-022-00586-8">Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.</a> <em>Journal of cheminformatics</em> (2022)</li>
+<li><a href="https://doi.org/10.1016/j.aca.2020.08.050">Metabolic profile of fish muscle tissue changes with sampling method, storage strategy and time.</a> <em>Analytica chimica acta</em> (2020)</li>
+<li><a href="https://doi.org/10.1007/s00330-019-06193-w">Prediction of response after chemoradiation for esophageal cancer using a combination of dosimetry and CT radiomics.</a> <em>European radiology</em> (2019)</li>
+<li><a href="https://doi.org/10.1016/j.aca.2018.10.062">Structure/reaction directed analysis for LC-MS based untargeted analysis.</a> <em>Analytica chimica acta</em> (2018) — Introduces the globalstd algorithm for data-driven independent ion selection. High-frequency PMDs among co-eluting peaks reveal widespread adducts and neutral losses; one representative ion per compound is retained, eliminating redundancy without a predefined adduct list.</li>
+</ul>
+<h3 id="applications-in-drug-metabolism_1">Applications in drug metabolism</h3>
+<ul>
+<li><a href="https://doi.org/10.1021/envhealth.3c00218">Active Molecular Network Discovery Links Lifestyle Variables to Breast Cancer in the Long Island Breast Cancer Study Project.</a> <em>Environment &amp; health (Washington, D.C.)</em> (2024)</li>
+<li><a href="https://doi.org/10.1016/j.jpha.2023.08.001">Mapping the metabolic responses to oxaliplatin-based chemotherapy with in vivo spatiotemporal metabolomics.</a> <em>Journal of pharmaceutical analysis</em> (2023)</li>
+<li><a href="https://doi.org/10.1016/j.jpha.2022.06.002">Metabolomic fingerprinting of porcine lung tissue during pre-clinical prolonged ex vivo lung perfusion using in vivo SPME coupled with LC-HRMS.</a> <em>Journal of pharmaceutical analysis</em> (2022)</li>
+<li><a href="https://doi.org/10.1021/acs.est.1c04039">Molecular Gatekeeper Discovery: Workflow for Linking Multiple Exposure Biomarkers to Metabolomics.</a> <em>Environmental science &amp; technology</em> (2022) — Introduces the molecular gatekeeper concept. Uses PMD analysis to link multiple environmental exposure biomarkers to downstream metabolomics, identifying hub metabolites that mediate exposure–health relationships.</li>
+<li><a href="https://doi.org/10.1021/acs.est.0c07184">Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.</a> <em>Environmental science &amp; technology</em> (2021)</li>
+</ul>
+<h3 id="applications-in-environmental-transformation_1">Applications in environmental transformation</h3>
+<ul>
+<li><a href="https://doi.org/10.1016/j.cej.2025.167655">FT-ICR MS and viral metagenomics reveal distinct mechanisms of lysogenic and lytic phage-driven DOM transformations in wastewater at formula-levels</a> <em>Chemical Engineering Journal</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.est.5c01928">Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants</a> <em>Environmental Science &amp; Technology</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acsestwater.4c01260">Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition</a> <em>ACS ES&amp;T Water</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.estlett.5c00284">MoleTrans: Browser-Based Webtool for Postanalysis on Molecular Chemodiversity and Transformation of Dissolved Organic Matters via FT-ICR MS</a> <em>Environmental Science &amp; Technology Letters</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.jhazmat.2025.137183">Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge</a> <em>Journal of Hazardous Materials</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.jhazmat.2024.137038">Effect of a high Cl– concentration on the transformation of waste leachate DOM by the UV/PMS system: A mechanistic study using the Suwannee River natural organic matter (SRNOM) as a simulator of waste leachate DOM</a> <em>Journal of Hazardous Materials</em> (2025)</li>
+<li><a href="https://doi.org/10.1038/s43247-025-02032-7">Long-term fertilization promotes the microbial-mediated transformation of soil dissolved organic matter</a> <em>Communications Earth &amp; Environment</em> (2025)</li>
+<li><a href="https://doi.org/10.1016/j.seppur.2024.128536">Photochemical transformation altered coagulation behavior and treatability of dissolved organic matters in water</a> <em>Separation and Purification Technology</em> (2025)</li>
+<li><a href="https://doi.org/10.1021/acs.est.4c08840">Network-Based Methods for Deciphering the Oxidizability of Complex Leachate DOM with <sup>•</sup>OH/O<sub>3</sub> via Molecular Signatures</a> <em>Environmental Science &amp; Technology</em> (2025)</li>
+<li><a href="https://doi.org/10.1186/s12859-024-05994-1">DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.</a> <em>BMC bioinformatics</em> (2024)</li>
+<li><a href="https://doi.org/10.1016/j.jpba.2024.116429">The impact of sampling time point on the lipidome composition</a> <em>Journal of Pharmaceutical and Biomedical Analysis</em> (2024)</li>
+<li><a href="https://doi.org/10.1016/j.cej.2024.157156">Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water</a> <em>Chemical Engineering Journal</em> (2024)</li>
+<li><a href="https://doi.org/10.1126/sciadv.adn1039">Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.</a> <em>Science advances</em> (2024)</li>
+<li><a href="https://doi.org/10.1016/j.watres.2024.121299">Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis</a> <em>Water Research</em> (2024)</li>
+<li><a href="https://doi.org/10.1021/acs.est.3c00199">Exploring the Complexities of Dissolved Organic Matter Photochemistry from the Molecular Level by Using Machine Learning Approaches</a> <em>Environmental Science &amp; Technology</em> (2023)</li>
+<li><a href="https://doi.org/10.1016/j.cej.2023.141881">Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment</a> <em>Chemical Engineering Journal</em> (2023)</li>
+<li><a href="https://doi.org/10.3390/toxics10120778">Bioaccumulation and Biotransformation of Chlorinated Paraffins.</a> <em>Toxics</em> (2022)</li>
+<li><a href="https://doi.org/10.1016/j.csbj.2022.09.004">Strategies for structure elucidation of small molecules based on LC-MS/MS data from complex biological samples.</a> <em>Computational and structural biotechnology journal</em> (2022)</li>
+<li><a href="https://doi.org/10.1016/j.envres.2022.112713">Novel insight into dissolved organic nitrogen (DON) transformation along wastewater treatment processes with special emphasis on endogenous-source DON.</a> <em>Environmental research</em> (2022)</li>
+<li><a href="https://doi.org/10.1021/acsenvironau.1c00024">In Vivo Solid-Phase Microextraction and Applications in Environmental Sciences.</a> <em>ACS environmental Au</em> (2021)</li>
+<li><a href="https://doi.org/10.1016/j.envint.2021.106849">Tooth biomarkers to characterize the temporal dynamics of the fetal and early-life exposome.</a> <em>Environment international</em> (2021)</li>
+<li><a href="https://doi.org/10.1021/acs.est.0c05111">Medium- and Short-Chain Chlorinated Paraffins in Mature Maize Plants and Corresponding Agricultural Soils.</a> <em>Environmental science &amp; technology</em> (2021)</li>
+<li><a href="https://doi.org/10.1007/978-981-13-9447-8_3">In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology</a> <em>A New Paradigm for Environmental Chemistry and Toxicology</em> (2019)</li>
+</ul>
+<h3 id="applications-in-endogenous-metabolomics_1">Applications in endogenous metabolomics</h3>
+<ul>
+<li><a href="https://doi.org/10.1021/acs.analchem.5c01213">mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry-Based Nontargeted Metabolomics Data Analysis</a> <em>Analytical Chemistry</em> (2025)</li>
+<li><a href="https://doi.org/10.1101/2023.11.14.567024">mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry Based Non-targeted Metabolomics Data Analysis</a> (2023)</li>
+<li><a href="https://doi.org/10.1021/acs.analchem.2c04995">Deep Characterization of Serum Metabolome Based on the Segment-Optimized Spectral-Stitching Direct-Infusion Fourier Transform Ion Cyclotron Resonance Mass Spectrometry Approach</a> <em>Analytical Chemistry</em> (2023)</li>
+<li><a href="https://doi.org/10.1016/j.jpba.2023.115400">A mass defect filtering combined background subtraction strategy for rapid screening and identification of metabolites in rat plasma after oral administration of Yindan Xinnaotong soft capsule</a> <em>Journal of Pharmaceutical and Biomedical Analysis</em> (2023)</li>
+<li><a href="https://doi.org/10.1016/j.xcrp.2022.100978">AI/ML-driven advances in untargeted metabolomics and exposomics for biomedical applications.</a> <em>Cell reports. Physical science</em> (2022)</li>
+<li><a href="https://doi.org/10.1038/s41592-021-01303-3">Metabolite discovery through global annotation of untargeted metabolomics data.</a> <em>Nature methods</em> (2021) — NetID uses global network optimisation for metabolite annotation. Incorporates PMD-based ion relationships to propagate identities from known to unannotated LC-MS peaks across the full dataset.</li>
+<li><a href="https://doi.org/10.1016/j.jpba.2020.113574">Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.</a> <em>Journal of pharmaceutical and biomedical analysis</em> (2020)</li>
+<li><a href="https://doi.org/10.1016/j.foodchem.2020.126619">A UPLC-Q-TOF-MS-based metabolomics approach for the evaluation of fermented mare’s milk to koumiss</a> <em>Food Chemistry</em> (2020)</li>
+<li><a href="https://doi.org/10.1101/2019.12.16.878637">Simulation-based comprehensive study of batch effects in metabolomics studies</a> (2019)</li>
+<li><a href="https://doi.org/10.3390/metabo9100200">The metaRbolomics Toolbox in Bioconductor and beyond.</a> <em>Metabolites</em> (2019)</li>
+</ul>
+<p><em>79 papers total. Last updated 2026-04-28.</em></p>
+<!-- COLLECTION_END -->
+
+<h2 id="monthly-archive">Monthly archive</h2>
+<!-- MONTHLY_ARCHIVE_START -->
+<ul>
+<li><a href="updates/2026-03.html">2026-03</a> — 1 paper</li>
+</ul>
+<!-- MONTHLY_ARCHIVE_END -->
+      </article>
+      <footer>
+        <p>Generated from <a href="https://github.com">source repository</a>. Content is machine-managed with monthly updates.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+(function () {
+  // Build TOC from headings in the article
+  var article = document.querySelector('article');
+  var tocList = document.getElementById('toc-list');
+  if (!article || !tocList) return;
+
+  var headings = article.querySelectorAll('h2, h3');
+  if (headings.length === 0) return;
+
+  headings.forEach(function (h) {
+    if (!h.id) return;
+    var li = document.createElement('li');
+    li.className = h.tagName === 'H3' ? 'toc-h3' : 'toc-h2';
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent.replace(/\s*\d+\s*$/, '');
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  // Highlight active section using IntersectionObserver
+  var links = tocList.querySelectorAll('a');
+  var activeId = null;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        activeId = entry.target.id;
+        links.forEach(function (a) {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+        });
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+
+  headings.forEach(function (h) { if (h.id) observer.observe(h); });
+
+  // Style publication lists: wrap content in .pub-list
+  var allPubSection = document.getElementById('all-publications');
+  if (allPubSection) {
+    var el = allPubSection.nextElementSibling;
+    while (el) {
+      if (el.tagName === 'H2') break;
+      if (el.tagName === 'H3') {
+        // Add count badge
+        var nextUl = el.nextElementSibling;
+        while (nextUl && nextUl.tagName !== 'UL') nextUl = nextUl.nextElementSibling;
+        if (nextUl) {
+          var count = nextUl.querySelectorAll('li').length;
+          var badge = document.createElement('span');
+          badge.className = 'section-count';
+          badge.textContent = count;
+          el.appendChild(badge);
+          nextUl.classList.add('pub-list');
+          // Wrap li contents
+          nextUl.querySelectorAll('li').forEach(function (li) {
+            var a = li.querySelector('a');
+            var em = li.querySelector('em');
+            if (a) {
+              var titleSpan = document.createElement('span');
+              titleSpan.className = 'pub-title';
+              titleSpan.appendChild(a.cloneNode(true));
+              li.innerHTML = '';
+              li.appendChild(titleSpan);
+              if (em) {
+                var metaSpan = document.createElement('span');
+                metaSpan.className = 'pub-meta';
+                metaSpan.innerHTML = em.outerHTML;
+                li.appendChild(metaSpan);
+              }
+            }
+          });
+        }
+      }
+      el = el.nextElementSibling;
+    }
+  }
+})();
+</script>
+</body>
+</html>

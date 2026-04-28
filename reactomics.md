@@ -1,0 +1,240 @@
+# Reactomics
+
+**Reactomics** is the study of chemical reactions as a system — specifically, using **paired mass distances (PMDs)** observed in mass spectrometry data to identify and map the reaction networks operating in biological, environmental, and chemical systems. The concept was formally introduced in ["Reactomics: using mass spectrometry as a chemical reaction detector"](https://doi.org/10.1038/s42004-020-00403-z) (Communications Chemistry, 2020), where it was shown that the mass differences between pairs of ions in a metabolomics dataset directly encode the chemical reactions that connect them.
+
+The core insight is simple but powerful: **a fixed mass difference between two molecules corresponds to a specific chemical reaction or biotransformation**. By cataloguing these paired mass distances across an untargeted metabolomics dataset, one can reconstruct the reaction networks active in a sample without prior knowledge of compound identities.
+
+This page collects publications related to reactomics and PMD-based analysis. New papers are added monthly.
+
+## Why reactomics matters
+
+Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.
+
+Reactomics addresses this gap by treating **reactions as first-class objects**. Rather than asking "which metabolites differ between groups?", reactomics asks "which reactions differ between groups?" and "what reaction network is active in this sample?". This shift has several practical consequences:
+
+- Reaction-based analysis is **more robust to annotation gaps** than compound-based analysis, because PMDs can be computed for any peak pair regardless of whether the peaks have been annotated.
+- Reactions are **chemically interpretable** — a PMD of 2.0157 (H₂) means reduction; a PMD of 14.0157 (CH₂) means methylation or chain elongation. The network is readable without a lookup table.
+- Reaction networks can be **compared across conditions**, across species, and across sample types in a way that metabolite lists often cannot.
+- The approach connects naturally to **biochemical pathway databases** (KEGG, HMDB reactions, Reactome) while remaining usable when compound annotation is incomplete.
+
+## Paired mass distance and chemical reactions
+
+### The PMD concept
+
+A **paired mass distance (PMD)** is the absolute difference in accurate mass between two ions detected in the same mass spectrometry dataset. For example:
+
+| PMD (Da) | Formula change | Reaction type |
+|----------|----------------|---------------|
+| 2.0157   | H₂             | Reduction / hydrogenation |
+| 14.0157  | CH₂            | Methylation, chain elongation |
+| 15.9949  | O              | Oxidation (single oxygen) |
+| 17.0027  | OH             | Hydroxylation |
+| 18.0106  | H₂O            | Hydration / dehydration |
+| 28.0313  | C₂H₄           | Ethylation |
+| 42.0106  | C₂H₂O          | Acetylation |
+| 79.9663  | HPO₃           | Phosphorylation |
+| 162.0528 | C₆H₁₀O₅        | Hexose addition (glycosylation) |
+
+When two ions have a PMD matching a known reaction, they are candidates for a substrate–product pair of that reaction. When many such pairs are found in a dataset, the reaction is inferred to be active in the biological or chemical system under study.
+
+### PMD network
+
+Ion pairs connected by chemically meaningful PMDs form a **PMD network**. Nodes are ions (detected m/z values); edges are labeled by the PMD (i.e., the reaction type). The PMD network summarizes the full reaction landscape of a sample in a single data structure.
+
+Key properties of the PMD network:
+
+- It is **computable from any untargeted LC-MS dataset** without annotation.
+- The degree distribution of nodes reflects which compounds are most metabolically active.
+- Comparison of PMD networks between conditions reveals which reactions are up- or down-regulated, analogous to differential expression analysis.
+- Subnetworks often correspond to known biochemical pathways, providing a path to biological interpretation.
+
+The PMD network is constructed using the `getchain()` function in the [`pmd` R package](https://yufree.github.io/pmd/), which traces reaction chains through the ion list by following consecutive PMD edges.
+
+## Methods and tools
+
+### Computing PMDs
+
+PMD analysis requires **accurate mass measurements**, typically from high-resolution instruments such as Orbitrap or Q-TOF mass spectrometers. The mass accuracy required to distinguish between isobaric reactions (e.g., CO at 27.9949 vs. C₂H₄ at 28.0313) is approximately 5 ppm or better.
+
+The workflow is:
+
+1. **Peak detection** — extract a peak list with accurate m/z values from raw LC-MS data (e.g., using XCMS, MZmine, or similar tools).
+2. **PMD calculation** — compute all pairwise mass differences; filter to retain only those matching a curated list of chemically meaningful reactions.
+3. **Network construction** — build the PMD network using `getchain()`, which links ions into reaction chains.
+4. **Quantitative analysis** — use `getreact()` to compute substrate–product intensity ratios across samples; apply network analysis metrics or pathway annotation.
+
+### Quantitative reaction analysis
+
+Beyond identifying which reactions are present, PMDs enable **quantitative reaction analysis**: for any substrate–product ion pair connected by a PMD, the ratio of their intensities across samples reflects how actively that reaction is proceeding. `getreact()` implements this by computing per-sample intensity ratios for all PMD-linked pairs and returning a reaction-by-sample matrix suitable for downstream statistical comparison.
+
+This makes it possible to ask not just "which reactions are active?" but "which reactions differ significantly between conditions?" — treating reactions as the unit of analysis rather than individual metabolites. The approach is annotation-free: a PMD value of 15.9949 Da (oxygen addition) quantifies oxidation activity across every ion pair in the dataset, regardless of whether the compounds have been identified.
+
+### The pmd R package
+
+The [`pmd` package](https://cran.r-project.org/package=pmd) provides a complete implementation of reactomics analysis in R:
+
+- `getpaired()` — identifies ion pairs linked by specific PMDs
+- `getchain()` — constructs the PMD network by tracing reaction chains through the ion list
+- `getreact()` — computes quantitative reaction activity from substrate–product intensity ratios; returns a reaction-by-sample matrix for statistical comparison
+- `getstd()` — extracts stable isotope-related pairs for quality control
+- Visualization functions for network plots and reaction heatmaps
+
+The package handles both positive and negative ionization mode data and integrates with standard metabolomics workflows.
+
+### PMD databases and reaction lists
+
+Reactomics relies on curated PMD reference lists corresponding to known biochemical reactions. The `pmd` package ships several built-in datasets:
+
+- **`keggrall`** — PMDs derived from KEGG enzyme-catalyzed reactions, with reaction formula and KEGG ID
+- **`hmdb`** — high-frequency PMDs from HMDB human metabolite entries
+- **`omics`** — a merged multi-database reaction PMD table covering major omics reactions
+- **`sda`** — common PMDs for substructure differences, ion replacements, and reactions
+- **`MaConDa`** — mass spectrometry contaminant PMDs for background checking
+
+## In-source reactions and independent ion selection
+
+In-source reactions — adduct formation, in-source fragmentation, and isotope patterns — also produce characteristic mass differences between ion pairs in an LC-MS dataset. These are analytical artefacts rather than biological reactions, yet they follow the same PMD logic: a fixed mass difference between two ions encodes a specific process connecting them.
+
+This observation underlies the **globalstd algorithm**, introduced in [Yu, Olkowicz & Pawliszyn (2019)](https://doi.org/10.1016/j.aca.2018.10.062) and implemented in the `pmd` package. Crucially, globalstd is **data-driven**: it does not rely on a predefined adduct list. Instead, it discovers which mass differences are genuinely widespread in the current dataset and uses that evidence to define redundancy. The algorithm works in three steps:
+
+1. **Retention-time clustering** — co-eluting ions are grouped together as likely originating from the same compound.
+2. **Data-driven high-frequency PMD detection** — pairwise mass differences are computed within each RT group. PMDs that appear at high frequency across many groups are inferred to represent **widely-occurring adducts and neutral losses** (e.g., Na/H exchange, ¹³C isotope, common solvent adducts). Because every compound that undergoes a given in-source reaction contributes the same PMD, these mass differences accumulate to anomalously high counts — a signal that is entirely derived from the data itself.
+3. **Independent ion screening** — using the discovered high-frequency PMDs, one representative ion is retained per compound cluster; redundant adducts, isotopologue peaks, and in-source fragments are removed.
+
+The result is a **non-redundant set of independent ions** that preserves full chemical diversity while eliminating peak multiplicity. No prior knowledge of which adducts to expect is required.
+
+## Applications in drug metabolism
+
+Drug metabolism generates a predictable set of biotransformation products. Phase I reactions (oxidation, reduction, hydrolysis) and Phase II reactions (conjugation) each correspond to specific PMDs. Reactomics enables **untargeted drug metabolism profiling**: given a sample from a drug-treated organism, the PMD network can identify which phase I and phase II transformations occurred without pre-specifying which metabolites to look for.
+
+## Applications in environmental transformation
+
+Environmental samples contain complex mixtures of chemicals undergoing abiotic and biotic transformations. By computing the PMD network of a water, sediment, or biological tissue sample, one can identify which transformation reactions are active without knowing the identities of the parent compounds.
+
+## Applications in endogenous metabolomics
+
+In human and animal metabolomics, reactomics connects measured metabolite abundances to the enzyme activities that produced them. The PMD network of a plasma or urine sample reflects the metabolic state of the organism — which biosynthetic and catabolic reactions are most active.
+
+## Monthly literature collection
+
+New papers related to reactomics and PMD-based analysis, collected monthly from PubMed.
+
+<!-- MONTHLY_UPDATES_START -->
+### 2026-03
+
+- [Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.](https://doi.org/10.1016/j.watres.2025.125247) *Water research* (2025-12)
+<!-- MONTHLY_UPDATES_END -->
+
+## All publications
+
+Full collection of publications using or extending PMD-based reactomics, from the original paper (2020) to present. Updated monthly.
+
+<!-- COLLECTION_START -->
+### Paired mass distance and chemical reactions
+
+- [Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.](https://doi.org/10.1016/j.watres.2026.125913) *Water research* (2026)
+- [Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.](https://doi.org/10.1016/j.biortech.2026.134282) *Bioresource technology* (2026)
+- [Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.](https://doi.org/10.1021/acs.est.5c14774) *Environmental science & technology* (2026)
+- [Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.](https://doi.org/10.1016/j.watres.2025.125056) *Water research* (2025)
+- [Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.](https://doi.org/10.1158/1055-9965.EPI-25-0801) *Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology* (2025)
+- [Microbial Physiological Adaptation to Biodegradable Microplastics Drives the Transformation and Reactivity of Dissolved Organic Matter in Soil.](https://doi.org/10.1021/acs.est.5c09633) *Environmental science & technology* (2025)
+- [Molecular Humification Mechanisms of Dissolved Organic Matter during Maize Straw Composting Enhanced by Humus Soil Biomaterial: Paired-Molecule Mass Difference Reactomics Analysis Based on FT-ICR MS.](https://doi.org/10.1021/acs.jafc.5c05559) *Journal of agricultural and food chemistry* (2025)
+- [Decoding periodate-driven phototransformation of dissolved organic matter in sunlit waters: Multidimensional property shifts and molecular network reconfiguration.](https://doi.org/10.1016/j.watres.2025.124331) *Water research* (2025)
+- [Identifying the impacts of photochemical and biological processes on wastewater effluent organic matter in receiving water using directed paired mass distance](https://doi.org/10.1016/j.jece.2025.117411) *Journal of Environmental Chemical Engineering* (2025)
+- [Wildfire-Derived Pyrogenic Dissolved Organic Matter (pyDOM) Enhances Riverine DOM Reactivities and Nitrogen Metabolisms.](https://doi.org/10.1021/acs.est.5c01794) *Environmental science & technology* (2025)
+- [Toward an integrated omics approach for plant biosynthetic pathway discovery in the age of AI](https://doi.org/10.1016/j.tibs.2025.01.010) *Trends in Biochemical Sciences* (2025)
+- [Enhanced Release and Reactivity of Soil Water-Extractable Organic Matter Following Wildfire in a Subtropical Forest.](https://doi.org/10.1021/acs.est.4c13557) *Environmental science & technology* (2025)
+- [Revealing the interplay of dissolved organic matters variation with microbial symbiotic network in lime-treated sludge landscaping.](https://doi.org/10.1016/j.envres.2024.120216) *Environmental research* (2024)
+- [Complexation with Metal Ions Affects Chlorination Reactivity of Dissolved Organic Matter: Structural Reactomics of Emerging Disinfection Byproducts.](https://doi.org/10.1021/acs.est.4c03022) *Environmental science & technology* (2024)
+- [Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)](https://doi.org/10.1080/00032719.2024.2358160) *Analytical Letters* (2024)
+- [Exploring Prenatal Exposure to Halogenated Compounds and Its Relationship with Birth Outcomes Using Nontarget Analysis](https://doi.org/10.1021/acs.est.3c09534) *Environmental Science &amp; Technology* (2024)
+- [Inhibitory effect of microplastics derived organic matters on humification reaction of organics in sewage sludge under alkali-hydrothermal treatment.](https://doi.org/10.1016/j.watres.2024.121231) *Water research* (2024)
+- [Tracking the transformation pathway of dissolved organic matters (DOMs) in biochars under sludge pyrolysis via reactomics and molecular network analysis.](https://doi.org/10.1016/j.chemosphere.2023.140149) *Chemosphere* (2023)
+- [Ring-Opening Polymerization of rac-Lactide Catalyzed by Octahedral Nickel Carboxylate Complexes](https://doi.org/10.3390/catal13020304) *Catalysts* (2023)
+- [Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.](https://doi.org/10.1016/j.watres.2022.119488) *Water research* (2022)
+- [In vivo solid phase microextraction for bioanalysis](https://doi.org/10.1016/j.trac.2022.116656) *TrAC Trends in Analytical Chemistry* (2022)
+- [Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry](https://doi.org/10.1016/j.trac.2021.116409) *TrAC Trends in Analytical Chemistry* (2021)
+- [Single Cell Reactomics: Real-Time Single-Cell Activation Kinetics of Optically Trapped Macrophages.](https://doi.org/10.1002/smtd.202000849) *Small methods* (2021) — Extends reactomics to the single-cell level. Combines optical trapping with PMD-based reaction monitoring to track real-time metabolic activation kinetics in individual macrophages.
+- [Untargeted high-resolution paired mass distance data mining for retrieving general chemical relationships.](https://doi.org/10.1038/s42004-020-00403-z) *Communications chemistry* (2020) — The original reactomics paper. Introduces the PMD concept: high-frequency mass differences in untargeted MS data directly encode active chemical reactions, enabling reaction-network reconstruction without compound identification.
+- [Carbohydrate fraction characterisation of functional yogurts containing pectin and pectic oligosaccharides through convolutional networks](https://doi.org/10.1016/j.jfca.2020.103484) *Journal of Food Composition and Analysis* (2020)
+- [Recent Advances in In Vivo SPME Sampling](https://doi.org/10.3390/separations7010006) *Separations* (2020)
+- [Reactomics: using mass spectrometry as a reaction detector](https://doi.org/10.1101/855148) (2019)
+
+### PMD network
+
+- [Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.](https://doi.org/10.1016/j.watres.2025.125247) *Water research* (2025) — Uses frequency-based PMD analysis to reveal which transformation pathways are preferentially selected during organic matter mineralisation, linking reaction selectivity to treatment conditions.
+- [Microbial Roles in Dissolved Organic Matter Transformation in Full-Scale Wastewater Treatment Processes Revealed by Reactomics and Comparative Genomics.](https://doi.org/10.1021/acs.est.1c02584) *Environmental science & technology* (2021) — Pairs reactomics with comparative genomics. PMD-based reaction networks identify which microbial guilds drive specific dissolved-organic-matter transformations across full-scale wastewater treatment stages.
+- [Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.](https://doi.org/10.1021/acs.est.0c01830) *Environmental science & technology* (2020) — First application of PMD network to biotransformation tracing. Uses PMD-linked ion chains to map chlorinated paraffin metabolism in rice cells, demonstrating that reaction pathways can be recovered from untargeted data without compound annotation.
+
+### Methods and tools
+
+- [Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review](https://doi.org/10.1080/10408347.2025.2528134) *Critical Reviews in Analytical Chemistry* (2025)
+- [Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.](https://doi.org/10.1016/j.watres.2025.123645) *Water research* (2025)
+- [Unveiling molecular DOM reactomics and transformation coupled with multifunctional nanocomposites under anaerobic conditions: Tracking potential metabolomics and pathways.](https://doi.org/10.1016/j.chemosphere.2025.144111) *Chemosphere* (2025)
+- [Deciphering Microbe-Mediated Dissolved Organic Matter Reactome in Wastewater Treatment Plants Using Directed Paired Mass Distance.](https://doi.org/10.1021/acs.est.3c06871) *Environmental science & technology* (2023)
+- [Interpretable Machine Learning and Reactomics Assisted Isotopically Labeled FT-ICR-MS for Exploring the Reactivity and Transformation of Natural Organic Matter during Ultraviolet Photolysis.](https://doi.org/10.1021/acs.est.3c05213) *Environmental science & technology* (2023)
+- [A multiplatform metabolomics/reactomics approach as a powerful strategy to identify reaction compounds generated during hemicellulose hydrothermal extraction from agro-food biomasses.](https://doi.org/10.1016/j.foodchem.2023.136150) *Food chemistry* (2023)
+- [A Novel LC-MS Based Targeted Metabolomic Approach to Study the Biomarkers of Food Intake.](https://doi.org/10.1002/mnfr.202000615) *Molecular nutrition & food research* (2020)
+
+### In-source reactions and independent ion selection
+
+- [Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.](https://doi.org/10.1186/s13321-022-00586-8) *Journal of cheminformatics* (2022)
+- [Metabolic profile of fish muscle tissue changes with sampling method, storage strategy and time.](https://doi.org/10.1016/j.aca.2020.08.050) *Analytica chimica acta* (2020)
+- [Prediction of response after chemoradiation for esophageal cancer using a combination of dosimetry and CT radiomics.](https://doi.org/10.1007/s00330-019-06193-w) *European radiology* (2019)
+- [Structure/reaction directed analysis for LC-MS based untargeted analysis.](https://doi.org/10.1016/j.aca.2018.10.062) *Analytica chimica acta* (2018) — Introduces the globalstd algorithm for data-driven independent ion selection. High-frequency PMDs among co-eluting peaks reveal widespread adducts and neutral losses; one representative ion per compound is retained, eliminating redundancy without a predefined adduct list.
+
+### Applications in drug metabolism
+
+- [Active Molecular Network Discovery Links Lifestyle Variables to Breast Cancer in the Long Island Breast Cancer Study Project.](https://doi.org/10.1021/envhealth.3c00218) *Environment & health (Washington, D.C.)* (2024)
+- [Mapping the metabolic responses to oxaliplatin-based chemotherapy with in vivo spatiotemporal metabolomics.](https://doi.org/10.1016/j.jpha.2023.08.001) *Journal of pharmaceutical analysis* (2023)
+- [Metabolomic fingerprinting of porcine lung tissue during pre-clinical prolonged ex vivo lung perfusion using in vivo SPME coupled with LC-HRMS.](https://doi.org/10.1016/j.jpha.2022.06.002) *Journal of pharmaceutical analysis* (2022)
+- [Molecular Gatekeeper Discovery: Workflow for Linking Multiple Exposure Biomarkers to Metabolomics.](https://doi.org/10.1021/acs.est.1c04039) *Environmental science & technology* (2022) — Introduces the molecular gatekeeper concept. Uses PMD analysis to link multiple environmental exposure biomarkers to downstream metabolomics, identifying hub metabolites that mediate exposure–health relationships.
+- [Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.](https://doi.org/10.1021/acs.est.0c07184) *Environmental science & technology* (2021)
+
+### Applications in environmental transformation
+
+- [FT-ICR MS and viral metagenomics reveal distinct mechanisms of lysogenic and lytic phage-driven DOM transformations in wastewater at formula-levels](https://doi.org/10.1016/j.cej.2025.167655) *Chemical Engineering Journal* (2025)
+- [Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants](https://doi.org/10.1021/acs.est.5c01928) *Environmental Science &amp; Technology* (2025)
+- [Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition](https://doi.org/10.1021/acsestwater.4c01260) *ACS ES&amp;T Water* (2025)
+- [MoleTrans: Browser-Based Webtool for Postanalysis on Molecular Chemodiversity and Transformation of Dissolved Organic Matters via FT-ICR MS](https://doi.org/10.1021/acs.estlett.5c00284) *Environmental Science &amp; Technology Letters* (2025)
+- [Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge](https://doi.org/10.1016/j.jhazmat.2025.137183) *Journal of Hazardous Materials* (2025)
+- [Effect of a high Cl– concentration on the transformation of waste leachate DOM by the UV/PMS system: A mechanistic study using the Suwannee River natural organic matter (SRNOM) as a simulator of waste leachate DOM](https://doi.org/10.1016/j.jhazmat.2024.137038) *Journal of Hazardous Materials* (2025)
+- [Long-term fertilization promotes the microbial-mediated transformation of soil dissolved organic matter](https://doi.org/10.1038/s43247-025-02032-7) *Communications Earth &amp; Environment* (2025)
+- [Photochemical transformation altered coagulation behavior and treatability of dissolved organic matters in water](https://doi.org/10.1016/j.seppur.2024.128536) *Separation and Purification Technology* (2025)
+- [Network-Based Methods for Deciphering the Oxidizability of Complex Leachate DOM with <sup>•</sup>OH/O<sub>3</sub> via Molecular Signatures](https://doi.org/10.1021/acs.est.4c08840) *Environmental Science &amp; Technology* (2025)
+- [DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.](https://doi.org/10.1186/s12859-024-05994-1) *BMC bioinformatics* (2024)
+- [The impact of sampling time point on the lipidome composition](https://doi.org/10.1016/j.jpba.2024.116429) *Journal of Pharmaceutical and Biomedical Analysis* (2024)
+- [Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water](https://doi.org/10.1016/j.cej.2024.157156) *Chemical Engineering Journal* (2024)
+- [Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.](https://doi.org/10.1126/sciadv.adn1039) *Science advances* (2024)
+- [Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis](https://doi.org/10.1016/j.watres.2024.121299) *Water Research* (2024)
+- [Exploring the Complexities of Dissolved Organic Matter Photochemistry from the Molecular Level by Using Machine Learning Approaches](https://doi.org/10.1021/acs.est.3c00199) *Environmental Science &amp; Technology* (2023)
+- [Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment](https://doi.org/10.1016/j.cej.2023.141881) *Chemical Engineering Journal* (2023)
+- [Bioaccumulation and Biotransformation of Chlorinated Paraffins.](https://doi.org/10.3390/toxics10120778) *Toxics* (2022)
+- [Strategies for structure elucidation of small molecules based on LC-MS/MS data from complex biological samples.](https://doi.org/10.1016/j.csbj.2022.09.004) *Computational and structural biotechnology journal* (2022)
+- [Novel insight into dissolved organic nitrogen (DON) transformation along wastewater treatment processes with special emphasis on endogenous-source DON.](https://doi.org/10.1016/j.envres.2022.112713) *Environmental research* (2022)
+- [In Vivo Solid-Phase Microextraction and Applications in Environmental Sciences.](https://doi.org/10.1021/acsenvironau.1c00024) *ACS environmental Au* (2021)
+- [Tooth biomarkers to characterize the temporal dynamics of the fetal and early-life exposome.](https://doi.org/10.1016/j.envint.2021.106849) *Environment international* (2021)
+- [Medium- and Short-Chain Chlorinated Paraffins in Mature Maize Plants and Corresponding Agricultural Soils.](https://doi.org/10.1021/acs.est.0c05111) *Environmental science & technology* (2021)
+- [In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology](https://doi.org/10.1007/978-981-13-9447-8_3) *A New Paradigm for Environmental Chemistry and Toxicology* (2019)
+
+### Applications in endogenous metabolomics
+
+- [mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry-Based Nontargeted Metabolomics Data Analysis](https://doi.org/10.1021/acs.analchem.5c01213) *Analytical Chemistry* (2025)
+- [mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry Based Non-targeted Metabolomics Data Analysis](https://doi.org/10.1101/2023.11.14.567024) (2023)
+- [Deep Characterization of Serum Metabolome Based on the Segment-Optimized Spectral-Stitching Direct-Infusion Fourier Transform Ion Cyclotron Resonance Mass Spectrometry Approach](https://doi.org/10.1021/acs.analchem.2c04995) *Analytical Chemistry* (2023)
+- [A mass defect filtering combined background subtraction strategy for rapid screening and identification of metabolites in rat plasma after oral administration of Yindan Xinnaotong soft capsule](https://doi.org/10.1016/j.jpba.2023.115400) *Journal of Pharmaceutical and Biomedical Analysis* (2023)
+- [AI/ML-driven advances in untargeted metabolomics and exposomics for biomedical applications.](https://doi.org/10.1016/j.xcrp.2022.100978) *Cell reports. Physical science* (2022)
+- [Metabolite discovery through global annotation of untargeted metabolomics data.](https://doi.org/10.1038/s41592-021-01303-3) *Nature methods* (2021) — NetID uses global network optimisation for metabolite annotation. Incorporates PMD-based ion relationships to propagate identities from known to unannotated LC-MS peaks across the full dataset.
+- [Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.](https://doi.org/10.1016/j.jpba.2020.113574) *Journal of pharmaceutical and biomedical analysis* (2020)
+- [A UPLC-Q-TOF-MS-based metabolomics approach for the evaluation of fermented mare’s milk to koumiss](https://doi.org/10.1016/j.foodchem.2020.126619) *Food Chemistry* (2020)
+- [Simulation-based comprehensive study of batch effects in metabolomics studies](https://doi.org/10.1101/2019.12.16.878637) (2019)
+- [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019)
+
+*79 papers total. Last updated 2026-04-28.*
+<!-- COLLECTION_END -->
+
+## Monthly archive
+
+<!-- MONTHLY_ARCHIVE_START -->
+- [2026-03](updates/2026-03.html) — 1 paper
+<!-- MONTHLY_ARCHIVE_END -->

@@ -1,0 +1,95 @@
+name: Monthly reactomics update
+
+on:
+  schedule:
+    - cron: "0 16 3 * *"
+  workflow_dispatch:
+    inputs:
+      target_month:
+        description: "Month to rebuild in YYYY-MM format (e.g. 2026-03)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  monthly-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TARGET_MONTH: ${{ github.event.inputs.target_month || '' }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      LLM_MODEL: ${{ secrets.LLM_MODEL }}
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate inputs
+        if: github.event.inputs.target_month != ''
+        run: |
+          if ! [[ "${{ github.event.inputs.target_month }}" =~ ^[0-9]{4}-(0[1-9]|1[0-2])$ ]]; then
+            echo "::error::target_month must be YYYY-MM format with valid month (01-12), got '${{ github.event.inputs.target_month }}'"
+            exit 1
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Log execution mode
+        run: |
+          echo "### Execution Mode" >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$TARGET_MONTH" ]; then
+            echo "Rebuilding specific month: $TARGET_MONTH" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Running scheduled monthly update" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -z "$LLM_API_KEY" ]; then
+            echo "LLM: **not configured** — review queue only" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "LLM: configured (model: $LLM_MODEL)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Build full collection (bib + all PubMed history)
+        run: python scripts/build_collection.py
+
+      - name: Fetch monthly papers
+        run: python scripts/fetch_monthly_papers.py
+
+      - name: Select monthly updates
+        run: python scripts/select_monthly_updates.py
+
+      - name: Update markdown and archives
+        run: python scripts/update_site.py
+
+      - name: Render HTML
+        run: python scripts/render_site.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git add reactomics.md reactomics_zh.md reactomics.bib index.html reactomics.html index_zh.html reactomics_zh.html data/ updates/
+          git commit -m "Update monthly reactomics content ($(date +%Y-%m))"
+          git push
+
+      - name: Upload debug artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-data-${{ github.run_id }}
+          path: |
+            data/papers.json
+            data/selected-updates.json
+          retention-days: 14

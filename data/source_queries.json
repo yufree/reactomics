@@ -1,0 +1,14 @@
+[
+  {
+    "name": "core-reactomics",
+    "query": "reactomics[Title/Abstract]"
+  },
+  {
+    "name": "pmd-mass-distance",
+    "query": "\"paired mass distance\"[Title/Abstract]"
+  },
+  {
+    "name": "globalstd",
+    "query": "globalstd[Title/Abstract] OR (\"independent ion\"[Title/Abstract] AND \"mass spectrometry\"[Title/Abstract] AND (\"in-source\"[Title/Abstract] OR \"adduct\"[Title/Abstract] OR \"redundant\"[Title/Abstract]))"
+  }
+]
