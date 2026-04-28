@@ -213,7 +213,22 @@ li { margin-bottom: .3rem; }
 .pub-list li:last-child { border-bottom: none; }
 .pub-list li::before { display: none; }
 .pub-list .pub-title { flex: 1; }
+.pub-list .pub-note { font-size: .8rem; color: var(--muted); }
 .pub-list .pub-meta { flex-shrink: 0; font-size: .75rem; color: var(--muted); white-space: nowrap; }
+
+/* ── DOM transformation sub-section indent ── */
+h3[id*="dom-transformation"],
+h3[id*="dom"] + ul,
+h3[id*="dom"] ~ ul:first-of-type {
+  margin-left: 1.4rem;
+}
+h3[id*="dom-transformation"] {
+  font-size: .92em;
+  color: var(--muted);
+  border-left: 3px solid var(--border);
+  padding-left: .6rem;
+  margin-left: 1rem;
+}
 
 /* ── Section badge ── */
 .section-heading {
@@ -338,9 +353,22 @@ footer {
             var a = li.querySelector('a');
             var em = li.querySelector('em');
             if (a) {
+              // Extract annotation text (text nodes after the <em>)
+              var annotationText = '';
+              li.childNodes.forEach(function (node) {
+                if (node.nodeType === 3 && node.textContent.includes('—')) {
+                  annotationText = node.textContent.replace(/^\s*—\s*/, '').trim();
+                }
+              });
               var titleSpan = document.createElement('span');
               titleSpan.className = 'pub-title';
               titleSpan.appendChild(a.cloneNode(true));
+              if (annotationText) {
+                var noteSpan = document.createElement('span');
+                noteSpan.className = 'pub-note';
+                noteSpan.textContent = ' — ' + annotationText;
+                titleSpan.appendChild(noteSpan);
+              }
               li.innerHTML = '';
               li.appendChild(titleSpan);
               if (em) {

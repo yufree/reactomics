@@ -17,13 +17,14 @@ SELECTION_FILE = DATA_DIR / "selected-updates.json"
 HISTORY_FILE = DATA_DIR / "monthly-updates.json"
 
 SECTION_ORDER_ZH = {
-    "Paired mass distance and chemical reactions": "配对质量距离与化学反应",
-    "PMD network": "PMD网络",
     "Methods and tools": "方法与工具",
     "In-source reactions and independent ion selection": "源内反应与独立峰选择",
-    "Applications in drug metabolism": "药物代谢应用",
+    "PMD network": "PMD网络",
     "Applications in environmental transformation": "环境转化应用",
+    "DOM transformation": "↳ DOM（天然有机质）转化",
+    "Applications in drug metabolism": "药物代谢应用",
     "Applications in endogenous metabolomics": "内源性代谢组学应用",
+    "Reviews": "综述",
 }
 
 UPDATES_START = "<!-- MONTHLY_UPDATES_START -->"
@@ -101,13 +102,14 @@ def render_archive_block(history):
 
 
 SECTION_ORDER = [
-    "Paired mass distance and chemical reactions",
-    "PMD network",
     "Methods and tools",
     "In-source reactions and independent ion selection",
-    "Applications in drug metabolism",
+    "PMD network",
     "Applications in environmental transformation",
+    "DOM transformation",
+    "Applications in drug metabolism",
     "Applications in endogenous metabolomics",
+    "Reviews",
 ]
 
 

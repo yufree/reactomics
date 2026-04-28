@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-28T01:57:17+00:00",
+  "generated_at": "2026-04-28T14:18:57+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-04-27",
-  "total": 79,
+  "end_date": "2026-04-28",
+  "total": 75,
   "papers": [
     {
       "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
@@ -22,7 +22,8 @@
       ],
       "source": "pubmed",
       "pmid": "41980437",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "PMD analysis of FT-ICR MS data reveals that oxygenation (+O) reactions precede and dominate chlorination in disinfection byproduct formation during UV/chlorine treatment, with over 93% of identified precursors undergoing oxygenation before chlorination."
     },
     {
       "title": "Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.",
@@ -46,7 +47,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "41747906",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "PMD network analysis of FT-ICR MS data elucidates DOM transformation in multi-stage biological contact oxidation, linking six key microbial genera to 70 PMDs associated with glycolysis and amino acid metabolic pathways."
     },
     {
       "title": "Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.",
@@ -66,7 +68,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "41540359",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Applications in environmental transformation",
+      "annotation": "Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes."
     },
     {
       "title": "Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.",
@@ -111,7 +114,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "41344131",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Applications in environmental transformation",
+      "annotation": "Reactomics network analysis shows that aged microplastics stimulate metabolite turnover of nitrogenous and sulfurous compounds and increase molecular transformation network complexity, promoting antibiotic resistance gene exchange in anaerobic sludge digestion."
     },
     {
       "title": "Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.",
@@ -133,7 +137,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "40932331",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Applications in drug metabolism",
+      "annotation": "Applies the quantitative PMD (qPMD) reactomics approach to neonatal dried blood spots and maternal pregnancy serum, identifying nine DBS qPMDs associated with pediatric ALL risk and suggesting early-life metabolic reactivity hubs linked to leukemogenesis."
     },
     {
       "title": "FT-ICR MS and viral metagenomics reveal distinct mechanisms of lysogenic and lytic phage-driven DOM transformations in wastewater at formula-levels",
@@ -156,7 +161,7 @@
         "Tiecheng Wang"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation"
     },
     {
       "title": "Microbial Physiological Adaptation to Biodegradable Microplastics Drives the Transformation and Reactivity of Dissolved Organic Matter in Soil.",
@@ -176,7 +181,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "40924621",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Combines stable isotope tracing, reactomics, and metagenomics to show that PLA microplastics induce oxidative lignin degradation while PHA promotes microbial anabolism, revealing contrasting DOM transformation pathways driven by different biodegradable plastics."
     },
     {
       "title": "Molecular Humification Mechanisms of Dissolved Organic Matter during Maize Straw Composting Enhanced by Humus Soil Biomaterial: Paired-Molecule Mass Difference Reactomics Analysis Based on FT-ICR MS.",
@@ -194,7 +200,8 @@
       ],
       "source": "bib+pubmed+oc",
       "pmid": "40811610",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Paired-molecule mass difference reactomics via FT-ICR MS identifies three molecular humification pathways—phenol-protein reaction, polyphenol self-condensation, and Maillard reaction—during humus-enhanced maize straw composting, with N-containing molecules showing the highest reactivity."
     },
     {
       "title": "mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry-Based Nontargeted Metabolomics Data Analysis",
@@ -208,7 +215,8 @@
         "Vivek Philip"
       ],
       "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Introduces the mzrtsim R package for simulating full-scan GC/LC-MS raw data (mzML format) from MoNA and HMDB spectra, enabling ground-truth benchmarking of metabolomics peak-extraction software and exposing false-positive peaks in XCMS, mzMine, and OpenMS."
     },
     {
       "title": "Decoding periodate-driven phototransformation of dissolved organic matter in sunlit waters: Multidimensional property shifts and molecular network reconfiguration.",
@@ -226,7 +234,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "40769065",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Combines FT-ICR MS-based PMD network analysis with interpretable machine learning to show that residual periodate from advanced oxidation enhances DOM photoreactivity 1.4–3.6-fold and promotes aromatic fragmentation via oxygenation-dominated reactions."
     },
     {
       "title": "Identifying the impacts of photochemical and biological processes on wastewater effluent organic matter in receiving water using directed paired mass distance",
@@ -244,7 +253,7 @@
         "Feng Xiao"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation"
     },
     {
       "title": "Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants",
@@ -272,7 +281,8 @@
         "Guibin Jiang"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "Reviews",
+      "annotation": "Reviews gut microbiota-mediated transformation of environmental pollutants, highlighting multi-omics integration and advanced mass spectrometry approaches for identifying transformation products and assessing pollutant bioavailability and health risks."
     },
     {
       "title": "Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review",
@@ -290,7 +300,8 @@
         "Vinicius Kartnaller"
       ],
       "source": "crossref+oc",
-      "section": "Methods and tools"
+      "section": "Reviews",
+      "annotation": "Systematic review of 33 computational tools for chromatographic MS data processing published 2018–2024, covering advances in peak detection, alignment, and deconvolution including machine learning approaches, with emphasis on open-source solutions."
     },
     {
       "title": "Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition",
@@ -305,7 +316,7 @@
         "Weiming Chen"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation"
     },
     {
       "title": "Wildfire-Derived Pyrogenic Dissolved Organic Matter (pyDOM) Enhances Riverine DOM Reactivities and Nitrogen Metabolisms.",
@@ -326,7 +337,8 @@
       ],
       "source": "bib+pubmed+oc",
       "pmid": "40481773",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "High-resolution MS and substrate-explicit modeling show that wildfire-derived pyrogenic DOM increases refractory aromatic components in river water; reactomics analysis reveals an enhanced potential for microbial oxidative reactions linked to higher nominal oxidation state of carbon."
     },
     {
       "title": "MoleTrans: Browser-Based Webtool for Postanalysis on Molecular Chemodiversity and Transformation of Dissolved Organic Matters via FT-ICR MS",
@@ -349,7 +361,7 @@
         "Manabu Fujii"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation"
     },
     {
       "title": "Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.",
@@ -379,7 +391,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "40252401",
-      "section": "Methods and tools"
+      "section": "Methods and tools",
+      "annotation": "Combines FT-ICR MS with PMD network analysis for high-throughput profiling of PFAS transformation products at mDa resolving power, revealing that UV treatment causes chain shortening while plasma treatment generates both chain-shortening and oxygen-rich chain-lengthening products."
     },
     {
       "title": "Toward an integrated omics approach for plant biosynthetic pathway discovery in the age of AI",
@@ -394,7 +407,8 @@
         "Jing-Ke Weng"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Reviews",
+      "annotation": "Reviews multiomics strategies for plant biosynthetic pathway discovery, proposing an integrated workflow combining molecular networking, reaction pair analysis, and gene co-expression patterns to accelerate identification of natural product biosynthetic genes."
     },
     {
       "title": "Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge",
@@ -416,7 +430,8 @@
         "Weijun Zhang"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "Applications in environmental transformation",
+      "annotation": "Integrates machine learning for non-reference quantification of transformation products with suspect/nontarget screening in activated sludge, identifying 39 parent chemicals and 286 TPs with random-forest-predicted response factors and applying risk-based prioritization."
     },
     {
       "title": "Effect of a high Cl– concentration on the transformation of waste leachate DOM by the UV/PMS system: A mechanistic study using the Suwannee River natural organic matter (SRNOM) as a simulator of waste leachate DOM",
@@ -431,7 +446,8 @@
         "Weiming Chen"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation",
+      "annotation": "Investigates how high chloride concentrations shift DOM transformation mechanisms under UV/PMS treatment, using molecular analysis to reveal competing oxidation pathways and their impact on disinfection byproduct precursor formation."
     },
     {
       "title": "Enhanced Release and Reactivity of Soil Water-Extractable Organic Matter Following Wildfire in a Subtropical Forest.",
@@ -450,7 +466,8 @@
       ],
       "source": "bib+pubmed+oc",
       "pmid": "39982015",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Reactomics analysis of post-wildfire subtropical soil reveals an 8-fold increase in potential DOM reactivity, driven by elevated oxidative enzyme reactions and enrichment of aromatic-compound-degrading microbes, challenging the assumption that fire-altered DOM is less reactive."
     },
     {
       "title": "Long-term fertilization promotes the microbial-mediated transformation of soil dissolved organic matter",
@@ -471,7 +488,8 @@
         "Ming Liu"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation",
+      "annotation": "Examines long-term fertilization effects on soil DOM transformation through microbial community analysis and molecular characterization, linking fertilization regimes to shifts in DOM composition and microbial-mediated transformation pathways."
     },
     {
       "title": "Photochemical transformation altered coagulation behavior and treatability of dissolved organic matters in water",
@@ -490,7 +508,7 @@
         "Weijun Zhang"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation"
     },
     {
       "title": "Unveiling molecular DOM reactomics and transformation coupled with multifunctional nanocomposites under anaerobic conditions: Tracking potential metabolomics and pathways.",
@@ -507,7 +525,8 @@
       ],
       "source": "bib+pubmed+oc",
       "pmid": "39837067",
-      "section": "Methods and tools"
+      "section": "DOM transformation",
+      "annotation": "FT-ICR MS-based reactomics and metabolic pathway analysis track DOM transformations in livestock manure anaerobic digestion with metal-doped hydrochar supplements, revealing shifts from highly unsaturated to peptide-like molecules and linking reaction networks to microbial metabolic pathways."
     },
     {
       "title": "Network-Based Methods for Deciphering the Oxidizability of Complex Leachate DOM with <sup>•</sup>OH/O<sub>3</sub> via Molecular Signatures",
@@ -528,7 +547,8 @@
         "Ziyang Lou"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation",
+      "annotation": "Uses PMD-based molecular network analysis to resolve oxidizability signatures of complex landfill leachate DOM under OH radical and ozone treatment, linking specific molecular subclasses to their susceptibility to advanced oxidation processes."
     },
     {
       "title": "DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.",
@@ -546,7 +566,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "39695921",
-      "section": "Applications in environmental transformation"
+      "section": "Methods and tools",
+      "annotation": "Presents the DNEA R package for differential network enrichment analysis of metabolomics data, constructing biological networks via partial correlations and performing enrichment testing applicable to exogenous, secondary, and unknown compounds beyond traditional pathway databases."
     },
     {
       "title": "The impact of sampling time point on the lipidome composition",
@@ -566,7 +587,8 @@
         "Barbara Bojko"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Compares HILIC-HRMS lipidome profiles of meningioma and glioma brain tumors sampled fresh versus after 12-month storage, showing storage-induced phospholipid and sphingolipid degradation while tumor-type discrimination remains intact."
     },
     {
       "title": "Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water",
@@ -588,7 +610,7 @@
         "Weijun Zhang"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation"
     },
     {
       "title": "Revealing the interplay of dissolved organic matters variation with microbial symbiotic network in lime-treated sludge landscaping.",
@@ -608,7 +630,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "39442659",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Reactomics analysis reveals that 0.4 g/g-TS lime dosage optimally promotes sludge stabilization during landscaping by enhancing protein hydrolysis and decarboxylation-driven humification, with microbial community shifts from Aromatoleum to Firmicutes-affiliated genera."
     },
     {
       "title": "Complexation with Metal Ions Affects Chlorination Reactivity of Dissolved Organic Matter: Structural Reactomics of Emerging Disinfection Byproducts.",
@@ -631,7 +654,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "39042037",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Structural reactomics analysis shows that iron and zinc complexation with DOM alters functional group availability and chlorination reactivity, generating emerging disinfection byproducts with distinct molecular signatures from uncomplexed DOM."
     },
     {
       "title": "Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)",
@@ -649,7 +673,7 @@
         "Li Wang"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Applications in drug metabolism"
     },
     {
       "title": "Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.",
@@ -668,7 +692,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "38781329",
-      "section": "Applications in environmental transformation"
+      "section": "Applications in environmental transformation",
+      "annotation": "Develops APP-ID, an automatic PFAS identification platform with an enhanced molecular network algorithm (0.7% false-positive rate vs 2.4–46% for current methods) and a support vector machine for unknown PFAS structure identification, detecting 39 previously unreported environmental PFAS."
     },
     {
       "title": "Active Molecular Network Discovery Links Lifestyle Variables to Breast Cancer in the Long Island Breast Cancer Study Project.",
@@ -688,7 +713,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "38932753",
-      "section": "Applications in drug metabolism"
+      "section": "Applications in drug metabolism",
+      "annotation": "Uses active molecular network clustering and LASSO to link plasma metabolites in postmenopausal women to breast cancer status and lifestyle factors, identifying DiHODE connected to β-carotene supplement use as a potential molecular intermediary linking inflammation to breast cancer."
     },
     {
       "title": "Exploring Prenatal Exposure to Halogenated Compounds and Its Relationship with Birth Outcomes Using Nontarget Analysis",
@@ -710,7 +736,8 @@
         "Yuxin Zheng"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Nontarget analysis of 326 cord blood samples identifies 44 halogenated organic compounds including veterinary drugs, pesticides, and disinfection byproducts, finding significant negative associations between Cl/Br-HOC mixture exposure and newborn birth length."
     },
     {
       "title": "Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis",
@@ -731,7 +758,8 @@
         "Jinju Geng"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "Applications in environmental transformation",
+      "annotation": "Develops simplified network analysis (SNA) to uncover transformation pathways of emerging contaminants across 15 Chinese WWTPs, finding (de)methylation and dehydration as the most frequent reactions and identifying 22 transformation products of four anti-hypertensive drugs."
     },
     {
       "title": "Inhibitory effect of microplastics derived organic matters on humification reaction of organics in sewage sludge under alkali-hydrothermal treatment.",
@@ -751,7 +779,8 @@
       ],
       "source": "bib+pubmed",
       "pmid": "38324988",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "FT-ICR MS and PMD analysis demonstrate that microplastic-leached DOM inhibits artificial humic acid formation during alkali-hydrothermal sludge treatment by suppressing condensation of oxygen-rich aromatic molecules, reducing plant growth promotion."
     },
     {
       "title": "Deciphering Microbe-Mediated Dissolved Organic Matter Reactome in Wastewater Treatment Plants Using Directed Paired Mass Distance.",
@@ -771,7 +800,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "38147428",
-      "section": "Methods and tools"
+      "section": "DOM transformation",
+      "annotation": "Introduces directed PMD (dPMD) analysis that infers substrate-product direction from sequential MS data without formula assignment, revealing conserved first-step reactions that trigger DOM diversification and identifying microbe-enzyme-reaction associations across 12 WWTPs."
     },
     {
       "title": "Interpretable Machine Learning and Reactomics Assisted Isotopically Labeled FT-ICR-MS for Exploring the Reactivity and Transformation of Natural Organic Matter during Ultraviolet Photolysis.",
@@ -790,21 +820,8 @@
       ],
       "source": "bib+pubmed+oc",
       "pmid": "38111239",
-      "section": "Methods and tools"
-    },
-    {
-      "title": "mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry Based Non-targeted Metabolomics Data Analysis",
-      "doi": "10.1101/2023.11.14.567024",
-      "url": "https://doi.org/10.1101/2023.11.14.567024",
-      "journal": "",
-      "year": 2023,
-      "published_date": "2023-11-16",
-      "authors": [
-        "Miao Yu",
-        "Vivek Philip"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
+      "section": "DOM transformation",
+      "annotation": "Combines deuterium isotope labeling, FT-ICR MS, interpretable machine learning, and PMD network analysis to unravel NOM photoreactivity under UV irradiation, finding CHOS formulas most reactive and hydroxylation dominant for lignin/CRAMs."
     },
     {
       "title": "Tracking the transformation pathway of dissolved organic matters (DOMs) in biochars under sludge pyrolysis via reactomics and molecular network analysis.",
@@ -823,7 +840,8 @@
       ],
       "source": "bib+pubmed+oc",
       "pmid": "37709065",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "Applies FT-ICR MS-based reactomics and molecular network analysis to track sludge biochar DOM transformation under pyrolysis, identifying three-stage cascade reactions and showing that temperatures above 500°C are needed to minimize harmful N-containing byproducts."
     },
     {
       "title": "Mapping the metabolic responses to oxaliplatin-based chemotherapy with in vivo spatiotemporal metabolomics.",
@@ -843,7 +861,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "38464782",
-      "section": "Applications in drug metabolism"
+      "section": "Applications in drug metabolism",
+      "annotation": "Uses biocompatible in vivo SPME microprobes with global metabolomics profiling to map spatiotemporal metabolic changes in porcine lung during isolated lung perfusion with oxaliplatin, identifying 139 discriminant compounds and dose thresholds for lung toxicity."
     },
     {
       "title": "Deep Characterization of Serum Metabolome Based on the Segment-Optimized Spectral-Stitching Direct-Infusion Fourier Transform Ion Cyclotron Resonance Mass Spectrometry Approach",
@@ -867,7 +886,8 @@
         "Guowang Xu"
       ],
       "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Develops segment-optimized spectral-stitching DI-FTICR MS achieving 8-fold more features than full-range acquisition, with a PMD-based reaction network used to disambiguate molecular formula candidates, yielding 3534 unambiguous formulas from pooled human serum."
     },
     {
       "title": "A mass defect filtering combined background subtraction strategy for rapid screening and identification of metabolites in rat plasma after oral administration of Yindan Xinnaotong soft capsule",
@@ -886,7 +906,8 @@
         "Wen Gao"
       ],
       "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Establishes a mass defect filtering strategy combined with neutral loss and diagnostic fragment ion filtering for comprehensive metabolite profiling of a traditional Chinese medicine (YDXNT) in rat plasma, identifying 29 prototype components and 93 metabolites."
     },
     {
       "title": "Exploring the Complexities of Dissolved Organic Matter Photochemistry from the Molecular Level by Using Machine Learning Approaches",
@@ -909,7 +930,8 @@
         "Ding He"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation",
+      "annotation": "Trains ML models on irradiation data from two estuaries to predict photochemical reactivity of unannotated DOM molecules in five worldwide estuaries, revealing that riverine DOM chemistry largely determines subsequent photodegradation fate."
     },
     {
       "title": "A multiplatform metabolomics/reactomics approach as a powerful strategy to identify reaction compounds generated during hemicellulose hydrothermal extraction from agro-food biomasses.",
@@ -928,7 +950,8 @@
       ],
       "source": "pubmed",
       "pmid": "37086522",
-      "section": "Methods and tools"
+      "section": "Methods and tools",
+      "annotation": "Combines GC-MS, liquid chromatography, and reactomics in a multiplatform approach to characterize degradation compounds formed during hydrothermal hemicellulose extraction from hazelnut shells, demonstrating PMD-based reaction tracking in food chemistry contexts."
     },
     {
       "title": "Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment",
@@ -949,26 +972,6 @@
       "section": "Applications in environmental transformation"
     },
     {
-      "title": "Ring-Opening Polymerization of rac-Lactide Catalyzed by Octahedral Nickel Carboxylate Complexes",
-      "doi": "10.3390/catal13020304",
-      "url": "https://doi.org/10.3390/catal13020304",
-      "journal": "Catalysts",
-      "year": 2023,
-      "published_date": "2023-01-29",
-      "authors": [
-        "Alexey Nikiforov",
-        "Natalia Panina",
-        "Daniil Blinou",
-        "Vladislav Gurzhiy",
-        "Juliya Nashchekina",
-        "Evgenia Korzhikova-Vlakh",
-        "Alexey Eremin",
-        "Mariia Stepanova"
-      ],
-      "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
-    },
-    {
       "title": "Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.",
       "doi": "10.1016/j.watres.2022.119488",
       "url": "https://doi.org/10.1016/j.watres.2022.119488",
@@ -986,7 +989,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "36538840",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "DOM transformation",
+      "annotation": "FT-ICR MS and PMD-based reactomics reveal that persulfate pretreatment of sludge enhances VFA production by modulating DOM molecular compositions through humification-related reactions, beyond the conventional view of improved N-compound decomposition."
     },
     {
       "title": "Bioaccumulation and Biotransformation of Chlorinated Paraffins.",
@@ -1002,7 +1006,8 @@
       ],
       "source": "pubmed",
       "pmid": "36548610",
-      "section": "Applications in environmental transformation"
+      "section": "Reviews",
+      "annotation": "Reviews bioaccumulation and biotransformation of chlorinated paraffins across species, summarizing tissue distribution patterns and biotransformation pathways including hydroxylation, dechlorination, and carbon chain decomposition in plants, invertebrates, and vertebrates."
     },
     {
       "title": "Strategies for structure elucidation of small molecules based on LC-MS/MS data from complex biological samples.",
@@ -1020,7 +1025,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "36187931",
-      "section": "Applications in environmental transformation"
+      "section": "Reviews",
+      "annotation": "Reviews strategies for structure elucidation of small molecules from LC-MS/MS data, categorizing approaches into mass spectral annotation and retention time prediction, and discusses advances including open-source tools for untargeted metabolomics."
     },
     {
       "title": "In vivo solid phase microextraction for bioanalysis",
@@ -1036,7 +1042,7 @@
         "Caroline Fernandes Grecco"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Reviews"
     },
     {
       "title": "AI/ML-driven advances in untargeted metabolomics and exposomics for biomedical applications.",
@@ -1051,7 +1057,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "35936554",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Reviews",
+      "annotation": "Reviews AI and ML applications across untargeted metabolomics and HRMS exposomics workflows, discussing advances in peak detection, chemical identification, and disease screening, with emphasis on integrating endogenous and exogenous small-molecule detection."
     },
     {
       "title": "Metabolomic fingerprinting of porcine lung tissue during pre-clinical prolonged ex vivo lung perfusion using in vivo SPME coupled with LC-HRMS.",
@@ -1070,7 +1077,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "36105172",
-      "section": "Applications in drug metabolism"
+      "section": "Applications in drug metabolism",
+      "annotation": "Deploys in vivo SPME microprobes for repeated non-destructive sampling of porcine lung during 19-hour normothermic ex vivo lung perfusion, identifying upregulated inflammatory and lipid metabolism pathways between hours 11–12 as markers of emerging lung injury."
     },
     {
       "title": "Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.",
@@ -1086,7 +1094,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "35172886",
-      "section": "In-source reactions and independent ion selection"
+      "section": "In-source reactions and independent ion selection",
+      "annotation": "Introduces PMDDA (PMD-dependent analysis), a workflow that removes redundant MS1 peaks using co-elution PMDs then exports a non-redundant precursor ion list for pseudo-targeted MS2 collection, yielding more annotated compounds and molecular networks than CAMERA or RAMClustR."
     },
     {
       "title": "Molecular Gatekeeper Discovery: Workflow for Linking Multiple Exposure Biomarkers to Metabolomics.",
@@ -1125,7 +1134,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "35016867",
-      "section": "Applications in environmental transformation"
+      "section": "DOM transformation",
+      "annotation": "Uses IMS-QTOF MS and PMD-based reaction network analysis to show that endogenous-source dissolved organic nitrogen constitutes over 35.5% of wastewater DON and participates in 46.7% of core biochemical reaction networks across a full-scale treatment train."
     },
     {
       "title": "Metabolite discovery through global annotation of untargeted metabolomics data.",
@@ -1171,7 +1181,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "37101756",
-      "section": "Applications in environmental transformation"
+      "section": "Reviews",
+      "annotation": "Reviews in vivo SPME applications in environmental sciences, covering direct tissue sampling of wildlife, fish, and invertebrates for non-lethal biomonitoring of environmental contaminants and endogenous metabolites."
     },
     {
       "title": "Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry",
@@ -1188,7 +1199,7 @@
         "Guibin Jiang"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Reviews"
     },
     {
       "title": "Tooth biomarkers to characterize the temporal dynamics of the fetal and early-life exposome.",
@@ -1215,7 +1226,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "34482270",
-      "section": "Applications in environmental transformation"
+      "section": "Applications in environmental transformation",
+      "annotation": "Profiles small molecules from micro-dissected deciduous tooth layers by untargeted metabolomics, annotating 390 compounds across 62 chemical classes and identifying 267 metabolites that discriminate prenatal from postnatal fractions, providing retrospective access to fetal exposures."
     },
     {
       "title": "Microbial Roles in Dissolved Organic Matter Transformation in Full-Scale Wastewater Treatment Processes Revealed by Reactomics and Comparative Genomics.",
@@ -1257,7 +1269,8 @@
       ],
       "source": "pubmed",
       "pmid": "33754697",
-      "section": "Applications in environmental transformation"
+      "section": "Applications in environmental transformation",
+      "annotation": "Reports first characterization of MCCP and SCCP bioaccumulation in mature maize plants near a CP production facility, finding most CPs concentrated in tissues with direct airborne exposure and assessing edible risks to humans and livestock."
     },
     {
       "title": "Single Cell Reactomics: Real-Time Single-Cell Activation Kinetics of Optically Trapped Macrophages.",
@@ -1275,7 +1288,7 @@
       ],
       "source": "pubmed",
       "pmid": "34927846",
-      "section": "Paired mass distance and chemical reactions",
+      "section": "Applications in endogenous metabolomics",
       "annotation": "Extends reactomics to the single-cell level. Combines optical trapping with PMD-based reaction monitoring to track real-time metabolic activation kinetics in individual macrophages."
     },
     {
@@ -1300,7 +1313,8 @@
       ],
       "source": "pubmed",
       "pmid": "33544574",
-      "section": "Applications in drug metabolism"
+      "section": "Applications in drug metabolism",
+      "annotation": "Systematically characterizes sulfation and glycosylation conjugates of 2,4,6-tribromophenol in rice using PMD network analysis, identifying 8 conjugates in seedlings and revealing compartmentalization and excretion mechanisms for bromophenol detoxification."
     },
     {
       "title": "Untargeted high-resolution paired mass distance data mining for retrieving general chemical relationships.",
@@ -1315,7 +1329,7 @@
       ],
       "source": "pubmed+oc",
       "pmid": "34337162",
-      "section": "Paired mass distance and chemical reactions",
+      "section": "Methods and tools",
       "annotation": "The original reactomics paper. Introduces the PMD concept: high-frequency mass differences in untargeted MS data directly encode active chemical reactions, enabling reaction-network reconstruction without compound identification."
     },
     {
@@ -1332,7 +1346,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "32997396",
-      "section": "Methods and tools"
+      "section": "Methods and tools",
+      "annotation": "Uses PMD networking combined with parallel reaction monitoring to selectively extract and identify 76 wheat phytochemical-derived metabolites in human urine, establishing a quantification platform for biomarkers of whole grain wheat intake without enzymatic hydrolysis."
     },
     {
       "title": "Metabolic profile of fish muscle tissue changes with sampling method, storage strategy and time.",
@@ -1352,7 +1367,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "33081948",
-      "section": "In-source reactions and independent ion selection"
+      "section": "In-source reactions and independent ion selection",
+      "annotation": "Applies globalstd algorithm and structure/reaction directed analysis to investigate how sampling method and storage conditions affect fish muscle metabolomics profiles, finding butylation-series metabolites stable during storage and demonstrating in vivo SPME superiority for unstable metabolites."
     },
     {
       "title": "Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.",
@@ -1372,7 +1388,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "32896810",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Validates hemoglobin measured as a sodium lauryl sulfate complex at 540 nm as a normalization factor for metabolite quantification in dried blood spots archived at 4°C for up to 21 years, enabling retrospective untargeted metabolomics in long-term biorepositories."
     },
     {
       "title": "A UPLC-Q-TOF-MS-based metabolomics approach for the evaluation of fermented mare’s milk to koumiss",
@@ -1388,7 +1405,8 @@
         "Quan Shuang"
       ],
       "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Applications in endogenous metabolomics",
+      "annotation": "Identifies 354 metabolites in mare's milk and koumiss by UPLC-Q-TOF-MS, finding 105 down-regulated metabolites during fermentation and revealing branched-chain amino acid metabolism and ß-alanine metabolism as key metabolic pathways in koumiss production."
     },
     {
       "title": "Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.",
@@ -1429,7 +1447,7 @@
         "Antonia Montilla"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Applications in endogenous metabolomics"
     },
     {
       "title": "Recent Advances in In Vivo SPME Sampling",
@@ -1445,7 +1463,7 @@
         "Maria Careri"
       ],
       "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
+      "section": "Reviews"
     },
     {
       "title": "Simulation-based comprehensive study of batch effects in metabolomics studies",
@@ -1461,20 +1479,6 @@
       ],
       "source": "crossref+oc",
       "section": "Applications in endogenous metabolomics"
-    },
-    {
-      "title": "Reactomics: using mass spectrometry as a reaction detector",
-      "doi": "10.1101/855148",
-      "url": "https://doi.org/10.1101/855148",
-      "journal": "",
-      "year": 2019,
-      "published_date": "2019-11-25",
-      "authors": [
-        "Miao Yu",
-        "Lauren Petrick"
-      ],
-      "source": "crossref+oc",
-      "section": "Paired mass distance and chemical reactions"
     },
     {
       "title": "The metaRbolomics Toolbox in Bioconductor and beyond.",
@@ -1506,7 +1510,8 @@
       ],
       "source": "pubmed+oc",
       "pmid": "31548506",
-      "section": "Applications in endogenous metabolomics"
+      "section": "Reviews",
+      "annotation": "Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration."
     },
     {
       "title": "In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology",
@@ -1521,31 +1526,7 @@
         "Janusz Pawliszyn"
       ],
       "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
-    },
-    {
-      "title": "Prediction of response after chemoradiation for esophageal cancer using a combination of dosimetry and CT radiomics.",
-      "doi": "10.1007/s00330-019-06193-w",
-      "url": "https://doi.org/10.1007/s00330-019-06193-w",
-      "journal": "European radiology",
-      "year": 2019,
-      "published_date": "2019-04-26",
-      "authors": [
-        "Xiance Jin",
-        "Xiaomin Zheng",
-        "Didi Chen",
-        "Juebin Jin",
-        "Guojie Zhu",
-        "Xia Deng",
-        "Ce Han",
-        "Changfei Gong",
-        "Yongqiang Zhou",
-        "Cong Liu",
-        "Congying Xie"
-      ],
-      "source": "pubmed",
-      "pmid": "31028447",
-      "section": "In-source reactions and independent ion selection"
+      "section": "Reviews"
     },
     {
       "title": "Structure/reaction directed analysis for LC-MS based untargeted analysis.",

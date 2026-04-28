@@ -356,7 +356,7 @@ def assign_section(paper):
         if any(t in text for t in ["method", "algorithm", "software", "r package", "workflow",
                                     "tool", "benchmark", "database", "review", "perspective"]):
             return "Methods and tools"
-        return "Paired mass distance and chemical reactions"
+        # fall through to application section detection
     if any(t in text for t in ["drug metabolism", "phase i", "phase ii", "glucuronidation",
                                 "sulfation", "cytochrome", "cyp", "xenobiotic", "pharmacokinetic",
                                 "leukemia", "cancer", "clinical", "therapeutic"]):
@@ -370,7 +370,7 @@ def assign_section(paper):
         return "Applications in endogenous metabolomics"
     if any(t in text for t in ["r package", "software", "workflow", "algorithm", "tool"]):
         return "Methods and tools"
-    return "Paired mass distance and chemical reactions"
+    return "Applications in environmental transformation"
 
 
 # ---------------------------------------------------------------------------
