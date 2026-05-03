@@ -120,9 +120,9 @@ In human and animal metabolomics, reactomics connects measured metabolite abunda
 New papers related to reactomics and PMD-based analysis, collected monthly from PubMed.
 
 <!-- MONTHLY_UPDATES_START -->
-### 2026-03
+### 2026-04
 
-- [Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.](https://doi.org/10.1016/j.watres.2025.125247) *Water research* (2025-12)
+- [Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.](https://doi.org/10.1016/j.watres.2026.125913) *Water research* (2026-04)
 <!-- MONTHLY_UPDATES_END -->
 
 ## All publications
@@ -229,11 +229,12 @@ Full collection of publications using or extending PMD-based reactomics, from th
 - [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019) — Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration.
 - [In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology](https://doi.org/10.1007/978-981-13-9447-8_3) *A New Paradigm for Environmental Chemistry and Toxicology* (2019)
 
-*75 papers total. Last updated 2026-04-28.*
+*75 papers total. Last updated 2026-05-03.*
 <!-- COLLECTION_END -->
 
 ## Monthly archive
 
 <!-- MONTHLY_ARCHIVE_START -->
+- [2026-04](updates/2026-04.html) — 1 paper
 - [2026-03](updates/2026-03.html) — 1 paper
 <!-- MONTHLY_ARCHIVE_END -->

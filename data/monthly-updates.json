@@ -25,6 +25,32 @@
           "score": 22
         }
       ]
+    },
+    {
+      "month": "2026-04",
+      "generated_at": "2026-05-03T16:35:36Z",
+      "mode": "review_queue_only",
+      "updates": [],
+      "papers": [
+        {
+          "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
+          "url": "https://doi.org/10.1016/j.watres.2026.125913",
+          "doi": "10.1016/j.watres.2026.125913",
+          "journal": "Water research",
+          "published_date": "2026-04-09",
+          "authors": [
+            "Wentao Li",
+            "Tiantian Li",
+            "Yue Hu",
+            "Yangang Li",
+            "Wenzhen Zhang",
+            "Mengkai Li",
+            "Zhimin Qiang"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 22
+        }
+      ]
     }
   ]
 }

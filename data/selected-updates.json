@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-04-27T14:44:29Z",
-  "month": "2026-03",
+  "generated_at": "2026-05-03T16:35:36Z",
+  "month": "2026-04",
   "mode": "review_queue_only",
   "updates": [],
   "papers": [
     {
-      "title": "Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.",
-      "url": "https://doi.org/10.1016/j.watres.2025.125247",
-      "doi": "10.1016/j.watres.2025.125247",
+      "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
+      "url": "https://doi.org/10.1016/j.watres.2026.125913",
+      "doi": "10.1016/j.watres.2026.125913",
       "journal": "Water research",
-      "published_date": "2025-12-20",
+      "published_date": "2026-04-09",
       "authors": [
-        "Xiaofeng Zhang",
-        "Congyu Hou",
-        "Wenkai An",
-        "Huaijia Xin",
-        "Qinghua Ji",
-        "Gong Zhang",
-        "Huijuan Liu"
+        "Wentao Li",
+        "Tiantian Li",
+        "Yue Hu",
+        "Yangang Li",
+        "Wenzhen Zhang",
+        "Mengkai Li",
+        "Zhimin Qiang"
       ],
       "section": "Paired mass distance and chemical reactions",
       "score": 22
