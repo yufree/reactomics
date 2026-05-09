@@ -7,7 +7,7 @@ The core insight is simple but powerful: **a fixed mass difference between two m
 <figure>
   <img src="assets/pmd-orbitals.png" alt="PMDs visualised as quantized orbital shells around a precursor ion, with each shell labeled by a biochemical reaction" />
   <figcaption>
-    Like electron orbitals in quantum physics, paired mass distances are not continuous — they are quantized. Each orbital shell encodes a distinct biochemical transformation. <a href="assets/pmd-orbitals-interactive.html">Interactive version →</a>
+    Like electron orbitals in quantum physics, paired mass distances are not continuous — they are quantized. Each orbital shell encodes a distinct biochemical transformation.
   </figcaption>
 </figure>
 
