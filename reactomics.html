@@ -171,6 +171,12 @@ blockquote {
   background: var(--accent-light); border-radius: 0 4px 4px 0;
 }
 
+/* ── Figures ── */
+figure { margin: 1.5rem 0; text-align: center; }
+figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+figcaption { font-size: .85rem; color: var(--muted); margin-top: .6rem; line-height: 1.5; max-width: 38rem; margin-left: auto; margin-right: auto; }
+figcaption a { color: var(--link); }
+
 /* ── Tables ── */
 table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .88em; }
 th, td { border: 1px solid var(--border); padding: .5rem .75rem; text-align: left; }
@@ -283,6 +289,13 @@ footer {
         <h1 id="reactomics">Reactomics</h1>
 <p><strong>Reactomics</strong> is the study of chemical reactions as a system — specifically, using <strong>paired mass distances (PMDs)</strong> observed in mass spectrometry data to identify and map the reaction networks operating in biological, environmental, and chemical systems. The concept was formally introduced in <a href="https://doi.org/10.1038/s42004-020-00403-z">"Reactomics: using mass spectrometry as a chemical reaction detector"</a> (Communications Chemistry, 2020), where it was shown that the mass differences between pairs of ions in a metabolomics dataset directly encode the chemical reactions that connect them.</p>
 <p>The core insight is simple but powerful: <strong>a fixed mass difference between two molecules corresponds to a specific chemical reaction or biotransformation</strong>. By cataloguing these paired mass distances across an untargeted metabolomics dataset, one can reconstruct the reaction networks active in a sample without prior knowledge of compound identities.</p>
+<figure>
+  <img src="assets/pmd-orbitals.png" alt="PMDs visualised as quantized orbital shells around a precursor ion, with each shell labeled by a biochemical reaction" />
+  <figcaption>
+    Like electron orbitals in quantum physics, paired mass distances are not continuous — they are quantized. Each orbital shell encodes a distinct biochemical transformation. <a href="assets/pmd-orbitals-interactive.html">Interactive version →</a>
+  </figcaption>
+</figure>
+
 <p>This page collects publications related to reactomics and PMD-based analysis. New papers are added monthly.</p>
 <h2 id="why-reactomics-matters">Why reactomics matters</h2>
 <p>Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.</p>

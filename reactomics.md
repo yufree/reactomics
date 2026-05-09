@@ -4,6 +4,13 @@
 
 The core insight is simple but powerful: **a fixed mass difference between two molecules corresponds to a specific chemical reaction or biotransformation**. By cataloguing these paired mass distances across an untargeted metabolomics dataset, one can reconstruct the reaction networks active in a sample without prior knowledge of compound identities.
 
+<figure>
+  <img src="assets/pmd-orbitals.png" alt="PMDs visualised as quantized orbital shells around a precursor ion, with each shell labeled by a biochemical reaction" />
+  <figcaption>
+    Like electron orbitals in quantum physics, paired mass distances are not continuous — they are quantized. Each orbital shell encodes a distinct biochemical transformation. <a href="assets/pmd-orbitals-interactive.html">Interactive version →</a>
+  </figcaption>
+</figure>
+
 This page collects publications related to reactomics and PMD-based analysis. New papers are added monthly.
 
 ## Why reactomics matters

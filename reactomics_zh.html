@@ -171,6 +171,12 @@ blockquote {
   background: var(--accent-light); border-radius: 0 4px 4px 0;
 }
 
+/* ── Figures ── */
+figure { margin: 1.5rem 0; text-align: center; }
+figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+figcaption { font-size: .85rem; color: var(--muted); margin-top: .6rem; line-height: 1.5; max-width: 38rem; margin-left: auto; margin-right: auto; }
+figcaption a { color: var(--link); }
+
 /* ── Tables ── */
 table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .88em; }
 th, td { border: 1px solid var(--border); padding: .5rem .75rem; text-align: left; }
@@ -283,6 +289,13 @@ footer {
         <h1 id="_1">反应组学</h1>
 <p><strong>反应组学</strong>（Reactomics）是以化学反应为研究对象的系统性学科——具体而言，通过质谱数据中观测到的<strong>配对质量距离（PMD，Paired Mass Distance）</strong>来识别并绘制生物体、环境及化学体系中的反应网络。该概念由于淼等人在2020年发表于 <em>Communications Chemistry</em> 的<a href="https://doi.org/10.1038/s42004-020-00403-z">原始论文</a>中正式提出：同一质谱数据集中两个离子之间的精确质量差，直接编码了连接它们的化学反应信息。</p>
 <p>核心思想简单而有力：<strong>两个分子之间固定的质量差对应一类特定的化学反应或生物转化</strong>。通过系统梳理非靶向代谢组学数据中的配对质量距离，无需预先知道化合物的身份，即可重建样品中活跃的反应网络。</p>
+<figure>
+  <img src="assets/pmd-orbitals.png" alt="PMD作为绕中心离子的量子化轨道壳层，每条壳层标注一种生化转化反应" />
+  <figcaption>
+    如同量子物理中的电子轨道，配对质量差（PMD）并非连续分布——它们是量子化的。每条轨道壳层对应一种特定的生化转化反应。<a href="assets/pmd-orbitals-interactive.html">交互版本 →</a>
+  </figcaption>
+</figure>
+
 <p>本页收录与反应组学及PMD分析相关的文献，每月自动更新。</p>
 <h2 id="_2">为什么反应组学重要</h2>
 <p>传统代谢组学工作流程通过鉴定化合物并将其丰度与表型关联来开展研究。这种方法固然有价值，但它将代谢物视为独立实体，而非反应网络中的节点。实际上，代谢物经由酶促反应和自发化学反应不断产生、消耗和转化——它们之间通过反应相互连接。</p>

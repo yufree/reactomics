@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reactomics — PMD Quantized Orbitals (Slide)</title>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; background: #000; }
+  #root { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "lang": "zh",
+  "theme": "light"
+}/*EDITMODE-END*/;
+
+// ─── Copy ────────────────────────────────────────────────────────────────────
+const COPY = {
+  en: {
+    title: "Reactomics",
+    subtitle: "Quantized Mass Distances in Chemical Reaction Space",
+    tagline: "Like electron orbitals in quantum physics, paired mass distances (PMDs) are not continuous — they are quantized.\nEach orbital shell encodes a distinct biochemical transformation.",
+    coreLabel: "Precursor",
+    coreSubLabel: "Ion [M]",
+    footer: "PMD-based reactomics  ·  pmd R package  ·  Communications Chemistry 2020",
+    orbitRadiusNote: "Orbital radius ∝ PMD value",
+    reactions: [
+      { pmd: "2.0157 Da",   formula: "H₂",       name: "Reduction",       sub: "Hydrogenation"    },
+      { pmd: "14.0157 Da",  formula: "CH₂",       name: "Methylation",     sub: "Chain elongation" },
+      { pmd: "15.9949 Da",  formula: "O",         name: "Oxidation",       sub: "Single oxygen"    },
+      { pmd: "18.0106 Da",  formula: "H₂O",       name: "Hydration",       sub: "Dehydration"      },
+      { pmd: "42.0106 Da",  formula: "C₂H₂O",     name: "Acetylation",     sub: "Acyl transfer"    },
+      { pmd: "79.9663 Da",  formula: "HPO₃",      name: "Phosphorylation", sub: "Kinase substrate" },
+      { pmd: "162.0528 Da", formula: "C₆H₁₀O₅",  name: "Glycosylation",   sub: "Hexose addition"  },
+    ]
+  },
+  zh: {
+    title: "反应组学",
+    subtitle: "化学反应空间中的量子化质量差",
+    tagline: "如同量子物理中的电子轨道，配对质量差（PMD）并非连续分布——它们是量子化的。\n每条轨道壳层对应一种特定的生化转化反应。",
+    coreLabel: "前体",
+    coreSubLabel: "离子 [M]",
+    footer: "基于PMD的反应组学  ·  pmd R软件包  ·  Communications Chemistry 2020",
+    orbitRadiusNote: "轨道半径 ∝ PMD值",
+    reactions: [
+      { pmd: "2.0157 Da",   formula: "H₂",       name: "还原反应", sub: "加氢"      },
+      { pmd: "14.0157 Da",  formula: "CH₂",      name: "甲基化",   sub: "碳链延伸"  },
+      { pmd: "15.9949 Da",  formula: "O",        name: "氧化",     sub: "单氧加成"  },
+      { pmd: "18.0106 Da",  formula: "H₂O",      name: "水合反应", sub: "脱水/水合" },
+      { pmd: "42.0106 Da",  formula: "C₂H₂O",    name: "乙酰化",   sub: "酰基转移"  },
+      { pmd: "79.9663 Da",  formula: "HPO₃",     name: "磷酸化",   sub: "激酶底物"  },
+      { pmd: "162.0528 Da", formula: "C₆H₁₀O₅", name: "糖基化",   sub: "己糖加成"  },
+    ]
+  }
+};
+
+// ─── Theme tokens ─────────────────────────────────────────────────────────────
+const THEMES = {
+  dark: {
+    // backgrounds
+    bgFrom: "#0d1535", bgTo: "#050810",
+    bgGlow: "#0a1840",
+    // core
+    coreFrom: "#ffffff", coreMid: "#99ccff", coreTo: "#2244cc",
+    coreHalo: "#1133aa",
+    coreText: "white",
+    // orbit colors (vivid on dark)
+    orbitColors: ["#00c8f0","#f0b830","#f07030","#3a7fff","#30dd88","#b855ee","#ee3898"],
+    // arcs
+    arcOpacity: 0.48,
+    arcGlowOpacity: 0.11,
+    dotFill: "white",
+    connectorOpacity: 0.32,
+    // text
+    titleFill: "white",
+    subtitleFill: "#4a5580",
+    taglineFill: "#8090b8",
+    reactionNameFill: "white",
+    reactionNameOpacity: 0.92,
+    subFill: "white",
+    subOpacity: 0.36,
+    footerFill: "#253048",
+    ruleFill: "white",
+    ruleOpacity: 0.08,
+    // stars visible
+    starsOpacity: 0.7,
+    starsColor: "white",
+    // separator
+    separatorColor: "white",
+    separatorOpacity: 0.06,
+  },
+  light: {
+    bgFrom: "#f4f6fb", bgTo: "#eaeef8",
+    bgGlow: "#c8d4f0",
+    coreFrom: "#2255cc", coreMid: "#4488ee", coreTo: "#88bbff",
+    coreHalo: "#3366cc",
+    coreText: "white",
+    orbitColors: ["#0099cc","#c88800","#cc5500","#1a5fcc","#1a9955","#7722cc","#cc1177"],
+    arcOpacity: 0.55,
+    arcGlowOpacity: 0.08,
+    dotFill: "white",
+    connectorOpacity: 0.38,
+    titleFill: "#0f1a3a",
+    subtitleFill: "#3a4a7a",
+    taglineFill: "#5060a0",
+    reactionNameFill: "#0f1a3a",
+    reactionNameOpacity: 0.88,
+    subFill: "#0f1a3a",
+    subOpacity: 0.40,
+    footerFill: "#8090b8",
+    ruleFill: "#0f1a3a",
+    ruleOpacity: 0.10,
+    starsOpacity: 0,
+    starsColor: "transparent",
+    separatorColor: "#0f1a3a",
+    separatorOpacity: 0.07,
+  }
+};
+
+// ─── Slide ────────────────────────────────────────────────────────────────────
+function Slide({ lang, theme }) {
+  const copy = COPY[lang];
+  const T = THEMES[theme];
+
+  const W = 1920, H = 1080;
+  const coreX = 280, coreY = H / 2;
+  const coreR = 62;
+  const orbitStep = 72;
+
+  const orbits = copy.reactions.map((r, i) => ({
+    ...r,
+    color: T.orbitColors[i],
+    radius: coreR + 28 + (i + 1) * orbitStep,
+  }));
+
+  // panelX starts just after the widest orbit tip: 280 + 62+28+7*72 = 874 → 900
+  const panelX = 910;
+  const panelRowH = 110;
+  const panelTop = (H - copy.reactions.length * panelRowH) / 2;
+
+  function arcPath(r) {
+    const x0 = coreX, y0 = coreY - r;
+    const x1 = coreX, y1 = coreY + r;
+    return `M ${x0} ${y0} A ${r} ${r} 0 0 1 ${x1} ${y1}`;
+  }
+
+  function connectorPath(orb, labelY) {
+    const arcRight = { x: coreX + orb.radius, y: coreY };
+    const midX = arcRight.x + (panelX - arcRight.x) * 0.5;
+    return `M ${arcRight.x} ${arcRight.y} C ${midX} ${arcRight.y} ${midX} ${labelY} ${panelX - 18} ${labelY}`;
+  }
+
+  // Unique IDs per theme to avoid gradient conflicts
+  const uid = theme;
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width:"100%", height:"100%", display:"block" }} xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id={`bg-${uid}`} cx="28%" cy="50%" r="60%">
+          <stop offset="0%" stopColor={T.bgFrom}/>
+          <stop offset="100%" stopColor={T.bgTo}/>
+        </radialGradient>
+        <radialGradient id={`core-${uid}`} cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stopColor={T.coreFrom} stopOpacity="1"/>
+          <stop offset="35%"  stopColor={T.coreMid}  stopOpacity="0.95"/>
+          <stop offset="100%" stopColor={T.coreTo}   stopOpacity="0.6"/>
+        </radialGradient>
+        <filter id={`glow-sm-${uid}`} x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id={`glow-core-${uid}`} x="-100%" y="-100%" width="300%" height="300%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id={`glow-md-${uid}`} x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <pattern id={`stars-${uid}`} x="0" y="0" width="240" height="240" patternUnits="userSpaceOnUse">
+          {[...Array(28)].map((_, i) => (
+            <circle key={i}
+              cx={(i * 83 + 17) % 240} cy={(i * 61 + 43) % 240}
+              r={0.25 + (i % 4) * 0.3}
+              fill={T.starsColor} opacity={0.15 + (i % 6) * 0.07}
+            />
+          ))}
+        </pattern>
+        <clipPath id={`clip-${uid}`}>
+          <rect x="0" y="0" width={W} height={H}/>
+        </clipPath>
+        <clipPath id={`clip-left-${uid}`}>
+          <rect x="0" y="0" width="820" height={H}/>
+        </clipPath>
+      </defs>
+
+      {/* Background */}
+      <rect x="0" y="0" width={W} height={H} fill={`url(#bg-${uid})`}/>
+      <rect x="0" y="0" width={W} height={H} fill={`url(#stars-${uid})`} opacity={T.starsOpacity}/>
+
+      {/* Core halo */}
+      <ellipse cx={coreX} cy={coreY} rx="420" ry="380" fill={T.bgGlow} opacity="0.45" filter={`url(#glow-core-${uid})`}/>
+
+      <g clipPath={`url(#clip-${uid})`}>
+
+        {/* Orbit arcs */}
+        {orbits.map((orb, i) => (
+          <g key={i}>
+            <path d={arcPath(orb.radius)} fill="none" stroke={orb.color}
+              strokeWidth="4" opacity={T.arcGlowOpacity} filter={`url(#glow-md-${uid})`}/>
+            <path d={arcPath(orb.radius)} fill="none" stroke={orb.color}
+              strokeWidth="1.2" opacity={T.arcOpacity} strokeDasharray="5 11"/>
+          </g>
+        ))}
+
+        {/* Connectors + dots */}
+        {orbits.map((orb, i) => {
+          const labelY = panelTop + i * panelRowH + panelRowH / 2;
+          return (
+            <g key={i}>
+              <path d={connectorPath(orb, labelY)} fill="none" stroke={orb.color}
+                strokeWidth="3" opacity={T.arcGlowOpacity * 0.8} filter={`url(#glow-sm-${uid})`}/>
+              <path d={connectorPath(orb, labelY)} fill="none" stroke={orb.color}
+                strokeWidth="0.9" opacity={T.connectorOpacity}/>
+              {/* Dot at arc rightmost point */}
+              <circle cx={coreX + orb.radius} cy={coreY} r="6"
+                fill={orb.color} filter={`url(#glow-sm-${uid})`} opacity="0.85"/>
+              <circle cx={coreX + orb.radius} cy={coreY} r="2.8"
+                fill={T.dotFill} opacity="0.95"/>
+            </g>
+          );
+        })}
+
+        {/* Core nucleus */}
+        <circle cx={coreX} cy={coreY} r={coreR + 30} fill={T.coreHalo} opacity="0.18" filter={`url(#glow-core-${uid})`}/>
+        <circle cx={coreX} cy={coreY} r={coreR} fill={`url(#core-${uid})`} filter={`url(#glow-sm-${uid})`}/>
+        <text x={coreX} y={coreY - 10} textAnchor="middle" fill={T.coreText}
+          fontSize="32" fontFamily="'Space Mono', monospace" fontWeight="700" opacity="0.95">
+          {copy.coreLabel}
+        </text>
+        <text x={coreX} y={coreY + 22} textAnchor="middle" fill={T.coreText}
+          fontSize="24" fontFamily="'Space Mono', monospace" opacity="0.60">
+          {copy.coreSubLabel}
+        </text>
+
+        {/* Right panel */}
+        {orbits.map((orb, i) => {
+          const labelY = panelTop + i * panelRowH + panelRowH / 2;
+          return (
+            <g key={i}>
+              {/* Accent bar */}
+              <rect x={panelX} y={labelY - 26} width="3.5" height="52" rx="1.75"
+                fill={orb.color} opacity="0.75"/>
+              {/* PMD */}
+              <text x={panelX + 20} y={labelY - 6} fill={orb.color}
+                fontSize="30" fontFamily="'Space Mono', monospace" fontWeight="700">
+                {orb.pmd}
+              </text>
+              {/* Formula */}
+              <text x={panelX + 20} y={labelY + 24} fill={orb.color}
+                fontSize="20" fontFamily="'Space Mono', monospace" opacity="0.55">
+                {orb.formula}
+              </text>
+              {/* Reaction name */}
+              <text x={panelX + 230} y={labelY - 4} fill={T.reactionNameFill}
+                fontSize="28" fontFamily="'Space Grotesk', sans-serif" fontWeight="600"
+                opacity={T.reactionNameOpacity}>
+                {orb.name}
+              </text>
+              {/* Sub */}
+              <text x={panelX + 230} y={labelY + 24} fill={T.subFill}
+                fontSize="18" fontFamily="'Space Grotesk', sans-serif"
+                opacity={T.subOpacity}>
+                {orb.sub}
+              </text>
+              {/* Separator */}
+              {i < orbits.length - 1 && (
+                <line x1={panelX} y1={labelY + panelRowH / 2 - 4}
+                  x2={W - 48}   y2={labelY + panelRowH / 2 - 4}
+                  stroke={T.separatorColor} strokeWidth="0.5" opacity={T.separatorOpacity}/>
+              )}
+            </g>
+          );
+        })}
+
+        {/* Title block */}
+        <text x="52" y="86" fill={T.titleFill} fontSize="68"
+          fontFamily="'Space Grotesk', sans-serif" fontWeight="700" letterSpacing="-2" opacity="0.97">
+          {copy.title}
+        </text>
+        <text x="55" y="132" fill={T.subtitleFill} fontSize="24"
+          fontFamily="'Space Mono', monospace" letterSpacing="0.2">
+          {copy.subtitle}
+        </text>
+        {/* Tagline — clipped to left 840px to avoid orbit label area */}
+        <g clipPath={`url(#clip-left-${uid})`}>
+          {copy.tagline.split("\n").map((line, i) => (
+            <text key={i} x="55" y={186 + i * 32} fill={T.taglineFill}
+              fontSize="20" fontFamily="'Space Grotesk', sans-serif" opacity="0.80">
+              {line}
+            </text>
+          ))}
+        </g>
+
+        {/* Footer area */}
+        <text x="55" y={H - 34} fill={T.footerFill} fontSize="17" fontFamily="'Space Mono', monospace">
+          {copy.orbitRadiusNote}
+        </text>
+        <text x={W / 2} y={H - 18} textAnchor="middle" fill={T.footerFill}
+          fontSize="17" fontFamily="'Space Mono', monospace">
+          {copy.footer}
+        </text>
+
+        {/* Rule lines */}
+        <line x1="48" y1="130" x2={W - 48} y2="130"
+          stroke={T.ruleFill} strokeWidth="0.5" opacity={T.ruleOpacity}/>
+        <line x1="48" y1={H - 52} x2={W - 48} y2={H - 52}
+          stroke={T.ruleFill} strokeWidth="0.5" opacity={T.ruleOpacity}/>
+
+      </g>
+    </svg>
+  );
+}
+
+// ─── Tweaks panel ─────────────────────────────────────────────────────────────
+function TweaksPanel({ lang, setLang, theme, setTheme, visible, onClose }) {
+  if (!visible) return null;
+  const isDark = theme === "dark";
+  return (
+    <div style={{
+      position: "fixed", bottom: 24, right: 24, zIndex: 999,
+      background: isDark ? "rgba(6,10,24,0.97)" : "rgba(245,247,255,0.97)",
+      border: `1px solid ${isDark ? "rgba(60,80,160,0.35)" : "rgba(100,120,200,0.25)"}`,
+      borderRadius: 10, padding: "18px 20px", width: 240,
+      fontFamily: "'Space Grotesk', sans-serif",
+      color: isDark ? "#c0c8e0" : "#1a2560",
+      boxShadow: isDark ? "0 0 36px rgba(0,40,180,0.2)" : "0 4px 32px rgba(60,80,180,0.12)"
+    }}>
+      <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:16 }}>
+        <span style={{ fontSize:13, fontWeight:600 }}>Tweaks</span>
+        <button onClick={onClose} style={{ background:"none", border:"none",
+          color: isDark ? "#6068a0" : "#8090b8", cursor:"pointer", fontSize:18, lineHeight:1 }}>×</button>
+      </div>
+
+      {/* Language */}
+      <div style={{ fontSize:10, color: isDark ? "#4050a0" : "#7080b0", marginBottom:8, textTransform:"uppercase", letterSpacing:1 }}>Language</div>
+      <div style={{ display:"flex", gap:8, marginBottom:18 }}>
+        {["en","zh"].map(l => (
+          <button key={l} onClick={() => setLang(l)} style={{
+            flex:1, padding:"6px 0", borderRadius:6,
+            background: lang === l
+              ? (isDark ? "rgba(50,90,230,0.35)" : "rgba(30,60,200,0.12)")
+              : (isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.04)"),
+            border: `1px solid ${lang === l ? (isDark ? "#4466ee" : "#3355cc") : (isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)")}`,
+            color: lang === l ? (isDark ? "#88aaff" : "#2244cc") : (isDark ? "#6068a0" : "#8090b8"),
+            fontSize:12, cursor:"pointer", fontFamily:"'Space Mono', monospace"
+          }}>{l === "en" ? "English" : "中文"}</button>
+        ))}
+      </div>
+
+      {/* Theme */}
+      <div style={{ fontSize:10, color: isDark ? "#4050a0" : "#7080b0", marginBottom:8, textTransform:"uppercase", letterSpacing:1 }}>Theme</div>
+      <div style={{ display:"flex", gap:8 }}>
+        {["dark","light"].map(t => (
+          <button key={t} onClick={() => setTheme(t)} style={{
+            flex:1, padding:"6px 0", borderRadius:6,
+            background: theme === t
+              ? (isDark ? "rgba(50,90,230,0.35)" : "rgba(30,60,200,0.12)")
+              : (isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.04)"),
+            border: `1px solid ${theme === t ? (isDark ? "#4466ee" : "#3355cc") : (isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)")}`,
+            color: theme === t ? (isDark ? "#88aaff" : "#2244cc") : (isDark ? "#6068a0" : "#8090b8"),
+            fontSize:12, cursor:"pointer", fontFamily:"'Space Mono', monospace"
+          }}>{t === "dark" ? "🌙 Dark" : "☀️ Light"}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── App ──────────────────────────────────────────────────────────────────────
+function App() {
+  const [lang,  setLangState]  = React.useState(TWEAK_DEFAULTS.lang);
+  const [theme, setThemeState] = React.useState(TWEAK_DEFAULTS.theme);
+  const [panelVisible, setPanelVisible] = React.useState(false);
+
+  const setLang = (l) => {
+    setLangState(l);
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { lang: l, theme } }, '*');
+  };
+  const setTheme = (t) => {
+    setThemeState(t);
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { lang, theme: t } }, '*');
+  };
+
+  React.useEffect(() => {
+    const handler = (e) => {
+      if (e.data?.type === '__activate_edit_mode')   setPanelVisible(true);
+      if (e.data?.type === '__deactivate_edit_mode') setPanelVisible(false);
+    };
+    window.addEventListener('message', handler);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', handler);
+  }, []);
+
+  const bg = theme === "dark" ? "#050810" : "#eaeef8";
+
+  return (
+    <div style={{ width:"100vw", height:"100vh", background: bg, overflow:"hidden" }}>
+      <deck-stage>
+        <section data-screen-label="01 PMD Orbitals" style={{ width:"100%", height:"100%", background: bg }}>
+          <Slide lang={lang} theme={theme}/>
+        </section>
+      </deck-stage>
+      <TweaksPanel
+        lang={lang} setLang={setLang}
+        theme={theme} setTheme={setTheme}
+        visible={panelVisible}
+        onClose={() => {
+          setPanelVisible(false);
+          window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
+        }}
+      />
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+</body>
+</html>
