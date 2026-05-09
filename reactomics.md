@@ -50,6 +50,39 @@ Key properties of the PMD network:
 
 The PMD network is constructed using the `getchain()` function in the [`pmd` R package](https://yufree.github.io/pmd/), which traces reaction chains through the ion list by following consecutive PMD edges.
 
+## Reaction-level quantification: what makes reactomics an *omics*
+
+The single most important — and most under-appreciated — feature of reactomics is **quantification at the reaction level, without compound identification**. Much of the published work using PMDs has focused on building reaction *networks* and then interpreting individual nodes by going back to compound annotation. That is useful, but it leaves the analysis tied to identification. If a reaction's two end-points must be named before the reaction can be counted, the workflow has not really moved past traditional metabolomics — it has only added a graph layer on top.
+
+Reactomics was proposed precisely to bypass that bottleneck. The unit of analysis is **the reaction, not the molecule**. A particular PMD — say 15.9949 Da, oxygen addition — may appear thousands of times across an untargeted dataset, on hundreds of substrate–product ion pairs. Each occurrence is one observed instance of *that reaction happening*. By measuring how active the PMD as a whole is across samples, one can quantify oxidation activity, methylation activity, or glycosylation activity directly, with no compound list required. This is what makes the approach an *omics*: **reactions are the analytes**.
+
+The `getreact()` function in the [`pmd` R package](https://cran.r-project.org/package=pmd) implements this idea. For each ion pair connected by a target PMD, it examines how the pair behaves across samples and chooses one of two quantification modes accordingly.
+
+### Static reactions: substrate and product change together
+
+Sometimes the substrate and product of a reaction rise and fall together across samples — the ratio between them stays roughly constant while their absolute intensities both go up or down. Biologically, this is the picture of a reaction whose enzyme is **not the rate-limiting step**. The enzyme operates at a stable conversion efficiency, and what changes between samples is how much substrate is being supplied upstream or how much product is being drawn off downstream.
+
+For these *static* reactions, the most informative quantity is the **total throughput**: substrate intensity plus product intensity. A larger sum means the whole substrate–product pool is larger, i.e., upstream supply is higher. Differences in this sum between groups of samples reveal which reactions are being regulated **upstream or downstream of the catalytic step**.
+
+### Dynamic reactions: substrate and product change independently
+
+In other cases, substrate and product do not move together. The ratio between them shifts from sample to sample. This is what one expects when the **enzyme itself is the regulated component** — its activity or abundance changes between samples, so the conversion of substrate into product proceeds at different efficiencies even at similar substrate levels. Substrate accumulates when the enzyme is suppressed; product accumulates when it is induced.
+
+For these *dynamic* reactions, the meaningful quantity is the **ratio**, with the more stable peak in the numerator (acting as an internal reference) and the more variable peak in the denominator. The resulting per-sample value tracks how the actively-changing partner moves relative to the stable reference, isolating changes that originate in catalytic activity from sample-level abundance shifts.
+
+### Two regulation regimes, two readouts
+
+Together, the static and dynamic modes cover the two basic ways a reaction's quantitative signal can encode biological regulation:
+
+- **Static PMD ⇒ upstream/downstream control.** The enzyme is operating stably; what changes is the supply of substrate or the removal of product. Quantify by intensity sum.
+- **Dynamic PMD ⇒ enzyme-level control.** Enzyme activity is the variable; substrate supply is roughly constant. Quantify by ratio.
+
+This is conceptually parallel to metabolic control analysis, but it is operationalised entirely from untargeted LC-MS data — no kinetic measurements, no isotopically labelled tracers, no compound identification required.
+
+### Why this is the part of reactomics worth pushing forward
+
+The PMD network has rightly received attention as a way to organise untargeted MS data. But network construction alone does not free the analysis from compound identification: to interpret a node, the molecule still has to be named. **Reaction-level quantification is what separates reactomics from "yet another network method"** — the reactions themselves carry quantitative biological meaning, even when the molecules at their endpoints remain unknown. Treating that reaction layer as the analyte, rather than as a stepping-stone toward compound annotation, is the part of reactomics that we believe is most worth developing further.
+
 ## Methods and tools
 
 ### Computing PMDs
@@ -61,13 +94,7 @@ The workflow is:
 1. **Peak detection** — extract a peak list with accurate m/z values from raw LC-MS data (e.g., using XCMS, MZmine, or similar tools).
 2. **PMD calculation** — compute all pairwise mass differences; filter to retain only those matching a curated list of chemically meaningful reactions.
 3. **Network construction** — build the PMD network using `getchain()`, which links ions into reaction chains.
-4. **Quantitative analysis** — use `getreact()` to compute substrate–product intensity ratios across samples; apply network analysis metrics or pathway annotation.
-
-### Quantitative reaction analysis
-
-Beyond identifying which reactions are present, PMDs enable **quantitative reaction analysis**: for any substrate–product ion pair connected by a PMD, the ratio of their intensities across samples reflects how actively that reaction is proceeding. `getreact()` implements this by computing per-sample intensity ratios for all PMD-linked pairs and returning a reaction-by-sample matrix suitable for downstream statistical comparison.
-
-This makes it possible to ask not just "which reactions are active?" but "which reactions differ significantly between conditions?" — treating reactions as the unit of analysis rather than individual metabolites. The approach is annotation-free: a PMD value of 15.9949 Da (oxygen addition) quantifies oxidation activity across every ion pair in the dataset, regardless of whether the compounds have been identified.
+4. **Quantitative analysis** — use `getreact()` to quantify reaction activity in each sample. Static reactions are quantified by intensity sum (substrate + product); dynamic reactions by ratio (stable peak / variable peak). See *Reaction-level quantification* above for the conceptual rationale.
 
 ### The pmd R package
 
@@ -75,7 +102,7 @@ The [`pmd` package](https://cran.r-project.org/package=pmd) provides a complete 
 
 - `getpaired()` — identifies ion pairs linked by specific PMDs
 - `getchain()` — constructs the PMD network by tracing reaction chains through the ion list
-- `getreact()` — computes quantitative reaction activity from substrate–product intensity ratios; returns a reaction-by-sample matrix for statistical comparison
+- `getreact()` — quantifies reaction activity per sample, with `method = "static"` (intensity sum, for upstream/downstream-regulated reactions) or `method = "dynamic"` (stable/variable peak ratio, for enzyme-regulated reactions); returns a reaction-by-sample matrix for statistical comparison
 - `getstd()` — extracts stable isotope-related pairs for quality control
 - Visualization functions for network plots and reaction heatmaps
 
