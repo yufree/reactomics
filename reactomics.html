@@ -296,7 +296,78 @@ footer {
   </figcaption>
 </figure>
 
-<p>This page collects publications related to reactomics and PMD-based analysis. New papers are added monthly.</p>
+<h2 id="where-the-quantization-comes-from">Where the quantization comes from</h2>
+<p>The orbital analogy above is more than a teaching aid. It has the same logical structure as the physics it borrows from: in both cases, a continuous space is forced into discrete units by a universal underlying constraint.</p>
+<p>In quantum mechanics the constraint is the Schrödinger equation. Any bound electron must occupy one of a countable set of eigenstates, and because the equation is universal, every atom in the universe shares the same orbital architecture.</p>
+<p>In metabolism the constraint is the <strong>early cofactor budget</strong>. Almost every reaction in living chemistry is driven by transferring a specific group from a small set of cofactors that were already in use before LUCA. Each cofactor delivers a fixed mass increment — and that increment is the PMD:</p>
+<table>
+<thead>
+<tr>
+<th>Cofactor (or oxidant)</th>
+<th>Group transferred</th>
+<th>PMD (Da)</th>
+<th>Reaction class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAD(P)H</td>
+<td>H₂</td>
+<td>2.0157</td>
+<td>Reduction</td>
+</tr>
+<tr>
+<td>SAM</td>
+<td>CH₂ (methyl)</td>
+<td>14.0157</td>
+<td>Methylation</td>
+</tr>
+<tr>
+<td>O₂ / Fe–O / cytochromes</td>
+<td>O</td>
+<td>15.9949</td>
+<td>Oxidation</td>
+</tr>
+<tr>
+<td>(same systems)</td>
+<td>OH</td>
+<td>17.0027</td>
+<td>Hydroxylation</td>
+</tr>
+<tr>
+<td>(same systems)</td>
+<td>H₂O</td>
+<td>18.0106</td>
+<td>Hydration / dehydration</td>
+</tr>
+<tr>
+<td>Acetyl-CoA</td>
+<td>C₂H₂O</td>
+<td>42.0106</td>
+<td>Acetylation</td>
+</tr>
+<tr>
+<td>ATP / kinases</td>
+<td>HPO₃</td>
+<td>79.9663</td>
+<td>Phosphorylation</td>
+</tr>
+<tr>
+<td>UDP-glucose</td>
+<td>C₆H₁₀O₅</td>
+<td>162.0528</td>
+<td>Glycosylation</td>
+</tr>
+</tbody>
+</table>
+<p>The PMDs that dominate real datasets are exactly the ones the cofactor-and-enzyme infrastructure can deliver cheaply. PMDs that would be chemically interesting but require unavailable cofactors or higher activation barriers simply do not appear at high frequency. The discreteness is not arbitrary — it is the shadow of which transformations early life could afford.</p>
+<h3 id="the-evolutionary-freeze">The evolutionary freeze</h3>
+<p>Once a cofactor became central to cellular metabolism, it became almost impossible to remove. Every downstream pathway came to depend on it; the cofactor was now infrastructure, not a choice. This is the same logic that froze the genetic code in place — local mutations cannot rewire it because the entire cell now reads it.</p>
+<p>The consequence is striking. The high-frequency PMD spectrum is <strong>deeply conserved across all domains of life</strong>. A bacterium, a plant, and a human share roughly the same set of dominant PMDs because they share roughly the same cofactors. What differs between organisms is not the <em>structure</em> of the spectrum but the <em>intensity</em> of each shell — which reactions are upregulated, which are suppressed.</p>
+<p>This is a strong parallel to physics. Every atom shares the same orbital structure because every atom obeys the same Schrödinger equation; every organism shares the same PMD shell structure because every organism inherited the same frozen cofactor set. <strong>Universality through a common underlying constraint</strong> is the same explanatory move in both fields.</p>
+<h3 id="a-note-for-chemists">A note for chemists</h3>
+<p>The take-home is not that metabolism is <em>like</em> quantum mechanics in some loose poetic sense. It is that <strong>chemistry has its own genuine quantization principle</strong>, derivable from cofactor inheritance and evolutionary lock-in. Chemists do not need to borrow the prestige of physics to make this argument — the discreteness of the metabolic reaction set is a phenomenon in its own right, with its own physical mechanism (cofactor-bounded catalytic feasibility) and its own conservation law (evolutionary freeze).</p>
+<p>If physics gets to say "every atom in the universe has discrete energy levels because the Schrödinger equation is universal," chemistry gets to say "every cell on Earth has discrete reaction levels because the cofactor pool is universal." The shapes of those two statements are the same, and so is their explanatory weight.</p>
 <h2 id="why-reactomics-matters">Why reactomics matters</h2>
 <p>Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.</p>
 <p>Reactomics addresses this gap by treating <strong>reactions as first-class objects</strong>. Rather than asking "which metabolites differ between groups?", reactomics asks "which reactions differ between groups?" and "what reaction network is active in this sample?". This shift has several practical consequences:</p>

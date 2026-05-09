@@ -11,7 +11,40 @@ The core insight is simple but powerful: **a fixed mass difference between two m
   </figcaption>
 </figure>
 
-This page collects publications related to reactomics and PMD-based analysis. New papers are added monthly.
+## Where the quantization comes from
+
+The orbital analogy above is more than a teaching aid. It has the same logical structure as the physics it borrows from: in both cases, a continuous space is forced into discrete units by a universal underlying constraint.
+
+In quantum mechanics the constraint is the Schrödinger equation. Any bound electron must occupy one of a countable set of eigenstates, and because the equation is universal, every atom in the universe shares the same orbital architecture.
+
+In metabolism the constraint is the **early cofactor budget**. Almost every reaction in living chemistry is driven by transferring a specific group from a small set of cofactors that were already in use before LUCA. Each cofactor delivers a fixed mass increment — and that increment is the PMD:
+
+| Cofactor (or oxidant) | Group transferred | PMD (Da) | Reaction class |
+|------------------------|-------------------|----------|----------------|
+| NAD(P)H | H₂ | 2.0157 | Reduction |
+| SAM | CH₂ (methyl) | 14.0157 | Methylation |
+| O₂ / Fe–O / cytochromes | O | 15.9949 | Oxidation |
+| (same systems) | OH | 17.0027 | Hydroxylation |
+| (same systems) | H₂O | 18.0106 | Hydration / dehydration |
+| Acetyl-CoA | C₂H₂O | 42.0106 | Acetylation |
+| ATP / kinases | HPO₃ | 79.9663 | Phosphorylation |
+| UDP-glucose | C₆H₁₀O₅ | 162.0528 | Glycosylation |
+
+The PMDs that dominate real datasets are exactly the ones the cofactor-and-enzyme infrastructure can deliver cheaply. PMDs that would be chemically interesting but require unavailable cofactors or higher activation barriers simply do not appear at high frequency. The discreteness is not arbitrary — it is the shadow of which transformations early life could afford.
+
+### The evolutionary freeze
+
+Once a cofactor became central to cellular metabolism, it became almost impossible to remove. Every downstream pathway came to depend on it; the cofactor was now infrastructure, not a choice. This is the same logic that froze the genetic code in place — local mutations cannot rewire it because the entire cell now reads it.
+
+The consequence is striking. The high-frequency PMD spectrum is **deeply conserved across all domains of life**. A bacterium, a plant, and a human share roughly the same set of dominant PMDs because they share roughly the same cofactors. What differs between organisms is not the *structure* of the spectrum but the *intensity* of each shell — which reactions are upregulated, which are suppressed.
+
+This is a strong parallel to physics. Every atom shares the same orbital structure because every atom obeys the same Schrödinger equation; every organism shares the same PMD shell structure because every organism inherited the same frozen cofactor set. **Universality through a common underlying constraint** is the same explanatory move in both fields.
+
+### A note for chemists
+
+The take-home is not that metabolism is *like* quantum mechanics in some loose poetic sense. It is that **chemistry has its own genuine quantization principle**, derivable from cofactor inheritance and evolutionary lock-in. Chemists do not need to borrow the prestige of physics to make this argument — the discreteness of the metabolic reaction set is a phenomenon in its own right, with its own physical mechanism (cofactor-bounded catalytic feasibility) and its own conservation law (evolutionary freeze).
+
+If physics gets to say "every atom in the universe has discrete energy levels because the Schrödinger equation is universal," chemistry gets to say "every cell on Earth has discrete reaction levels because the cofactor pool is universal." The shapes of those two statements are the same, and so is their explanatory weight.
 
 ## Why reactomics matters
 
