@@ -361,14 +361,19 @@ footer {
 </tbody>
 </table>
 <p>真实数据集里最高频的那些 PMD，正好是辅因子–酶基础设施能"低成本交付"的那批。化学上同样有趣、但需要不存在的辅因子或更高活化能的 PMD，根本不会高频出现。这种离散性不是任意的——它是早期生命能负担得起哪些化学转化的投影。</p>
-<h3 id="_3">演化的冻结</h3>
+<h3 id="_3">为什么质谱能读出这些壳层</h3>
+<p>让反应组学成立，还有一层物理量子化是容易被忽略的、但其实是必要的。我们数的那些 PMD 并不是整数质量——它们落在一些非常特定的非整数值上，正是这些非整数值把化学上不同但名义质量相同的变化区分开来。甲基化（+CH₂）的 PMD 是 14.0157 Da，碳被氮取代（+N）是 14.0031 Da，同位素替换又给出别的值。这些小数偏移并不来自有机化学——<strong>它们来自核结合能</strong>。</p>
+<p>核子结合成原子核时会释放能量，通过 E = mc² 这部分能量以质量亏损的形式被记录下来。碳-12 按约定恰好是 12；其他每种核素都带有一个反映其核子结合紧密程度的质量亏损。氢-1 是 1.00783 Da，氧-16 是 15.9949 Da，氮-14 是 14.0031 Da。这些小数偏移是量子力学层面的可观测量——它们编码强相互作用的本征态，正如电子轨道编码库仑势的本征态。</p>
+<p>后果是直接的：<strong>让原子有离散能级的同一种物理量子化，也让分子反应有了离散的质量特征。</strong> 没有这一层，PMD 壳层在整数质量轴上会塌成一团，反应组学根本就做不成。高分辨质谱（Orbitrap、FT-ICR）本质上是一台伪装成化学仪器的核结合能探测器——它通过测量核子如何排列来读取化学信息。</p>
+<p>所以这张轨道图在物理上是<strong>双重接地</strong>的：壳层之所以存在，是因为辅因子继承固定了早期生命能做哪些转化；壳层之所以可观测，是因为核结合给每个转化赋予了它自己独特的、量子力学上可分辨的质量亏损。<strong>电子层级的量子化让化学成为可能；核层级的量子化让化学可被读出。</strong></p>
+<h3 id="_4">演化的冻结</h3>
 <p>一个辅因子一旦成为细胞代谢的核心，就几乎无法被移除。每条下游通路都依赖它，它已经从"一种选择"升级成了"基础设施"。这跟冻结遗传密码的逻辑是一样的——局部突变无法重写它，因为整个细胞都已经在读它。</p>
 <p>后果非常显著：高频 PMD 谱在<strong>生物的所有域之间高度保守</strong>。细菌、植物和人类共享大致相同的高频 PMD 集合，因为他们共享大致相同的辅因子集合。生物之间的差异不在谱的<em>结构</em>上，而在每个壳层的<em>强度</em>上——哪些反应被上调，哪些被压制。</p>
 <p>这跟物理上的故事强对称。每个原子共享同一套轨道结构，因为每个原子都服从同一个 Schrödinger 方程；每个生物共享同一套 PMD 壳层结构，因为每个生物都继承了同一套被冻结的辅因子集合。<strong>通过共同的底层约束实现普适性</strong>，是这两个学科里同样的解释手法。</p>
-<h3 id="_4">给化学人的一段话</h3>
+<h3 id="_5">给化学人的一段话</h3>
 <p>这里值得带走的不是"代谢有点像量子力学，听上去比较诗意"。重点是：<strong>化学有自己货真价实的量子化原理</strong>——可从辅因子继承和演化锁定中推导出来。化学家不需要借物理学的威望来支撑这个论证——代谢反应集的离散性是它本身的现象，有它自己的物理机制（受辅因子约束的催化可行性），也有它自己的守恒律（演化冻结）。</p>
 <p>如果物理可以说"宇宙中每个原子都有离散的能级，因为 Schrödinger 方程是普适的"，化学就可以说"地球上每个细胞都有离散的反应层级，因为辅因子库是普适的"。这两个陈述形状一致，解释力也相当。</p>
-<h2 id="_5">为什么反应组学重要</h2>
+<h2 id="_6">为什么反应组学重要</h2>
 <p>传统代谢组学工作流程通过鉴定化合物并将其丰度与表型关联来开展研究。这种方法固然有价值，但它将代谢物视为独立实体，而非反应网络中的节点。实际上，代谢物经由酶促反应和自发化学反应不断产生、消耗和转化——它们之间通过反应相互连接。</p>
 <p>反应组学通过将<strong>反应关系作为研究对象</strong>来弥补这一不足。与其问"哪些代谢物在组间存在差异"，反应组学更关注"哪些反应在组间存在差异"以及"样品中活跃的反应网络是什么"。这一转变带来了几个重要优势：</p>
 <ul>
@@ -377,7 +382,7 @@ footer {
 <li>反应网络可跨条件、跨物种、跨样品类型进行<strong>比较</strong>，而单纯的代谢物列表往往难以做到。</li>
 <li>该方法与<strong>生化通路数据库</strong>（KEGG、HMDB反应、Reactome）天然契合，同时在注释不完整时仍可使用。</li>
 </ul>
-<h2 id="_6">配对质量距离与化学反应</h2>
+<h2 id="_7">配对质量距离与化学反应</h2>
 <h3 id="pmd">PMD概念</h3>
 <p><strong>配对质量距离（PMD）</strong>是同一质谱数据集中检测到的两个离子之间的精确质量差。例如：</p>
 <table>
@@ -447,26 +452,26 @@ footer {
 <li>子网络通常对应已知生化通路，为生物学解读提供路径。</li>
 </ul>
 <p>PMD网络通过<a href="https://yufree.github.io/pmd/"><code>pmd</code> R包</a>中的<code>getchain()</code>函数构建，该函数通过追踪连续PMD边将离子链接成反应链。</p>
-<h2 id="_7">反应层定量：反应组学之所以是"组学"</h2>
+<h2 id="_8">反应层定量：反应组学之所以是"组学"</h2>
 <p>反应组学最关键、也是目前最被低估的特性，是<strong>在不做化合物鉴定的前提下直接对反应做定量</strong>。文献里大量工作止步于把 PMD 拿来构建反应网络，然后通过节点反查物质鉴定来解读结果——这有用，但绕回去之后整个分析又被绑回到鉴定瓶颈上，本质上还是传统代谢组学加了一层网络可视化。</p>
 <p>反应组学一开始就是为了跳过这个瓶颈：<strong>分析的最小单元是反应，不是分子</strong>。某个特定的 PMD——比方 15.9949 Da 的氧加成——在一组非靶向数据里可能出现成千上万次，对应几百对底物–产物离子对。每一次出现都是这个反应正在发生的一次观测。把所有出现合在一起看它在样品间的活跃度，就直接量化了氧化、甲基化、糖基化这些反应的整体强度，全程不需要任何化合物名单。这才是它配得上叫做"组学"的原因——<strong>反应就是分析对象本身</strong>。</p>
 <p><a href="https://cran.r-project.org/package=pmd"><code>pmd</code> R包</a>中的<code>getreact()</code>函数实现了这个思路。对于每一对被指定 PMD 连起来的离子，它先看这一对在样本间的行为，然后分两种量化模式处理。</p>
-<h3 id="_8">静态反应：底物和产物同涨同落</h3>
+<h3 id="_9">静态反应：底物和产物同涨同落</h3>
 <p>有时一个反应的底物和产物在样本间是一起涨落的——比值大致不变，但绝对强度同步变化。生化上对应的是<strong>酶不是限速步骤</strong>：转化效率稳定，样品间真正变化的是上游供应量或下游消耗量。</p>
 <p>这种"静态"反应里最有信息量的定量是<strong>总通量</strong>——底物强度加产物强度。和大就表示整个底物–产物池子大，上游供应足。样品间这个和的差异，反映的是<strong>这个反应的上游/下游被怎样调控</strong>。</p>
-<h3 id="_9">动态反应：底物和产物各走各的</h3>
+<h3 id="_10">动态反应：底物和产物各走各的</h3>
 <p>另一种情况是底物和产物不一起变。比值从一个样品到另一个样品在变。这通常意味着<strong>酶本身才是被调控的部分</strong>：它的活性或丰度在不同样品里不一样，所以即使底物水平相近，转化效率也不同——底物在酶被抑制时积累，产物在酶被诱导时升高。</p>
 <p>对这类"动态"反应，有意义的定量是<strong>比值</strong>——把更稳定的那个峰放在分子（当作内参），更不稳定的那个放分母。这样得出的每样品比值，反映的是变动那一端相对参考端的变化，把"酶活动"从"样本水平丰度漂移"中剥离出来。</p>
-<h3 id="_10">两种调控模式，两种读数</h3>
+<h3 id="_11">两种调控模式，两种读数</h3>
 <p>静态和动态两种模式合起来，刚好覆盖了一个反应在定量上能体现生物学调控的两条基本路径：</p>
 <ul>
 <li><strong>静态 PMD ⇒ 上游/下游调控。</strong> 酶稳定运行，变的是底物供应或产物去路。用强度求和定量。</li>
 <li><strong>动态 PMD ⇒ 酶层调控。</strong> 酶活是变量，底物供应大致不变。用比值定量。</li>
 </ul>
 <p>概念上跟代谢控制分析（MCA）很像，但完全是从非靶向 LC-MS 数据里直接读出来的——不需要动力学测量、不需要同位素标记、不需要化合物鉴定。</p>
-<h3 id="_11">为什么这才是反应组学最值得推的部分</h3>
+<h3 id="_12">为什么这才是反应组学最值得推的部分</h3>
 <p>PMD 网络作为整理非靶向 MS 数据的工具，得到了应有的关注。但<strong>只构建网络本身并没有把分析从鉴定中解放出来</strong>：想要解读一个节点，分子终归要被命名。<strong>反应层定量才是反应组学区别于"又一种网络方法"的地方</strong>——反应本身携带定量生物学信息，哪怕反应两端的分子始终是未知的。把这层反应定量当作真正的分析对象，而不只是通往化合物鉴定的中间步骤，才是反应组学最值得继续往前推的部分。</p>
-<h2 id="_12">方法与工具</h2>
+<h2 id="_13">方法与工具</h2>
 <h3 id="pmd_2">PMD计算</h3>
 <p>PMD分析需要<strong>高精度质量测量</strong>，通常来自Orbitrap或Q-TOF等高分辨率质谱仪器。区分同重素反应（如CO，27.9949 Da vs. C₂H₄，28.0313 Da）所需质量精度约为5 ppm或更优。</p>
 <p>工作流程如下：</p>
@@ -495,7 +500,7 @@ footer {
 <li><strong><code>sda</code></strong> — 亚结构差异、离子替换和反应的常见PMD</li>
 <li><strong><code>MaConDa</code></strong> — 质谱污染物PMD，用于背景干扰核查</li>
 </ul>
-<h2 id="_13">源内反应与独立峰选择</h2>
+<h2 id="_14">源内反应与独立峰选择</h2>
 <p>源内反应——加合物形成、源内碎裂和同位素模式——同样会在LC-MS数据集中的离子对之间产生特征性质量差。这些属于分析仪器产生的伪影而非生物反应，但遵循相同的PMD逻辑：两个离子之间固定的质量差编码了连接它们的特定过程。</p>
 <p>这一发现是 <strong>globalstd 算法</strong>的核心依据，该算法由<a href="https://doi.org/10.1016/j.aca.2018.10.062">Yu、Olkowicz与Pawliszyn（2019）</a>提出，并在<code>pmd</code>包中实现。globalstd 的关键特点是<strong>数据驱动</strong>：它不依赖预定义的加合物列表，而是从当前数据集中发现哪些质量差真正普遍存在，并以此为据定义冗余。算法分三步执行：</p>
 <ol>
@@ -504,13 +509,13 @@ footer {
 <li><strong>独立峰筛选</strong> — 利用发现的高频PMD，每个化合物簇保留一个代表性离子，去除冗余的加合物、同位素峰和源内碎片。</li>
 </ol>
 <p>最终输出一套<strong>无冗余的独立离子集合</strong>，在保留完整化学多样性的同时消除峰的多重性。无需预先了解数据集中会出现哪些加合物。</p>
-<h2 id="_14">药物代谢应用</h2>
+<h2 id="_15">药物代谢应用</h2>
 <p>药物代谢产生一组可预测的生物转化产物。I相反应（氧化、还原、水解）和II相反应（结合反应）各对应特定PMD。反应组学支持<strong>非靶向药物代谢谱</strong>分析：给定来自药物处理生物体的样品，PMD网络可识别发生了哪些I相和II相转化，无需预先指定目标代谢物。</p>
-<h2 id="_15">环境转化应用</h2>
+<h2 id="_16">环境转化应用</h2>
 <p>环境样品包含经历生物和非生物转化的复杂化学物质混合物。通过计算水体、沉积物或生物组织样品的PMD网络，可在不了解母体化合物身份的情况下识别活跃的转化反应。</p>
-<h2 id="_16">内源性代谢组学应用</h2>
+<h2 id="_17">内源性代谢组学应用</h2>
 <p>在人类和动物代谢组学中，反应组学将测量到的代谢物丰度与产生它们的酶活性相连。血浆或尿液样品的PMD网络反映了生物体的代谢状态——哪些合成代谢和分解代谢反应最为活跃。</p>
-<h2 id="_17">每月文献集</h2>
+<h2 id="_18">每月文献集</h2>
 <p>以下为每月从PubMed收录的反应组学及PMD分析相关新文献。</p>
 <!-- MONTHLY_UPDATES_START -->
 <h3 id="2026-04">2026-04</h3>
@@ -519,10 +524,10 @@ footer {
 </ul>
 <!-- MONTHLY_UPDATES_END -->
 
-<h2 id="_18">全部文献</h2>
+<h2 id="_19">全部文献</h2>
 <p>收录自原始论文（2020年）至今所有使用或扩展PMD反应组学的文献，每月更新。</p>
 <!-- COLLECTION_START -->
-<h3 id="_19">方法与工具</h3>
+<h3 id="_20">方法与工具</h3>
 <ul>
 <li><a href="https://doi.org/10.1016/j.watres.2025.123645">Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.</a> <em>Water research</em> (2025) — Combines FT-ICR MS with PMD network analysis for high-throughput profiling of PFAS transformation products at mDa resolving power, revealing that UV treatment causes chain shortening while plasma treatment generates both chain-shortening and oxygen-rich chain-lengthening products.</li>
 <li><a href="https://doi.org/10.1186/s12859-024-05994-1">DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.</a> <em>BMC bioinformatics</em> (2024) — Presents the DNEA R package for differential network enrichment analysis of metabolomics data, constructing biological networks via partial correlations and performing enrichment testing applicable to exogenous, secondary, and unknown compounds beyond traditional pathway databases.</li>
@@ -530,7 +535,7 @@ footer {
 <li><a href="https://doi.org/10.1038/s42004-020-00403-z">Untargeted high-resolution paired mass distance data mining for retrieving general chemical relationships.</a> <em>Communications chemistry</em> (2020) — The original reactomics paper. Introduces the PMD concept: high-frequency mass differences in untargeted MS data directly encode active chemical reactions, enabling reaction-network reconstruction without compound identification.</li>
 <li><a href="https://doi.org/10.1002/mnfr.202000615">A Novel LC-MS Based Targeted Metabolomic Approach to Study the Biomarkers of Food Intake.</a> <em>Molecular nutrition &amp; food research</em> (2020) — Uses PMD networking combined with parallel reaction monitoring to selectively extract and identify 76 wheat phytochemical-derived metabolites in human urine, establishing a quantification platform for biomarkers of whole grain wheat intake without enzymatic hydrolysis.</li>
 </ul>
-<h3 id="_20">源内反应与独立峰选择</h3>
+<h3 id="_21">源内反应与独立峰选择</h3>
 <ul>
 <li><a href="https://doi.org/10.1186/s13321-022-00586-8">Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.</a> <em>Journal of cheminformatics</em> (2022) — Introduces PMDDA (PMD-dependent analysis), a workflow that removes redundant MS1 peaks using co-elution PMDs then exports a non-redundant precursor ion list for pseudo-targeted MS2 collection, yielding more annotated compounds and molecular networks than CAMERA or RAMClustR.</li>
 <li><a href="https://doi.org/10.1016/j.aca.2020.08.050">Metabolic profile of fish muscle tissue changes with sampling method, storage strategy and time.</a> <em>Analytica chimica acta</em> (2020) — Applies globalstd algorithm and structure/reaction directed analysis to investigate how sampling method and storage conditions affect fish muscle metabolomics profiles, finding butylation-series metabolites stable during storage and demonstrating in vivo SPME superiority for unstable metabolites.</li>
@@ -542,7 +547,7 @@ footer {
 <li><a href="https://doi.org/10.1021/acs.est.1c02584">Microbial Roles in Dissolved Organic Matter Transformation in Full-Scale Wastewater Treatment Processes Revealed by Reactomics and Comparative Genomics.</a> <em>Environmental science &amp; technology</em> (2021) — Pairs reactomics with comparative genomics. PMD-based reaction networks identify which microbial guilds drive specific dissolved-organic-matter transformations across full-scale wastewater treatment stages.</li>
 <li><a href="https://doi.org/10.1021/acs.est.0c01830">Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.</a> <em>Environmental science &amp; technology</em> (2020) — First application of PMD network to biotransformation tracing. Uses PMD-linked ion chains to map chlorinated paraffin metabolism in rice cells, demonstrating that reaction pathways can be recovered from untargeted data without compound annotation.</li>
 </ul>
-<h3 id="_21">环境转化应用</h3>
+<h3 id="_22">环境转化应用</h3>
 <ul>
 <li><a href="https://doi.org/10.1021/acs.est.5c14774">Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.</a> <em>Environmental science &amp; technology</em> (2026) — Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes.</li>
 <li><a href="https://doi.org/10.1016/j.watres.2025.125056">Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.</a> <em>Water research</em> (2025) — Reactomics network analysis shows that aged microplastics stimulate metabolite turnover of nitrogenous and sulfurous compounds and increase molecular transformation network complexity, promoting antibiotic resistance gene exchange in anaerobic sludge digestion.</li>
@@ -582,7 +587,7 @@ footer {
 <li><a href="https://doi.org/10.1016/j.watres.2022.119488">Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.</a> <em>Water research</em> (2022) — FT-ICR MS and PMD-based reactomics reveal that persulfate pretreatment of sludge enhances VFA production by modulating DOM molecular compositions through humification-related reactions, beyond the conventional view of improved N-compound decomposition.</li>
 <li><a href="https://doi.org/10.1016/j.envres.2022.112713">Novel insight into dissolved organic nitrogen (DON) transformation along wastewater treatment processes with special emphasis on endogenous-source DON.</a> <em>Environmental research</em> (2022) — Uses IMS-QTOF MS and PMD-based reaction network analysis to show that endogenous-source dissolved organic nitrogen constitutes over 35.5% of wastewater DON and participates in 46.7% of core biochemical reaction networks across a full-scale treatment train.</li>
 </ul>
-<h3 id="_22">药物代谢应用</h3>
+<h3 id="_23">药物代谢应用</h3>
 <ul>
 <li><a href="https://doi.org/10.1158/1055-9965.EPI-25-0801">Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.</a> <em>Cancer epidemiology, biomarkers &amp; prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology</em> (2025) — Applies the quantitative PMD (qPMD) reactomics approach to neonatal dried blood spots and maternal pregnancy serum, identifying nine DBS qPMDs associated with pediatric ALL risk and suggesting early-life metabolic reactivity hubs linked to leukemogenesis.</li>
 <li><a href="https://doi.org/10.1080/00032719.2024.2358160">Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)</a> <em>Analytical Letters</em> (2024)</li>
@@ -592,7 +597,7 @@ footer {
 <li><a href="https://doi.org/10.1021/acs.est.1c04039">Molecular Gatekeeper Discovery: Workflow for Linking Multiple Exposure Biomarkers to Metabolomics.</a> <em>Environmental science &amp; technology</em> (2022) — Introduces the molecular gatekeeper concept. Uses PMD analysis to link multiple environmental exposure biomarkers to downstream metabolomics, identifying hub metabolites that mediate exposure–health relationships.</li>
 <li><a href="https://doi.org/10.1021/acs.est.0c07184">Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.</a> <em>Environmental science &amp; technology</em> (2021) — Systematically characterizes sulfation and glycosylation conjugates of 2,4,6-tribromophenol in rice using PMD network analysis, identifying 8 conjugates in seedlings and revealing compartmentalization and excretion mechanisms for bromophenol detoxification.</li>
 </ul>
-<h3 id="_23">内源性代谢组学应用</h3>
+<h3 id="_24">内源性代谢组学应用</h3>
 <ul>
 <li><a href="https://doi.org/10.1021/acs.analchem.5c01213">mzrtsim: Raw Data Simulation for Reproducible Gas/Liquid Chromatography–Mass Spectrometry-Based Nontargeted Metabolomics Data Analysis</a> <em>Analytical Chemistry</em> (2025) — Introduces the mzrtsim R package for simulating full-scan GC/LC-MS raw data (mzML format) from MoNA and HMDB spectra, enabling ground-truth benchmarking of metabolomics peak-extraction software and exposing false-positive peaks in XCMS, mzMine, and OpenMS.</li>
 <li><a href="https://doi.org/10.1016/j.jpba.2024.116429">The impact of sampling time point on the lipidome composition</a> <em>Journal of Pharmaceutical and Biomedical Analysis</em> (2024) — Compares HILIC-HRMS lipidome profiles of meningioma and glioma brain tumors sampled fresh versus after 12-month storage, showing storage-induced phospholipid and sphingolipid degradation while tumor-type discrimination remains intact.</li>
@@ -606,7 +611,7 @@ footer {
 <li><a href="https://doi.org/10.1016/j.jfca.2020.103484">Carbohydrate fraction characterisation of functional yogurts containing pectin and pectic oligosaccharides through convolutional networks</a> <em>Journal of Food Composition and Analysis</em> (2020)</li>
 <li><a href="https://doi.org/10.1101/2019.12.16.878637">Simulation-based comprehensive study of batch effects in metabolomics studies</a> (2019)</li>
 </ul>
-<h3 id="_24">综述</h3>
+<h3 id="_25">综述</h3>
 <ul>
 <li><a href="https://doi.org/10.1021/acs.est.5c01928">Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants</a> <em>Environmental Science &amp; Technology</em> (2025) — Reviews gut microbiota-mediated transformation of environmental pollutants, highlighting multi-omics integration and advanced mass spectrometry approaches for identifying transformation products and assessing pollutant bioavailability and health risks.</li>
 <li><a href="https://doi.org/10.1080/10408347.2025.2528134">Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review</a> <em>Critical Reviews in Analytical Chemistry</em> (2025) — Systematic review of 33 computational tools for chromatographic MS data processing published 2018–2024, covering advances in peak detection, alignment, and deconvolution including machine learning approaches, with emphasis on open-source solutions.</li>
@@ -624,7 +629,7 @@ footer {
 <p><em>共 75 篇论文。最后更新：2026-05-03。</em></p>
 <!-- COLLECTION_END -->
 
-<h2 id="_25">月度存档</h2>
+<h2 id="_26">月度存档</h2>
 <!-- MONTHLY_ARCHIVE_START -->
 <ul>
 <li><a href="updates/2026-04.html">2026-04</a> — 1 篇论文</li>

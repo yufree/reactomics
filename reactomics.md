@@ -32,6 +32,16 @@ In metabolism the constraint is the **early cofactor budget**. Almost every reac
 
 The PMDs that dominate real datasets are exactly the ones the cofactor-and-enzyme infrastructure can deliver cheaply. PMDs that would be chemically interesting but require unavailable cofactors or higher activation barriers simply do not appear at high frequency. The discreteness is not arbitrary — it is the shadow of which transformations early life could afford.
 
+### Why mass spectrometry can read the shells
+
+There is another layer of physical quantization at work, easy to miss but essential. The PMDs we count are not integer masses — they sit at very specific fractional values that disambiguate chemically distinct changes that share the same nominal mass. Methylation (+CH₂) has PMD 14.0157 Da; replacing carbon with nitrogen (+N) has PMD 14.0031 Da; an isotope swap gives yet a different value. These small offsets do not come from organic chemistry — **they come from nuclear binding energy**.
+
+When nucleons bind into a nucleus, energy is released, and through E = mc² that energy registers as a mass deficit. Carbon-12 is exactly 12 by convention; every other nuclide carries a mass defect that reflects how tightly its nucleons are bound. Hydrogen-1 is 1.00783 Da, oxygen-16 is 15.9949 Da, nitrogen-14 is 14.0031 Da. These fractional offsets are quantum-mechanical observables — they encode the eigenstates of the strong force the way electronic orbitals encode the eigenstates of the Coulomb potential.
+
+The consequence is direct: **the same physical quantization that gives atoms their discrete energy levels also gives molecular reactions their discrete mass signatures.** Without it, PMD shells would collapse into each other on the integer-mass axis and reactomics would be impossible. High-resolution mass spectrometry (Orbitrap, FT-ICR) is essentially a nuclear-binding-energy detector dressed up as a chemistry tool — it reads out chemistry by measuring how nucleons are arranged.
+
+So the orbital picture is **doubly grounded** in physics. The shells exist because cofactor inheritance fixed which transformations early life could perform; the shells are observable because nuclear binding gives every transformation its own characteristic, quantum-mechanically distinct mass defect. Quantization at the electronic level made the chemistry possible; quantization at the nuclear level made it readable.
+
 ### The evolutionary freeze
 
 Once a cofactor became central to cellular metabolism, it became almost impossible to remove. Every downstream pathway came to depend on it; the cofactor was now infrastructure, not a choice. This is the same logic that froze the genetic code in place — local mutations cannot rewire it because the entire cell now reads it.
