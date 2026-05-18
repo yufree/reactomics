@@ -4,13 +4,6 @@
 
 The core insight is simple but powerful: **a fixed mass difference between two molecules corresponds to a specific chemical reaction or biotransformation**. By cataloguing these paired mass distances across an untargeted metabolomics dataset, one can reconstruct the reaction networks active in a sample without prior knowledge of compound identities.
 
-<figure>
-  <img src="assets/pmd-orbitals.png" alt="PMDs visualised as quantized orbital shells around a precursor ion, with each shell labeled by a biochemical reaction" />
-  <figcaption>
-    Like electron orbitals in quantum physics, paired mass distances are not continuous — they are quantized. Each orbital shell encodes a distinct biochemical transformation.
-  </figcaption>
-</figure>
-
 ## Why reactomics matters
 
 Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.
@@ -22,7 +15,14 @@ Reactomics addresses this gap by treating **reactions as first-class objects**. 
 - Reaction networks can be **compared across conditions**, across species, and across sample types in a way that metabolite lists often cannot.
 - The approach connects naturally to **biochemical pathway databases** (KEGG, HMDB reactions, Reactome) while remaining usable when compound annotation is incomplete.
 
-The practical appeal above rests on a deeper question worth taking seriously: why does this work at all? Why should mass differences encode chemistry so cleanly, and why should the same set of reactions recur across organisms? The orbital figure on top of this page is not just decoration — it points to a real structural reason for the discreteness, with roots in physics and evolution.
+The practical appeal above rests on a deeper question worth taking seriously: why does this work at all? Why should mass differences encode chemistry so cleanly, and why should the same set of reactions recur across organisms? The figure below is not just decoration — it points to a real structural reason for the discreteness, with roots in physics and evolution.
+
+<figure>
+  <img src="assets/pmd-orbitals.png" alt="PMDs visualised as quantized orbital shells around a precursor ion, with each shell labeled by a biochemical reaction" />
+  <figcaption>
+    Like electron orbitals in quantum physics, paired mass distances are not continuous — they are quantized. Each orbital shell encodes a distinct biochemical transformation.
+  </figcaption>
+</figure>
 
 ### Where the quantization comes from
 
