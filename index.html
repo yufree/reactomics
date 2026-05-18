@@ -296,7 +296,17 @@ footer {
   </figcaption>
 </figure>
 
-<h2 id="where-the-quantization-comes-from">Where the quantization comes from</h2>
+<h2 id="why-reactomics-matters">Why reactomics matters</h2>
+<p>Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.</p>
+<p>Reactomics addresses this gap by treating <strong>reactions as first-class objects</strong>. Rather than asking "which metabolites differ between groups?", reactomics asks "which reactions differ between groups?" and "what reaction network is active in this sample?". This shift has several practical consequences:</p>
+<ul>
+<li>Reaction-based analysis is <strong>more robust to annotation gaps</strong> than compound-based analysis, because PMDs can be computed for any peak pair regardless of whether the peaks have been annotated.</li>
+<li>Reactions are <strong>chemically interpretable</strong> — a PMD of 2.0157 (H₂) means reduction; a PMD of 14.0157 (CH₂) means methylation or chain elongation. The network is readable without a lookup table.</li>
+<li>Reaction networks can be <strong>compared across conditions</strong>, across species, and across sample types in a way that metabolite lists often cannot.</li>
+<li>The approach connects naturally to <strong>biochemical pathway databases</strong> (KEGG, HMDB reactions, Reactome) while remaining usable when compound annotation is incomplete.</li>
+</ul>
+<p>The practical appeal above rests on a deeper question worth taking seriously: why does this work at all? Why should mass differences encode chemistry so cleanly, and why should the same set of reactions recur across organisms? The orbital figure on top of this page is not just decoration — it points to a real structural reason for the discreteness, with roots in physics and evolution.</p>
+<h3 id="where-the-quantization-comes-from">Where the quantization comes from</h3>
 <p>The orbital analogy above is more than a teaching aid. It has the same logical structure as the physics it borrows from: in both cases, a continuous space is forced into discrete units by a universal underlying constraint.</p>
 <p>In quantum mechanics the constraint is the Schrödinger equation. Any bound electron must occupy one of a countable set of eigenstates, and because the equation is universal, every atom in the universe shares the same orbital architecture.</p>
 <p>In metabolism the constraint is the <strong>early cofactor budget</strong>. Almost every reaction in living chemistry is driven by transferring a specific group from a small set of cofactors that were already in use before LUCA. Each cofactor delivers a fixed mass increment — and that increment is the PMD:</p>
@@ -373,15 +383,6 @@ footer {
 <h3 id="a-note-for-chemists">A note for chemists</h3>
 <p>The take-home is not that metabolism is <em>like</em> quantum mechanics in some loose poetic sense. It is that <strong>chemistry has its own genuine quantization principle</strong>, derivable from cofactor inheritance and evolutionary lock-in. Chemists do not need to borrow the prestige of physics to make this argument — the discreteness of the metabolic reaction set is a phenomenon in its own right, with its own physical mechanism (cofactor-bounded catalytic feasibility) and its own conservation law (evolutionary freeze).</p>
 <p>If physics gets to say "every atom in the universe has discrete energy levels because the Schrödinger equation is universal," chemistry gets to say "every cell on Earth has discrete reaction levels because the cofactor pool is universal." The shapes of those two statements are the same, and so is their explanatory weight.</p>
-<h2 id="why-reactomics-matters">Why reactomics matters</h2>
-<p>Traditional metabolomics workflows identify compounds and correlate their abundance with phenotypes. This approach is valuable, but it treats metabolites as independent entities rather than as nodes in a reaction network. In reality, metabolites are produced, consumed, and transformed by enzymes and spontaneous chemistry — they are connected by reactions.</p>
-<p>Reactomics addresses this gap by treating <strong>reactions as first-class objects</strong>. Rather than asking "which metabolites differ between groups?", reactomics asks "which reactions differ between groups?" and "what reaction network is active in this sample?". This shift has several practical consequences:</p>
-<ul>
-<li>Reaction-based analysis is <strong>more robust to annotation gaps</strong> than compound-based analysis, because PMDs can be computed for any peak pair regardless of whether the peaks have been annotated.</li>
-<li>Reactions are <strong>chemically interpretable</strong> — a PMD of 2.0157 (H₂) means reduction; a PMD of 14.0157 (CH₂) means methylation or chain elongation. The network is readable without a lookup table.</li>
-<li>Reaction networks can be <strong>compared across conditions</strong>, across species, and across sample types in a way that metabolite lists often cannot.</li>
-<li>The approach connects naturally to <strong>biochemical pathway databases</strong> (KEGG, HMDB reactions, Reactome) while remaining usable when compound annotation is incomplete.</li>
-</ul>
 <h2 id="paired-mass-distance-and-chemical-reactions">Paired mass distance and chemical reactions</h2>
 <h3 id="the-pmd-concept">The PMD concept</h3>
 <p>A <strong>paired mass distance (PMD)</strong> is the absolute difference in accurate mass between two ions detected in the same mass spectrometry dataset. For example:</p>
