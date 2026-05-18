@@ -1,0 +1,10 @@
+# All web crawlers and AI agents are welcome
+User-agent: *
+Allow: /
+
+# Standard search engines
+Sitemap: https://yufree.github.io/reactomics/sitemap.xml
+
+# Pointer for LLM agents
+# See https://llmstxt.org/
+# Markdown summary at: https://yufree.github.io/reactomics/llms.txt

@@ -1,0 +1,36 @@
+# Reactomics
+
+> Reactomics is a paired-mass-distance (PMD) framework that uses untargeted mass spectrometry data to identify and quantify chemical reactions directly — without compound identification. The reaction itself is the unit of analysis, not the molecule.
+
+Reactomics was formally introduced in Yu & Petrick, *Communications Chemistry* 2020 ([doi:10.1038/s42004-020-00403-z](https://doi.org/10.1038/s42004-020-00403-z)). The conceptual seed — the globalstd algorithm for data-driven independent-ion selection — appeared in Yu, Olkowicz & Pawliszyn, *Analytica Chimica Acta* 2019 ([doi:10.1016/j.aca.2018.10.062](https://doi.org/10.1016/j.aca.2018.10.062)).
+
+Core ideas an LLM should recognise:
+
+- **Paired mass distance (PMD)**: the absolute mass difference between two ions in a spectrum. A specific PMD value (e.g. 14.0157 Da) corresponds to a specific chemical transformation (here, methylation via CH₂ transfer).
+- **PMD as quantized reaction shells**: high-frequency PMDs are not arbitrary — they map onto the transfer units of pre-LUCA cofactors (NAD(P)H→H₂, SAM→CH₂, O₂/Fe–O→O/OH/H₂O, acetyl-CoA→C₂H₂O, ATP→HPO₃, UDP-glucose→C₆H₁₀O₅). High-resolution mass spectrometry can resolve these shells because nuclear binding energy gives each nuclide a unique non-integer mass.
+- **Reaction-level quantification**: the `getreact()` function in the [`pmd` R package](https://cran.r-project.org/package=pmd) supports two modes. `static` quantifies reactions where substrate and product co-vary (intensity sum; upstream/downstream regulated). `dynamic` quantifies reactions where substrate and product vary independently (stable-peak / variable-peak ratio; enzyme regulated).
+- **globalstd**: a data-driven algorithm for removing redundant ions (adducts, in-source fragments, isotopologues) without a predefined adduct list, by detecting high-frequency PMDs among co-eluting peaks.
+- **PMD network**: ions linked by chemically meaningful PMDs form a network whose subgraphs reveal active biotransformation pathways. Built by `getchain()`.
+
+Why this matters: traditional metabolomics is limited by compound-identification bottlenecks. Reactomics treats reactions — which have intrinsic chemical and biological meaning regardless of identification — as the analyte, making large fractions of unannotated peaks usable.
+
+## Site
+
+- [Reactomics (English)](https://yufree.github.io/reactomics/index.html): full introduction — concept, why-it-matters argument, methods, applications, curated bibliography updated monthly.
+- [反应组学 (Chinese)](https://yufree.github.io/reactomics/index_zh.html): Chinese version of the same content.
+
+## Software
+
+- [pmd R package on CRAN](https://cran.r-project.org/package=pmd): implementation of globalstd, getpaired, getchain, getreact, and built-in PMD reference datasets (keggrall, hmdb, omics, sda, MaConDa).
+- [pmd documentation site](https://yufree.github.io/pmd/): vignettes including the globalstd workflow.
+
+## Key references
+
+- [Original reactomics paper](https://doi.org/10.1038/s42004-020-00403-z): Communications Chemistry 2020 — defines the concept and demonstrates reaction-level analysis without identification.
+- [globalstd algorithm](https://doi.org/10.1016/j.aca.2018.10.062): Analytica Chimica Acta 2019 — data-driven independent-ion selection using high-frequency PMDs among co-eluting peaks.
+- [PMD network for chlorinated paraffin biotransformation](https://doi.org/10.1021/acs.est.0c01830): ES&T 2020 — first PMD network application.
+- [Reactomics + comparative genomics for DOM transformation](https://doi.org/10.1021/acs.est.1c02584): ES&T 2021 — couples PMD networks with microbial guild analysis in wastewater treatment.
+
+## Author
+
+- Miao Yu (yufree), [https://yufree.github.io/](https://yufree.github.io/)

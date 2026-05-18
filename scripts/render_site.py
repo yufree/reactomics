@@ -11,6 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 MAIN_MD_EN = ROOT / "reactomics.md"
 MAIN_MD_ZH = ROOT / "reactomics_zh.md"
 
+SITE_BASE = "https://yufree.github.io/reactomics"
+OG_IMAGE = f"{SITE_BASE}/assets/pmd-orbitals.png"
+AUTHOR_NAME = "Miao Yu"
+AUTHOR_URL = "https://yufree.github.io/"
+
 
 CSS = """
 :root {
@@ -373,7 +378,8 @@ JS = """
 
 def render_markdown_file(source_path, output_path, title, lang="en",
                          alt_lang_url=None, alt_lang_label=None,
-                         site_desc="PMD-based reactomics — introduction and monthly literature collection."):
+                         site_desc="PMD-based reactomics — introduction and monthly literature collection.",
+                         description=None, keywords=None, canonical=None):
     if not source_path.exists():
         print(f"  Warning: {source_path} not found, skipping", file=sys.stderr)
         return
@@ -397,6 +403,44 @@ def render_markdown_file(source_path, output_path, title, lang="en",
     else:
         lang_switch = ""
 
+    # SEO / discoverability metadata
+    desc = description or site_desc
+    kw = keywords or "reactomics, paired mass distance, PMD, mass spectrometry, metabolomics"
+    page_filename = output_path.name
+    canonical_url = canonical or f"{SITE_BASE}/{page_filename}"
+    og_locale = "en_US" if lang == "en" else "zh_CN"
+    alt_locale = "zh_CN" if lang == "en" else "en_US"
+    alt_canonical = (
+        f"{SITE_BASE}/{alt_lang_url}" if alt_lang_url else None
+    )
+
+    # hreflang alternate links
+    hreflang_links = ""
+    if alt_canonical:
+        alt_hreflang = "zh" if lang == "en" else "en"
+        hreflang_links = (
+            f'  <link rel="alternate" hreflang="{lang}" href="{html.escape(canonical_url)}" />\n'
+            f'  <link rel="alternate" hreflang="{alt_hreflang}" href="{html.escape(alt_canonical)}" />\n'
+            f'  <link rel="alternate" hreflang="x-default" href="{SITE_BASE}/index.html" />\n'
+        )
+
+    # JSON-LD structured data
+    import json as _json
+    jsonld = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "description": desc,
+        "url": canonical_url,
+        "image": OG_IMAGE,
+        "inLanguage": lang,
+        "author": {"@type": "Person", "name": AUTHOR_NAME, "url": AUTHOR_URL},
+        "publisher": {"@type": "Person", "name": AUTHOR_NAME, "url": AUTHOR_URL},
+        "keywords": kw,
+        "mainEntityOfPage": {"@type": "WebPage", "@id": canonical_url},
+    }
+    jsonld_str = _json.dumps(jsonld, ensure_ascii=False, indent=2)
+
     html_doc = f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -404,6 +448,25 @@ def render_markdown_file(source_path, output_path, title, lang="en",
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
   <title>{html.escape(title)}</title>
+  <meta name="description" content="{html.escape(desc)}" />
+  <meta name="keywords" content="{html.escape(kw)}" />
+  <meta name="author" content="{html.escape(AUTHOR_NAME)}" />
+  <link rel="canonical" href="{html.escape(canonical_url)}" />
+{hreflang_links}  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{html.escape(title)}" />
+  <meta property="og:description" content="{html.escape(desc)}" />
+  <meta property="og:url" content="{html.escape(canonical_url)}" />
+  <meta property="og:image" content="{html.escape(OG_IMAGE)}" />
+  <meta property="og:locale" content="{og_locale}" />
+  <meta property="og:locale:alternate" content="{alt_locale}" />
+  <meta property="og:site_name" content="Reactomics" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{html.escape(title)}" />
+  <meta name="twitter:description" content="{html.escape(desc)}" />
+  <meta name="twitter:image" content="{html.escape(OG_IMAGE)}" />
+  <script type="application/ld+json">
+{jsonld_str}
+  </script>
   <style>{CSS}</style>
 </head>
 <body>
@@ -439,26 +502,58 @@ def render_markdown_file(source_path, output_path, title, lang="en",
 
 
 def main():
-    # English pages
-    render_markdown_file(
-        MAIN_MD_EN, ROOT / "index.html", "Reactomics",
-        lang="en", alt_lang_url="index_zh.html", alt_lang_label="中文",
+    desc_en = (
+        "Reactomics uses paired mass distances (PMDs) in untargeted mass "
+        "spectrometry data to identify and quantify chemical reactions "
+        "directly — without compound identification. Theory, methods (pmd "
+        "R package), and monthly-updated publications."
     )
-    render_markdown_file(
-        MAIN_MD_EN, ROOT / "reactomics.html", "Reactomics",
-        lang="en", alt_lang_url="reactomics_zh.html", alt_lang_label="中文",
+    desc_zh = (
+        "反应组学利用非靶向质谱数据中的配对质量距离（PMD）直接识别和"
+        "量化化学反应——无需化合物鉴定。涵盖理论、方法（pmd R 包）以及"
+        "每月更新的文献集合。"
+    )
+    kw_en = (
+        "reactomics, paired mass distance, PMD, mass spectrometry, "
+        "untargeted metabolomics, reaction network, getreact, globalstd, "
+        "pmd R package, dissolved organic matter, biotransformation"
+    )
+    kw_zh = (
+        "反应组学, 配对质量距离, PMD, 质谱, 非靶向代谢组学, 反应网络, "
+        "getreact, globalstd, pmd R 包, 天然有机质, 生物转化"
     )
 
-    # Chinese pages
+    title_en = "Reactomics — paired mass distance analysis for mass spectrometry"
+    title_zh = "反应组学 — 基于配对质量距离的质谱分析框架"
+
+    # English pages (index.html is canonical; reactomics.html points to it)
     render_markdown_file(
-        MAIN_MD_ZH, ROOT / "index_zh.html", "反应组学",
-        lang="zh", alt_lang_url="index.html", alt_lang_label="EN",
-        site_desc="基于配对质量距离（PMD）的反应组学——导论与每月文献集",
+        MAIN_MD_EN, ROOT / "index.html", title_en,
+        lang="en", alt_lang_url="index_zh.html", alt_lang_label="中文",
+        description=desc_en, keywords=kw_en,
+        canonical=f"{SITE_BASE}/index.html",
     )
     render_markdown_file(
-        MAIN_MD_ZH, ROOT / "reactomics_zh.html", "反应组学",
+        MAIN_MD_EN, ROOT / "reactomics.html", title_en,
+        lang="en", alt_lang_url="reactomics_zh.html", alt_lang_label="中文",
+        description=desc_en, keywords=kw_en,
+        canonical=f"{SITE_BASE}/index.html",  # duplicate of index.html
+    )
+
+    # Chinese pages (index_zh.html is canonical; reactomics_zh.html points to it)
+    render_markdown_file(
+        MAIN_MD_ZH, ROOT / "index_zh.html", title_zh,
+        lang="zh", alt_lang_url="index.html", alt_lang_label="EN",
+        site_desc=desc_zh,
+        description=desc_zh, keywords=kw_zh,
+        canonical=f"{SITE_BASE}/index_zh.html",
+    )
+    render_markdown_file(
+        MAIN_MD_ZH, ROOT / "reactomics_zh.html", title_zh,
         lang="zh", alt_lang_url="reactomics.html", alt_lang_label="EN",
-        site_desc="基于配对质量距离（PMD）的反应组学——导论与每月文献集",
+        site_desc=desc_zh,
+        description=desc_zh, keywords=kw_zh,
+        canonical=f"{SITE_BASE}/index_zh.html",  # duplicate of index_zh.html
     )
 
     # Monthly archive pages
