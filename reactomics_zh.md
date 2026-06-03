@@ -199,9 +199,11 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 以下为每月从PubMed收录的反应组学及PMD分析相关新文献。
 
 <!-- MONTHLY_UPDATES_START -->
-### 2026-04
+### 2026-05
 
-- [Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.](https://doi.org/10.1016/j.watres.2026.125913) *Water research* （2026-04）
+- [Molecular signature evolution of coal-derived dissolved organic matter under geothermal conditions: FT-ICR MS and machine learning.](https://doi.org/10.1371/journal.pone.0342889) *PloS one* （2026-05）
+- [Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.](https://doi.org/10.1016/j.biortech.2026.134282) *Bioresource technology* （2026-02）
+- [Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.](https://doi.org/10.1016/j.envpol.2026.128413) *Environmental pollution (Barking, Essex : 1987)* （2026-05）
 <!-- MONTHLY_UPDATES_END -->
 
 ## 全部文献
@@ -231,6 +233,8 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 
 ### 环境转化应用
 
+- [Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.](https://doi.org/10.1016/j.envpol.2026.128413) *Environmental pollution (Barking, Essex : 1987)* (2026)
+- [Molecular signature evolution of coal-derived dissolved organic matter under geothermal conditions: FT-ICR MS and machine learning.](https://doi.org/10.1371/journal.pone.0342889) *PloS one* (2026)
 - [Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.](https://doi.org/10.1021/acs.est.5c14774) *Environmental science & technology* (2026) — Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes.
 - [Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.](https://doi.org/10.1016/j.watres.2025.125056) *Water research* (2025) — Reactomics network analysis shows that aged microplastics stimulate metabolite turnover of nitrogenous and sulfurous compounds and increase molecular transformation network complexity, promoting antibiotic resistance gene exchange in anaerobic sludge digestion.
 - [Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge](https://doi.org/10.1016/j.jhazmat.2025.137183) *Journal of Hazardous Materials* (2025) — Integrates machine learning for non-reference quantification of transformation products with suspect/nontarget screening in activated sludge, identifying 39 parent chemicals and 286 TPs with random-forest-predicted response factors and applying risk-based prioritization.
@@ -308,12 +312,13 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 - [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019) — Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration.
 - [In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology](https://doi.org/10.1007/978-981-13-9447-8_3) *A New Paradigm for Environmental Chemistry and Toxicology* (2019)
 
-*共 75 篇论文。最后更新：2026-05-03。*
+*共 77 篇论文。最后更新：2026-06-03。*
 <!-- COLLECTION_END -->
 
 ## 月度存档
 
 <!-- MONTHLY_ARCHIVE_START -->
+- [2026-05](updates/2026-05.html) — 3 篇论文
 - [2026-04](updates/2026-04.html) — 1 篇论文
 - [2026-03](updates/2026-03.html) — 1 篇论文
 <!-- MONTHLY_ARCHIVE_END -->

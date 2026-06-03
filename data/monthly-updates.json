@@ -51,6 +51,71 @@
           "score": 22
         }
       ]
+    },
+    {
+      "month": "2026-05",
+      "generated_at": "2026-06-03T19:41:11Z",
+      "mode": "review_queue_only",
+      "updates": [],
+      "papers": [
+        {
+          "title": "Molecular signature evolution of coal-derived dissolved organic matter under geothermal conditions: FT-ICR MS and machine learning.",
+          "url": "https://doi.org/10.1371/journal.pone.0342889",
+          "doi": "10.1371/journal.pone.0342889",
+          "journal": "PloS one",
+          "published_date": "2026-05-08",
+          "authors": [
+            "Peng Ge",
+            "Tan Liu",
+            "Dong Dong",
+            "Zepeng Wan",
+            "Yanqing Wu"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 23
+        },
+        {
+          "title": "Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.",
+          "url": "https://doi.org/10.1016/j.biortech.2026.134282",
+          "doi": "10.1016/j.biortech.2026.134282",
+          "journal": "Bioresource technology",
+          "published_date": "2026-02-24",
+          "authors": [
+            "Yuchen Guo",
+            "Zhen Sun",
+            "Jieqiong Wang",
+            "Yonglan Tian",
+            "Jibao Liu",
+            "Zhongyu Guo",
+            "Aibin Hu",
+            "Dongming Wu",
+            "Yunfei Zhang",
+            "Shaoxia Yang",
+            "Junfeng Niu"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 22
+        },
+        {
+          "title": "Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.",
+          "url": "https://doi.org/10.1016/j.envpol.2026.128413",
+          "doi": "10.1016/j.envpol.2026.128413",
+          "journal": "Environmental pollution (Barking, Essex : 1987)",
+          "published_date": "2026-05-23",
+          "authors": [
+            "Xiaopeng Yan",
+            "Luyang Wang",
+            "Claude Kiki",
+            "Luo Liu",
+            "Dan Qin",
+            "Jin Xiao",
+            "Guangpu Zhao",
+            "Qian Sun"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 18
+        }
+      ]
     }
   ]
 }

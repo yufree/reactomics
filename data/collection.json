@@ -1,9 +1,48 @@
 {
-  "generated_at": "2026-05-03T16:35:34+00:00",
+  "generated_at": "2026-06-03T19:41:09+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-05-03",
-  "total": 75,
+  "end_date": "2026-06-03",
+  "total": 77,
   "papers": [
+    {
+      "title": "Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.",
+      "doi": "10.1016/j.envpol.2026.128413",
+      "url": "https://doi.org/10.1016/j.envpol.2026.128413",
+      "journal": "Environmental pollution (Barking, Essex : 1987)",
+      "year": 2026,
+      "published_date": "2026-05-23",
+      "authors": [
+        "Xiaopeng Yan",
+        "Luyang Wang",
+        "Claude Kiki",
+        "Luo Liu",
+        "Dan Qin",
+        "Jin Xiao",
+        "Guangpu Zhao",
+        "Qian Sun"
+      ],
+      "source": "pubmed",
+      "pmid": "42178102",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Molecular signature evolution of coal-derived dissolved organic matter under geothermal conditions: FT-ICR MS and machine learning.",
+      "doi": "10.1371/journal.pone.0342889",
+      "url": "https://doi.org/10.1371/journal.pone.0342889",
+      "journal": "PloS one",
+      "year": 2026,
+      "published_date": "2026-05-08",
+      "authors": [
+        "Peng Ge",
+        "Tan Liu",
+        "Dong Dong",
+        "Zepeng Wan",
+        "Yanqing Wu"
+      ],
+      "source": "pubmed",
+      "pmid": "42102026",
+      "section": "Applications in environmental transformation"
+    },
     {
       "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
       "doi": "10.1016/j.watres.2026.125913",
