@@ -1,9 +1,31 @@
 {
-  "generated_at": "2026-06-03T19:41:09+00:00",
+  "generated_at": "2026-06-10T16:16:28+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-06-03",
-  "total": 77,
+  "end_date": "2026-06-10",
+  "total": 65,
   "papers": [
+    {
+      "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
+      "doi": "10.1016/j.watres.2026.126218",
+      "url": "https://doi.org/10.1016/j.watres.2026.126218",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-06-02",
+      "authors": [
+        "Xu Yan",
+        "MinXin Ji",
+        "JingYa Lou",
+        "XiaoPing Shi",
+        "Shuyang Feng",
+        "Ming Ying",
+        "Feng Zhu",
+        "Gang Wu",
+        "Xu-Xiang Zhang"
+      ],
+      "source": "pubmed",
+      "pmid": "42250422",
+      "section": "Applications in environmental transformation"
+    },
     {
       "title": "Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.",
       "doi": "10.1016/j.envpol.2026.128413",
@@ -590,46 +612,6 @@
       "annotation": "Uses PMD-based molecular network analysis to resolve oxidizability signatures of complex landfill leachate DOM under OH radical and ozone treatment, linking specific molecular subclasses to their susceptibility to advanced oxidation processes."
     },
     {
-      "title": "DNEA: an R package for fast and versatile data-driven network analysis of metabolomics data.",
-      "doi": "10.1186/s12859-024-05994-1",
-      "url": "https://doi.org/10.1186/s12859-024-05994-1",
-      "journal": "BMC bioinformatics",
-      "year": 2024,
-      "published_date": "2024-12-18",
-      "authors": [
-        "Christopher Patsalis",
-        "Gayatri Iyer",
-        "Marci Brandenburg",
-        "Alla Karnovsky",
-        "George Michailidis"
-      ],
-      "source": "pubmed+oc",
-      "pmid": "39695921",
-      "section": "Methods and tools",
-      "annotation": "Presents the DNEA R package for differential network enrichment analysis of metabolomics data, constructing biological networks via partial correlations and performing enrichment testing applicable to exogenous, secondary, and unknown compounds beyond traditional pathway databases."
-    },
-    {
-      "title": "The impact of sampling time point on the lipidome composition",
-      "doi": "10.1016/j.jpba.2024.116429",
-      "url": "https://doi.org/10.1016/j.jpba.2024.116429",
-      "journal": "Journal of Pharmaceutical and Biomedical Analysis",
-      "year": 2024,
-      "published_date": "2024-12-01",
-      "authors": [
-        "Joanna Bogusiewicz",
-        "Bogumiła Kupcewicz",
-        "Kacper Wnuk",
-        "Magdalena Gaca-Tabaszewska",
-        "Jacek Furtak",
-        "Marek Harat",
-        "Katarzyna Buszko",
-        "Barbara Bojko"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics",
-      "annotation": "Compares HILIC-HRMS lipidome profiles of meningioma and glioma brain tumors sampled fresh versus after 12-month storage, showing storage-induced phospholipid and sphingolipid degradation while tumor-type discrimination remains intact."
-    },
-    {
       "title": "Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water",
       "doi": "10.1016/j.cej.2024.157156",
       "url": "https://doi.org/10.1016/j.cej.2024.157156",
@@ -695,24 +677,6 @@
       "pmid": "39042037",
       "section": "DOM transformation",
       "annotation": "Structural reactomics analysis shows that iron and zinc complexation with DOM alters functional group availability and chlorination reactivity, generating emerging disinfection byproducts with distinct molecular signatures from uncomplexed DOM."
-    },
-    {
-      "title": "Determination of Sedative and Anesthetic Drug Residues in Aquatic Food Products Using Solid Phase Extraction (SPE) and Liquid Chromatography–Tandem Mass Spectrometry (LC–MS/MS)",
-      "doi": "10.1080/00032719.2024.2358160",
-      "url": "https://doi.org/10.1080/00032719.2024.2358160",
-      "journal": "Analytical Letters",
-      "year": 2024,
-      "published_date": "2024-05-29",
-      "authors": [
-        "Lina Xin",
-        "Yun Chen",
-        "Minglu Li",
-        "Feiyan Liang",
-        "Ning Xia",
-        "Li Wang"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in drug metabolism"
     },
     {
       "title": "Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.",
@@ -929,26 +893,6 @@
       "annotation": "Develops segment-optimized spectral-stitching DI-FTICR MS achieving 8-fold more features than full-range acquisition, with a PMD-based reaction network used to disambiguate molecular formula candidates, yielding 3534 unambiguous formulas from pooled human serum."
     },
     {
-      "title": "A mass defect filtering combined background subtraction strategy for rapid screening and identification of metabolites in rat plasma after oral administration of Yindan Xinnaotong soft capsule",
-      "doi": "10.1016/j.jpba.2023.115400",
-      "url": "https://doi.org/10.1016/j.jpba.2023.115400",
-      "journal": "Journal of Pharmaceutical and Biomedical Analysis",
-      "year": 2023,
-      "published_date": "2023-07-01",
-      "authors": [
-        "An-Xian Huang",
-        "Jun-Ming Li",
-        "Liu Yang",
-        "Ling Chen",
-        "Zi-Han Zhou",
-        "Ping Li",
-        "Wen Gao"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics",
-      "annotation": "Establishes a mass defect filtering strategy combined with neutral loss and diagnostic fragment ion filtering for comprehensive metabolite profiling of a traditional Chinese medicine (YDXNT) in rat plasma, identifying 29 prototype components and 93 metabolites."
-    },
-    {
       "title": "Exploring the Complexities of Dissolved Organic Matter Photochemistry from the Molecular Level by Using Machine Learning Approaches",
       "doi": "10.1021/acs.est.3c00199",
       "url": "https://doi.org/10.1021/acs.est.3c00199",
@@ -991,24 +935,6 @@
       "pmid": "37086522",
       "section": "Methods and tools",
       "annotation": "Combines GC-MS, liquid chromatography, and reactomics in a multiplatform approach to characterize degradation compounds formed during hydrothermal hemicellulose extraction from hazelnut shells, demonstrating PMD-based reaction tracking in food chemistry contexts."
-    },
-    {
-      "title": "Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment",
-      "doi": "10.1016/j.cej.2023.141881",
-      "url": "https://doi.org/10.1016/j.cej.2023.141881",
-      "journal": "Chemical Engineering Journal",
-      "year": 2023,
-      "published_date": "2023-03-01",
-      "authors": [
-        "Aibin Hu",
-        "Jing Ai",
-        "Yongliang Zheng",
-        "Shisheng Li",
-        "Dongsheng Wang",
-        "Weijun Zhang"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in environmental transformation"
     },
     {
       "title": "Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.",
@@ -1066,22 +992,6 @@
       "pmid": "36187931",
       "section": "Reviews",
       "annotation": "Reviews strategies for structure elucidation of small molecules from LC-MS/MS data, categorizing approaches into mass spectral annotation and retention time prediction, and discusses advances including open-source tools for untargeted metabolomics."
-    },
-    {
-      "title": "In vivo solid phase microextraction for bioanalysis",
-      "doi": "10.1016/j.trac.2022.116656",
-      "url": "https://doi.org/10.1016/j.trac.2022.116656",
-      "journal": "TrAC Trends in Analytical Chemistry",
-      "year": 2022,
-      "published_date": "2022-08-01",
-      "authors": [
-        "Maria Eugênia Costa Queiroz",
-        "Israel Donizeti de Souza",
-        "Igor Gustavo de Oliveira",
-        "Caroline Fernandes Grecco"
-      ],
-      "source": "crossref+oc",
-      "section": "Reviews"
     },
     {
       "title": "AI/ML-driven advances in untargeted metabolomics and exposomics for biomedical applications.",
@@ -1207,23 +1117,6 @@
       "annotation": "NetID uses global network optimisation for metabolite annotation. Incorporates PMD-based ion relationships to propagate identities from known to unannotated LC-MS peaks across the full dataset."
     },
     {
-      "title": "In Vivo Solid-Phase Microextraction and Applications in Environmental Sciences.",
-      "doi": "10.1021/acsenvironau.1c00024",
-      "url": "https://doi.org/10.1021/acsenvironau.1c00024",
-      "journal": "ACS environmental Au",
-      "year": 2021,
-      "published_date": "2021-10-24",
-      "authors": [
-        "Miao Yu",
-        "Anna Roszkowska",
-        "Janusz Pawliszyn"
-      ],
-      "source": "pubmed+oc",
-      "pmid": "37101756",
-      "section": "Reviews",
-      "annotation": "Reviews in vivo SPME applications in environmental sciences, covering direct tissue sampling of wildlife, fish, and invertebrates for non-lethal biomonitoring of environmental contaminants and endogenous metabolites."
-    },
-    {
       "title": "Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry",
       "doi": "10.1016/j.trac.2021.116409",
       "url": "https://doi.org/10.1016/j.trac.2021.116409",
@@ -1312,25 +1205,6 @@
       "annotation": "Reports first characterization of MCCP and SCCP bioaccumulation in mature maize plants near a CP production facility, finding most CPs concentrated in tissues with direct airborne exposure and assessing edible risks to humans and livestock."
     },
     {
-      "title": "Single Cell Reactomics: Real-Time Single-Cell Activation Kinetics of Optically Trapped Macrophages.",
-      "doi": "10.1002/smtd.202000849",
-      "url": "https://doi.org/10.1002/smtd.202000849",
-      "journal": "Small methods",
-      "year": 2021,
-      "published_date": "2021-02-11",
-      "authors": [
-        "Gwenda F Vasse",
-        "Pedro Buzón",
-        "Barbro N Melgert",
-        "Wouter H Roos",
-        "Patrick van Rijn"
-      ],
-      "source": "pubmed",
-      "pmid": "34927846",
-      "section": "Applications in endogenous metabolomics",
-      "annotation": "Extends reactomics to the single-cell level. Combines optical trapping with PMD-based reaction monitoring to track real-time metabolic activation kinetics in individual macrophages."
-    },
-    {
       "title": "Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.",
       "doi": "10.1021/acs.est.0c07184",
       "url": "https://doi.org/10.1021/acs.est.0c07184",
@@ -1410,44 +1284,6 @@
       "annotation": "Applies globalstd algorithm and structure/reaction directed analysis to investigate how sampling method and storage conditions affect fish muscle metabolomics profiles, finding butylation-series metabolites stable during storage and demonstrating in vivo SPME superiority for unstable metabolites."
     },
     {
-      "title": "Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.",
-      "doi": "10.1016/j.jpba.2020.113574",
-      "url": "https://doi.org/10.1016/j.jpba.2020.113574",
-      "journal": "Journal of pharmaceutical and biomedical analysis",
-      "year": 2020,
-      "published_date": "2020-08-23",
-      "authors": [
-        "Miao Yu",
-        "Georgia Dolios",
-        "Vladimir Yong-Gonzalez",
-        "Olle Björkqvist",
-        "Elena Colicino",
-        "Jonas Halfvarson",
-        "Lauren Petrick"
-      ],
-      "source": "pubmed+oc",
-      "pmid": "32896810",
-      "section": "Applications in endogenous metabolomics",
-      "annotation": "Validates hemoglobin measured as a sodium lauryl sulfate complex at 540 nm as a normalization factor for metabolite quantification in dried blood spots archived at 4°C for up to 21 years, enabling retrospective untargeted metabolomics in long-term biorepositories."
-    },
-    {
-      "title": "A UPLC-Q-TOF-MS-based metabolomics approach for the evaluation of fermented mare’s milk to koumiss",
-      "doi": "10.1016/j.foodchem.2020.126619",
-      "url": "https://doi.org/10.1016/j.foodchem.2020.126619",
-      "journal": "Food Chemistry",
-      "year": 2020,
-      "published_date": "2020-08-01",
-      "authors": [
-        "Yanan Xia",
-        "Jiaqi Yu",
-        "Weigang Miao",
-        "Quan Shuang"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics",
-      "annotation": "Identifies 354 metabolites in mare's milk and koumiss by UPLC-Q-TOF-MS, finding 105 down-regulated metabolites during fermentation and revealing branched-chain amino acid metabolism and ß-alanine metabolism as key metabolic pathways in koumiss production."
-    },
-    {
       "title": "Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.",
       "doi": "10.1021/acs.est.0c01830",
       "url": "https://doi.org/10.1021/acs.est.0c01830",
@@ -1470,39 +1306,6 @@
       "pmid": "32600037",
       "section": "PMD network",
       "annotation": "First application of PMD network to biotransformation tracing. Uses PMD-linked ion chains to map chlorinated paraffin metabolism in rice cells, demonstrating that reaction pathways can be recovered from untargeted data without compound annotation."
-    },
-    {
-      "title": "Carbohydrate fraction characterisation of functional yogurts containing pectin and pectic oligosaccharides through convolutional networks",
-      "doi": "10.1016/j.jfca.2020.103484",
-      "url": "https://doi.org/10.1016/j.jfca.2020.103484",
-      "journal": "Journal of Food Composition and Analysis",
-      "year": 2020,
-      "published_date": "2020-07-01",
-      "authors": [
-        "Carlos Sabater",
-        "Celia Abad-García",
-        "Paloma Delgado-Fernández",
-        "Nieves Corzo",
-        "Antonia Montilla"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
-    },
-    {
-      "title": "Recent Advances in In Vivo SPME Sampling",
-      "doi": "10.3390/separations7010006",
-      "url": "https://doi.org/10.3390/separations7010006",
-      "journal": "Separations",
-      "year": 2020,
-      "published_date": "2020-01-15",
-      "authors": [
-        "Nicolò Riboni",
-        "Fabio Fornari",
-        "Federica Bianchi",
-        "Maria Careri"
-      ],
-      "source": "crossref+oc",
-      "section": "Reviews"
     },
     {
       "title": "Simulation-based comprehensive study of batch effects in metabolomics studies",
@@ -1551,21 +1354,6 @@
       "pmid": "31548506",
       "section": "Reviews",
       "annotation": "Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration."
-    },
-    {
-      "title": "In Vivo SPME for Bioanalysis in Environmental Monitoring and Toxicology",
-      "doi": "10.1007/978-981-13-9447-8_3",
-      "url": "https://doi.org/10.1007/978-981-13-9447-8_3",
-      "journal": "A New Paradigm for Environmental Chemistry and Toxicology",
-      "year": 2019,
-      "published_date": "2019-08-10",
-      "authors": [
-        "Anna Roszkowska",
-        "Miao Yu",
-        "Janusz Pawliszyn"
-      ],
-      "source": "crossref+oc",
-      "section": "Reviews"
     },
     {
       "title": "Structure/reaction directed analysis for LC-MS based untargeted analysis.",
