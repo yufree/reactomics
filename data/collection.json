@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-10T16:16:28+00:00",
+  "generated_at": "2026-06-10T21:23:36+00:00",
   "start_date": "2019-01-01",
   "end_date": "2026-06-10",
-  "total": 65,
+  "total": 59,
   "papers": [
     {
       "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
@@ -720,29 +720,6 @@
       "annotation": "Uses active molecular network clustering and LASSO to link plasma metabolites in postmenopausal women to breast cancer status and lifestyle factors, identifying DiHODE connected to β-carotene supplement use as a potential molecular intermediary linking inflammation to breast cancer."
     },
     {
-      "title": "Exploring Prenatal Exposure to Halogenated Compounds and Its Relationship with Birth Outcomes Using Nontarget Analysis",
-      "doi": "10.1021/acs.est.3c09534",
-      "url": "https://doi.org/10.1021/acs.est.3c09534",
-      "journal": "Environmental Science &amp; Technology",
-      "year": 2024,
-      "published_date": "2024-04-12",
-      "authors": [
-        "Huan Lin",
-        "Wei Gao",
-        "Jingjing Li",
-        "Nan Zhao",
-        "Hongna Zhang",
-        "Juntong Wei",
-        "Xiaoran Wei",
-        "Bing Wang",
-        "Yongfeng Lin",
-        "Yuxin Zheng"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics",
-      "annotation": "Nontarget analysis of 326 cord blood samples identifies 44 halogenated organic compounds including veterinary drugs, pesticides, and disinfection byproducts, finding significant negative associations between Cl/Br-HOC mixture exposure and newborn birth length."
-    },
-    {
       "title": "Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis",
       "doi": "10.1016/j.watres.2024.121299",
       "url": "https://doi.org/10.1016/j.watres.2024.121299",
@@ -845,27 +822,6 @@
       "pmid": "37709065",
       "section": "DOM transformation",
       "annotation": "Applies FT-ICR MS-based reactomics and molecular network analysis to track sludge biochar DOM transformation under pyrolysis, identifying three-stage cascade reactions and showing that temperatures above 500°C are needed to minimize harmful N-containing byproducts."
-    },
-    {
-      "title": "Mapping the metabolic responses to oxaliplatin-based chemotherapy with in vivo spatiotemporal metabolomics.",
-      "doi": "10.1016/j.jpha.2023.08.001",
-      "url": "https://doi.org/10.1016/j.jpha.2023.08.001",
-      "journal": "Journal of pharmaceutical analysis",
-      "year": 2023,
-      "published_date": "2023-08-09",
-      "authors": [
-        "Mariola Olkowicz",
-        "Khaled Ramadan",
-        "Hernando Rosales-Solano",
-        "Miao Yu",
-        "Aizhou Wang",
-        "Marcelo Cypel",
-        "Janusz Pawliszyn"
-      ],
-      "source": "pubmed+oc",
-      "pmid": "38464782",
-      "section": "Applications in drug metabolism",
-      "annotation": "Uses biocompatible in vivo SPME microprobes with global metabolomics profiling to map spatiotemporal metabolic changes in porcine lung during isolated lung perfusion with oxaliplatin, identifying 139 discriminant compounds and dose thresholds for lung toxicity."
     },
     {
       "title": "Deep Characterization of Serum Metabolome Based on the Segment-Optimized Spectral-Stitching Direct-Infusion Fourier Transform Ion Cyclotron Resonance Mass Spectrometry Approach",
@@ -1010,26 +966,6 @@
       "annotation": "Reviews AI and ML applications across untargeted metabolomics and HRMS exposomics workflows, discussing advances in peak detection, chemical identification, and disease screening, with emphasis on integrating endogenous and exogenous small-molecule detection."
     },
     {
-      "title": "Metabolomic fingerprinting of porcine lung tissue during pre-clinical prolonged ex vivo lung perfusion using in vivo SPME coupled with LC-HRMS.",
-      "doi": "10.1016/j.jpha.2022.06.002",
-      "url": "https://doi.org/10.1016/j.jpha.2022.06.002",
-      "journal": "Journal of pharmaceutical analysis",
-      "year": 2022,
-      "published_date": "2022-06-08",
-      "authors": [
-        "Nikita Looby",
-        "Anna Roszkowska",
-        "Aadil Ali",
-        "Barbara Bojko",
-        "Marcelo Cypel",
-        "Janusz Pawliszyn"
-      ],
-      "source": "pubmed+oc",
-      "pmid": "36105172",
-      "section": "Applications in drug metabolism",
-      "annotation": "Deploys in vivo SPME microprobes for repeated non-destructive sampling of porcine lung during 19-hour normothermic ex vivo lung perfusion, identifying upregulated inflammatory and lipid metabolism pathways between hours 11–12 as markers of emerging lung injury."
-    },
-    {
       "title": "Reproducible untargeted metabolomics workflow for exhaustive MS2 data acquisition of MS1 features.",
       "doi": "10.1186/s13321-022-00586-8",
       "url": "https://doi.org/10.1186/s13321-022-00586-8",
@@ -1134,34 +1070,6 @@
       "section": "Reviews"
     },
     {
-      "title": "Tooth biomarkers to characterize the temporal dynamics of the fetal and early-life exposome.",
-      "doi": "10.1016/j.envint.2021.106849",
-      "url": "https://doi.org/10.1016/j.envint.2021.106849",
-      "journal": "Environment international",
-      "year": 2021,
-      "published_date": "2021-09-02",
-      "authors": [
-        "Miao Yu",
-        "Peijun Tu",
-        "Georgia Dolios",
-        "Priyanthi S Dassanayake",
-        "Heather Volk",
-        "Craig Newschaffer",
-        "M Daniele Fallin",
-        "Lisa Croen",
-        "Kristen Lyall",
-        "Rebecca Schmidt",
-        "Irva Hertz-Piccioto",
-        "Christine Austin",
-        "Manish Arora",
-        "Lauren M Petrick"
-      ],
-      "source": "pubmed+oc",
-      "pmid": "34482270",
-      "section": "Applications in environmental transformation",
-      "annotation": "Profiles small molecules from micro-dissected deciduous tooth layers by untargeted metabolomics, annotating 390 compounds across 62 chemical classes and identifying 267 metabolites that discriminate prenatal from postnatal fractions, providing retrospective access to fetal exposures."
-    },
-    {
       "title": "Microbial Roles in Dissolved Organic Matter Transformation in Full-Scale Wastewater Treatment Processes Revealed by Reactomics and Comparative Genomics.",
       "doi": "10.1021/acs.est.1c02584",
       "url": "https://doi.org/10.1021/acs.est.1c02584",
@@ -1182,27 +1090,6 @@
       "pmid": "34338502",
       "section": "PMD network",
       "annotation": "Pairs reactomics with comparative genomics. PMD-based reaction networks identify which microbial guilds drive specific dissolved-organic-matter transformations across full-scale wastewater treatment stages."
-    },
-    {
-      "title": "Medium- and Short-Chain Chlorinated Paraffins in Mature Maize Plants and Corresponding Agricultural Soils.",
-      "doi": "10.1021/acs.est.0c05111",
-      "url": "https://doi.org/10.1021/acs.est.0c05111",
-      "journal": "Environmental science & technology",
-      "year": 2021,
-      "published_date": "2021-03-23",
-      "authors": [
-        "Weifang Chen",
-        "Xingwang Hou",
-        "Yanwei Liu",
-        "Xinxiao Hu",
-        "Jiyan Liu",
-        "Jerald L Schnoor",
-        "Guibin Jiang"
-      ],
-      "source": "pubmed",
-      "pmid": "33754697",
-      "section": "Applications in environmental transformation",
-      "annotation": "Reports first characterization of MCCP and SCCP bioaccumulation in mature maize plants near a CP production facility, finding most CPs concentrated in tissues with direct airborne exposure and assessing edible risks to humans and livestock."
     },
     {
       "title": "Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.",
@@ -1306,21 +1193,6 @@
       "pmid": "32600037",
       "section": "PMD network",
       "annotation": "First application of PMD network to biotransformation tracing. Uses PMD-linked ion chains to map chlorinated paraffin metabolism in rice cells, demonstrating that reaction pathways can be recovered from untargeted data without compound annotation."
-    },
-    {
-      "title": "Simulation-based comprehensive study of batch effects in metabolomics studies",
-      "doi": "10.1101/2019.12.16.878637",
-      "url": "https://doi.org/10.1101/2019.12.16.878637",
-      "journal": "",
-      "year": 2019,
-      "published_date": "2019-12-17",
-      "authors": [
-        "Miao Yu",
-        "Anna Roszkowska",
-        "Janusz Pawliszyn"
-      ],
-      "source": "crossref+oc",
-      "section": "Applications in endogenous metabolomics"
     },
     {
       "title": "The metaRbolomics Toolbox in Bioconductor and beyond.",
