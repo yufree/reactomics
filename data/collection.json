@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-10T21:23:36+00:00",
+  "generated_at": "2026-06-10T21:39:46+00:00",
   "start_date": "2019-01-01",
   "end_date": "2026-06-10",
-  "total": 59,
+  "total": 62,
   "papers": [
     {
       "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
@@ -612,6 +612,27 @@
       "annotation": "Uses PMD-based molecular network analysis to resolve oxidizability signatures of complex landfill leachate DOM under OH radical and ozone treatment, linking specific molecular subclasses to their susceptibility to advanced oxidation processes."
     },
     {
+      "title": "The impact of sampling time point on the lipidome composition",
+      "doi": "10.1016/j.jpba.2024.116429",
+      "url": "https://doi.org/10.1016/j.jpba.2024.116429",
+      "journal": "Journal of Pharmaceutical and Biomedical Analysis",
+      "year": 2024,
+      "published_date": "2024-12-01",
+      "authors": [
+        "Joanna Bogusiewicz",
+        "Bogumiła Kupcewicz",
+        "Kacper Wnuk",
+        "Magdalena Gaca-Tabaszewska",
+        "Jacek Furtak",
+        "Marek Harat",
+        "Katarzyna Buszko",
+        "Barbara Bojko"
+      ],
+      "source": "crossref+oc",
+      "section": "Methods and tools",
+      "annotation": "Compares HILIC-HRMS lipidome profiles of meningioma and glioma brain tumors sampled fresh versus after 12-month storage, showing storage-induced phospholipid and sphingolipid degradation while tumor-type discrimination remains intact."
+    },
+    {
       "title": "Enhanced removal of biolabile oxygen-depleted dissolved organic matter by coagulation-adsorption process Improves biological stability of reclaimed water",
       "doi": "10.1016/j.cej.2024.157156",
       "url": "https://doi.org/10.1016/j.cej.2024.157156",
@@ -893,6 +914,24 @@
       "annotation": "Combines GC-MS, liquid chromatography, and reactomics in a multiplatform approach to characterize degradation compounds formed during hydrothermal hemicellulose extraction from hazelnut shells, demonstrating PMD-based reaction tracking in food chemistry contexts."
     },
     {
+      "title": "Synchronous biostimulants recovery and dewaterability enhancement of anaerobic digestion sludge through post-hydrothermal treatment",
+      "doi": "10.1016/j.cej.2023.141881",
+      "url": "https://doi.org/10.1016/j.cej.2023.141881",
+      "journal": "Chemical Engineering Journal",
+      "year": 2023,
+      "published_date": "2023-03-01",
+      "authors": [
+        "Aibin Hu",
+        "Jing Ai",
+        "Yongliang Zheng",
+        "Shisheng Li",
+        "Dongsheng Wang",
+        "Weijun Zhang"
+      ],
+      "source": "crossref+oc",
+      "section": "DOM transformation"
+    },
+    {
       "title": "Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.",
       "doi": "10.1016/j.watres.2022.119488",
       "url": "https://doi.org/10.1016/j.watres.2022.119488",
@@ -1169,6 +1208,27 @@
       "pmid": "33081948",
       "section": "In-source reactions and independent ion selection",
       "annotation": "Applies globalstd algorithm and structure/reaction directed analysis to investigate how sampling method and storage conditions affect fish muscle metabolomics profiles, finding butylation-series metabolites stable during storage and demonstrating in vivo SPME superiority for unstable metabolites."
+    },
+    {
+      "title": "Untargeted metabolomics profiling and hemoglobin normalization for archived newborn dried blood spots from a refrigerated biorepository.",
+      "doi": "10.1016/j.jpba.2020.113574",
+      "url": "https://doi.org/10.1016/j.jpba.2020.113574",
+      "journal": "Journal of pharmaceutical and biomedical analysis",
+      "year": 2020,
+      "published_date": "2020-08-23",
+      "authors": [
+        "Miao Yu",
+        "Georgia Dolios",
+        "Vladimir Yong-Gonzalez",
+        "Olle Björkqvist",
+        "Elena Colicino",
+        "Jonas Halfvarson",
+        "Lauren Petrick"
+      ],
+      "source": "pubmed+oc",
+      "pmid": "32896810",
+      "section": "Methods and tools",
+      "annotation": "Validates hemoglobin measured as a sodium lauryl sulfate complex at 540 nm as a normalization factor for metabolite quantification in dried blood spots archived at 4°C for up to 21 years, enabling retrospective untargeted metabolomics in long-term biorepositories."
     },
     {
       "title": "Metabolism of SCCPs and MCCPs in Suspension Rice Cells Based on Paired Mass Distance (PMD) Analysis.",
