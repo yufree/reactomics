@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-10T21:39:46+00:00",
+  "generated_at": "2026-07-03T17:10:08+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-06-10",
-  "total": 62,
+  "end_date": "2026-07-03",
+  "total": 63,
   "papers": [
     {
       "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
@@ -152,6 +152,25 @@
       "pmid": "41448013",
       "section": "PMD network",
       "annotation": "Uses frequency-based PMD analysis to reveal which transformation pathways are preferentially selected during organic matter mineralisation, linking reaction selectivity to treatment conditions."
+    },
+    {
+      "title": "Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.",
+      "doi": "10.1016/j.jes.2025.12.043",
+      "url": "https://doi.org/10.1016/j.jes.2025.12.043",
+      "journal": "Journal of environmental sciences (China)",
+      "year": 2025,
+      "published_date": "2025-12-18",
+      "authors": [
+        "Guosheng Zhao",
+        "Longfei Wang",
+        "Yi Li",
+        "Jiaying Chen",
+        "Lihua Niu",
+        "Li Lin"
+      ],
+      "source": "pubmed",
+      "pmid": "42336562",
+      "section": "Methods and tools"
     },
     {
       "title": "Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.",

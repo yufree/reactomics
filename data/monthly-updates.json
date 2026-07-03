@@ -116,6 +116,34 @@
           "score": 18
         }
       ]
+    },
+    {
+      "month": "2026-06",
+      "generated_at": "2026-07-03T17:10:10Z",
+      "mode": "review_queue_only",
+      "updates": [],
+      "papers": [
+        {
+          "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
+          "url": "https://doi.org/10.1016/j.watres.2026.126218",
+          "doi": "10.1016/j.watres.2026.126218",
+          "journal": "Water research",
+          "published_date": "2026-06-02",
+          "authors": [
+            "Xu Yan",
+            "MinXin Ji",
+            "JingYa Lou",
+            "XiaoPing Shi",
+            "Shuyang Feng",
+            "Ming Ying",
+            "Feng Zhu",
+            "Gang Wu",
+            "Xu-Xiang Zhang"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 37
+        }
+      ]
     }
   ]
 }

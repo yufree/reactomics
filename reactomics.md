@@ -199,11 +199,9 @@ In human and animal metabolomics, reactomics connects measured metabolite abunda
 New papers related to reactomics and PMD-based analysis, collected monthly from PubMed.
 
 <!-- MONTHLY_UPDATES_START -->
-### 2026-05
+### 2026-06
 
-- [Molecular signature evolution of coal-derived dissolved organic matter under geothermal conditions: FT-ICR MS and machine learning.](https://doi.org/10.1371/journal.pone.0342889) *PloS one* (2026-05)
-- [Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.](https://doi.org/10.1016/j.biortech.2026.134282) *Bioresource technology* (2026-02)
-- [Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.](https://doi.org/10.1016/j.envpol.2026.128413) *Environmental pollution (Barking, Essex : 1987)* (2026-05)
+- [Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.](https://doi.org/10.1016/j.watres.2026.126218) *Water research* (2026-06)
 <!-- MONTHLY_UPDATES_END -->
 
 ## All publications
@@ -213,6 +211,7 @@ Full collection of publications using or extending PMD-based reactomics, from th
 <!-- COLLECTION_START -->
 ### Methods and tools
 
+- [Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.](https://doi.org/10.1016/j.jes.2025.12.043) *Journal of environmental sciences (China)* (2025)
 - [Accurate detection and high throughput profiling of unknown PFAS transformation products for elucidating degradation pathways.](https://doi.org/10.1016/j.watres.2025.123645) *Water research* (2025) — Combines FT-ICR MS with PMD network analysis for high-throughput profiling of PFAS transformation products at mDa resolving power, revealing that UV treatment causes chain shortening while plasma treatment generates both chain-shortening and oxygen-rich chain-lengthening products.
 - [The impact of sampling time point on the lipidome composition](https://doi.org/10.1016/j.jpba.2024.116429) *Journal of Pharmaceutical and Biomedical Analysis* (2024) — Compares HILIC-HRMS lipidome profiles of meningioma and glioma brain tumors sampled fresh versus after 12-month storage, showing storage-induced phospholipid and sphingolipid degradation while tumor-type discrimination remains intact.
 - [A multiplatform metabolomics/reactomics approach as a powerful strategy to identify reaction compounds generated during hemicellulose hydrothermal extraction from agro-food biomasses.](https://doi.org/10.1016/j.foodchem.2023.136150) *Food chemistry* (2023) — Combines GC-MS, liquid chromatography, and reactomics in a multiplatform approach to characterize degradation compounds formed during hydrothermal hemicellulose extraction from hazelnut shells, demonstrating PMD-based reaction tracking in food chemistry contexts.
@@ -297,12 +296,13 @@ Full collection of publications using or extending PMD-based reactomics, from th
 - [Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry](https://doi.org/10.1016/j.trac.2021.116409) *TrAC Trends in Analytical Chemistry* (2021)
 - [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019) — Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration.
 
-*62 papers total. Last updated 2026-06-10.*
+*63 papers total. Last updated 2026-07-03.*
 <!-- COLLECTION_END -->
 
 ## Monthly archive
 
 <!-- MONTHLY_ARCHIVE_START -->
+- [2026-06](updates/2026-06.html) — 1 paper
 - [2026-05](updates/2026-05.html) — 3 papers
 - [2026-04](updates/2026-04.html) — 1 paper
 - [2026-03](updates/2026-03.html) — 1 paper
