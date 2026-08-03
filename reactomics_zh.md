@@ -199,9 +199,11 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 以下为每月从PubMed收录的反应组学及PMD分析相关新文献。
 
 <!-- MONTHLY_UPDATES_START -->
-### 2026-06
+### 2026-07
 
-- [Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.](https://doi.org/10.1016/j.watres.2026.126218) *Water research* （2026-06）
+- [Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.](https://doi.org/10.1016/j.watres.2026.126473) *Water research* （2026-07）
+- [Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.](https://doi.org/10.1016/j.watres.2026.125913) *Water research* （2026-04）
+- [Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.](https://doi.org/10.1016/j.watres.2026.126448) *Water research* （2026-07）
 <!-- MONTHLY_UPDATES_END -->
 
 ## 全部文献
@@ -233,11 +235,21 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 
 ### 环境转化应用
 
+- [Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.](https://doi.org/10.1016/j.watres.2026.126473) *Water research* (2026)
+- [Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.](https://doi.org/10.1016/j.watres.2026.126448) *Water research* (2026)
 - [Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.](https://doi.org/10.1016/j.watres.2026.126218) *Water research* (2026)
 - [Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.](https://doi.org/10.1016/j.envpol.2026.128413) *Environmental pollution (Barking, Essex : 1987)* (2026)
 - [Molecular signature evolution of coal-derived dissolved organic matter under geothermal conditions: FT-ICR MS and machine learning.](https://doi.org/10.1371/journal.pone.0342889) *PloS one* (2026)
+- [Regional difference in the microheterogeneous distribution of singlet oxygen photoproduction from soil-derived dissolved organic matter: unraveling functional group and molecular-level drivers](https://doi.org/10.1016/j.watres.2026.125627) *Water Research* (2026)
+- [Response of microbe-DOM interactions to bioavailability in heterogeneous water diversion systems](https://doi.org/10.1016/j.watres.2025.125254) *Water Research* (2026)
+- [Novel enhanced network integrating transformations of DOM and microorganisms (ENITM) elucidates microbial-driven transformation pathways in estuarine sediments](https://doi.org/10.1016/j.watres.2025.125071) *Water Research* (2026)
 - [Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.](https://doi.org/10.1021/acs.est.5c14774) *Environmental science & technology* (2026) — Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes.
+- [From Target–Nontarget to Nontarget Screening: A Review on Screening Methods for Organic Pollutants Based on High-Resolution Mass Spectrometry](https://doi.org/10.1021/envhealth.5c00520) *Environment &amp; Health* (2026)
+- [The Molecular Transformation of Microplastic-Derived Dissolved Organic Matter Regulates the Bioavailability of Conventional Microplastic](https://doi.org/10.2139/ssrn.6027929) (2026)
+- [Estimating the steady and dynamic molecular fate of water treatment-derived dissolved organic matter](https://doi.org/10.1016/j.watres.2025.124837) *Water Research* (2026)
+- [Investigation of the Safety of Polyethylene Terephthalate/Aluminium Foil/Polyamide/Retort Cast Polypropylene Composite Film Packaging Pouches for Prepared Dishes](https://doi.org/10.1002/pts.70046) *Packaging Technology and Science* (2025)
 - [Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.](https://doi.org/10.1016/j.watres.2025.125056) *Water research* (2025) — Reactomics network analysis shows that aged microplastics stimulate metabolite turnover of nitrogenous and sulfurous compounds and increase molecular transformation network complexity, promoting antibiotic resistance gene exchange in anaerobic sludge digestion.
+- [Translocation and Tissue Distribution of Bisphenol AF and Its Transformation Products in Pumpkin Seedlings](https://doi.org/10.1021/acs.est.5c08612) *Environmental Science &amp; Technology* (2025)
 - [Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge](https://doi.org/10.1016/j.jhazmat.2025.137183) *Journal of Hazardous Materials* (2025) — Integrates machine learning for non-reference quantification of transformation products with suspect/nontarget screening in activated sludge, identifying 39 parent chemicals and 286 TPs with random-forest-predicted response factors and applying risk-based prioritization.
 - [Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.](https://doi.org/10.1126/sciadv.adn1039) *Science advances* (2024) — Develops APP-ID, an automatic PFAS identification platform with an enhanced molecular network algorithm (0.7% false-positive rate vs 2.4–46% for current methods) and a support vector machine for unknown PFAS structure identification, detecting 39 previously unreported environmental PFAS.
 - [Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis](https://doi.org/10.1016/j.watres.2024.121299) *Water Research* (2024) — Develops simplified network analysis (SNA) to uncover transformation pathways of emerging contaminants across 15 Chinese WWTPs, finding (de)methylation and dehydration as the most frequent reactions and identifying 22 transformation products of four anti-hypertensive drugs.
@@ -276,6 +288,7 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 
 - [Molecular Reactivity in Maternal Pregnancy Blood and Neonatal Dried Blood Spots Is Associated with the Risk of Pediatric Acute Lymphoblastic Leukemia.](https://doi.org/10.1158/1055-9965.EPI-25-0801) *Cancer epidemiology, biomarkers & prevention : a publication of the American Association for Cancer Research, cosponsored by the American Society of Preventive Oncology* (2025) — Applies the quantitative PMD (qPMD) reactomics approach to neonatal dried blood spots and maternal pregnancy serum, identifying nine DBS qPMDs associated with pediatric ALL risk and suggesting early-life metabolic reactivity hubs linked to leukemogenesis.
 - [Active Molecular Network Discovery Links Lifestyle Variables to Breast Cancer in the Long Island Breast Cancer Study Project.](https://doi.org/10.1021/envhealth.3c00218) *Environment & health (Washington, D.C.)* (2024) — Uses active molecular network clustering and LASSO to link plasma metabolites in postmenopausal women to breast cancer status and lifestyle factors, identifying DiHODE connected to β-carotene supplement use as a potential molecular intermediary linking inflammation to breast cancer.
+- [Active molecular network discovery links lifestyle variables to breast cancer in the Long Island Breast Cancer Study Project](https://doi.org/10.26434/chemrxiv-2022-l9ndq) (2022)
 - [Molecular Gatekeeper Discovery: Workflow for Linking Multiple Exposure Biomarkers to Metabolomics.](https://doi.org/10.1021/acs.est.1c04039) *Environmental science & technology* (2022) — Introduces the molecular gatekeeper concept. Uses PMD analysis to link multiple environmental exposure biomarkers to downstream metabolomics, identifying hub metabolites that mediate exposure–health relationships.
 - [Compartmentalization and Excretion of 2,4,6-Tribromophenol Sulfation and Glycosylation Conjugates in Rice Plants.](https://doi.org/10.1021/acs.est.0c07184) *Environmental science & technology* (2021) — Systematically characterizes sulfation and glycosylation conjugates of 2,4,6-tribromophenol in rice using PMD network analysis, identifying 8 conjugates in seedlings and revealing compartmentalization and excretion mechanisms for bromophenol detoxification.
 
@@ -296,12 +309,13 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 - [Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry](https://doi.org/10.1016/j.trac.2021.116409) *TrAC Trends in Analytical Chemistry* (2021)
 - [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019) — Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration.
 
-*共 63 篇论文。最后更新：2026-07-03。*
+*共 74 篇论文。最后更新：2026-08-03。*
 <!-- COLLECTION_END -->
 
 ## 月度存档
 
 <!-- MONTHLY_ARCHIVE_START -->
+- [2026-07](updates/2026-07.html) — 3 篇论文
 - [2026-06](updates/2026-06.html) — 1 篇论文
 - [2026-05](updates/2026-05.html) — 3 篇论文
 - [2026-04](updates/2026-04.html) — 1 篇论文

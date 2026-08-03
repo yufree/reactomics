@@ -1,9 +1,46 @@
 {
-  "generated_at": "2026-07-03T17:10:08+00:00",
+  "generated_at": "2026-08-03T17:46:29+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-07-03",
-  "total": 63,
+  "end_date": "2026-08-03",
+  "total": 74,
   "papers": [
+    {
+      "title": "Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.",
+      "doi": "10.1016/j.watres.2026.126473",
+      "url": "https://doi.org/10.1016/j.watres.2026.126473",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-07-10",
+      "authors": [
+        "Yingxianxian Liu",
+        "Zhixuan Tan",
+        "Yang Pan",
+        "Ran Yin",
+        "Haifei Zhang",
+        "Wanxin Li"
+      ],
+      "source": "pubmed",
+      "pmid": "42492209",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.",
+      "doi": "10.1016/j.watres.2026.126448",
+      "url": "https://doi.org/10.1016/j.watres.2026.126448",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-07-07",
+      "authors": [
+        "Zhixuan Tan",
+        "Yingxianxian Liu",
+        "Xiangru Zhang",
+        "Haifei Zhang",
+        "Wanxin Li"
+      ],
+      "source": "pubmed",
+      "pmid": "42492207",
+      "section": "Applications in environmental transformation"
+    },
     {
       "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
       "doi": "10.1016/j.watres.2026.126218",
@@ -66,6 +103,26 @@
       "section": "Applications in environmental transformation"
     },
     {
+      "title": "Regional difference in the microheterogeneous distribution of singlet oxygen photoproduction from soil-derived dissolved organic matter: unraveling functional group and molecular-level drivers",
+      "doi": "10.1016/j.watres.2026.125627",
+      "url": "https://doi.org/10.1016/j.watres.2026.125627",
+      "journal": "Water Research",
+      "year": 2026,
+      "published_date": "2026-05-01",
+      "authors": [
+        "Xiaoyan Zheng",
+        "Yayin Jiang",
+        "Qiyuan Sun",
+        "Feifeng Wang",
+        "Guanghui Guo",
+        "Jinfeng Lu",
+        "Yuting Luo",
+        "Pengcheng Huang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
       "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
       "doi": "10.1016/j.watres.2026.125913",
       "url": "https://doi.org/10.1016/j.watres.2026.125913",
@@ -85,6 +142,22 @@
       "pmid": "41980437",
       "section": "DOM transformation",
       "annotation": "PMD analysis of FT-ICR MS data reveals that oxygenation (+O) reactions precede and dominate chlorination in disinfection byproduct formation during UV/chlorine treatment, with over 93% of identified precursors undergoing oxygenation before chlorination."
+    },
+    {
+      "title": "Response of microbe-DOM interactions to bioavailability in heterogeneous water diversion systems",
+      "doi": "10.1016/j.watres.2025.125254",
+      "url": "https://doi.org/10.1016/j.watres.2025.125254",
+      "journal": "Water Research",
+      "year": 2026,
+      "published_date": "2026-03-01",
+      "authors": [
+        "Shuqi Zhang",
+        "Jiahe You",
+        "Xianfang Zhu",
+        "Guodong Ji"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
     },
     {
       "title": "Transformation process and removal mechanism of DOM based on paired mass distance (PMD) analysis in the multi-stage biological contact oxidation process.",
@@ -112,6 +185,28 @@
       "annotation": "PMD network analysis of FT-ICR MS data elucidates DOM transformation in multi-stage biological contact oxidation, linking six key microbial genera to 70 PMDs associated with glycolysis and amino acid metabolic pathways."
     },
     {
+      "title": "Novel enhanced network integrating transformations of DOM and microorganisms (ENITM) elucidates microbial-driven transformation pathways in estuarine sediments",
+      "doi": "10.1016/j.watres.2025.125071",
+      "url": "https://doi.org/10.1016/j.watres.2025.125071",
+      "journal": "Water Research",
+      "year": 2026,
+      "published_date": "2026-02-01",
+      "authors": [
+        "Shiyang Yu",
+        "Jitao Lv",
+        "Xindong Ma",
+        "Lu Jiang",
+        "Qiurui Zhang",
+        "Tianyu Chen",
+        "Han Fang",
+        "Dong Cao",
+        "Lixia Zhao",
+        "Yawei Wang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
       "title": "Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.",
       "doi": "10.1021/acs.est.5c14774",
       "url": "https://doi.org/10.1021/acs.est.5c14774",
@@ -127,10 +222,67 @@
         "Chen Qia",
         "Yunjiang Yu"
       ],
-      "source": "bib+pubmed",
+      "source": "bib+pubmed+oc",
       "pmid": "41540359",
       "section": "Applications in environmental transformation",
       "annotation": "Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes."
+    },
+    {
+      "title": "From Target–Nontarget to Nontarget Screening: A Review on Screening Methods for Organic Pollutants Based on High-Resolution Mass Spectrometry",
+      "doi": "10.1021/envhealth.5c00520",
+      "url": "https://doi.org/10.1021/envhealth.5c00520",
+      "journal": "Environment &amp; Health",
+      "year": 2026,
+      "published_date": "2026-01-09",
+      "authors": [
+        "Runmin Yuan",
+        "Hongrui Zhang",
+        "Jiyan Liu",
+        "Miao Yu",
+        "Xingwang Hou",
+        "Guibin Jiang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "The Molecular Transformation of Microplastic-Derived Dissolved Organic Matter Regulates the Bioavailability of Conventional Microplastic",
+      "doi": "10.2139/ssrn.6027929",
+      "url": "https://doi.org/10.2139/ssrn.6027929",
+      "journal": "",
+      "year": 2026,
+      "published_date": "2026-01-01",
+      "authors": [
+        "Zhimin Liu",
+        "Weijun Wang",
+        "Dengke Liu",
+        "Hailing He",
+        "Erwen Wang",
+        "Hao Wan",
+        "Xiaolu Liu"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Estimating the steady and dynamic molecular fate of water treatment-derived dissolved organic matter",
+      "doi": "10.1016/j.watres.2025.124837",
+      "url": "https://doi.org/10.1016/j.watres.2025.124837",
+      "journal": "Water Research",
+      "year": 2026,
+      "published_date": "2026-01-01",
+      "authors": [
+        "Junjie Qiu",
+        "Fan Lü",
+        "Xiao Hua",
+        "Jing Li",
+        "Hua Zhang",
+        "Qi Chen",
+        "Bin Xu",
+        "Pinjing He"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
     },
     {
       "title": "Frequency-based paired mass distance method revealed the transformation pathway selection of organic compounds during mineralization treatment.",
@@ -148,7 +300,7 @@
         "Gong Zhang",
         "Huijuan Liu"
       ],
-      "source": "pubmed",
+      "source": "pubmed+oc",
       "pmid": "41448013",
       "section": "PMD network",
       "annotation": "Uses frequency-based PMD analysis to reveal which transformation pathways are preferentially selected during organic matter mineralisation, linking reaction selectivity to treatment conditions."
@@ -168,9 +320,30 @@
         "Lihua Niu",
         "Li Lin"
       ],
-      "source": "pubmed",
+      "source": "pubmed+oc",
       "pmid": "42336562",
       "section": "Methods and tools"
+    },
+    {
+      "title": "Investigation of the Safety of Polyethylene Terephthalate/Aluminium Foil/Polyamide/Retort Cast Polypropylene Composite Film Packaging Pouches for Prepared Dishes",
+      "doi": "10.1002/pts.70046",
+      "url": "https://doi.org/10.1002/pts.70046",
+      "journal": "Packaging Technology and Science",
+      "year": 2025,
+      "published_date": "2025-12-12",
+      "authors": [
+        "Yiyong Zeng",
+        "Haixia Sui",
+        "Xinyu Liu",
+        "Haiyue Hou",
+        "Yujie Li",
+        "Muhammad Qamer Abbas",
+        "Yan Song",
+        "Daoyuan Yang",
+        "Zhenxia Du"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
     },
     {
       "title": "Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.",
@@ -215,10 +388,29 @@
         "Joseph L Wiemels",
         "Catherine Metayer"
       ],
-      "source": "bib+pubmed",
+      "source": "bib+pubmed+oc",
       "pmid": "40932331",
       "section": "Applications in drug metabolism",
       "annotation": "Applies the quantitative PMD (qPMD) reactomics approach to neonatal dried blood spots and maternal pregnancy serum, identifying nine DBS qPMDs associated with pediatric ALL risk and suggesting early-life metabolic reactivity hubs linked to leukemogenesis."
+    },
+    {
+      "title": "Translocation and Tissue Distribution of Bisphenol AF and Its Transformation Products in Pumpkin Seedlings",
+      "doi": "10.1021/acs.est.5c08612",
+      "url": "https://doi.org/10.1021/acs.est.5c08612",
+      "journal": "Environmental Science &amp; Technology",
+      "year": 2025,
+      "published_date": "2025-10-06",
+      "authors": [
+        "Xingwang Hou",
+        "Linfeng Wei",
+        "Hongrui Zhang",
+        "Feng Guo",
+        "Shanjun Song",
+        "Jiyan Liu",
+        "Guibin Jiang"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in environmental transformation"
     },
     {
       "title": "FT-ICR MS and viral metagenomics reveal distinct mechanisms of lysogenic and lytic phage-driven DOM transformations in wastewater at formula-levels",
@@ -949,6 +1141,25 @@
       ],
       "source": "crossref+oc",
       "section": "DOM transformation"
+    },
+    {
+      "title": "Active molecular network discovery links lifestyle variables to breast cancer in the Long Island Breast Cancer Study Project",
+      "doi": "10.26434/chemrxiv-2022-l9ndq",
+      "url": "https://doi.org/10.26434/chemrxiv-2022-l9ndq",
+      "journal": "",
+      "year": 2022,
+      "published_date": "2022-12-28",
+      "authors": [
+        "Miao Yu",
+        "Qian Li",
+        "Georgia Dolios",
+        "Peijun Tu",
+        "Susan Teitelbaum",
+        "Jia Chen",
+        "Lauren Petrick"
+      ],
+      "source": "crossref+oc",
+      "section": "Applications in drug metabolism"
     },
     {
       "title": "Comprehensive understanding of DOM reactivity in anaerobic fermentation of persulfate-pretreated sewage sludge via FT-ICR mass spectrometry and reactomics analysis.",

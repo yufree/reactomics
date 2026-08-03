@@ -144,6 +144,65 @@
           "score": 37
         }
       ]
+    },
+    {
+      "month": "2026-07",
+      "generated_at": "2026-08-03T17:46:32Z",
+      "mode": "review_queue_only",
+      "updates": [],
+      "papers": [
+        {
+          "title": "Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.",
+          "url": "https://doi.org/10.1016/j.watres.2026.126473",
+          "doi": "10.1016/j.watres.2026.126473",
+          "journal": "Water research",
+          "published_date": "2026-07-10",
+          "authors": [
+            "Yingxianxian Liu",
+            "Zhixuan Tan",
+            "Yang Pan",
+            "Ran Yin",
+            "Haifei Zhang",
+            "Wanxin Li"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 52
+        },
+        {
+          "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
+          "url": "https://doi.org/10.1016/j.watres.2026.125913",
+          "doi": "10.1016/j.watres.2026.125913",
+          "journal": "Water research",
+          "published_date": "2026-04-09",
+          "authors": [
+            "Wentao Li",
+            "Tiantian Li",
+            "Yue Hu",
+            "Yangang Li",
+            "Wenzhen Zhang",
+            "Mengkai Li",
+            "Zhimin Qiang"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 22
+        },
+        {
+          "title": "Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.",
+          "url": "https://doi.org/10.1016/j.watres.2026.126448",
+          "doi": "10.1016/j.watres.2026.126448",
+          "journal": "Water research",
+          "published_date": "2026-07-07",
+          "authors": [
+            "Zhixuan Tan",
+            "Yingxianxian Liu",
+            "Xiangru Zhang",
+            "Haifei Zhang",
+            "Wanxin Li"
+          ],
+          "section": "Applications in environmental transformation",
+          "score": 0
+        }
+      ]
     }
   ]
 }

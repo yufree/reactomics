@@ -1,28 +1,59 @@
 {
-  "generated_at": "2026-07-03T17:10:10Z",
-  "month": "2026-06",
+  "generated_at": "2026-08-03T17:46:32Z",
+  "month": "2026-07",
   "mode": "review_queue_only",
   "updates": [],
   "papers": [
     {
-      "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
-      "url": "https://doi.org/10.1016/j.watres.2026.126218",
-      "doi": "10.1016/j.watres.2026.126218",
+      "title": "Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.",
+      "url": "https://doi.org/10.1016/j.watres.2026.126473",
+      "doi": "10.1016/j.watres.2026.126473",
       "journal": "Water research",
-      "published_date": "2026-06-02",
+      "published_date": "2026-07-10",
       "authors": [
-        "Xu Yan",
-        "MinXin Ji",
-        "JingYa Lou",
-        "XiaoPing Shi",
-        "Shuyang Feng",
-        "Ming Ying",
-        "Feng Zhu",
-        "Gang Wu",
-        "Xu-Xiang Zhang"
+        "Yingxianxian Liu",
+        "Zhixuan Tan",
+        "Yang Pan",
+        "Ran Yin",
+        "Haifei Zhang",
+        "Wanxin Li"
       ],
       "section": "Paired mass distance and chemical reactions",
-      "score": 37
+      "score": 52
+    },
+    {
+      "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
+      "url": "https://doi.org/10.1016/j.watres.2026.125913",
+      "doi": "10.1016/j.watres.2026.125913",
+      "journal": "Water research",
+      "published_date": "2026-04-09",
+      "authors": [
+        "Wentao Li",
+        "Tiantian Li",
+        "Yue Hu",
+        "Yangang Li",
+        "Wenzhen Zhang",
+        "Mengkai Li",
+        "Zhimin Qiang"
+      ],
+      "section": "Paired mass distance and chemical reactions",
+      "score": 22
+    },
+    {
+      "title": "Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.",
+      "url": "https://doi.org/10.1016/j.watres.2026.126448",
+      "doi": "10.1016/j.watres.2026.126448",
+      "journal": "Water research",
+      "published_date": "2026-07-07",
+      "authors": [
+        "Zhixuan Tan",
+        "Yingxianxian Liu",
+        "Xiangru Zhang",
+        "Haifei Zhang",
+        "Wanxin Li"
+      ],
+      "section": "Applications in environmental transformation",
+      "score": 0
     }
   ]
 }
