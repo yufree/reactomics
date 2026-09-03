@@ -203,6 +203,83 @@
           "score": 0
         }
       ]
+    },
+    {
+      "month": "2026-08",
+      "generated_at": "2026-09-03T18:57:44Z",
+      "mode": "review_queue_only",
+      "updates": [],
+      "papers": [
+        {
+          "title": "Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.",
+          "url": "https://doi.org/10.1016/j.jes.2025.12.043",
+          "doi": "10.1016/j.jes.2025.12.043",
+          "journal": "Journal of environmental sciences (China)",
+          "published_date": "2025-12-18",
+          "authors": [
+            "Guosheng Zhao",
+            "Longfei Wang",
+            "Yi Li",
+            "Jiaying Chen",
+            "Lihua Niu",
+            "Li Lin"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 40
+        },
+        {
+          "title": "Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.",
+          "url": "https://doi.org/10.1016/j.watres.2026.126808",
+          "doi": "10.1016/j.watres.2026.126808",
+          "journal": "Water research",
+          "published_date": "2026-08-26",
+          "authors": [
+            "Ziwei Zhang",
+            "Huanjun Zhang",
+            "Yi Li",
+            "Wangkai Fang"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 27
+        },
+        {
+          "title": "Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.",
+          "url": "https://doi.org/10.1016/j.envpol.2026.128413",
+          "doi": "10.1016/j.envpol.2026.128413",
+          "journal": "Environmental pollution (Barking, Essex : 1987)",
+          "published_date": "2026-05-23",
+          "authors": [
+            "Xiaopeng Yan",
+            "Luyang Wang",
+            "Claude Kiki",
+            "Luo Liu",
+            "Dan Qin",
+            "Jin Xiao",
+            "Guangpu Zhao",
+            "Qian Sun"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 18
+        },
+        {
+          "title": "Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.",
+          "url": "https://doi.org/10.1016/j.watres.2026.126633",
+          "doi": "10.1016/j.watres.2026.126633",
+          "journal": "Water research",
+          "published_date": "2026-08-05",
+          "authors": [
+            "Congyu Hou",
+            "Xiaofeng Zhang",
+            "Yulong Yang",
+            "Wenkai An",
+            "Huaijia Xin",
+            "Qinghua Ji",
+            "Huijuan Liu"
+          ],
+          "section": "Paired mass distance and chemical reactions",
+          "score": 12
+        }
+      ]
     }
   ]
 }

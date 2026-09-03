@@ -199,11 +199,12 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 以下为每月从PubMed收录的反应组学及PMD分析相关新文献。
 
 <!-- MONTHLY_UPDATES_START -->
-### 2026-07
+### 2026-08
 
-- [Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.](https://doi.org/10.1016/j.watres.2026.126473) *Water research* （2026-07）
-- [Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.](https://doi.org/10.1016/j.watres.2026.125913) *Water research* （2026-04）
-- [Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.](https://doi.org/10.1016/j.watres.2026.126448) *Water research* （2026-07）
+- [Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.](https://doi.org/10.1016/j.jes.2025.12.043) *Journal of environmental sciences (China)* （2025-12）
+- [Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.](https://doi.org/10.1016/j.watres.2026.126808) *Water research* （2026-08）
+- [Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.](https://doi.org/10.1016/j.envpol.2026.128413) *Environmental pollution (Barking, Essex : 1987)* （2026-05）
+- [Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.](https://doi.org/10.1016/j.watres.2026.126633) *Water research* （2026-08）
 <!-- MONTHLY_UPDATES_END -->
 
 ## 全部文献
@@ -235,6 +236,9 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 
 ### 环境转化应用
 
+- [Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.](https://doi.org/10.1016/j.watres.2026.126808) *Water research* (2026)
+- [Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.](https://doi.org/10.1016/j.watres.2026.126633) *Water research* (2026)
+- [Molecular-level transformation of algal organic matter during water treatment processes by FT-ICR MS integrated with reactomics and interpretable machine learning.](https://doi.org/10.1016/j.watres.2026.126594) *Water research* (2026)
 - [Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.](https://doi.org/10.1016/j.watres.2026.126473) *Water research* (2026)
 - [Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.](https://doi.org/10.1016/j.watres.2026.126448) *Water research* (2026)
 - [Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.](https://doi.org/10.1016/j.watres.2026.126218) *Water research* (2026)
@@ -249,7 +253,11 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 - [Estimating the steady and dynamic molecular fate of water treatment-derived dissolved organic matter](https://doi.org/10.1016/j.watres.2025.124837) *Water Research* (2026)
 - [Investigation of the Safety of Polyethylene Terephthalate/Aluminium Foil/Polyamide/Retort Cast Polypropylene Composite Film Packaging Pouches for Prepared Dishes](https://doi.org/10.1002/pts.70046) *Packaging Technology and Science* (2025)
 - [Real-world aged microplastics exacerbate antibiotic resistance genes dissemination in anaerobic sludge digestion via enhancing microbial metabolite communication-driven pilus conjugative transfer.](https://doi.org/10.1016/j.watres.2025.125056) *Water research* (2025) — Reactomics network analysis shows that aged microplastics stimulate metabolite turnover of nitrogenous and sulfurous compounds and increase molecular transformation network complexity, promoting antibiotic resistance gene exchange in anaerobic sludge digestion.
-- [Translocation and Tissue Distribution of Bisphenol AF and Its Transformation Products in Pumpkin Seedlings](https://doi.org/10.1021/acs.est.5c08612) *Environmental Science &amp; Technology* (2025)
+- [Translocation
+and
+Tissue Distribution of Bisphenol
+AF and Its Transformation Products in Pumpkin Seedlings](https://doi.org/10.1021/acs.est.5c08612) *Environmental Science &amp;
+Technology* (2025)
 - [Integrating machine learning, suspect and nontarget screening reveal the interpretable fates of micropollutants and their transformation products in sludge](https://doi.org/10.1016/j.jhazmat.2025.137183) *Journal of Hazardous Materials* (2025) — Integrates machine learning for non-reference quantification of transformation products with suspect/nontarget screening in activated sludge, identifying 39 parent chemicals and 286 TPs with random-forest-predicted response factors and applying risk-based prioritization.
 - [Machine learning-enhanced molecular network reveals global exposure to hundreds of unknown PFAS.](https://doi.org/10.1126/sciadv.adn1039) *Science advances* (2024) — Develops APP-ID, an automatic PFAS identification platform with an enhanced molecular network algorithm (0.7% false-positive rate vs 2.4–46% for current methods) and a support vector machine for unknown PFAS structure identification, detecting 39 previously unreported environmental PFAS.
 - [Unveiling intricate transformation pathways of emerging contaminants during wastewater treatment processes through simplified network analysis](https://doi.org/10.1016/j.watres.2024.121299) *Water Research* (2024) — Develops simplified network analysis (SNA) to uncover transformation pathways of emerging contaminants across 15 Chinese WWTPs, finding (de)methylation and dehydration as the most frequent reactions and identifying 22 transformation products of four anti-hypertensive drugs.
@@ -263,7 +271,11 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 - [Molecular Humification Mechanisms of Dissolved Organic Matter during Maize Straw Composting Enhanced by Humus Soil Biomaterial: Paired-Molecule Mass Difference Reactomics Analysis Based on FT-ICR MS.](https://doi.org/10.1021/acs.jafc.5c05559) *Journal of agricultural and food chemistry* (2025) — Paired-molecule mass difference reactomics via FT-ICR MS identifies three molecular humification pathways—phenol-protein reaction, polyphenol self-condensation, and Maillard reaction—during humus-enhanced maize straw composting, with N-containing molecules showing the highest reactivity.
 - [Decoding periodate-driven phototransformation of dissolved organic matter in sunlit waters: Multidimensional property shifts and molecular network reconfiguration.](https://doi.org/10.1016/j.watres.2025.124331) *Water research* (2025) — Combines FT-ICR MS-based PMD network analysis with interpretable machine learning to show that residual periodate from advanced oxidation enhances DOM photoreactivity 1.4–3.6-fold and promotes aromatic fragmentation via oxygenation-dominated reactions.
 - [Identifying the impacts of photochemical and biological processes on wastewater effluent organic matter in receiving water using directed paired mass distance](https://doi.org/10.1016/j.jece.2025.117411) *Journal of Environmental Chemical Engineering* (2025)
-- [Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition](https://doi.org/10.1021/acsestwater.4c01260) *ACS ES&amp;T Water* (2025)
+- [Reaction Sequence of the UV/H
+                    <sub>2</sub>
+                    O
+                    <sub>2</sub>
+                    System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition](https://doi.org/10.1021/acsestwater.4c01260) *ACS ES&amp;T Water* (2025)
 - [Wildfire-Derived Pyrogenic Dissolved Organic Matter (pyDOM) Enhances Riverine DOM Reactivities and Nitrogen Metabolisms.](https://doi.org/10.1021/acs.est.5c01794) *Environmental science & technology* (2025) — High-resolution MS and substrate-explicit modeling show that wildfire-derived pyrogenic DOM increases refractory aromatic components in river water; reactomics analysis reveals an enhanced potential for microbial oxidative reactions linked to higher nominal oxidation state of carbon.
 - [MoleTrans: Browser-Based Webtool for Postanalysis on Molecular Chemodiversity and Transformation of Dissolved Organic Matters via FT-ICR MS](https://doi.org/10.1021/acs.estlett.5c00284) *Environmental Science &amp; Technology Letters* (2025)
 - [Effect of a high Cl– concentration on the transformation of waste leachate DOM by the UV/PMS system: A mechanistic study using the Suwannee River natural organic matter (SRNOM) as a simulator of waste leachate DOM](https://doi.org/10.1016/j.jhazmat.2024.137038) *Journal of Hazardous Materials* (2025) — Investigates how high chloride concentrations shift DOM transformation mechanisms under UV/PMS treatment, using molecular analysis to reveal competing oxidation pathways and their impact on disinfection byproduct precursor formation.
@@ -309,12 +321,13 @@ PMD分析需要**高精度质量测量**，通常来自Orbitrap或Q-TOF等高分
 - [Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry](https://doi.org/10.1016/j.trac.2021.116409) *TrAC Trends in Analytical Chemistry* (2021)
 - [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019) — Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration.
 
-*共 74 篇论文。最后更新：2026-08-03。*
+*共 77 篇论文。最后更新：2026-09-03。*
 <!-- COLLECTION_END -->
 
 ## 月度存档
 
 <!-- MONTHLY_ARCHIVE_START -->
+- [2026-08](updates/2026-08.html) — 4 篇论文
 - [2026-07](updates/2026-07.html) — 3 篇论文
 - [2026-06](updates/2026-06.html) — 1 篇论文
 - [2026-05](updates/2026-05.html) — 3 篇论文

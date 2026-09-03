@@ -1,9 +1,67 @@
 {
-  "generated_at": "2026-08-03T17:46:29+00:00",
+  "generated_at": "2026-09-03T18:57:41+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-08-03",
-  "total": 74,
+  "end_date": "2026-09-03",
+  "total": 77,
   "papers": [
+    {
+      "title": "Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.",
+      "doi": "10.1016/j.watres.2026.126808",
+      "url": "https://doi.org/10.1016/j.watres.2026.126808",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-08-26",
+      "authors": [
+        "Ziwei Zhang",
+        "Huanjun Zhang",
+        "Yi Li",
+        "Wangkai Fang"
+      ],
+      "source": "pubmed",
+      "pmid": "42669264",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.",
+      "doi": "10.1016/j.watres.2026.126633",
+      "url": "https://doi.org/10.1016/j.watres.2026.126633",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-08-05",
+      "authors": [
+        "Congyu Hou",
+        "Xiaofeng Zhang",
+        "Yulong Yang",
+        "Wenkai An",
+        "Huaijia Xin",
+        "Qinghua Ji",
+        "Huijuan Liu"
+      ],
+      "source": "pubmed",
+      "pmid": "42570591",
+      "section": "Applications in environmental transformation"
+    },
+    {
+      "title": "Molecular-level transformation of algal organic matter during water treatment processes by FT-ICR MS integrated with reactomics and interpretable machine learning.",
+      "doi": "10.1016/j.watres.2026.126594",
+      "url": "https://doi.org/10.1016/j.watres.2026.126594",
+      "journal": "Water research",
+      "year": 2026,
+      "published_date": "2026-07-30",
+      "authors": [
+        "Wenke Li",
+        "Qiguang Shan",
+        "Qinglong Fu",
+        "Jibao Liu",
+        "Mahmoud Nasr",
+        "Huiyu Dong",
+        "Eunsang Kwon",
+        "Manabu Fujii"
+      ],
+      "source": "pubmed",
+      "pmid": "42561802",
+      "section": "Applications in environmental transformation"
+    },
     {
       "title": "Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.",
       "doi": "10.1016/j.watres.2026.126473",
@@ -394,10 +452,10 @@
       "annotation": "Applies the quantitative PMD (qPMD) reactomics approach to neonatal dried blood spots and maternal pregnancy serum, identifying nine DBS qPMDs associated with pediatric ALL risk and suggesting early-life metabolic reactivity hubs linked to leukemogenesis."
     },
     {
-      "title": "Translocation and Tissue Distribution of Bisphenol AF and Its Transformation Products in Pumpkin Seedlings",
+      "title": "Translocation\nand\nTissue Distribution of Bisphenol\nAF and Its Transformation Products in Pumpkin Seedlings",
       "doi": "10.1021/acs.est.5c08612",
       "url": "https://doi.org/10.1021/acs.est.5c08612",
-      "journal": "Environmental Science &amp; Technology",
+      "journal": "Environmental Science &amp;\nTechnology",
       "year": 2025,
       "published_date": "2025-10-06",
       "authors": [
@@ -576,7 +634,7 @@
       "annotation": "Systematic review of 33 computational tools for chromatographic MS data processing published 2018–2024, covering advances in peak detection, alignment, and deconvolution including machine learning approaches, with emphasis on open-source solutions."
     },
     {
-      "title": "Reaction Sequence of the UV/H<sub>2</sub>O<sub>2</sub> System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition",
+      "title": "Reaction Sequence of the UV/H\n                    <sub>2</sub>\n                    O\n                    <sub>2</sub>\n                    System on the Suwannee River Dissolved Organic Matter with Complex Molecular Composition",
       "doi": "10.1021/acsestwater.4c01260",
       "url": "https://doi.org/10.1021/acsestwater.4c01260",
       "journal": "ACS ES&amp;T Water",

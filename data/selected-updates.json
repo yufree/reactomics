@@ -1,59 +1,77 @@
 {
-  "generated_at": "2026-08-03T17:46:32Z",
-  "month": "2026-07",
+  "generated_at": "2026-09-03T18:57:44Z",
+  "month": "2026-08",
   "mode": "review_queue_only",
   "updates": [],
   "papers": [
     {
-      "title": "Making waves: From molecular inventories to mechanistic networks - an isotope-anchored reactomics framework for proactive DBP management.",
-      "url": "https://doi.org/10.1016/j.watres.2026.126473",
-      "doi": "10.1016/j.watres.2026.126473",
-      "journal": "Water research",
-      "published_date": "2026-07-10",
+      "title": "Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.",
+      "url": "https://doi.org/10.1016/j.jes.2025.12.043",
+      "doi": "10.1016/j.jes.2025.12.043",
+      "journal": "Journal of environmental sciences (China)",
+      "published_date": "2025-12-18",
       "authors": [
-        "Yingxianxian Liu",
-        "Zhixuan Tan",
-        "Yang Pan",
-        "Ran Yin",
-        "Haifei Zhang",
-        "Wanxin Li"
+        "Guosheng Zhao",
+        "Longfei Wang",
+        "Yi Li",
+        "Jiaying Chen",
+        "Lihua Niu",
+        "Li Lin"
       ],
       "section": "Paired mass distance and chemical reactions",
-      "score": 52
+      "score": 40
     },
     {
-      "title": "Role of oxygenation reactions in chlorinated disinfection byproduct formation during vacuum UV/chlorine treatment of reclaimed water.",
-      "url": "https://doi.org/10.1016/j.watres.2026.125913",
-      "doi": "10.1016/j.watres.2026.125913",
+      "title": "Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.",
+      "url": "https://doi.org/10.1016/j.watres.2026.126808",
+      "doi": "10.1016/j.watres.2026.126808",
       "journal": "Water research",
-      "published_date": "2026-04-09",
+      "published_date": "2026-08-26",
       "authors": [
-        "Wentao Li",
-        "Tiantian Li",
-        "Yue Hu",
-        "Yangang Li",
-        "Wenzhen Zhang",
-        "Mengkai Li",
-        "Zhimin Qiang"
+        "Ziwei Zhang",
+        "Huanjun Zhang",
+        "Yi Li",
+        "Wangkai Fang"
       ],
       "section": "Paired mass distance and chemical reactions",
-      "score": 22
+      "score": 27
     },
     {
-      "title": "Unveiling 4-hydroxyphenylpyruvic acid as a highly potent precursor of toxic I-DBPs during chloramination of natural organic matter.",
-      "url": "https://doi.org/10.1016/j.watres.2026.126448",
-      "doi": "10.1016/j.watres.2026.126448",
-      "journal": "Water research",
-      "published_date": "2026-07-07",
+      "title": "Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.",
+      "url": "https://doi.org/10.1016/j.envpol.2026.128413",
+      "doi": "10.1016/j.envpol.2026.128413",
+      "journal": "Environmental pollution (Barking, Essex : 1987)",
+      "published_date": "2026-05-23",
       "authors": [
-        "Zhixuan Tan",
-        "Yingxianxian Liu",
-        "Xiangru Zhang",
-        "Haifei Zhang",
-        "Wanxin Li"
+        "Xiaopeng Yan",
+        "Luyang Wang",
+        "Claude Kiki",
+        "Luo Liu",
+        "Dan Qin",
+        "Jin Xiao",
+        "Guangpu Zhao",
+        "Qian Sun"
       ],
-      "section": "Applications in environmental transformation",
-      "score": 0
+      "section": "Paired mass distance and chemical reactions",
+      "score": 18
+    },
+    {
+      "title": "Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.",
+      "url": "https://doi.org/10.1016/j.watres.2026.126633",
+      "doi": "10.1016/j.watres.2026.126633",
+      "journal": "Water research",
+      "published_date": "2026-08-05",
+      "authors": [
+        "Congyu Hou",
+        "Xiaofeng Zhang",
+        "Yulong Yang",
+        "Wenkai An",
+        "Huaijia Xin",
+        "Qinghua Ji",
+        "Huijuan Liu"
+      ],
+      "section": "Paired mass distance and chemical reactions",
+      "score": 12
     }
   ]
 }
