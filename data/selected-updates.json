@@ -1,74 +1,44 @@
 {
-  "generated_at": "2026-09-03T18:57:44Z",
-  "month": "2026-08",
+  "generated_at": "2026-10-03T18:52:25Z",
+  "month": "2026-09",
   "mode": "review_queue_only",
   "updates": [],
   "papers": [
     {
-      "title": "Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.",
-      "url": "https://doi.org/10.1016/j.jes.2025.12.043",
-      "doi": "10.1016/j.jes.2025.12.043",
-      "journal": "Journal of environmental sciences (China)",
-      "published_date": "2025-12-18",
-      "authors": [
-        "Guosheng Zhao",
-        "Longfei Wang",
-        "Yi Li",
-        "Jiaying Chen",
-        "Lihua Niu",
-        "Li Lin"
-      ],
-      "section": "Paired mass distance and chemical reactions",
-      "score": 40
-    },
-    {
-      "title": "Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.",
-      "url": "https://doi.org/10.1016/j.watres.2026.126808",
-      "doi": "10.1016/j.watres.2026.126808",
+      "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.",
+      "url": "https://doi.org/10.1016/j.watres.2026.126218",
+      "doi": "10.1016/j.watres.2026.126218",
       "journal": "Water research",
-      "published_date": "2026-08-26",
+      "published_date": "2026-06-02",
       "authors": [
-        "Ziwei Zhang",
-        "Huanjun Zhang",
-        "Yi Li",
-        "Wangkai Fang"
+        "Xu Yan",
+        "MinXin Ji",
+        "JingYa Lou",
+        "XiaoPing Shi",
+        "Shuyang Feng",
+        "Ming Ying",
+        "Feng Zhu",
+        "Gang Wu",
+        "Xu-Xiang Zhang"
       ],
       "section": "Paired mass distance and chemical reactions",
-      "score": 27
+      "score": 37
     },
     {
-      "title": "Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.",
-      "url": "https://doi.org/10.1016/j.envpol.2026.128413",
-      "doi": "10.1016/j.envpol.2026.128413",
-      "journal": "Environmental pollution (Barking, Essex : 1987)",
-      "published_date": "2026-05-23",
+      "title": "Dissolved organic matter molecular diversity and transformation potential are associated with microbial carbon use efficiency in paddy soils.",
+      "url": "https://doi.org/10.1016/j.jenvman.2026.130923",
+      "doi": "10.1016/j.jenvman.2026.130923",
+      "journal": "Journal of environmental management",
+      "published_date": "2026-09-15",
       "authors": [
-        "Xiaopeng Yan",
-        "Luyang Wang",
-        "Claude Kiki",
-        "Luo Liu",
-        "Dan Qin",
-        "Jin Xiao",
-        "Guangpu Zhao",
-        "Qian Sun"
-      ],
-      "section": "Paired mass distance and chemical reactions",
-      "score": 18
-    },
-    {
-      "title": "Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.",
-      "url": "https://doi.org/10.1016/j.watres.2026.126633",
-      "doi": "10.1016/j.watres.2026.126633",
-      "journal": "Water research",
-      "published_date": "2026-08-05",
-      "authors": [
-        "Congyu Hou",
-        "Xiaofeng Zhang",
-        "Yulong Yang",
-        "Wenkai An",
-        "Huaijia Xin",
-        "Qinghua Ji",
-        "Huijuan Liu"
+        "Long Chen",
+        "Shulan Cheng",
+        "Huajun Fang",
+        "Yifan Guo",
+        "Fangying Shi",
+        "Hui Wang",
+        "Bingqian Liu",
+        "Haiguang Pu"
       ],
       "section": "Paired mass distance and chemical reactions",
       "score": 12

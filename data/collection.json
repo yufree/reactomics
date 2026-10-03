@@ -1,9 +1,30 @@
 {
-  "generated_at": "2026-09-03T18:57:41+00:00",
+  "generated_at": "2026-10-03T18:52:22+00:00",
   "start_date": "2019-01-01",
-  "end_date": "2026-09-03",
-  "total": 77,
+  "end_date": "2026-10-03",
+  "total": 78,
   "papers": [
+    {
+      "title": "Dissolved organic matter molecular diversity and transformation potential are associated with microbial carbon use efficiency in paddy soils.",
+      "doi": "10.1016/j.jenvman.2026.130923",
+      "url": "https://doi.org/10.1016/j.jenvman.2026.130923",
+      "journal": "Journal of environmental management",
+      "year": 2026,
+      "published_date": "2026-09-15",
+      "authors": [
+        "Long Chen",
+        "Shulan Cheng",
+        "Huajun Fang",
+        "Yifan Guo",
+        "Fangying Shi",
+        "Hui Wang",
+        "Bingqian Liu",
+        "Haiguang Pu"
+      ],
+      "source": "pubmed",
+      "pmid": "42743843",
+      "section": "Applications in environmental transformation"
+    },
     {
       "title": "Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.",
       "doi": "10.1016/j.watres.2026.126808",
@@ -286,10 +307,10 @@
       "annotation": "Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes."
     },
     {
-      "title": "From Target–Nontarget to Nontarget Screening: A Review on Screening Methods for Organic Pollutants Based on High-Resolution Mass Spectrometry",
+      "title": "From Target-Nontarget to Nontarget Screening: A Review on Screening Methods for Organic Pollutants Based on High-Resolution Mass Spectrometry.",
       "doi": "10.1021/envhealth.5c00520",
       "url": "https://doi.org/10.1021/envhealth.5c00520",
-      "journal": "Environment &amp; Health",
+      "journal": "Environment & health (Washington, D.C.)",
       "year": 2026,
       "published_date": "2026-01-09",
       "authors": [
@@ -300,7 +321,8 @@
         "Xingwang Hou",
         "Guibin Jiang"
       ],
-      "source": "crossref+oc",
+      "source": "pubmed+oc",
+      "pmid": "42164876",
       "section": "Applications in environmental transformation"
     },
     {
@@ -586,10 +608,10 @@
       "section": "DOM transformation"
     },
     {
-      "title": "Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants",
+      "title": "Transformative Forces:\nThe Role of Gut Microbiota\nin Processing Environmental Pollutants",
       "doi": "10.1021/acs.est.5c01928",
       "url": "https://doi.org/10.1021/acs.est.5c01928",
-      "journal": "Environmental Science &amp; Technology",
+      "journal": "Environmental Science &amp;\nTechnology",
       "year": 2025,
       "published_date": "2025-07-25",
       "authors": [

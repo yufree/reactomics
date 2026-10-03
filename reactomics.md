@@ -199,12 +199,10 @@ In human and animal metabolomics, reactomics connects measured metabolite abunda
 New papers related to reactomics and PMD-based analysis, collected monthly from PubMed.
 
 <!-- MONTHLY_UPDATES_START -->
-### 2026-08
+### 2026-09
 
-- [Machine learning uncovers tidal DOM transformations and keystone molecules via FT-ICR MS and reactomics for estuarine nutrient cycling.](https://doi.org/10.1016/j.jes.2025.12.043) *Journal of environmental sciences (China)* (2025-12)
-- [Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.](https://doi.org/10.1016/j.watres.2026.126808) *Water research* (2026-08)
-- [Anaerobic transformation of 6PPD-Q in sediment: Dominated by quinone reduction and novel O-methylation pathways.](https://doi.org/10.1016/j.envpol.2026.128413) *Environmental pollution (Barking, Essex : 1987)* (2026-05)
-- [Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.](https://doi.org/10.1016/j.watres.2026.126633) *Water research* (2026-08)
+- [Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP.](https://doi.org/10.1016/j.watres.2026.126218) *Water research* (2026-06)
+- [Dissolved organic matter molecular diversity and transformation potential are associated with microbial carbon use efficiency in paddy soils.](https://doi.org/10.1016/j.jenvman.2026.130923) *Journal of environmental management* (2026-09)
 <!-- MONTHLY_UPDATES_END -->
 
 ## All publications
@@ -236,6 +234,7 @@ Full collection of publications using or extending PMD-based reactomics, from th
 
 ### Applications in environmental transformation
 
+- [Dissolved organic matter molecular diversity and transformation potential are associated with microbial carbon use efficiency in paddy soils.](https://doi.org/10.1016/j.jenvman.2026.130923) *Journal of environmental management* (2026)
 - [Molecular evidence for algal bloom decay as a critical window for bacteria-mediated DOM transformation toward more refractory forms.](https://doi.org/10.1016/j.watres.2026.126808) *Water research* (2026)
 - [Deep mineralization of hypersaline wastewater for resource recovery via a MXene-doped Ti4O7 flow-through electrode.](https://doi.org/10.1016/j.watres.2026.126633) *Water research* (2026)
 - [Molecular-level transformation of algal organic matter during water treatment processes by FT-ICR MS integrated with reactomics and interpretable machine learning.](https://doi.org/10.1016/j.watres.2026.126594) *Water research* (2026)
@@ -248,7 +247,7 @@ Full collection of publications using or extending PMD-based reactomics, from th
 - [Response of microbe-DOM interactions to bioavailability in heterogeneous water diversion systems](https://doi.org/10.1016/j.watres.2025.125254) *Water Research* (2026)
 - [Novel enhanced network integrating transformations of DOM and microorganisms (ENITM) elucidates microbial-driven transformation pathways in estuarine sediments](https://doi.org/10.1016/j.watres.2025.125071) *Water Research* (2026)
 - [Insights into Contaminant Composition Variations and Reactomics during Wastewater Treatment Processes Based on Nontargeted Analysis and Paired Mass Distance.](https://doi.org/10.1021/acs.est.5c14774) *Environmental science & technology* (2026) — Nontargeted PMD analysis of paired influent-effluent samples from 11 WWTPs shows that methylation/demethylation are the most conserved transformation reactions, with high-frequency PMDs capturing carbon-related polarity changes across treatment processes.
-- [From Target–Nontarget to Nontarget Screening: A Review on Screening Methods for Organic Pollutants Based on High-Resolution Mass Spectrometry](https://doi.org/10.1021/envhealth.5c00520) *Environment &amp; Health* (2026)
+- [From Target-Nontarget to Nontarget Screening: A Review on Screening Methods for Organic Pollutants Based on High-Resolution Mass Spectrometry.](https://doi.org/10.1021/envhealth.5c00520) *Environment & health (Washington, D.C.)* (2026)
 - [The Molecular Transformation of Microplastic-Derived Dissolved Organic Matter Regulates the Bioavailability of Conventional Microplastic](https://doi.org/10.2139/ssrn.6027929) (2026)
 - [Estimating the steady and dynamic molecular fate of water treatment-derived dissolved organic matter](https://doi.org/10.1016/j.watres.2025.124837) *Water Research* (2026)
 - [Investigation of the Safety of Polyethylene Terephthalate/Aluminium Foil/Polyamide/Retort Cast Polypropylene Composite Film Packaging Pouches for Prepared Dishes](https://doi.org/10.1002/pts.70046) *Packaging Technology and Science* (2025)
@@ -312,7 +311,10 @@ Technology* (2025)
 
 ### Reviews
 
-- [Transformative Forces: The Role of Gut Microbiota in Processing Environmental Pollutants](https://doi.org/10.1021/acs.est.5c01928) *Environmental Science &amp; Technology* (2025) — Reviews gut microbiota-mediated transformation of environmental pollutants, highlighting multi-omics integration and advanced mass spectrometry approaches for identifying transformation products and assessing pollutant bioavailability and health risks.
+- [Transformative Forces:
+The Role of Gut Microbiota
+in Processing Environmental Pollutants](https://doi.org/10.1021/acs.est.5c01928) *Environmental Science &amp;
+Technology* (2025) — Reviews gut microbiota-mediated transformation of environmental pollutants, highlighting multi-omics integration and advanced mass spectrometry approaches for identifying transformation products and assessing pollutant bioavailability and health risks.
 - [Trends and Innovations in Tools for Processing Chromatographic Data Using Mass Spectrometry Detection: A Systematic Review](https://doi.org/10.1080/10408347.2025.2528134) *Critical Reviews in Analytical Chemistry* (2025) — Systematic review of 33 computational tools for chromatographic MS data processing published 2018–2024, covering advances in peak detection, alignment, and deconvolution including machine learning approaches, with emphasis on open-source solutions.
 - [Toward an integrated omics approach for plant biosynthetic pathway discovery in the age of AI](https://doi.org/10.1016/j.tibs.2025.01.010) *Trends in Biochemical Sciences* (2025) — Reviews multiomics strategies for plant biosynthetic pathway discovery, proposing an integrated workflow combining molecular networking, reaction pair analysis, and gene co-expression patterns to accelerate identification of natural product biosynthetic genes.
 - [Bioaccumulation and Biotransformation of Chlorinated Paraffins.](https://doi.org/10.3390/toxics10120778) *Toxics* (2022) — Reviews bioaccumulation and biotransformation of chlorinated paraffins across species, summarizing tissue distribution patterns and biotransformation pathways including hydroxylation, dechlorination, and carbon chain decomposition in plants, invertebrates, and vertebrates.
@@ -321,12 +323,13 @@ Technology* (2025)
 - [Recent advances in data-mining techniques for measuring transformation products by high-resolution mass spectrometry](https://doi.org/10.1016/j.trac.2021.116409) *TrAC Trends in Analytical Chemistry* (2021)
 - [The metaRbolomics Toolbox in Bioconductor and beyond.](https://doi.org/10.3390/metabo9100200) *Metabolites* (2019) — Comprehensive review of over 200 R packages for computational metabolomics, covering data processing, biostatistics, metabolite annotation, and pathway analysis, with emphasis on reproducible Bioconductor workflows and multi-step pipeline integration.
 
-*77 papers total. Last updated 2026-09-03.*
+*78 papers total. Last updated 2026-10-03.*
 <!-- COLLECTION_END -->
 
 ## Monthly archive
 
 <!-- MONTHLY_ARCHIVE_START -->
+- [2026-09](updates/2026-09.html) — 2 papers
 - [2026-08](updates/2026-08.html) — 4 papers
 - [2026-07](updates/2026-07.html) — 3 papers
 - [2026-06](updates/2026-06.html) — 1 paper
