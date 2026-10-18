@@ -104,12 +104,12 @@ def fig1_paradigm_shift():
     _panel(ax, 0.015, 0.04, 0.425, 0.80, "Traditional Metabolomics", title_size=22)
 
     left_xy = {
-        "A": (0.10, 0.68),
-        "B": (0.30, 0.74),
-        "C": (0.15, 0.52),
-        "D": (0.355, 0.56),
-        "E": (0.11, 0.36),
-        "F": (0.335, 0.385),
+        "A": (0.10, 0.66),
+        "B": (0.30, 0.72),
+        "C": (0.15, 0.50),
+        "D": (0.355, 0.54),
+        "E": (0.11, 0.34),
+        "F": (0.335, 0.365),
     }
     for label, (x, y) in left_xy.items():
         ax.scatter(
@@ -135,35 +135,50 @@ def fig1_paradigm_shift():
             zorder=6,
         )
 
-    # Caption block — packed tight so panels feel filled
+    # Caption band fills the lower panel (reduces empty white)
+    ax.add_patch(
+        FancyBboxPatch(
+            (0.03, 0.055),
+            0.395,
+            0.22,
+            boxstyle="round,pad=0.01,rounding_size=0.04",
+            linewidth=0,
+            facecolor="#edf2f7",
+            transform=ax.transAxes,
+            zorder=3,
+        )
+    )
     ax.text(
         0.228,
-        0.255,
+        0.22,
         "Metabolites as independent entities",
         ha="center",
         fontsize=16,
         color=MUTED,
         style="italic",
         transform=ax.transAxes,
+        zorder=4,
     )
     ax.text(
         0.228,
-        0.175,
+        0.145,
         'Question: "Which metabolites differ?"',
         ha="center",
         fontsize=17,
         fontweight="bold",
         color=CORAL,
         transform=ax.transAxes,
+        zorder=4,
     )
     ax.text(
         0.228,
-        0.095,
+        0.08,
         "Requires compound annotation",
         ha="center",
         fontsize=15,
         color=MUTED,
         transform=ax.transAxes,
+        zorder=4,
     )
 
     # Arrow
@@ -191,12 +206,12 @@ def fig1_paradigm_shift():
     _panel(ax, 0.56, 0.04, 0.425, 0.80, "Reactomics", title_color=GREEN, title_size=22)
 
     right_xy = {
-        "A": (0.645, 0.68),
-        "B": (0.845, 0.74),
-        "C": (0.695, 0.52),
-        "D": (0.90, 0.56),
-        "E": (0.655, 0.36),
-        "F": (0.88, 0.385),
+        "A": (0.645, 0.66),
+        "B": (0.845, 0.72),
+        "C": (0.695, 0.50),
+        "D": (0.90, 0.54),
+        "E": (0.655, 0.34),
+        "F": (0.88, 0.365),
     }
     edges = [
         ("A", "B", "CH₂  14.0157", CORAL),
@@ -266,34 +281,49 @@ def fig1_paradigm_shift():
             zorder=6,
         )
 
+    ax.add_patch(
+        FancyBboxPatch(
+            (0.575, 0.055),
+            0.395,
+            0.22,
+            boxstyle="round,pad=0.01,rounding_size=0.04",
+            linewidth=0,
+            facecolor="#edf2f7",
+            transform=ax.transAxes,
+            zorder=3,
+        )
+    )
     ax.text(
         0.772,
-        0.255,
+        0.22,
         "Reactions (PMDs) as first-class objects",
         ha="center",
         fontsize=16,
         color=MUTED,
         style="italic",
         transform=ax.transAxes,
+        zorder=4,
     )
     ax.text(
         0.772,
-        0.175,
+        0.145,
         'Question: "Which reactions differ?"',
         ha="center",
         fontsize=17,
         fontweight="bold",
         color=GREEN,
         transform=ax.transAxes,
+        zorder=4,
     )
     ax.text(
         0.772,
-        0.095,
+        0.08,
         "No compound ID required",
         ha="center",
         fontsize=15,
         color=MUTED,
         transform=ax.transAxes,
+        zorder=4,
     )
 
     ax.text(
