@@ -39,7 +39,7 @@ def save(fig, name: str):
     plt.close(fig)
 
 
-def _panel(ax, x, y, w, h, title, title_color=NAVY):
+def _panel(ax, x, y, w, h, title, title_color=NAVY, title_size=13):
     box = FancyBboxPatch(
         (x, y),
         w,
@@ -54,12 +54,12 @@ def _panel(ax, x, y, w, h, title, title_color=NAVY):
     ax.add_patch(box)
     ax.text(
         x + w / 2,
-        y + h - 0.055,
+        y + h - 0.045,
         title,
         transform=ax.transAxes,
         ha="center",
         va="top",
-        fontsize=13,
+        fontsize=title_size,
         fontweight="bold",
         color=title_color,
         fontfamily="DejaVu Sans",
@@ -69,7 +69,8 @@ def _panel(ax, x, y, w, h, title, title_color=NAVY):
 
 def fig1_paradigm_shift():
     """Side-by-side: traditional metabolomics vs reactomics."""
-    fig, ax = plt.subplots(figsize=(14, 7.2), facecolor=BG)
+    # Slightly shorter canvas → same text reads larger when scaled to poster width
+    fig, ax = plt.subplots(figsize=(13, 6.4), facecolor=BG)
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
@@ -77,11 +78,11 @@ def fig1_paradigm_shift():
 
     ax.text(
         0.5,
-        0.96,
+        0.98,
         "Paradigm Shift: From Metabolites to Reactions",
         ha="center",
         va="top",
-        fontsize=18,
+        fontsize=30,
         fontweight="bold",
         color=NAVY,
         fontfamily="DejaVu Sans",
@@ -89,37 +90,35 @@ def fig1_paradigm_shift():
     )
     ax.text(
         0.5,
-        0.905,
+        0.895,
         "Reactomics treats chemical reactions as first-class analytes in untargeted MS data",
         ha="center",
         va="top",
-        fontsize=10,
+        fontsize=16,
         color=MUTED,
         fontfamily="DejaVu Sans",
         transform=ax.transAxes,
     )
 
     # Left panel
-    _panel(ax, 0.04, 0.08, 0.40, 0.76, "Traditional Metabolomics")
+    _panel(ax, 0.015, 0.04, 0.425, 0.80, "Traditional Metabolomics", title_size=22)
 
-    # Scattered independent metabolites
-    rng = np.random.default_rng(7)
     left_xy = {
-        "A": (0.14, 0.62),
-        "B": (0.28, 0.68),
-        "C": (0.20, 0.48),
-        "D": (0.34, 0.52),
-        "E": (0.16, 0.34),
-        "F": (0.32, 0.36),
+        "A": (0.10, 0.68),
+        "B": (0.30, 0.74),
+        "C": (0.15, 0.52),
+        "D": (0.355, 0.56),
+        "E": (0.11, 0.36),
+        "F": (0.335, 0.385),
     }
     for label, (x, y) in left_xy.items():
         ax.scatter(
             [x],
             [y],
-            s=420,
+            s=1100,
             c=TEAL,
             edgecolors=NAVY,
-            linewidths=1.5,
+            linewidths=2.4,
             zorder=5,
             transform=ax.transAxes,
         )
@@ -130,38 +129,39 @@ def fig1_paradigm_shift():
             ha="center",
             va="center",
             color="white",
-            fontsize=11,
+            fontsize=20,
             fontweight="bold",
             transform=ax.transAxes,
             zorder=6,
         )
 
+    # Caption block — packed tight so panels feel filled
     ax.text(
-        0.24,
-        0.26,
+        0.228,
+        0.255,
         "Metabolites as independent entities",
         ha="center",
-        fontsize=9,
+        fontsize=16,
         color=MUTED,
         style="italic",
         transform=ax.transAxes,
     )
     ax.text(
-        0.24,
-        0.195,
+        0.228,
+        0.175,
         'Question: "Which metabolites differ?"',
         ha="center",
-        fontsize=10,
+        fontsize=17,
         fontweight="bold",
         color=CORAL,
         transform=ax.transAxes,
     )
     ax.text(
-        0.24,
-        0.14,
+        0.228,
+        0.095,
         "Requires compound annotation",
         ha="center",
-        fontsize=8.5,
+        fontsize=15,
         color=MUTED,
         transform=ax.transAxes,
     )
@@ -169,43 +169,51 @@ def fig1_paradigm_shift():
     # Arrow
     ax.annotate(
         "",
-        xy=(0.55, 0.48),
-        xytext=(0.46, 0.48),
+        xy=(0.555, 0.48),
+        xytext=(0.45, 0.48),
         xycoords=ax.transAxes,
         textcoords=ax.transAxes,
-        arrowprops=dict(arrowstyle="-|>", color=CORAL, lw=3.2, mutation_scale=22),
+        arrowprops=dict(arrowstyle="-|>", color=CORAL, lw=5.0, mutation_scale=34),
     )
     ax.text(
-        0.505,
-        0.545,
+        0.502,
+        0.555,
         "SHIFT",
         ha="center",
         va="bottom",
-        fontsize=9,
+        fontsize=17,
         fontweight="bold",
         color=CORAL,
         transform=ax.transAxes,
     )
 
     # Right panel
-    _panel(ax, 0.56, 0.08, 0.40, 0.76, "Reactomics", title_color=GREEN)
+    _panel(ax, 0.56, 0.04, 0.425, 0.80, "Reactomics", title_color=GREEN, title_size=22)
 
     right_xy = {
-        "A": (0.66, 0.62),
-        "B": (0.80, 0.68),
-        "C": (0.72, 0.48),
-        "D": (0.86, 0.52),
-        "E": (0.68, 0.34),
-        "F": (0.84, 0.36),
+        "A": (0.645, 0.68),
+        "B": (0.845, 0.74),
+        "C": (0.695, 0.52),
+        "D": (0.90, 0.56),
+        "E": (0.655, 0.36),
+        "F": (0.88, 0.385),
     }
     edges = [
-        ("A", "B", "CH₂\n14.0157", CORAL),
-        ("A", "C", "O\n15.9949", TEAL),
-        ("C", "E", "H₂\n2.0157", GREEN),
-        ("B", "D", "H₂O\n18.0106", PURPLE),
-        ("C", "D", "CH₂\n14.0157", CORAL),
-        ("E", "F", "O\n15.9949", TEAL),
+        ("A", "B", "CH₂  14.0157", CORAL),
+        ("A", "C", "O  15.9949", TEAL),
+        ("C", "E", "H₂  2.0157", GREEN),
+        ("B", "D", "H₂O  18.0106", PURPLE),
+        ("C", "D", "CH₂  14.0157", CORAL),
+        ("E", "F", "O  15.9949", TEAL),
     ]
+    label_off = {
+        ("A", "B"): (0.00, 0.03),
+        ("A", "C"): (-0.04, 0.00),
+        ("C", "E"): (-0.04, 0.00),
+        ("B", "D"): (0.045, 0.00),
+        ("C", "D"): (0.00, 0.035),
+        ("E", "F"): (0.00, -0.05),
+    }
     for a, b, lab, col in edges:
         x1, y1 = right_xy[a]
         x2, y2 = right_xy[b]
@@ -213,35 +221,35 @@ def fig1_paradigm_shift():
             [x1, x2],
             [y1, y2],
             color=col,
-            lw=2.8,
+            lw=4.0,
             solid_capstyle="round",
             transform=ax.transAxes,
             zorder=2,
         )
         mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        dx, dy = label_off[(a, b)]
         ax.text(
-            mx,
-            my + 0.018,
+            mx + dx,
+            my + dy,
             lab,
             ha="center",
-            va="bottom",
-            fontsize=6.5,
+            va="center",
+            fontsize=13,
             color=col,
             fontweight="bold",
             transform=ax.transAxes,
             zorder=4,
-            linespacing=0.95,
-            bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.9),
+            bbox=dict(boxstyle="round,pad=0.25", fc="white", ec="none", alpha=0.95),
         )
 
     for label, (x, y) in right_xy.items():
         ax.scatter(
             [x],
             [y],
-            s=380,
+            s=1000,
             c="white",
             edgecolors=NAVY,
-            linewidths=1.6,
+            linewidths=2.4,
             zorder=5,
             transform=ax.transAxes,
         )
@@ -252,48 +260,48 @@ def fig1_paradigm_shift():
             ha="center",
             va="center",
             color=NAVY,
-            fontsize=10,
+            fontsize=18,
             fontweight="bold",
             transform=ax.transAxes,
             zorder=6,
         )
 
     ax.text(
-        0.76,
-        0.26,
+        0.772,
+        0.255,
         "Reactions (PMDs) as first-class objects",
         ha="center",
-        fontsize=9,
+        fontsize=16,
         color=MUTED,
         style="italic",
         transform=ax.transAxes,
     )
     ax.text(
-        0.76,
-        0.195,
+        0.772,
+        0.175,
         'Question: "Which reactions differ?"',
         ha="center",
-        fontsize=10,
+        fontsize=17,
         fontweight="bold",
         color=GREEN,
         transform=ax.transAxes,
     )
     ax.text(
-        0.76,
-        0.14,
+        0.772,
+        0.095,
         "No compound ID required",
         ha="center",
-        fontsize=8.5,
+        fontsize=15,
         color=MUTED,
         transform=ax.transAxes,
     )
 
     ax.text(
         0.5,
-        0.02,
+        0.008,
         "PMD-based reactomics · Communications Chemistry 2020 · pmd R package",
         ha="center",
-        fontsize=8,
+        fontsize=13,
         color=MUTED,
         transform=ax.transAxes,
     )
