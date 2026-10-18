@@ -2,7 +2,28 @@
 
 Print-ready figures for a reactomics poster, focused on the **metabolites → reactions** paradigm shift.
 
-Regenerate vector/PDF/PNG schematics:
+## Editable PowerPoint (recommended)
+
+**`reactomics_paradigm_shift.pptx`** — native shapes/text boxes you can restyle in PowerPoint / Keynote / LibreOffice.
+
+| Slide | Content |
+|-------|---------|
+| 1 | Main paradigm-shift comparison |
+| 2 | Unit of analysis flip |
+| 3 | MS as reaction detector + PMD table |
+| 4 | Reaction-level quantification |
+| 5 | Practical consequences |
+| 6 | Editing notes |
+
+Regenerate:
+
+```bash
+python scripts/generate_poster_pptx.py
+```
+
+## Static exports (optional)
+
+Regenerate SVG/PDF/PNG schematics:
 
 ```bash
 python scripts/generate_poster_figures.py
